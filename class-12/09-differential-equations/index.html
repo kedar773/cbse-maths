@@ -1,0 +1,3441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 12 Differential Equations // CBSE Mathematics Whiteboard</title>
+  <meta name="description" content="CBSE Class 12 Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for Differential Equations.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/whiteboard.css">
+  <link rel="stylesheet" href="../../assets/css/whiteboard-animations.css">
+  <link rel="stylesheet" href="../../assets/css/chapter.css">
+  <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css">
+  
+  <!-- KaTeX Engine -->
+  <script src="../../assets/vendor/katex/katex.min.js"></script>
+  <script src="../../assets/vendor/katex/contrib/auto-render.min.js"></script>
+</head>
+<body data-chapter-slug="class-12-09-differential-equations">
+
+  <!-- Whiteboard Top Reading Progress Bar -->
+  <div class="reading-progress-bar"></div>
+
+  <!-- Sticky Whiteboard Header -->
+  <header class="chapter-header">
+    <div class="chapter-nav-wrap">
+      <div class="chapter-nav-left">
+        <a href="../../index.html" class="back-link" title="Return to Portal Hub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Portal
+        </a>
+        <div class="chapter-meta">
+          <div class="chapter-breadcrumb">
+            <span>Class 12</span>
+            <span>&bull;</span>
+            <span class="badge-branch">Calculus</span>
+            <span>&bull;</span>
+            <span class="badge-priority">⭐⭐⭐⭐⭐</span>
+          </div>
+          <h1>Differential Equations</h1>
+        </div>
+      </div>
+
+      <div class="chapter-nav-right">
+        <button class="board-tool-btn contact-modal-trigger" title="Contact Kedar Krishna / Ask Doubt">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Contact
+        </button>
+        <button class="board-tool-btn open-search-trigger" title="Quick Search (Ctrl+K)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          Search <kbd style="font-size: 0.7rem; background: #e2e8f0; padding: 0.1rem 0.3rem; border-radius: 4px;">Ctrl+K</kbd>
+        </button>
+        <button id="gridToggleBtn" class="board-tool-btn" title="Switch Whiteboard Grid Pattern">
+          ⁝⁝ Grid: Dots
+        </button>
+        <button id="markCompletedBtn" class="board-tool-btn" title="Track Mastery">
+          ○ Mark Complete
+        </button>
+      </div>
+    </div>
+
+    <!-- 5-Tab Navigation Bar -->
+    <div class="chapter-tabs-bar">
+      <div class="chapter-tabs">
+        <button class="tab-item active" data-target="panel-concepts">
+          📋 NCERT Core Notes
+        </button>
+        <button class="tab-item" data-target="panel-examples">
+          💡 Solved Examples &amp; Step Marking
+        </button>
+        <button class="tab-item" data-target="panel-pyqs">
+          🎯 Board Exam PYQ Vault (2020–2025)
+        </button>
+        <button class="tab-item" data-target="panel-traps">
+          ⚠️ Examiner Traps &amp; Hacks
+        </button>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="board-container">
+    <div class="whiteboard-frame">
+      <div style="padding: 1.5rem 1.75rem;">
+
+        <!-- Panels Container -->
+        <div class="panels-container">
+          
+          <!-- TAB 1: NCERT Core Notes -->
+          <div id="panel-concepts" class="view-panel active">
+            <div class="sticky-note" style="margin-bottom: 2rem;">
+              <div class="sticky-title">📘 NCERT Classroom Notes: Differential Equations</div>
+              Strictly aligned with current CBSE syllabus guidelines. Focus on fundamental definitions, intuitive proofs, and key identities.
+            </div>
+            
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note yellow" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Basic Concepts: Order, Degree, and Verification of Solutions of Differential Equations — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Basic Concepts: Order, Degree, and Verification of Solutions of Differential Equations</h1>
+<h1>Chapter: Differential Equations (Class 12 CBSE / State Boards)</h1>
+<h2>Subtopic 1: Basic Concepts — Order, Degree, and Verification of Solutions</h2>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Definition of a Differential Equation</h3>
+<p>An equation involving an independent variable (usually $x$), a dependent variable (usually $y$), and one or more derivative(s) of the dependent variable with respect to the independent variable:</p>
+<p>$$
+\frac{dy}{dx}, \frac{d^2y}{dx^2}, \dots, \frac{d^ny}{dx^n}
+$$</p>
+<p>is called a <strong>Differential Equation (D.E.)</strong>.</p>
+<ul>
+<li><strong>Ordinary Differential Equation (ODE):</strong> Involves derivatives with respect to a single independent variable. (The Class 12 syllabus deals exclusively with ODEs).</li>
+<li><strong>General Functional Form of an ODE of order $n$:</strong></li>
+</ul>
+<p>$$
+F\left(x, y, y', y'', \dots, y^{(n)}\right) = 0
+$$</p>
+<p>where $y^{(k)} = \frac{d^k y}{dx^k}$.</p>
+<hr />
+<h3>1.2 Order of a Differential Equation <span class="star-icon">⭐⭐⭐⭐⭐</span></h3>
+<blockquote>
+<p><strong>Definition (NCERT):</strong> 
+The <strong>order</strong> of a differential equation is defined as the order of the <strong>highest-order derivative</strong> of the dependent variable with respect to the independent variable appearing in the given differential equation.</p>
+</blockquote>
+<h4>Key Principles:</h4>
+<ol>
+<li><strong>Always Defined:</strong> The order of any valid differential equation is always a positive integer ($n \in \mathbb{N} = \{1, 2, 3, \dots\}$). It is <strong>never undefined</strong>.</li>
+<li>
+<p><strong>Identification Strategy:</strong> Scan the entire equation and locate all terms involving derivatives: $\frac{dy}{dx}$ (Order 1), $\frac{d^2y}{dx^2}$ (Order 2), $\frac{d^3y}{dx^3}$ (Order 3), etc. The maximum index of differentiation is the order.</p>
+</li>
+<li>
+<p><strong>Geometric Intuition:</strong> The order represents the intrinsic dimensionality or the number of independent physical/geometric degrees of freedom (e.g., in kinematics: position $\to$ order 0, velocity $\to$ order 1, acceleration $\to$ order 2).</p>
+</li>
+</ol>
+<hr />
+<h3>1.3 Degree of a Differential Equation <span class="star-icon">⭐⭐⭐⭐⭐</span></h3>
+<blockquote>
+<p><strong>Definition (NCERT):</strong> 
+To study the degree of a differential equation, the differential equation must be expressible as a <strong>polynomial equation in its derivatives</strong> (i.e., in $y', y'', y''', \dots$). 
+When so expressible, the <strong>degree</strong> is the <strong>highest power (positive integral exponent)</strong> to which the <strong>highest-order derivative</strong> is raised, after the equation has been made completely free from radicals (fractional powers) and negative exponents involving the derivatives.</p>
+</blockquote>
+<h4>Critical Existence Condition:</h4>
+<p>The degree of a differential equation is <strong>defined IF AND ONLY IF</strong> the equation can be written in the form:</p>
+<p>$$
+A_0(x,y)\left(\frac{d^n y}{dx^n}\right)^k + A_1(x,y)\left(\frac{d^n y}{dx^n}\right)^{k-1} + \dots + A_k(x,y) = 0
+$$</p>
+<p>where all derivative terms appear with non-negative integer powers and are <strong>not trapped</strong> inside transcendental operations such as:</p>
+<p>$$
+\sin\left(\frac{dy}{dx}\right), \quad \cos\left(\frac{d^2y}{dx^2}\right), \quad e^{\frac{dy}{dx}}, \quad \ln\left(\frac{dy}{dx}\right), \quad \tan^{-1}\left(\frac{dy}{dx}\right)
+$$</p>
+<blockquote>
+<p>[!IMPORTANT]
+- If any derivative term is trapped inside a non-algebraic/transcendental function and cannot be eliminated by algebraic manipulation, the <strong>degree is NOT DEFINED</strong>.
+- Transcendental functions of independent/dependent variables (such as $\sin x$, $e^y$, $\ln x$) <strong>do NOT affect</strong> the polynomial nature of derivatives. Degree depends strictly on the derivatives.</p>
+</blockquote>
+<hr />
+<h3>1.4 Solution of a Differential Equation: General vs. Particular <span class="star-icon">⭐⭐⭐⭐</span></h3>
+<p>A function $\phi(x)$ is called a <strong>solution</strong> (or integral) of a differential equation on an open interval $I$ if, when substituted into the differential equation together with its derivatives, it reduces the equation to an identity over $I$.</p>
+<h4>1. General Solution (Primitive)</h4>
+<p>A solution of an $n^{\text{th}}$-order differential equation containing <strong>exactly $n$ independent arbitrary constants</strong> is called the <strong>General Solution</strong> (or Complete Integral).</p>
+<p>$$
+\text{Number of arbitrary constants in the General Solution} = \text{Order of the D.E.} = n
+$$</p>
+<h4>2. Particular Solution</h4>
+<p>A solution obtained from the general solution by assigning specific numerical values to the arbitrary constants (determined via Initial Value Problems or Boundary Conditions) is called a <strong>Particular Solution</strong>.</p>
+<p>$$
+\text{Number of arbitrary constants in any Particular Solution} = 0
+$$</p>
+<hr />
+<h2>2. Rigorous Step-by-Step Verifications &amp; Proofs</h2>
+<h3>Theorem 1: Verification of Explicit Solutions</h3>
+<p><strong>Statement:</strong> Prove that the function $y = A\cos(\omega x) + B\sin(\omega x)$ is a general solution of the second-order linear differential equation:</p>
+<p>$$
+\frac{d^2y}{dx^2} + \omega^2 y = 0
+$$</p>
+<p>where $A, B, \omega$ are real constants and $\omega \neq 0$.</p>
+<h4>Proof:</h4>
+<p><strong>Given:</strong></p>
+<p>$$
+y(x) = A\cos(\omega x) + B\sin(\omega x) \quad \text{--- (1)}
+$$</p>
+<p><strong>To Prove:</strong></p>
+<p>$$
+\frac{d^2y}{dx^2} + \omega^2 y = 0
+$$</p>
+<p><strong>Step 1: First-Order Differentiation</strong>
+Differentiating equation (1) with respect to $x$ using linearity and standard chain rule:</p>
+<p>$$
+\frac{dy}{dx} = \frac{d}{dx}\big[A\cos(\omega x) + B\sin(\omega x)\big]
+$$</p>
+<p>$$
+\frac{dy}{dx} = -A\omega\sin(\omega x) + B\omega\cos(\omega x) \quad \text{--- (2)}
+$$</p>
+<p><strong>Step 2: Second-Order Differentiation</strong>
+Differentiating equation (2) with respect to $x$:</p>
+<p>$$
+\frac{d^2y}{dx^2} = \frac{d}{dx}\big[-A\omega\sin(\omega x) + B\omega\cos(\omega x)\big]
+$$</p>
+<p>$$
+\frac{d^2y}{dx^2} = -A\omega^2\cos(\omega x) - B\omega^2\sin(\omega x)
+$$</p>
+<p>Factoring out $-\omega^2$:</p>
+<p>$$
+\frac{d^2y}{dx^2} = -\omega^2\big[A\cos(\omega x) + B\sin(\omega x)\big] \quad \text{--- (3)}
+$$</p>
+<p><strong>Step 3: Direct Substitution</strong>
+Substitute equation (1) into equation (3):</p>
+<p>$$
+\frac{d^2y}{dx^2} = -\omega^2 y
+$$</p>
+<p>$$
+\implies \frac{d^2y}{dx^2} + \omega^2 y = 0
+$$</p>
+<p><strong>Conclusion:</strong>
+1. The function satisfies the differential equation identically for all $x \in \mathbb{R}$.
+2. The differential equation is of order 2, and the solution contains exactly 2 arbitrary constants ($A$ and $B$).
+Hence, $y = A\cos(\omega x) + B\sin(\omega x)$ is the <strong>general solution</strong>. $\quad \blacksquare$</p>
+<hr />
+<h3>Theorem 2: Verification of Implicit Relations</h3>
+<p><strong>Statement:</strong> Prove that the implicit relation $x^2 = 2y^2 \ln y$ is a solution of the differential equation:</p>
+<p>$$
+(x^2 + y^2)\frac{dy}{dx} - xy = 0
+$$</p>
+<p>for all $y > 0$ and $x > 0$.</p>
+<h4>Proof:</h4>
+<p><strong>Given:</strong></p>
+<p>$$
+x^2 = 2y^2 \ln y \quad \text{--- (1)}
+$$</p>
+<p><strong>To Prove:</strong></p>
+<p>$$
+(x^2 + y^2)\frac{dy}{dx} - xy = 0
+$$</p>
+<p><strong>Step 1: Implicit Differentiation</strong>
+Differentiating both sides of (1) with respect to $x$:</p>
+<p>$$
+\frac{d}{dx}(x^2) = \frac{d}{dx}\left(2y^2 \ln y\right)
+$$</p>
+<p>$$
+2x = 2 \left[ \frac{d}{dx}(y^2) \cdot \ln y + y^2 \cdot \frac{d}{dx}(\ln y) \right]
+$$</p>
+<p>$$
+2x = 2 \left[ 2y\frac{dy}{dx}\ln y + y^2 \cdot \frac{1}{y}\frac{dy}{dx} \right]
+$$</p>
+<p>$$
+2x = 2y \frac{dy}{dx} \left[ 2\ln y + 1 \right]
+$$</p>
+<p>Divide both sides by 2:</p>
+<p>$$
+x = y(2\ln y + 1)\frac{dy}{dx} \quad \text{--- (2)}
+$$</p>
+<p><strong>Step 2: Express $\frac{dy}{dx}$ in Terms of $x$ and $y$</strong>
+From equation (2):</p>
+<p>$$
+\frac{dy}{dx} = \frac{x}{y(2\ln y + 1)}
+$$</p>
+<p>From original equation (1), note that:</p>
+<p>$$
+2\ln y = \frac{x^2}{y^2}
+$$</p>
+<p>Substitute this relation into the denominator:</p>
+<p>$$
+2\ln y + 1 = \frac{x^2}{y^2} + 1 = \frac{x^2 + y^2}{y^2}
+$$</p>
+<p>Therefore:</p>
+<p>$$
+\frac{dy}{dx} = \frac{x}{y \cdot \left(\frac{x^2 + y^2}{y^2}\right)} = \frac{x y^2}{y (x^2 + y^2)} = \frac{xy}{x^2 + y^2}
+$$</p>
+<p><strong>Step 3: Verification of the Differential Equation</strong>
+Cross-multiplying:</p>
+<p>$$
+(x^2 + y^2)\frac{dy}{dx} = xy
+$$</p>
+<p>$$
+(x^2 + y^2)\frac{dy}{dx} - xy = 0
+$$</p>
+<p>The given relation identically satisfies the differential equation. $\quad \blacksquare$</p>
+<hr />
+<h2>3. High-Yield Examples &amp; 5-Year Board PYQs (2020–2025)</h2>
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note blue" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Differential Equations with Variables Separable and Equations Reducible to Separable Form — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Differential Equations with Variables Separable and Equations Reducible to Separable Form</h1>
+<h1>TEACHING LECTURE NOTE: DIFFERENTIAL EQUATIONS (CLASS 12 CBSE / ISC / JEE)</h1>
+<h2>Topic: Differential Equations with Variables Separable &amp; Reducible to Separable Form</h2>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Fundamental Definitions &amp; Core Terminology</h3>
+<p>A first-order, first-degree differential equation has the general form:</p>
+<p>$$
+\frac{dy}{dx} = f(x, y) \quad \text{or} \quad M(x, y)\,dx + N(x, y)\,dy = 0
+$$</p>
+<ul>
+<li><strong>General Solution</strong>: A relation between $x$ and $y$ satisfying the differential equation containing exactly one arbitrary constant (equal to the order of the differential equation, which is $1$).</li>
+<li><strong>Particular Solution</strong>: A solution obtained from the general solution by assigning a specific numerical value to the arbitrary constant using an initial condition / boundary value (e.g., $y(x_0) = y_0$).</li>
+<li><strong>Singular Solution</strong>: A solution that satisfies the differential equation but cannot be obtained from the general solution for any finite real value of the arbitrary constant. Often arises when dividing by factors that could be zero.</li>
+</ul>
+<hr />
+<h3>1.2 Variable Separable Form (<span class="star-icon">⭐⭐⭐⭐⭐</span> Priority)</h3>
+<h4>Definition</h4>
+<p>A first-order, first-degree differential equation is said to be of the <strong>variable separable type</strong> if it can be expressed in the form:</p>
+<p>$$
+\frac{dy}{dx} = f(x) \cdot g(y)
+$$</p>
+<p>where $f(x)$ is purely a function of $x$ (or a constant) and $g(y)$ is purely a function of $y$ (or a constant).</p>
+<h4>Geometric Interpretation</h4>
+<p>Geometrically, the slope $m = \frac{dy}{dx}$ at any point $(x, y)$ in the Cartesian plane decomposes into a product of a horizontal component depending only on abscissa $x$ and a vertical component depending only on ordinate $y$. 
+- Along any vertical line $x = c_1$, the ratio of slopes depends purely on $g(y)$.
+- Along any horizontal line $y = c_2$, the slope varies directly in proportion to $f(x)$.</p>
+<p>The solution represents a 1-parameter family of integral curves whose tangent slopes at every point $(x, y)$ factor as $f(x)g(y)$.</p>
+<hr />
+<h3>1.3 Equations Reducible to Variable Separable Form (<span class="star-icon">⭐⭐⭐⭐</span> Priority)</h3>
+<h4>Definition</h4>
+<p>Equations that are not directly separable, but have the specific structure:</p>
+<p>$$
+\frac{dy}{dx} = f(ax + by + c)
+$$</p>
+<p>where $a, b, c \in \mathbb{R}$ and $b \neq 0$.</p>
+<h4>Intuition</h4>
+<p>The rate of change of $y$ is governed entirely by the linear combination $u = ax + by + c$. By moving into a rotated/scaled coordinate system along the parallel lines $ax + by + c = k$, the entire multivariable dependency collapses into a single independent variable $u$, rendering the differential equation separable with respect to $u$ and $x$.</p>
+<hr />
+<h2>2. Rigorous Derivations &amp; Mathematical Proofs</h2>
+<h3>Proof 2.1: General Solution of Variable Separable Differential Equations</h3>
+<p>$$
+\begin{aligned}
+\textbf{Given:} &\quad \frac{dy}{dx} = f(x) \cdot g(y), \quad \text{where } g(y) \neq 0, \text{ and } f, g \text{ are continuous functions.} \\
+\textbf{To Prove:} &\quad \int \frac{1}{g(y)}\,dy = \int f(x)\,dx + C, \quad \text{where } C \text{ is an arbitrary constant.}
+\end{aligned}
+$$</p>
+<h4>Step-by-Step Proof:</h4>
+<ol>
+<li>Divide both sides of the given differential equation by $g(y)$ (since $g(y) \neq 0$):</li>
+</ol>
+<p>$$
+\frac{1}{g(y)} \frac{dy}{dx} = f(x)
+$$</p>
+<ol>
+<li>Integrate both sides with respect to $x$:</li>
+</ol>
+<p>$$
+\int \left( \frac{1}{g(y)} \frac{dy}{dx} \right) dx = \int f(x)\,dx
+$$</p>
+<ol>
+<li>Let $y = \phi(x)$. By the definition of differentials, the differential change in $y$ is:</li>
+</ol>
+<p>$$
+dy = \phi'(x)\,dx = \frac{dy}{dx}\,dx
+$$</p>
+<ol>
+<li>Substitute $dy = \frac{dy}{dx}\,dx$ into the left-hand integral:</li>
+</ol>
+<p>$$
+\int \frac{1}{g(y)}\,dy = \int f(x)\,dx + C
+$$</p>
+<p>where $C$ is an arbitrary constant of integration.</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.2: Reduction of $\frac{dy}{dx} = f(ax + by + c)$ to Variable Separable Form</h3>
+<p>$$
+\begin{aligned}
+\textbf{Given:} &\quad \frac{dy}{dx} = f(ax + by + c), \quad b \neq 0 \\
+\textbf{To Prove:} &\quad \int \frac{du}{a + b f(u)} = x + C, \quad \text{where } u = ax + by + c.
+\end{aligned}
+$$</p>
+<h4>Step-by-Step Proof:</h4>
+<ol>
+<li>Define a substitution variable:</li>
+</ol>
+<p>$$
+u = ax + by + c
+$$</p>
+<ol>
+<li>Differentiate both sides with respect to $x$:</li>
+</ol>
+<p>$$
+\frac{du}{dx} = a + b \frac{dy}{dx}
+$$</p>
+<ol>
+<li>Isolate the derivative $\frac{dy}{dx}$:</li>
+</ol>
+<p>$$
+\frac{dy}{dx} = \frac{1}{b} \left( \frac{du}{dx} - a \right)
+$$</p>
+<ol>
+<li>Equate this expression to $f(u)$ from the original differential equation:</li>
+</ol>
+<p>$$
+\frac{1}{b} \left( \frac{du}{dx} - a \right) = f(u)
+$$</p>
+<ol>
+<li>Clear the factor of $b$ and isolate $\frac{du}{dx}$:</li>
+</ol>
+<p>$$
+\frac{du}{dx} - a = b f(u) \implies \frac{du}{dx} = a + b f(u)
+$$</p>
+<ol>
+<li>Separate the variables $u$ and $x$ (assuming $a + b f(u) \neq 0$):</li>
+</ol>
+<p>$$
+\frac{1}{a + b f(u)}\,du = dx
+$$</p>
+<ol>
+<li>Integrate both sides:</li>
+</ol>
+<p>$$
+\int \frac{1}{a + b f(u)}\,du = \int 1\,dx + C \implies \int \frac{du}{a + b f(u)} = x + C
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Examples &amp; 5-Year Board PYQs (2020–2025)</h2>
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note green" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Homogeneous Differential Equations: Identification and Solution by Substitution — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Homogeneous Differential Equations: Identification and Solution by Substitution</h1>
+<h1>Class 12 Mathematics: Homogeneous Differential Equations</h1>
+<p><strong>Chapter:</strong> Differential Equations<br />
+<strong>Subtopic:</strong> Identification, Theoretical Foundations, and Solution by Substitution<br />
+<strong>Target Level:</strong> CBSE Board Examinations &amp; Engineering Entrances (JEE Main)  </p>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Homogeneous Functions of Degree $n$</h3>
+<p><span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(High Board Frequency — Mandatory 1-Mark / 2-Mark Justification Question)</em></p>
+<h4>NCERT Definition</h4>
+<p>A real-valued function $F(x, y)$ is said to be a <strong>homogeneous function of degree $n$</strong> if for any non-zero real scalar $\lambda$:</p>
+<p>$$
+F(\lambda x, \lambda y) = \lambda^n F(x, y)
+$$</p>
+<p>Alternatively, any function $F(x, y)$ that can be expressed strictly in the form:</p>
+<p>$$
+F(x, y) = x^n \cdot g\left(\frac{y}{x}\right) \quad \text{or} \quad F(x, y) = y^n \cdot h\left(\frac{x}{y}\right)
+$$</p>
+<p>is a homogeneous function of degree $n$.</p>
+<h4>Geometric Intuition</h4>
+<p>Consider the level sets or ray paths emanating from the origin $O(0,0)$ along a straight line $y = mx$. Along this ray, the ratio $\frac{y}{x} = m$ remains constant.<br />
+If $F(x, y)$ is homogeneous of degree $0$, the value of $F(x, y)$ along any ray passing through the origin depends <strong>only on the slope</strong> $m$, not on the distance $r$ from the origin:</p>
+<p>$$
+F(x, mx) = x^0 g(m) = g(m) = \text{constant along the ray}
+$$</p>
+<p>Geometrically, a first-order homogeneous differential equation defines a direction field where the integral curves share identical tangential slopes along any radial ray projecting from the origin.</p>
+<hr />
+<h3>1.2 Homogeneous Differential Equations (HDE)</h3>
+<p><span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Crucial CBSE 3-Mark / 5-Mark Core Topic)</em></p>
+<p>A first-order, first-degree differential equation:</p>
+<p>$$
+\frac{dy}{dx} = \frac{f(x, y)}{g(x, y)} \quad \text{or} \quad \frac{dy}{dx} = F(x, y)
+$$</p>
+<p>is defined as a <strong>Homogeneous Differential Equation</strong> if and only if $F(x, y)$ is a homogeneous function of degree <strong>zero</strong>. That is:</p>
+<p>$$
+F(\lambda x, \lambda y) = \lambda^0 F(x, y) = F(x, y)
+$$</p>
+<p>Equivalently, if written in Pfaffian form:</p>
+<p>$$
+M(x, y)\,dx + N(x, y)\,dy = 0
+$$</p>
+<p>the equation is homogeneous if both $M(x, y)$ and $N(x, y)$ are homogeneous functions of the <strong>same degree $n$</strong>. Then:</p>
+<p>$$
+\frac{dy}{dx} = -\frac{M(x, y)}{N(x, y)} = -\frac{\lambda^n M(x, y)}{\lambda^n N(x, y)} = F(x, y)
+$$</p>
+<hr />
+<h2>2. Complete Mathematical Proofs &amp; Derivations</h2>
+<h3>2.1 Derivation of Reducibility to Separable Form for Type I: $\frac{dy}{dx} = F(x, y)$</h3>
+<p><span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<h4>Theorem Statement</h4>
+<p>Every first-order homogeneous differential equation $\frac{dy}{dx} = g\left(\frac{y}{x}\right)$ can be reduced to a separable differential equation under the transformation:</p>
+<p>$$
+y = v \cdot x \quad \text{where } v = v(x)
+$$</p>
+<h4>Proof:</h4>
+<p><strong>Given:</strong></p>
+<p>$$
+\frac{dy}{dx} = g\left(\frac{y}{x}\right)
+$$</p>
+<p><strong>Step 1: Product rule differentiation</strong><br />
+Let:</p>
+<p>$$
+y = vx
+$$</p>
+<p>Differentiating both sides with respect to $x$ using the product rule:</p>
+<p>$$
+\frac{dy}{dx} = v \cdot \frac{d}{dx}(x) + x \cdot \frac{dv}{dx}
+$$</p>
+<p>$$
+\frac{dy}{dx} = v + x\frac{dv}{dx}
+$$</p>
+<p><strong>Step 2: Substitution into the governing equation</strong><br />
+Substitute $\frac{dy}{dx}$ and $\frac{y}{x} = v$ into the given differential equation:</p>
+<p>$$
+v + x\frac{dv}{dx} = g(v)
+$$</p>
+<p><strong>Step 3: Algebraic isolation of differentials</strong><br />
+Isolating the term with derivative:</p>
+<p>$$
+x\frac{dv}{dx} = g(v) - v
+$$</p>
+<p>Assuming $g(v) - v \neq 0$, divide both sides by $g(v) - v$ and multiply by $\frac{dx}{x}$:</p>
+<p>$$
+\frac{dv}{g(v) - v} = \frac{dx}{x}
+$$</p>
+<p><strong>Step 4: Integration</strong><br />
+Both variables are completely separated. Integrating both sides yields the general solution:</p>
+<p>$$
+\int \frac{dv}{g(v) - v} = \int \frac{dx}{x} + C = \ln|x| + C
+$$</p>
+<p>After evaluating the integral on the left-hand side, replace $v$ with $\frac{y}{x}$.  </p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h3>2.2 Derivation of Type II: $\frac{dx}{dy} = h\left(\frac{x}{y}\right)$</h3>
+<p><span class="star-icon">⭐⭐⭐⭐</span> <em>(Mandatory when terms contain exponential/trigonometric arguments of $\frac{x}{y}$)</em></p>
+<h4>Theorem Statement</h4>
+<p>Differential equations of the form $\frac{dx}{dy} = h\left(\frac{x}{y}\right)$ reduce to variable-separable form under the substitution:</p>
+<p>$$
+x = v \cdot y \quad \text{where } v = v(y)
+$$</p>
+<h4>Proof:</h4>
+<p><strong>Given:</strong></p>
+<p>$$
+\frac{dx}{dy} = h\left(\frac{x}{y}\right)
+$$</p>
+<p><strong>Step 1: Product rule differentiation</strong><br />
+Differentiating $x = vy$ with respect to $y$:</p>
+<p>$$
+\frac{dx}{dy} = v + y\frac{dv}{dy}
+$$</p>
+<p><strong>Step 2: Substitution and separation</strong>  </p>
+<p>$$
+v + y\frac{dv}{dy} = h(v)
+$$</p>
+<p>$$
+y\frac{dv}{dy} = h(v) - v
+$$</p>
+<p>$$
+\frac{dv}{h(v) - v} = \frac{dy}{y}
+$$</p>
+<p>Integrating both sides:</p>
+<p>$$
+\int \frac{dv}{h(v) - v} = \ln|y| + C
+$$</p>
+<p>Finally, substitute back $v = \frac{x}{y}$.  </p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Solved Examples &amp; Recent Board PYQs (2020–2025)</h2>
+<hr />
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note pink" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 First-Order Linear Differential Equations and the Integrating Factor Method — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>First-Order Linear Differential Equations and the Integrating Factor Method</h1>
+<h1>Class 12 Mathematics: Differential Equations</h1>
+<h2>Topic: First-Order Linear Differential Equations &amp; The Integrating Factor Method</h2>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Core Definitions &amp; Canonical Forms</h3>
+<p>A differential equation is said to be <strong>linear</strong> if the dependent variable and its derivative(s) occur only in the first degree and are not multiplied together.</p>
+<p>According to NCERT terminology, a <strong>first-order linear differential equation (LDE)</strong> appears in one of two canonical forms:</p>
+<h4><strong>Type I (Dependent Variable: $y$, Independent Variable: $x$)</strong> $\quad$ [Priority: <span class="star-icon">⭐⭐⭐⭐⭐</span>]</h4>
+<p>$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$</p>
+<ul>
+<li>Where $P(x)$ and $Q(x)$ are continuous functions of $x$ alone, or constants.</li>
+<li>Degree $= 1$, Order $= 1$.</li>
+</ul>
+<h4><strong>Type II (Dependent Variable: $x$, Independent Variable: $y$)</strong> $\quad$ [Priority: <span class="star-icon">⭐⭐⭐⭐</span>]</h4>
+<p>$$
+\frac{dx}{dy} + P_1(y)x = Q_1(y)
+$$</p>
+<ul>
+<li>Where $P_1(y)$ and $Q_1(y)$ are continuous functions of $y$ alone, or constants.</li>
+<li>This form is typically invoked when an equation cannot be separated as $\frac{dy}{dx} = f(x, y)$ or when $\frac{dy}{dx}$ has a non-linear expression in the denominator.</li>
+</ul>
+<hr />
+<h3>1.2 Mathematical Intuition: The Product Rule in Reverse</h3>
+<p>Consider differentiating the product of an unknown function $y(x)$ and an auxiliary function $I(x)$:</p>
+<p>$$
+\frac{d}{dx}\big[y \cdot I(x)\big] = I(x)\frac{dy}{dx} + I'(x)y
+$$</p>
+<p>Now examine the LHS of the canonical Type I equation multiplied by an arbitrary non-zero modifying factor $I(x)$:</p>
+<p>$$
+I(x)\frac{dy}{dx} + P(x)I(x)y = Q(x)I(x)
+$$</p>
+<p>Observe the structural similarity:
+* Term 1: $I(x)\frac{dy}{dx}$ matches in both expressions.
+* Term 2: To make the LHS an exact derivative of $[y \cdot I(x)]$, we require:</p>
+<p>$$
+I'(x)y = P(x)I(x)y \implies \frac{dI}{dx} = P(x)I(x)
+$$</p>
+<p>This transforms an otherwise non-integrable linear combination into a <strong>total derivative</strong> that can be integrated directly. The function $I(x)$ is termed the <strong>Integrating Factor (I.F.)</strong>.</p>
+<hr />
+<h3>1.3 Geometric Interpretation</h3>
+<p>A general first-order differential equation defines a <strong>slope field</strong> (directional field) in the Cartesian plane $\mathbb{R}^2$. 
+* For an LDE $\frac{dy}{dx} = Q(x) - P(x)y$, the isoclines (curves where the slope $\frac{dy}{dx} = c$) are given by $y = \frac{Q(x) - c}{P(x)}$.
+* When $P(x)$ is constant, say $k$, the rate of change of slope with respect to $y$ is constant: $\frac{\partial}{\partial y}\left(\frac{dy}{dx}\right) = -k$.
+* Multiplying by the integrating factor $e^{\int P\,dx}$ acts as a local stretching/scaling factor along the flow lines of the vector field, converting non-conservative vector fields into gradient (exact) systems. The solution curves form an infinite family of non-intersecting integral curves parameterized by an arbitrary integration constant $C$.</p>
+<hr />
+<h2>2. Step-by-Step Mathematical Proofs &amp; Derivations</h2>
+<h3>Theorem 1: Derivation of the Integrating Factor and General Solution (Type I) $\quad$ [Priority: <span class="star-icon">⭐⭐⭐⭐⭐</span>]</h3>
+<p><strong>Given:</strong> 
+A first-order linear differential equation in standard form:</p>
+<p>$$
+\frac{dy}{dx} + P(x)y = Q(x) \quad \text{--- (1)}
+$$</p>
+<p>where $P(x)$ and $Q(x)$ are continuous real-valued functions on an interval $I \subseteq \mathbb{R}$.</p>
+<p><strong>To Prove:</strong>
+1. The integrating factor is:</p>
+<p>$$
+\text{I.F.} = e^{\int P(x)\,dx}
+$$</p>
+<ol>
+<li>The general solution is given by:</li>
+</ol>
+<p>$$
+y \cdot e^{\int P(x)\,dx} = \int \left(Q(x) \cdot e^{\int P(x)\,dx}\right)dx + C
+$$</p>
+<hr />
+<p><strong>Proof:</strong></p>
+<p><strong>Step 1: Introduction of the Integrating Factor</strong><br />
+Let $g(x)$ be a non-zero differentiable function of $x$. Multiply equation (1) throughout by $g(x)$:</p>
+<p>$$
+g(x)\frac{dy}{dx} + P(x)g(x)y = Q(x)g(x) \quad \text{--- (2)}
+$$</p>
+<p><strong>Step 2: Condition for Exactness</strong><br />
+We require the LHS of equation (2) to be equal to the derivative of the product $[y \cdot g(x)]$:</p>
+<p>$$
+\frac{d}{dx}\big[y \cdot g(x)\big] = g(x)\frac{dy}{dx} + g'(x)y \quad \text{--- (3)}
+$$</p>
+<p>Equating the LHS of (2) and the RHS of (3):</p>
+<p>$$
+g(x)\frac{dy}{dx} + P(x)g(x)y = g(x)\frac{dy}{dx} + g'(x)y
+$$</p>
+<p>Subtracting $g(x)\frac{dy}{dx}$ from both sides:</p>
+<p>$$
+P(x)g(x)y = g'(x)y
+$$</p>
+<p>Since this must hold for any arbitrary function $y(x)$, we have:</p>
+<p>$$
+g'(x) = P(x)g(x) \implies \frac{dg}{dx} = P(x)g
+$$</p>
+<p><strong>Step 3: Solving for $g(x)$ (Separation of Variables)</strong><br />
+Separating variables for $g$:</p>
+<p>$$
+\frac{1}{g}\,dg = P(x)\,dx
+$$</p>
+<p>Integrating both sides with respect to their respective variables:</p>
+<p>$$
+\int \frac{1}{g}\,dg = \int P(x)\,dx
+$$</p>
+<p>$$
+\ln |g| = \int P(x)\,dx
+$$</p>
+<p>Exponentiating both sides:</p>
+<p>$$
+|g(x)| = e^{\int P(x)\,dx} \implies g(x) = \pm e^{\int P(x)\,dx}
+$$</p>
+<p>Since we only require one non-trivial integrating factor, we choose the positive branch and omit the constant of integration at this intermediate stage:</p>
+<p>$$
+\text{I.F.} = g(x) = e^{\int P(x)\,dx}
+$$</p>
+<p><strong>Step 4: Integration of the Modified Equation</strong><br />
+Substitute $g(x)$ back into equation (2):</p>
+<p>$$
+\frac{d}{dx}\left[y \cdot e^{\int P(x)\,dx}\right] = Q(x)e^{\int P(x)\,dx}
+$$</p>
+<p>Integrating both sides with respect to $x$:</p>
+<p>$$
+\int \frac{d}{dx}\left[y \cdot e^{\int P(x)\,dx}\right]dx = \int \left(Q(x) \cdot e^{\int P(x)\,dx}\right)dx + C
+$$</p>
+<p>By the Fundamental Theorem of Calculus:</p>
+<p>$$
+y \cdot e^{\int P(x)\,dx} = \int \left(Q(x) \cdot e^{\int P(x)\,dx}\right)dx + C
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h3>Theorem 2: General Solution of Type II Linear Differential Equations $\quad$ [Priority: <span class="star-icon">⭐⭐⭐⭐</span>]</h3>
+<p><strong>Given:</strong></p>
+<p>$$
+\frac{dx}{dy} + P_1(y)x = Q_1(y)
+$$</p>
+<p><strong>Proof Summary:</strong><br />
+Interchanging the roles of dependent variable $y$ and independent variable $x$:</p>
+<p>$$
+\text{I.F.} = e^{\int P_1(y)\,dy}
+$$</p>
+<p>Multiplying throughout by $\text{I.F.}$:</p>
+<p>$$
+\frac{d}{dy}\left[x \cdot e^{\int P_1(y)\,dy}\right] = Q_1(y) \cdot e^{\int P_1(y)\,dy}
+$$</p>
+<p>Integrating both sides with respect to $y$:</p>
+<p>$$
+x \cdot e^{\int P_1(y)\,dy} = \int \left(Q_1(y) \cdot e^{\int P_1(y)\,dy}\right)dy + C
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Examples &amp; 5-Year Board PYQs (2020–2025)</h2>
+                  </div>
+                
+          </div>
+
+          <!-- TAB 2: Solved Examples with Step Marking -->
+          <div id="panel-examples" class="view-panel">
+            <div class="sticky-note green" style="margin-bottom: 2rem;">
+              <div class="sticky-title">💡 High-Yield Worked Examples</div>
+              Each solution explicitly breaks down where CBSE examiners award step marks (½ mark for formula, 1 mark for substitutions).
+            </div>
+            
+                  <div class="question-card example-card" id="ex_0" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 1: Standard Degree Trap
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Question:</strong> Determine the order and degree (if defined) of:</p>
+<p>$$
+\left(\frac{d^2y}{dx^2}\right)^2 + \cos\left(\frac{dy}{dx}\right) = 0
+$$</p>
+<p><strong>Solution:</strong>
+1. <strong>Highest-order derivative:</strong> $\frac{d^2y}{dx^2}$. Therefore, $\text{Order} = 2$.
+2. <strong>Polynomial test:</strong> The first derivative appears as an argument of the cosine function, $\cos\left(\frac{dy}{dx}\right)$. Expanding this in a power series yields infinitely many powers of $\frac{dy}{dx}$:</p>
+<p>$$
+\cos\left(\frac{dy}{dx}\right) = 1 - \frac{1}{2!}\left(\frac{dy}{dx}\right)^2 + \frac{1}{4!}\left(\frac{dy}{dx}\right)^4 - \dots
+$$</p>
+<p>Hence, the differential equation cannot be expressed as a finite polynomial in its derivatives.
+* <strong>Answer:</strong> $\text{Order} = 2$; $\text{Degree} = \text{Not Defined}$.</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_1" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 2: Radical Cleansing
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Question:</strong> Find the order and degree of:</p>
+<p>$$
+\left[1 + \left(\frac{dy}{dx}\right)^2\right]^{3/2} = 5\frac{d^2y}{dx^2}
+$$</p>
+<p><strong>Solution:</strong>
+1. Eliminate the fractional exponent by squaring both sides:</p>
+<p>$$
+\left(\left[1 + \left(\frac{dy}{dx}\right)^2\right]^{3/2}\right)^2 = \left(5\frac{d^2y}{dx^2}\right)^2
+$$</p>
+<p>$$
+\left[1 + \left(\frac{dy}{dx}\right)^2\right]^3 = 25\left(\frac{d^2y}{dx^2}\right)^2
+$$</p>
+<ol>
+<li>Expand the left-hand side:</li>
+</ol>
+<p>$$
+1 + 3\left(\frac{dy}{dx}\right)^2 + 3\left(\frac{dy}{dx}\right)^4 + \left(\frac{dy}{dx}\right)^6 = 25\left(\frac{d^2y}{dx^2}\right)^2
+$$</p>
+<ol>
+<li>The highest-order derivative is $\frac{d^2y}{dx^2}$ (Order = 2).</li>
+<li>Its highest power is $2$ (Degree = 2).</li>
+<li><strong>Answer:</strong> $\text{Order} = 2$; $\text{Degree} = 2$.</li>
+</ol>
+<hr />
+<h3>[CBSE 2020, 1M]</h3>
+<p><strong>Question:</strong> Find the sum of the order and the degree of the differential equation:</p>
+<p>$$
+\frac{d}{dx}\left[\left(\frac{dy}{dx}\right)^3\right] = 0
+$$</p>
+<p><strong>Solution:</strong>
+Apply the chain rule to evaluate the outer differentiation $\frac{d}{dx}$:</p>
+<p>$$
+\frac{d}{dx}\left[\left(\frac{dy}{dx}\right)^3\right] = 3\left(\frac{dy}{dx}\right)^2 \cdot \frac{d}{dx}\left(\frac{dy}{dx}\right) = 3\left(\frac{dy}{dx}\right)^2 \left(\frac{d^2y}{dx^2}\right)
+$$</p>
+<p>The equation becomes:</p>
+<p>$$
+3\left(\frac{dy}{dx}\right)^2 \left(\frac{d^2y}{dx^2}\right) = 0
+$$</p>
+<ul>
+<li>Highest order derivative: $\frac{d^2y}{dx^2} \implies \text{Order} = 2$.</li>
+<li>Exponent of $\frac{d^2y}{dx^2}$ is $1 \implies \text{Degree} = 1$.</li>
+<li>Sum $= \text{Order} + \text{Degree} = 2 + 1 = 3$.</li>
+</ul>
+<hr />
+<h3>[CBSE 2021 (Term-1), 1M]</h3>
+<p><strong>Question:</strong> The number of arbitrary constants in the particular solution of a differential equation of third order is:
+(a) 3<br />
+(b) 2<br />
+(c) 1<br />
+(d) 0<br />
+<strong>Solution:</strong>
+By definition, a <strong>particular solution</strong> is obtained by substituting specific numerical values for all arbitrary constants. It contains <strong>zero</strong> arbitrary constants, regardless of the order of the differential equation.
+* <strong>Answer:</strong> <strong>(d) 0</strong></p>
+<hr />
+<h3>[CBSE 2022, 1M]</h3>
+<p><strong>Question:</strong> Determine the order and degree of:</p>
+<p>$$
+y''' + y^2 + e^{y'} = 0
+$$</p>
+<p><strong>Solution:</strong>
+* Highest derivative present: $y''' = \frac{d^3y}{dx^3} \implies \text{Order} = 3$.
+* The term $e^{y'}$ cannot be expressed as a polynomial in $y'$ ($e^{y'} = 1 + y' + \frac{(y')^2}{2!} + \dots$).
+* <strong>Answer:</strong> $\text{Order} = 3$; $\text{Degree} = \text{Not Defined}$.</p>
+<hr />
+<h3>[CBSE 2023, 2M]</h3>
+<p><strong>Question:</strong> Verify that $y = e^{-x} + ax + b$ is a solution of the differential equation:</p>
+<p>$$
+e^x \frac{d^2y}{dx^2} - 1 = 0
+$$</p>
+<p><strong>Solution:</strong>
+<strong>Given:</strong> $y = e^{-x} + ax + b$
+1. Differentiating with respect to $x$:</p>
+<p>$$
+\frac{dy}{dx} = -e^{-x} + a
+$$</p>
+<ol>
+<li>Differentiating a second time:</li>
+</ol>
+<p>$$
+\frac{d^2y}{dx^2} = -(-e^{-x}) + 0 = e^{-x}
+$$</p>
+<ol>
+<li>Substitute into the LHS of the differential equation:</li>
+</ol>
+<p>$$
+\text{LHS} = e^x \left(\frac{d^2y}{dx^2}\right) - 1 = e^x (e^{-x}) - 1 = e^0 - 1 = 1 - 1 = 0 = \text{RHS}
+$$</p>
+<p>Hence verified. $\quad \blacksquare$</p>
+<hr />
+<h3>[CBSE 2024, 3M]</h3>
+<p><strong>Question:</strong> If $y = A e^{mx} + B e^{nx}$, prove that:</p>
+<p>$$
+\frac{d^2y}{dx^2} - (m+n)\frac{dy}{dx} + mn\,y = 0
+$$</p>
+<p><strong>Solution:</strong>
+<strong>Given:</strong></p>
+<p>$$
+y = A e^{mx} + B e^{nx} \quad \text{--- (1)}
+$$</p>
+<p>Differentiating with respect to $x$:</p>
+<p>$$
+\frac{dy}{dx} = A m e^{mx} + B n e^{nx} \quad \text{--- (2)}
+$$</p>
+<p>Differentiating again with respect to $x$:</p>
+<p>$$
+\frac{d^2y}{dx^2} = A m^2 e^{mx} + B n^2 e^{nx} \quad \text{--- (3)}
+$$</p>
+<p>Now evaluate the LHS of the target differential equation:</p>
+<p>$$
+\text{LHS} = \frac{d^2y}{dx^2} - (m+n)\frac{dy}{dx} + mn\,y
+$$</p>
+<p>Substitute (1), (2), and (3):</p>
+<p>$$
+\text{LHS} = \left[ A m^2 e^{mx} + B n^2 e^{nx} \right] - (m+n)\left[ A m e^{mx} + B n e^{nx} \right] + mn\left[ A e^{mx} + B e^{nx} \right]
+$$</p>
+<p>Expand the terms:</p>
+<p>$$
+= A m^2 e^{mx} + B n^2 e^{nx} - A m^2 e^{mx} - A mn e^{mx} - B mn e^{nx} - B n^2 e^{nx} + A mn e^{mx} + B mn e^{nx}
+$$</p>
+<p>Group like terms:</p>
+<p>$$
+= A e^{mx}\left(m^2 - m^2 - mn + mn\right) + B e^{nx}\left(n^2 - n^2 - mn + mn\right)
+$$</p>
+<p>$$
+= A e^{mx}(0) + B e^{nx}(0) = 0 = \text{RHS}
+$$</p>
+<p>Hence proved. $\quad \blacksquare$</p>
+<hr />
+<h3>[CBSE Sample Paper 2025, 2M]</h3>
+<p><strong>Question:</strong> Find the product of the order and degree (if defined) of the differential equation:</p>
+<p>$$
+x^2\left(\frac{d^2y}{dx^2}\right)^3 + y\left(\frac{dy}{dx}\right)^4 + \sin x = 0
+$$</p>
+<p><strong>Solution:</strong>
+1. Highest order derivative: $\frac{d^2y}{dx^2} \implies \text{Order} = 2$.
+2. All derivative terms ($\frac{d^2y}{dx^2}$ and $\frac{dy}{dx}$) appear with non-negative integer powers and are not arguments of any transcendental functions. The $\sin x$ term involves only the independent variable $x$, which is permitted.
+3. Power of the highest derivative $\left(\frac{d^2y}{dx^2}\right)$ is $3 \implies \text{Degree} = 3$.
+4. $\text{Product} = \text{Order} \times \text{Degree} = 2 \times 3 = 6$.</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Student Blunders</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trap Type</th>
+<th style="text-align: left;">The Mistake Students Make</th>
+<th style="text-align: left;">Correct Mathematical Principle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Transcendental Variable Trap</strong></td>
+<td style="text-align: left;">Writing Degree as "Not Defined" for: $\frac{d^2y}{dx^2} + \sin x = 0$ or $e^y \frac{dy}{dx} = 1$.</td>
+<td style="text-align: left;"><strong>Degree is strictly about derivatives.</strong> $\sin x, \ln x, e^y$ do NOT invalidate the polynomial nature of derivatives. Degree = 1 here.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>The Incomplete Simplification Trap</strong></td>
+<td style="text-align: left;">Declaring Degree as "Not Defined" for: $\ln\left(\frac{dy}{dx}\right) = 2x + 3y$.</td>
+<td style="text-align: left;">If the equation can be algebraically rewritten as $\frac{dy}{dx} = e^{2x+3y}$, the derivative is isolated and degree = 1. Always attempt elementary inversion before concluding "Not Defined".</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>The False Inversion Trap</strong></td>
+<td style="text-align: left;">Trying to isolate $\frac{dy}{dx}$ in: $\sin\left(\frac{dy}{dx}\right) + \frac{d^2y}{dx^2} = 0 \implies \frac{dy}{dx} = \sin^{-1}\left(-\frac{d^2y}{dx^2}\right)$.</td>
+<td style="text-align: left;">Inverting isolates one derivative but puts another into an inverse trigonometric function. The degree remains <strong>Not Defined</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>The "Highest Power" Blunder</strong></td>
+<td style="text-align: left;">Choosing the largest exponent in the entire equation as degree: $\left(\frac{d^2y}{dx^2}\right)^2 + \left(\frac{dy}{dx}\right)^5 = 0 \to$ Degree = 5.</td>
+<td style="text-align: left;">Degree is the power of the <strong>highest-order derivative only</strong>. Here, Order = 2, Degree = 2.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Negative Exponent Trap</strong></td>
+<td style="text-align: left;">Calling Degree = 1 for: $\frac{d^2y}{dx^2} + \frac{1}{\frac{d^2y}{dx^2}} = x$.</td>
+<td style="text-align: left;">Clearing fractions requires multiplying by $\frac{d^2y}{dx^2}$: $\left(\frac{d^2y}{dx^2}\right)^2 + 1 = x\frac{d^2y}{dx^2}$. Degree is actually <strong>2</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Particular vs. General Count</strong></td>
+<td style="text-align: left;">Stating a particular solution of order 4 has 4 constants.</td>
+<td style="text-align: left;">General solution has $n$ constants; <strong>Particular solution ALWAYS has 0 constants.</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Rules</h2>
+<pre><code>                       ┌──────────────────────────────────────────────┐
+                       │ Does the D.E. contain non-algebraic forms of  │
+                       │ derivatives (e.g. sin(y'), e^y', ln(y''))?    │
+                       └──────────────────────┬───────────────────────┘
+                                              │
+                     YES                      │                      NO
+                      │                       │                       │
+      ┌───────────────┴───────────────┐       │       ┌───────────────┴───────────────┐
+      │ Can it be simplified via      │       │       │ Clear all negative and        │
+      │ algebra to isolate all        │       │       │ fractional exponents on       │
+      │ derivative terms?             │       │       │ derivative terms.             │
+      └───┬───────────────────────┬───┘       │       └───────────────┬───────────────┘
+          │                       │           │                       │
+         YES                      NO          │                       ▼
+          │                       │           │        Order  = Highest derivative
+          ▼                       ▼           │        Degree = Exponent of that
+     Simplify and           Degree is         │                 highest derivative
+     find Degree.         NOT DEFINED.        │
+</code></pre>
+<ol>
+<li><strong>The Rationalization Rule:</strong> If an equation has $(\dots)^{p/q}$ on derivatives, raise both sides to the LCM of the denominators of the powers before reading off the degree.</li>
+<li><strong>The Constant Counting Rule (Board Favorite MCQ):</strong></li>
+<li>Arbitrary constants in General Solution of order $n = n$.</li>
+<li>Arbitrary constants in Particular Solution of order $n = 0$.</li>
+<li><strong>Mnemonic for Order vs. Degree:</strong></li>
+<li><strong>O</strong>rder = <strong>O</strong>rigin (Who is the biggest parent derivative? Found first).</li>
+<li><strong>D</strong>egree = <strong>D</strong>ecor (The power wearing that biggest derivative's hat).</li>
+</ol>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_2" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 1: Standard Separation with Trigonometric Terms
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2024, 3 Marks]</span></strong></p>
+<p>$$
+\text{Find the particular solution of: } (1 + e^{2x})\,dy + (1 + y^2)e^x\,dx = 0, \quad \text{given } y = 1 \text{ when } x = 0.
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Separate variables</strong></p>
+<p>$$
+(1 + e^{2x})\,dy = -(1 + y^2)e^x\,dx
+$$</p>
+<p>Divide both sides by $(1 + y^2)(1 + e^{2x})$:</p>
+<p>$$
+\frac{1}{1 + y^2}\,dy = -\frac{e^x}{1 + e^{2x}}\,dx
+$$</p>
+<p><strong>Step 2: Integrate both sides</strong></p>
+<p>$$
+\int \frac{1}{1 + y^2}\,dy = -\int \frac{e^x}{1 + (e^x)^2}\,dx
+$$</p>
+<p>For the RHS, let $t = e^x \implies dt = e^x\,dx$:</p>
+<p>$$
+\tan^{-1}(y) = -\int \frac{dt}{1 + t^2} = -\tan^{-1}(t) + C
+$$</p>
+<p>$$
+\tan^{-1}(y) = -\tan^{-1}(e^x) + C
+$$</p>
+<p>$$
+\tan^{-1}(y) + \tan^{-1}(e^x) = C \quad \text{--- (General Solution)}
+$$</p>
+<p><strong>Step 3: Apply the initial condition $x = 0, y = 1$</strong></p>
+<p>$$
+\tan^{-1}(1) + \tan^{-1}(e^0) = C
+$$</p>
+<p>$$
+\frac{\pi}{4} + \tan^{-1}(1) = C \implies \frac{\pi}{4} + \frac{\pi}{4} = C \implies C = \frac{\pi}{2}
+$$</p>
+<p><strong>Step 4: Final Particular Solution</strong></p>
+<p>$$
+\tan^{-1}(y) + \tan^{-1}(e^x) = \frac{\pi}{2}
+$$</p>
+<p>Using the identity $\tan^{-1}(A) + \cot^{-1}(A) = \frac{\pi}{2} \implies \tan^{-1}(y) = \cot^{-1}(e^x) = \tan^{-1}\left(\frac{1}{e^x}\right)$:</p>
+<p>$$
+y = e^{-x} \quad \text{or} \quad y e^x = 1
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_3" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 2: Logarithmic Form & Quotient Manipulation
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2023, 4 Marks]</span></strong></p>
+<p>$$
+\text{Find the general solution of the differential equation: } x \frac{dy}{dx} - y + x \sin\left(\frac{y}{x}\right) = 0 \text{ (Reducible via angle)}
+$$</p>
+<p><em>Alternative purely separable variant from 2023:</em></p>
+<p>$$
+\text{Solve: } \frac{dy}{dx} = 1 + x + y + xy
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Factorize the RHS</strong></p>
+<p>$$
+\frac{dy}{dx} = (1 + x) + y(1 + x) = (1 + x)(1 + y)
+$$</p>
+<p><strong>Step 2: Separate the variables</strong></p>
+<p>$$
+\frac{dy}{1 + y} = (1 + x)\,dx \quad (\text{for } y \neq -1)
+$$</p>
+<p><strong>Step 3: Integrate both sides</strong></p>
+<p>$$
+\int \frac{1}{1 + y}\,dy = \int (1 + x)\,dx
+$$</p>
+<p>$$
+\ln|1 + y| = x + \frac{x^2}{2} + C_1
+$$</p>
+<p><strong>Step 4: Exponentiate to write in explicit form</strong></p>
+<p>$$
+|1 + y| = e^{x + \frac{x^2}{2} + C_1} = e^{C_1} \cdot e^{x + \frac{x^2}{2}}
+$$</p>
+<p>Let $C = \pm e^{C_1}$ (where $C \in \mathbb{R} \setminus \{0\}$):</p>
+<p>$$
+1 + y = C e^{x + \frac{x^2}{2}} \implies y = C e^{x + \frac{x^2}{2}} - 1
+$$</p>
+<p><em>(Note: $y = -1$ corresponds to $C = 0$, which also satisfies the original differential equation).</em></p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_4" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3: Reducible Form $f(ax + by + c)$
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2022 Term-2 / 2020, 5 Marks]</span></strong></p>
+<p>$$
+\text{Solve: } \frac{dy}{dx} = \cos(x + y) + \sin(x + y)
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Substitution</strong>
+Let $u = x + y$.
+Differentiating with respect to $x$:</p>
+<p>$$
+\frac{du}{dx} = 1 + \frac{dy}{dx} \implies \frac{dy}{dx} = \frac{du}{dx} - 1
+$$</p>
+<p><strong>Step 2: Substitute into the differential equation</strong></p>
+<p>$$
+\frac{du}{dx} - 1 = \cos(u) + \sin(u) \implies \frac{du}{dx} = 1 + \cos(u) + \sin(u)
+$$</p>
+<p><strong>Step 3: Separate variables</strong></p>
+<p>$$
+\frac{du}{1 + \cos(u) + \sin(u)} = dx
+$$</p>
+<p><strong>Step 4: Integrate using half-angle substitutions</strong>
+Recall standard half-angle identities:</p>
+<p>$$
+\cos(u) = \frac{1 - \tan^2\frac{u}{2}}{1 + \tan^2\frac{u}{2}}, \quad \sin(u) = \frac{2\tan\frac{u}{2}}{1 + \tan^2\frac{u}{2}}, \quad 1 = \frac{1 + \tan^2\frac{u}{2}}{1 + \tan^2\frac{u}{2}}
+$$</p>
+<p>Denominator becomes:</p>
+<p>$$
+1 + \cos(u) + \sin(u) = \frac{(1 + \tan^2\frac{u}{2}) + (1 - \tan^2\frac{u}{2}) + 2\tan\frac{u}{2}}{1 + \tan^2\frac{u}{2}} = \frac{2 + 2\tan\frac{u}{2}}{\sec^2\frac{u}{2}}
+$$</p>
+<p>Therefore:</p>
+<p>$$
+\int \frac{\sec^2\frac{u}{2}}{2\left(1 + \tan\frac{u}{2}\right)}\,du = \int dx
+$$</p>
+<p>Let $z = 1 + \tan\frac{u}{2} \implies dz = \frac{1}{2}\sec^2\frac{u}{2}\,du$:</p>
+<p>$$
+\int \frac{dz}{z} = x + C
+$$</p>
+<p>$$
+\ln|z| = x + C \implies \ln\left|1 + \tan\left(\frac{u}{2}\right)\right| = x + C
+$$</p>
+<p><strong>Step 5: Substitute back $u = x + y$</strong></p>
+<p>$$
+\ln\left|1 + \tan\left(\frac{x + y}{2}\right)\right| = x + C
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_5" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 4: Boundary Value Problem with Disappearing Singularities
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE Sample Paper 2024 / Board 2021, 3 Marks]</span></strong></p>
+<p>$$
+\text{Find the particular solution of } \frac{dy}{dx} = y \cot(2x), \quad \text{given that } y\left(\frac{\pi}{4}\right) = 2.
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Separate variables</strong></p>
+<p>$$
+\frac{1}{y}\,dy = \cot(2x)\,dx
+$$</p>
+<p><strong>Step 2: Integrate</strong></p>
+<p>$$
+\int \frac{1}{y}\,dy = \int \cot(2x)\,dx
+$$</p>
+<p>$$
+\ln|y| = \frac{1}{2}\ln|\sin(2x)| + \ln|C| \implies \ln|y| = \ln\left(|C| \sqrt{|\sin(2x)|}\right)
+$$</p>
+<p>$$
+y = C \sqrt{\sin(2x)}
+$$</p>
+<p><strong>Step 3: Evaluate $C$ with $x = \frac{\pi}{4}, y = 2$</strong></p>
+<p>$$
+2 = C \sqrt{\sin\left(2 \cdot \frac{\pi}{4}\right)} = C \sqrt{\sin\left(\frac{\pi}{2}\right)} = C(1) \implies C = 2
+$$</p>
+<p><strong>Step 4: Final Solution</strong></p>
+<p>$$
+y = 2\sqrt{\sin(2x)} \quad \text{or} \quad y^2 = 4\sin(2x)
+$$</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Student Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th>S.No.</th>
+<th>Critical Pitfall</th>
+<th>Incorrect Working</th>
+<th>Correct Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Loss of Constant of Integration</strong></td>
+<td>Students integrate both sides: $\ln y = x^2$ then add $+ C$ as $y = e^{x^2} + C$.</td>
+<td>Add $+C$ immediately upon removing integral signs: $\ln y = x^2 + C \implies y = e^{x^2+C} = A e^{x^2}$.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Chain Rule Loss in Substitution</strong></td>
+<td>In $\frac{dy}{dx} = (4x + y + 1)^2$, writing $\frac{du}{dx} = \frac{dy}{dx}$.</td>
+<td>Must differentiate $u = 4x + y + 1$ fully: $\frac{du}{dx} = 4 + \frac{dy}{dx} \implies \frac{dy}{dx} = \frac{du}{dx} - 4$.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Division by Zero (Singular Solutions)</strong></td>
+<td>Dividing by $y(y-1)$ without noting $y = 0$ or $y = 1$.</td>
+<td>Explicitly state: "Assuming $y \neq 0, y \neq 1$. Note that $y = 0$ and $y = 1$ satisfy the differential equation identically."</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Premature Absolute Value Drops</strong></td>
+<td>Writing $\int \frac{1}{x}\,dx = \ln(x)$ and evaluating negative initial conditions carelessly.</td>
+<td>Retain $\ln\|x\|$, or write $\ln\|y\| = \ln\|x\| + \ln\|C\| \implies y = Cx$ where $C \in \mathbb{R}$.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Constant Adjustment Trap</strong></td>
+<td>Treating $2C$ or $C/2$ as the original $C$ without renaming constants during verification.</td>
+<td>Let $C_1$ be initial constant, and relabel combined constants (e.g., let $2C_1 = C$).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points</h2>
+<h3>1. The Logarithmic Amalgamation Rule</h3>
+<p>Whenever all integrals yield logarithms:</p>
+<p>$$
+\int \frac{dy}{y} = \int \frac{dx}{x} \implies \ln|y| = \ln|x| + \ln|C| \implies y = Cx
+$$</p>
+<p><em>Always write the integration constant as $\ln|C|$ to clear logarithms in one mental step.</em></p>
+<h3>2. The Linear Invariance Hack for $\frac{dy}{dx} = f(ax + by + c)$</h3>
+<p>$$
+\int \frac{du}{a + b f(u)} = x + C
+$$</p>
+<p>Memorize this formula directly for Objective / MCQ sections.
+- <strong>Example</strong>: $\frac{dy}{dx} = (x + y)^2 \implies a=1, b=1, f(u)=u^2$.</p>
+<p>$$
+\int \frac{du}{1 + u^2} = x + C \implies \tan^{-1}(u) = x + C \implies \tan^{-1}(x+y) = x + C
+$$</p>
+<p><em>Solved in under 15 seconds.</em></p>
+<h3>3. Separation Spotting via Partial Derivatives</h3>
+<p>To quickly verify if $M(x, y)\,dx + N(x, y)\,dy = 0$ is separable:</p>
+<p>$$
+M(x, y) = f_1(x)g_1(y), \quad N(x, y) = f_2(x)g_2(y)
+$$</p>
+<p>The cross ratio $\frac{M(x, y)}{N(x, y)}$ must depend solely on single-variable products:</p>
+<p>$$
+\frac{M(x,y)}{N(x,y)} = \frac{f_1(x)}{f_2(x)} \cdot \frac{g_1(y)}{g_2(y)}
+$$</p>
+<p>If any mixed term like $(x^2 + y^2)$ or $(xy + 1)$ cannot be factorized into $(a(x))(b(y))$, it is <strong>not</strong> separable.</p>
+<h3>4. Mnemonic for Half-Angle Tangent Substitution in $\int \frac{du}{1 \pm \sin u \pm \cos u}$</h3>
+<p>Remember: <strong>"S-T-S"</strong> (Sine/Cosine $\to$ Tangent $\to$ Secant):</p>
+<p>$$
+t = \tan\left(\frac{u}{2}\right) \implies du = \frac{2\,dt}{1 + t^2}, \quad \sin u = \frac{2t}{1 + t^2}, \quad \cos u = \frac{1 - t^2}{1 + t^2}
+$$</p>
+<p>Denominator $(1 + t^2)$ always cancels out, yielding a simple rational algebraic integral.</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_6" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 1 [CBSE 2024, 5 Marks]
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Solve the differential equation:</strong></p>
+<p>$$
+(x^2 - y^2)\,dx + 2xy\,dy = 0, \quad \text{given that } y = 1 \text{ when } x = 1
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Express in standard derivative form and test homogeneity</strong>  </p>
+<p>$$
+2xy\,dy = -(x^2 - y^2)\,dx = (y^2 - x^2)\,dx
+$$</p>
+<p>$$
+\frac{dy}{dx} = \frac{y^2 - x^2}{2xy}
+$$</p>
+<p>Let $F(x, y) = \frac{y^2 - x^2}{2xy}$. Testing with $(\lambda x, \lambda y)$:</p>
+<p>$$
+F(\lambda x, \lambda y) = \frac{\lambda^2 y^2 - \lambda^2 x^2}{2(\lambda x)(\lambda y)} = \frac{\lambda^2 (y^2 - x^2)}{\lambda^2 (2xy)} = \lambda^0 F(x, y)
+$$</p>
+<p>Hence, the given differential equation is homogeneous of degree $0$.</p>
+<p><strong>Step 2: Apply Type I substitution</strong><br />
+Substitute:</p>
+<p>$$
+y = vx \implies \frac{dy}{dx} = v + x\frac{dv}{dx}
+$$</p>
+<p>Substituting into the differential equation:</p>
+<p>$$
+v + x\frac{dv}{dx} = \frac{(vx)^2 - x^2}{2x(vx)} = \frac{x^2(v^2 - 1)}{2x^2 v} = \frac{v^2 - 1}{2v}
+$$</p>
+<p><strong>Step 3: Separate variables</strong>  </p>
+<p>$$
+x\frac{dv}{dx} = \frac{v^2 - 1}{2v} - v = \frac{v^2 - 1 - 2v^2}{2v} = \frac{-(v^2 + 1)}{2v}
+$$</p>
+<p>$$
+\frac{2v}{v^2 + 1}\,dv = -\frac{dx}{x}
+$$</p>
+<p><strong>Step 4: Integrate both sides</strong>  </p>
+<p>$$
+\int \frac{2v}{v^2 + 1}\,dv = -\int \frac{1}{x}\,dx
+$$</p>
+<p>Since $\frac{d}{dv}(v^2 + 1) = 2v$:</p>
+<p>$$
+\ln|v^2 + 1| = -\ln|x| + \ln|C| \quad (C > 0)
+$$</p>
+<p>$$
+\ln|v^2 + 1| + \ln|x| = \ln C
+$$</p>
+<p>$$
+\ln\left|x(v^2 + 1)\right| = \ln C
+$$</p>
+<p>$$
+x(v^2 + 1) = C
+$$</p>
+<p><strong>Step 5: Resubstitute $v = \frac{y}{x}$</strong>  </p>
+<p>$$
+x\left(\frac{y^2}{x^2} + 1\right) = C \implies x\left(\frac{y^2 + x^2}{x^2}\right) = C \implies \frac{x^2 + y^2}{x} = C
+$$</p>
+<p>$$
+x^2 + y^2 = Cx
+$$</p>
+<p><strong>Step 6: Determine particular solution</strong><br />
+Given $y = 1$ when $x = 1$:</p>
+<p>$$
+1^2 + 1^2 = C(1) \implies C = 2
+$$</p>
+<p>Thus, the required particular solution is:</p>
+<p>$$
+x^2 + y^2 = 2x \quad \text{or} \quad (x - 1)^2 + y^2 = 1
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_7" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 2 [CBSE 2023, 5 Marks]
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Find the general solution of the differential equation:</strong></p>
+<p>$$
+x\,dy - y\,dx = \sqrt{x^2 + y^2}\,dx
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Algebraic rearrangement to form $\frac{dy}{dx}$</strong>  </p>
+<p>$$
+x\,dy = (y + \sqrt{x^2 + y^2})\,dx
+$$</p>
+<p>$$
+\frac{dy}{dx} = \frac{y + \sqrt{x^2 + y^2}}{x}
+$$</p>
+<p>Testing homogeneity:</p>
+<p>$$
+F(\lambda x, \lambda y) = \frac{\lambda y + \sqrt{\lambda^2 x^2 + \lambda^2 y^2}}{\lambda x} = \frac{\lambda (y + \sqrt{x^2 + y^2})}{\lambda x} = \lambda^0 F(x, y)
+$$</p>
+<p>The equation is homogeneous.</p>
+<p><strong>Step 2: Substitution $y = vx$</strong>  </p>
+<p>$$
+v + x\frac{dv}{dx} = \frac{vx + \sqrt{x^2 + v^2 x^2}}{x} = \frac{x(v + \sqrt{1 + v^2})}{x} \quad (\text{for } x > 0)
+$$</p>
+<p>$$
+v + x\frac{dv}{dx} = v + \sqrt{1 + v^2}
+$$</p>
+<p>$$
+x\frac{dv}{dx} = \sqrt{1 + v^2}
+$$</p>
+<p><strong>Step 3: Variable separation and integration</strong>  </p>
+<p>$$
+\frac{dv}{\sqrt{1 + v^2}} = \frac{dx}{x}
+$$</p>
+<p>Integrating both sides:</p>
+<p>$$
+\int \frac{dv}{\sqrt{1 + v^2}} = \int \frac{dx}{x}
+$$</p>
+<p>$$
+\ln\left|v + \sqrt{1 + v^2}\right| = \ln|x| + \ln C
+$$</p>
+<p>$$
+v + \sqrt{1 + v^2} = Cx
+$$</p>
+<p><strong>Step 4: Back-substitution</strong>  </p>
+<p>$$
+\frac{y}{x} + \sqrt{1 + \frac{y^2}{x^2}} = Cx
+$$</p>
+<p>$$
+\frac{y + \sqrt{x^2 + y^2}}{x} = Cx
+$$</p>
+<p>$$
+y + \sqrt{x^2 + y^2} = Cx^2
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_8" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3 [CBSE 2022 Term-II, 3 Marks]
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Solve the differential equation:</strong></p>
+<p>$$
+2y\,e^{x/y}\,dx + (y - 2x\,e^{x/y})\,dy = 0
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Recognize Type II symmetry ($\frac{x}{y}$ argument)</strong><br />
+Because the exponential contains $\frac{x}{y}$, we must rearrange the equation for $\frac{dx}{dy}$:</p>
+<p>$$
+2y\,e^{x/y}\,dx = (2x\,e^{x/y} - y)\,dy
+$$</p>
+<p>$$
+\frac{dx}{dy} = \frac{2x\,e^{x/y} - y}{2y\,e^{x/y}}
+$$</p>
+<p><strong>Step 2: Verification of homogeneity</strong><br />
+Let $F(x, y) = \frac{2x\,e^{x/y} - y}{2y\,e^{x/y}}$.</p>
+<p>$$
+F(\lambda x, \lambda y) = \frac{2(\lambda x)e^{\lambda x / \lambda y} - \lambda y}{2(\lambda y)e^{\lambda x / \lambda y}} = \frac{\lambda (2x\,e^{x/y} - y)}{\lambda (2y\,e^{x/y})} = \lambda^0 F(x, y)
+$$</p>
+<p><strong>Step 3: Substitution $x = vy$</strong>  </p>
+<p>$$
+\frac{dx}{dy} = v + y\frac{dv}{dy}
+$$</p>
+<p>$$
+v + y\frac{dv}{dy} = \frac{2(vy)e^v - y}{2y\,e^v} = \frac{2v\,e^v - 1}{2e^v} = v - \frac{1}{2e^v}
+$$</p>
+<p>$$
+y\frac{dv}{dy} = -\frac{1}{2e^v}
+$$</p>
+<p><strong>Step 4: Variable separation &amp; Integration</strong>  </p>
+<p>$$
+2e^v\,dv = -\frac{dy}{y}
+$$</p>
+<p>$$
+\int 2e^v\,dv = -\int \frac{dy}{y}
+$$</p>
+<p>$$
+2e^v = -\ln|y| + C
+$$</p>
+<p>$$
+2e^v + \ln|y| = C
+$$</p>
+<p><strong>Step 5: Resubstitute $v = \frac{x}{y}$</strong>  </p>
+<p>$$
+2e^{x/y} + \ln|y| = C
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_9" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 4 [CBSE 2020, 5 Marks]
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Find the particular solution of:</strong></p>
+<p>$$
+\left[x\sin^2\left(\frac{y}{x}\right) - y\right]dx + x\,dy = 0, \quad \text{given } y = \frac{\pi}{4} \text{ when } x = 1
+$$</p>
+<h4>Solution:</h4>
+<p><strong>Step 1: Rearrange to compute $\frac{dy}{dx}$</strong>  </p>
+<p>$$
+x\,dy = \left[y - x\sin^2\left(\frac{y}{x}\right)\right]dx
+$$</p>
+<p>$$
+\frac{dy}{dx} = \frac{y}{x} - \sin^2\left(\frac{y}{x}\right)
+$$</p>
+<p><strong>Step 2: Substitute $y = vx \implies \frac{dy}{dx} = v + x\frac{dv}{dx}$</strong>  </p>
+<p>$$
+v + x\frac{dv}{dx} = v - \sin^2(v)
+$$</p>
+<p>$$
+x\frac{dv}{dx} = -\sin^2(v)
+$$</p>
+<p><strong>Step 3: Separate variables</strong>  </p>
+<p>$$
+-\csc^2(v)\,dv = \frac{dx}{x}
+$$</p>
+<p><strong>Step 4: Integrate</strong>  </p>
+<p>$$
+\int -\csc^2(v)\,dv = \int \frac{dx}{x}
+$$</p>
+<p>$$
+\cot(v) = \ln|x| + C
+$$</p>
+<p><strong>Step 5: Resubstitute $v = \frac{y}{x}$</strong>  </p>
+<p>$$
+\cot\left(\frac{y}{x}\right) = \ln|x| + C
+$$</p>
+<p><strong>Step 6: Compute arbitrary constant $C$</strong><br />
+Given $y = \frac{\pi}{4}$ when $x = 1$:</p>
+<p>$$
+\cot\left(\frac{\pi/4}{1}\right) = \ln(1) + C \implies \cot\left(\frac{\pi}{4}\right) = 0 + C \implies C = 1
+$$</p>
+<p>Particular solution:</p>
+<p>$$
+\cot\left(\frac{y}{x}\right) = \ln|x| + 1
+$$</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trap / Pitfall Area</th>
+<th style="text-align: left;">Frequent Student Error</th>
+<th style="text-align: left;">Correct Methodical Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Omitting the Homogeneity Test</strong></td>
+<td style="text-align: left;">Jumping straight to $y=vx$ without stating the $\lambda$-test. Boards penalize $1$ full mark for skipping this step.</td>
+<td style="text-align: left;">Always write: <em>"Let $F(x,y)=\dots$, evaluate $F(\lambda x, \lambda y) = \lambda^0 F(x, y)$"</em>, and conclude it is homogeneous of degree 0 before substituting.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Wrong Choice of Independent Variable</strong></td>
+<td style="text-align: left;">Attempting $y = vx$ when the equation features expressions like $e^{x/y}$, $\sin(x/y)$, or $\cos(x/y)$. Leads to intractable non-elementary integration.</td>
+<td style="text-align: left;">If arguments are functions of $\frac{x}{y}$, immediately recast as $\frac{dx}{dy} = h(x/y)$ and use $x = vy \implies \frac{dx}{dy} = v + y\frac{dv}{dy}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Sign Error in Variable Separation</strong></td>
+<td style="text-align: left;">When subtracting $v$ from the right-hand side, students write: $v + x\frac{dv}{dx} = \frac{f(v)}{g(v)} \implies x\frac{dv}{dx} = \frac{f(v) - v}{g(v)}$ incorrectly forgetting common denominators.</td>
+<td style="text-align: left;">Carefully apply brackets: $x\frac{dv}{dx} = \frac{f(v) - v\cdot g(v)}{g(v)}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Arbitrary Constant Placement with Logarithms</strong></td>
+<td style="text-align: left;">Writing $\ln|A| = \ln|B| + C \implies A = B + C$.</td>
+<td style="text-align: left;">Apply index laws: $\ln|A| - \ln|B| = \ln C_1 \implies \left|\frac{A}{B}\right| = C_1 \implies A = C B$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Neglecting Boundary Conditions</strong></td>
+<td style="text-align: left;">Leaving the answer in terms of $v$ instead of $x$ and $y$, or calculating $C$ using $v$ instead of original coordinates.</td>
+<td style="text-align: left;">Always back-substitute $v = \frac{y}{x}$ (or $\frac{x}{y}$) <strong>first</strong>, then substitute initial values $(x_0, y_0)$ to find $C$.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points</h2>
+<ol>
+<li><strong>Sum of Degrees Rule (Instant Visual Check):</strong><br />
+   In polynomial forms $M(x, y)\,dx + N(x, y)\,dy = 0$, every single term must have the exact same combined sum of exponents of $x$ and $y$.</li>
+<li><em>Example:</em> $x^3 + 3xy^2$ has degree $3$ in both terms ($3$ and $1+2=3$).  </li>
+<li>
+<p>If any constant (e.g., $+ 5$) or mismatched power (e.g., $+ x^2$) appears, the equation is <strong>not</strong> homogeneous.</p>
+</li>
+<li>
+<p><strong>The "Cancel $v$ Directly" Shortcut:</strong><br />
+   If the differential equation has the form:</p>
+</li>
+</ol>
+<p>$$
+\frac{dy}{dx} = \frac{y}{x} + \phi\left(\frac{y}{x}\right)
+$$</p>
+<p>Upon substitution $y = vx$, the $v$ on both sides cancels instantly:</p>
+<p>$$
+v + x\frac{dv}{dx} = v + \phi(v) \implies \frac{dv}{\phi(v)} = \frac{dx}{x}
+$$</p>
+<p>This avoids 2–3 lines of tedious algebraic simplification.</p>
+<ol>
+<li><strong>Logarithmic Constant Grouping:</strong><br />
+   When all integration terms yield natural logs:</li>
+</ol>
+<p>$$
+\ln|f(v)| = \ln|x| + C
+$$</p>
+<p>Always write the constant as $\ln|C|$ (where $C > 0$). This allows direct exponentiation:</p>
+<p>$$
+f(v) = C x
+$$</p>
+<p>bypassing bulky $e^{\ln x + C}$ terms.</p>
+<ol>
+<li><strong>Euler's Homogeneous Function Theorem (Cross-Verification for Entrances):</strong><br />
+   If $u = F(x, y)$ is a homogeneous function of degree $n$, then:</li>
+</ol>
+<p>$$
+x\frac{\partial u}{\partial x} + y\frac{\partial u}{\partial y} = n \cdot u
+$$</p>
+<p>For degree $n = 0$:</p>
+<p>$$
+x\frac{\partial F}{\partial x} + y\frac{\partial F}{\partial y} = 0
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_10" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 1: Type I Standard Trigonometric Form
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2024, 3 Marks]</span></strong><br />
+Find the general solution of the differential equation:</p>
+<p>$$
+\cos^2 x \frac{dy}{dx} + y = \tan x \quad \left(0 \le x < \frac{\pi}{2}\right)
+$$</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Reduce to Canonical Form</strong><br />
+Dividing the entire equation by $\cos^2 x \neq 0$:</p>
+<p>$$
+\frac{dy}{dx} + \frac{1}{\cos^2 x}y = \frac{\tan x}{\cos^2 x}
+$$</p>
+<p>$$
+\frac{dy}{dx} + (\sec^2 x)y = \tan x \sec^2 x
+$$</p>
+<p>Comparing with $\frac{dy}{dx} + Py = Q$:</p>
+<p>$$
+P(x) = \sec^2 x, \quad Q(x) = \tan x \sec^2 x
+$$</p>
+<p><strong>Step 2: Determine the Integrating Factor</strong>  </p>
+<p>$$
+\text{I.F.} = e^{\int P(x)\,dx} = e^{\int \sec^2 x\,dx} = e^{\tan x}
+$$</p>
+<p><strong>Step 3: Write the General Solution Equation</strong>  </p>
+<p>$$
+y \cdot (\text{I.F.}) = \int Q(x) \cdot (\text{I.F.})\,dx + C
+$$</p>
+<p>$$
+y e^{\tan x} = \int (\tan x \sec^2 x) e^{\tan x}\,dx + C \quad \text{--- (1)}
+$$</p>
+<p><strong>Step 4: Evaluate the Integral</strong><br />
+Let $I_1 = \int \tan x \sec^2 x e^{\tan x}\,dx$.<br />
+Substitute $t = \tan x \implies dt = \sec^2 x\,dx$:</p>
+<p>$$
+I_1 = \int t e^t\,dt
+$$</p>
+<p>Using Integration by Parts ($\int u v\,dt = u \int v\,dt - \int (u' \int v\,dt)dt$):</p>
+<p>$$
+I_1 = t e^t - \int 1 \cdot e^t\,dt = t e^t - e^t = e^t(t - 1)
+$$</p>
+<p>Substitute back $t = \tan x$:</p>
+<p>$$
+I_1 = e^{\tan x}(\tan x - 1)
+$$</p>
+<p><strong>Step 5: Final Solution</strong><br />
+Substitute $I_1$ into (1):</p>
+<p>$$
+y e^{\tan x} = e^{\tan x}(\tan x - 1) + C
+$$</p>
+<p>Dividing by $e^{\tan x}$:</p>
+<p>$$
+y = (\tan x - 1) + C e^{-\tan x}
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_11" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 2: Type II Standard Algebraic Form
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2023, 5 Marks]</span></strong><br />
+Find the general solution of the differential equation:</p>
+<p>$$
+(1 + y^2)dx = (\tan^{-1} y - x)dy
+$$</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Identify the Dependent vs Independent Variable</strong><br />
+Expressing $\frac{dy}{dx}$:</p>
+<p>$$
+\frac{dy}{dx} = \frac{1 + y^2}{\tan^{-1} y - x}
+$$</p>
+<p>The denominator contains both variables non-linearly, which prevents separating or expressing it as $\frac{dy}{dx} + Py = Q$.<br />
+Taking the reciprocal:</p>
+<p>$$
+\frac{dx}{dy} = \frac{\tan^{-1} y - x}{1 + y^2} = \frac{\tan^{-1} y}{1 + y^2} - \frac{x}{1 + y^2}
+$$</p>
+<p>Rearranging into canonical Type II form:</p>
+<p>$$
+\frac{dx}{dy} + \left(\frac{1}{1 + y^2}\right)x = \frac{\tan^{-1} y}{1 + y^2}
+$$</p>
+<p>Comparing with $\frac{dx}{dy} + P_1(y)x = Q_1(y)$:</p>
+<p>$$
+P_1(y) = \frac{1}{1 + y^2}, \quad Q_1(y) = \frac{\tan^{-1} y}{1 + y^2}
+$$</p>
+<p><strong>Step 2: Find the Integrating Factor</strong>  </p>
+<p>$$
+\text{I.F.} = e^{\int P_1(y)\,dy} = e^{\int \frac{1}{1 + y^2}\,dy} = e^{\tan^{-1} y}
+$$</p>
+<p><strong>Step 3: Apply the Solution Formula</strong>  </p>
+<p>$$
+x \cdot (\text{I.F.}) = \int Q_1(y) \cdot (\text{I.F.})\,dy + C
+$$</p>
+<p>$$
+x e^{\tan^{-1} y} = \int \left(\frac{\tan^{-1} y}{1 + y^2}\right) e^{\tan^{-1} y}\,dy + C \quad \text{--- (1)}
+$$</p>
+<p><strong>Step 4: Evaluate the Integral</strong><br />
+Let $u = \tan^{-1} y \implies du = \frac{1}{1 + y^2}\,dy$.</p>
+<p>$$
+\int u e^u\,du = u e^u - e^u = e^u(u - 1)
+$$</p>
+<p>Substituting back $u = \tan^{-1} y$:</p>
+<p>$$
+\int \left(\frac{\tan^{-1} y}{1 + y^2}\right) e^{\tan^{-1} y}\,dy = e^{\tan^{-1} y}(\tan^{-1} y - 1)
+$$</p>
+<p><strong>Step 5: Write the Final Relation</strong>  </p>
+<p>$$
+x e^{\tan^{-1} y} = e^{\tan^{-1} y}(\tan^{-1} y - 1) + C
+$$</p>
+<p>$$
+x = (\tan^{-1} y - 1) + C e^{-\tan^{-1} y}
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_12" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3: Particular Solution with Boundary Condition
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2022, Term-2, 3 Marks]</span></strong><br />
+Find the particular solution of the differential equation:</p>
+<p>$$
+\frac{dy}{dx} + y \cot x = 4x \csc x \quad (x \neq 0), \quad \text{given that } y = 0 \text{ when } x = \frac{\pi}{2}
+$$</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Identify Canonical Components</strong><br />
+Equation is already in standard form $\frac{dy}{dx} + P(x)y = Q(x)$:</p>
+<p>$$
+P(x) = \cot x, \quad Q(x) = 4x \csc x
+$$</p>
+<p><strong>Step 2: Calculate $\text{I.F.}$</strong>  </p>
+<p>$$
+\text{I.F.} = e^{\int \cot x\,dx} = e^{\ln |\sin x|} = \sin x \quad (\text{for } 0 < x < \pi)
+$$</p>
+<p><strong>Step 3: Solve for the General Integral</strong>  </p>
+<p>$$
+y \cdot (\text{I.F.}) = \int Q(x) \cdot (\text{I.F.})\,dx + C
+$$</p>
+<p>$$
+y \sin x = \int (4x \csc x) \cdot \sin x\,dx + C
+$$</p>
+<p>Since $\csc x \cdot \sin x = 1$:</p>
+<p>$$
+y \sin x = \int 4x\,dx + C
+$$</p>
+<p>$$
+y \sin x = 2x^2 + C \quad \text{--- (General Solution)}
+$$</p>
+<p><strong>Step 4: Apply Initial Value Condition</strong><br />
+Substitute $x = \frac{\pi}{2}$ and $y = 0$:</p>
+<p>$$
+0 \cdot \sin\left(\frac{\pi}{2}\right) = 2\left(\frac{\pi}{2}\right)^2 + C
+$$</p>
+<p>$$
+0 = 2\left(\frac{\pi^2}{4}\right) + C \implies C = -\frac{\pi^2}{2}
+$$</p>
+<p><strong>Step 5: State the Particular Solution</strong>  </p>
+<p>$$
+y \sin x = 2x^2 - \frac{\pi^2}{2}
+$$</p>
+<p>$$
+y = 2x^2 \csc x - \frac{\pi^2}{2}\csc x
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_13" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 4: Leading Coefficient Normalization Trap
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong><span class="step-mark-tag">[CBSE 2020, 5 Marks]</span></strong><br />
+Solve the differential equation:</p>
+<p>$$
+(x \log x)\frac{dy}{dx} + y = \frac{2}{x}\log x
+$$</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Convert to Standard Form</strong><br />
+The coefficient of $\frac{dy}{dx}$ must be strictly $1$. Divide by $x \log x$:</p>
+<p>$$
+\frac{dy}{dx} + \left(\frac{1}{x \log x}\right)y = \frac{2}{x^2}
+$$</p>
+<p>Here, $P(x) = \frac{1}{x \log x}$ and $Q(x) = \frac{2}{x^2}$.</p>
+<p><strong>Step 2: Calculate $\text{I.F.}$</strong>  </p>
+<p>$$
+\int P(x)\,dx = \int \frac{1}{x \log x}\,dx
+$$</p>
+<p>Substitute $t = \log x \implies dt = \frac{1}{x}\,dx$:</p>
+<p>$$
+\int \frac{dt}{t} = \log |t| = \log |\log x|
+$$</p>
+<p>Therefore:</p>
+<p>$$
+\text{I.F.} = e^{\log(\log x)} = \log x
+$$</p>
+<p><strong>Step 3: Integrate to Obtain the Solution</strong>  </p>
+<p>$$
+y \cdot \log x = \int \left(\frac{2}{x^2} \cdot \log x\right)dx + C
+$$</p>
+<p>Evaluate $I_2 = 2\int x^{-2} \log x\,dx$ using Integration by Parts:
+* First function: $u = \log x \implies u' = \frac{1}{x}$
+* Second function: $v' = x^{-2} \implies v = -\frac{1}{x}$</p>
+<p>$$
+I_2 = 2 \left[ (\log x)\left(-\frac{1}{x}\right) - \int \left(-\frac{1}{x}\right)\left(\frac{1}{x}\right)dx \right]
+$$</p>
+<p>$$
+I_2 = 2 \left[ -\frac{\log x}{x} + \int x^{-2}\,dx \right] = 2 \left[ -\frac{\log x}{x} - \frac{1}{x} \right] = -\frac{2}{x}(\log x + 1)
+$$</p>
+<p><strong>Step 4: Final Expression</strong>  </p>
+<p>$$
+y \log x = -\frac{2}{x}(1 + \log x) + C
+$$</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trap / Common Mistake</th>
+<th style="text-align: left;">Incorrect Student Action</th>
+<th style="text-align: left;">Correct Mathematical Protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Non-Unitary Leading Derivative</strong></td>
+<td style="text-align: left;">Identifying $P(x)$ directly from $x\frac{dy}{dx} + 2y = x^2$ as $P=2$.</td>
+<td style="text-align: left;">First divide by the leading coefficient ($x$) to get $\frac{dy}{dx} + \frac{2}{x}y = x$. Here $P(x) = \frac{2}{x}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Sign Blindness in $P(x)$</strong></td>
+<td style="text-align: left;">In $\frac{dy}{dx} - (\tan x)y = \cos x$, treating $P(x) = \tan x$.</td>
+<td style="text-align: left;">The standard form is $+ P(x)y$. Thus $P(x) = -\tan x$, giving $\text{I.F.} = e^{-\int \tan x\,dx} = e^{-\ln|\sec x|} = \cos x$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Logarithm Power Law Mismanagement</strong></td>
+<td style="text-align: left;">Writing $e^{2\ln x} = 2x$ or $2e^{\ln x}$.</td>
+<td style="text-align: left;">Apply the power law first: $e^{k \ln x} = e^{\ln(x^k)} = x^k$. Hence $e^{2\ln x} = x^2$ and $e^{-\ln x} = x^{-1} = \frac{1}{x}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Premature Omission of $C$</strong></td>
+<td style="text-align: left;">Omitting $C$ in the general solution step and arbitrarily adding it at the very end as $y = \dots + C$.</td>
+<td style="text-align: left;">The factor $\text{I.F.}$ multiplies $y$ on the LHS. Dividing by $\text{I.F.}$ at the end affects $C$: $y = f(x) + \frac{C}{\text{I.F.}}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Type Confusion</strong></td>
+<td style="text-align: left;">Forcing an equation with high powers of $y$ into Type I when $\frac{dx}{dy}$ would yield a linear equation in $x$.</td>
+<td style="text-align: left;">If $y$ appears with degree $> 1$ or inside difficult arguments, invert derivatives: $\frac{dx}{dy} = \left(\frac{dy}{dx}\right)^{-1}$. Test for Type II.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points</h2>
+<h3>5.1 The Exponential Log Cancellation Rule</h3>
+<p>Always simplify the integrating factor before attempting the RHS integration:</p>
+<p>$$
+e^{n \ln(f(x))} = \big[f(x)\big]^n
+$$</p>
+<ul>
+<li>$e^{-\ln(\cos x)} = (\cos x)^{-1} = \sec x$</li>
+<li>$e^{-2\ln(x+1)} = (x+1)^{-2} = \frac{1}{(x+1)^2}$</li>
+<li>$e^{3\ln x} = x^3$</li>
+</ul>
+<h3>5.2 The 10-Second Type Classifier</h3>
+<p>Given $f(x, y)\,dx + g(x, y)\,dy = 0$:
+1. Check degrees of $x$ and $y$.
+2. If $y$ is isolated to the first degree throughout the equation, it is <strong>Type I</strong>:</p>
+<p>$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$</p>
+<ol>
+<li>If $x$ is isolated to the first degree throughout the equation, it is <strong>Type II</strong>:</li>
+</ol>
+<p>$$
+\frac{dx}{dy} + P_1(y)x = Q_1(y)
+$$</p>
+<h3>5.3 Quick Check for Correct I.F.</h3>
+<p>Differentiate your proposed $[y \cdot \text{I.F.}]$ mentally:</p>
+<p>$$
+\frac{d}{dx}[y \cdot \text{I.F.}] = \text{I.F.} \cdot \frac{dy}{dx} + (\text{I.F.} \cdot P)y
+$$</p>
+<p>If factoring out $\text{I.F.}$ reproduces your original normalized LHS, your $\text{I.F.}$ is verified.</p>
+<h3>5.4 Summary Cheat Sheet</h3>
+<pre><code>+-------------------------------------------------------------------------------+
+|                                    LDE FORM                                   |
++-------------------------------------------------------------------------------+
+| Type I:                                                                       |
+|   dy/dx + P(x)y = Q(x)                                                        |
+|   --&gt; I.F. = exp( ∫ P(x) dx )                                                 |
+|   --&gt; Solution: y · (I.F.) = ∫ [ Q(x) · (I.F.) ] dx + C                       |
++-------------------------------------------------------------------------------+
+| Type II:                                                                      |
+|   dx/dy + P₁(y)x = Q₁(y)                                                      |
+|   --&gt; I.F. = exp( ∫ P₁(y) dy )                                                |
+|   --&gt; Solution: x · (I.F.) = ∫ [ Q₁(y) · (I.F.) ] dy + C                      |
++-------------------------------------------------------------------------------+
+</code></pre>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+          </div>
+
+          <!-- TAB 3: Board Exam PYQ Vault -->
+          <div id="panel-pyqs" class="view-panel">
+            <div class="sticky-note blue" style="margin-bottom: 1.5rem;">
+              <div class="sticky-title">🎯 CBSE Board Exam Questions Vault (2020–2025)</div>
+              Real examination questions categorized by official CBSE marks weightage. Practice writing out each step before checking model answers.
+            </div>
+
+            <!-- PYQ Filter Chips -->
+            <div class="pyq-filter-bar">
+              <div class="filter-group">
+                <span class="filter-label">Filter Marks:</span>
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="1m">1 Mark (MCQ/AR)</button>
+                <button class="filter-chip" data-filter="2m">2 Marks (VSA)</button>
+                <button class="filter-chip" data-filter="3m">3 Marks (SA)</button>
+                <button class="filter-chip" data-filter="4m">4 Marks (Case Study)</button>
+                <button class="filter-chip" data-filter="5m">5 Marks (LA)</button>
+              </div>
+              <div class="filter-group">
+                <span class="filter-label">Exam Year:</span>
+                <button class="filter-chip" data-filter="2024">2024</button>
+                <button class="filter-chip" data-filter="2023">2023</button>
+                <button class="filter-chip" data-filter="2022">2022</button>
+              </div>
+            </div>
+
+            <div class='pyq-intro' style='margin-bottom: 1rem;'><h1>Master CBSE Question Bank: All Questions from Last 5 Years (2020-2025) with Marking Schemes</h1>
+<h1>CBSE Class 12 Mathematics: Differential Equations</h1>
+<h2>Exhaustive Board Exam Question Bank (2020 – 2025)</h2>
+<h3><em>Curated by Senior Board Mathematics Examiner</em></h3>
+<hr />
+<h2>SECTION A: 1-MARK MCQs &amp; ASSERTION-REASON QUESTIONS</h2>
+<hr /></div>
+
+                  <div class="question-card" id="q_14" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 1</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 (Delhi/AI - Set 65/1/1), 1 Mark]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>The sum of the order and the degree of the differential equation:</p>
+<p>$$
+1 + \left(\frac{dy}{dx}\right)^3 = \frac{d^2y}{dx^2}
+$$</p>
+<p>is:
+(a) $2$<br />
+(b) $3$<br />
+(c) $4$<br />
+(d) not defined  </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li><strong>Identify Order:</strong><br />
+   The highest order derivative present is $\frac{d^2y}{dx^2}$. Hence:</li>
+</ol>
+<p>$$
+\text{Order} = 2 \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Identify Degree:</strong><br />
+   The equation is a polynomial in derivatives. The power of the highest order derivative $\left(\frac{d^2y}{dx^2}\right)^1$ is $1$. Hence:</li>
+</ol>
+<p>$$
+\text{Degree} = 1
+$$</p>
+<ol>
+<li><strong>Sum:</strong></li>
+</ol>
+<p>$$
+\text{Sum} = \text{Order} + \text{Degree} = 2 + 1 = 3 \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(b) 3</strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_15" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 2</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2023 (Set 65/2/1), 1 Mark]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>The degree of the differential equation:</p>
+<p>$$
+\left(\frac{d^2y}{dx^2}\right)^2 + \left(\frac{dy}{dx}\right)^3 = x \sin\left(\frac{dy}{dx}\right)
+$$</p>
+<p>is:
+(a) $2$<br />
+(b) $3$<br />
+(c) $1$<br />
+(d) not defined  </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ul>
+<li>The term $\sin\left(\frac{dy}{dx}\right)$ cannot be expressed as a polynomial in $\frac{dy}{dx}$ (its Taylor expansion contains infinite derivative terms).</li>
+<li>A differential equation possesses a defined degree if and only if it can be written as a polynomial equation in its derivatives.</li>
+<li>Thus, the degree is <strong>not defined</strong>.  </li>
+</ul>
+<p>$$
+\left[1\text{ Mark for identifying non-polynomial form and concluding}\right]
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(d) not defined</strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_16" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 3</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 (Set 65/4/1), 1 Mark]</span></strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>The integrating factor ($\text{I.F.}$) of the differential equation:</p>
+<p>$$
+x \frac{dy}{dx} - y = 2x^2
+$$</p>
+<p>is:
+(a) $e^{-x}$<br />
+(b) $e^{-y}$<br />
+(c) $\frac{1}{x}$<br />
+(d) $x$  </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li><strong>Standard Form $\frac{dy}{dx} + P(x)y = Q(x)$:</strong>
+   Divide throughout by $x$ ($x \neq 0$):</li>
+</ol>
+<p>$$
+\frac{dy}{dx} - \frac{1}{x}y = 2x \implies P(x) = -\frac{1}{x} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Calculate Integrating Factor:</strong></li>
+</ol>
+<p>$$
+\text{I.F.} = e^{\int P(x)\,dx} = e^{\int -\frac{1}{x}\,dx} = e^{-\ln|x|} = e^{\ln(x^{-1})} = \frac{1}{x} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(c) $\frac{1}{x}$</strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_17" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 4</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2023 (Set 65/3/1), 1 Mark]</span></strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>The integrating factor of the differential equation:</p>
+<p>$$
+(1 - y^2)\frac{dx}{dy} + yx = ay \quad (-1 < y < 1)
+$$</p>
+<p>is:
+(a) $\frac{1}{y^2 - 1}$<br />
+(b) $\frac{1}{\sqrt{y^2 - 1}}$<br />
+(c) $\frac{1}{\sqrt{1 - y^2}}$<br />
+(d) $\sqrt{1 - y^2}$  </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li>Convert to linear standard form in $x$: $\frac{dx}{dy} + P(y)x = Q(y)$:</li>
+</ol>
+<p>$$
+\frac{dx}{dy} + \left(\frac{y}{1 - y^2}\right)x = \frac{ay}{1 - y^2} \implies P(y) = \frac{y}{1 - y^2} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li>Compute $\int P(y)\,dy$:</li>
+</ol>
+<p>$$
+\int \frac{y}{1 - y^2}\,dy = -\frac{1}{2}\ln(1 - y^2) = \ln\left((1 - y^2)^{-1/2}\right)
+$$</p>
+<p>$$
+\text{I.F.} = e^{\int P(y)\,dy} = \frac{1}{\sqrt{1 - y^2}} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(c) $\frac{1}{\sqrt{1 - y^2}}$</strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_18" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 5</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2025 Model / 2024 Compartment, 1 Mark]</span></strong> <span class="star-icon">⭐⭐⭐</span></p>
+<p><strong>Assertion (A):</strong> The number of arbitrary constants in the general </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of a differential equation of fourth order is $4$.<br />
+<strong>Reason (R):</strong> The number of arbitrary constants in the particular solution of a differential equation of third order is $0$.</p>
+<p>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).<br />
+(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).<br />
+(c) (A) is true but (R) is false.<br />
+(d) (A) is false but (R) is true.  </p>
+<h4>Model Solution:</h4>
+<ul>
+<li><strong>(A) is true:</strong> The general solution of an $n^{\text{th}}$-order differential equation has exactly $n$ independent arbitrary constants (here $n = 4$).</li>
+<li><strong>(R) is true:</strong> A particular solution is free from arbitrary constants (number of arbitrary constants $= 0$).</li>
+<li>(R) does not explain why an $n^{\text{th}}$-order general solution has $n$ constants (which comes from $n$ successive integrations).</li>
+</ul>
+<p>$$
+\left[1\text{ Mark}\right]
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(b)</strong></p>
+<hr />
+<h2>SECTION B: 2-MARK VERY SHORT ANSWER (VSA) QUESTIONS</h2>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_19" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 6</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 (Set 65/2/2), 2 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>Find the general </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of the differential equation:</p>
+<p>$$
+\frac{dy}{dx} = e^{x - y} + x^2 e^{-y}
+$$</p>
+<h4>Model Solution:</h4>
+<ol>
+<li><strong>Factorize RHS:</strong></li>
+</ol>
+<p>$$
+\frac{dy}{dx} = e^{-y}\left(e^x + x^2\right) \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Variable Separation:</strong></li>
+</ol>
+<p>$$
+\frac{dy}{e^{-y}} = (e^x + x^2)\,dx \implies e^y\,dy = (e^x + x^2)\,dx \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Integrating both sides:</strong></li>
+</ol>
+<p>$$
+\int e^y\,dy = \int (e^x + x^2)\,dx
+$$</p>
+<p>$$
+e^y = e^x + \frac{x^3}{3} + C \quad [1\text{ Mark}]
+$$</p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_20" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 7</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2023 (Delhi Set 65/1/2), 2 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>Solve the differential equation:</p>
+<p>$$
+x \sqrt{1 - y^2}\,dx + y \sqrt{1 - x^2}\,dy = 0
+$$</p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li><strong>Separation of Variables:</strong></li>
+</ol>
+<p>$$
+\frac{y}{\sqrt{1 - y^2}}\,dy = -\frac{x}{\sqrt{1 - x^2}}\,dx \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Integration:</strong></li>
+</ol>
+<p>$$
+\int \frac{2y}{2\sqrt{1 - y^2}}\,dy = -\int \frac{2x}{2\sqrt{1 - x^2}}\,dx
+$$</p>
+<p>Let $1 - y^2 = u \implies -2y\,dy = du$ and $1 - x^2 = v \implies -2x\,dx = dv$:</p>
+<p>$$
+-\sqrt{1 - y^2} = \sqrt{1 - x^2} - C \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Final General Solution:</strong></li>
+</ol>
+<p>$$
+\sqrt{1 - x^2} + \sqrt{1 - y^2} = C \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_21" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 8</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2022 Term-2 (Set 65/1), 2 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>Find the integrating factor and hence solve:</p>
+<p>$$
+\frac{dy}{dx} + y \cot x = 2 \cos x
+$$</p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li><strong>Integrating Factor:</strong></li>
+</ol>
+<p>$$
+P(x) = \cot x \implies \text{I.F.} = e^{\int \cot x\,dx} = e^{\ln|\sin x|} = \sin x \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>General Solution:</strong></li>
+</ol>
+<p>$$
+y \cdot (\text{I.F.}) = \int Q(x) \cdot (\text{I.F.})\,dx + C
+$$</p>
+<p>$$
+y \sin x = \int 2\cos x \sin x\,dx + C = \int \sin 2x\,dx + C
+$$</p>
+<p>$$
+y \sin x = -\frac{\cos 2x}{2} + C \quad [1\text{ Mark}]
+$$</p>
+<hr />
+<h2>SECTION C: 3-MARK SHORT ANSWER (SA) QUESTIONS</h2>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_22" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 9</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 (Set 65/3/1), 3 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>Find the particular </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of the differential equation:</p>
+<p>$$
+\frac{dy}{dx} + 2y \tan x = \sin x, \quad \text{given that } y = 0 \text{ when } x = \frac{\pi}{3}
+$$</p>
+<h4>Model Solution:</h4>
+<ol>
+<li><strong>Identify $P(x)$ and $Q(x)$:</strong></li>
+</ol>
+<p>$$
+P(x) = 2\tan x, \quad Q(x) = \sin x
+$$</p>
+<ol>
+<li><strong>Integrating Factor ($\text{I.F.}$):</strong></li>
+</ol>
+<p>$$
+\text{I.F.} = e^{\int 2\tan x\,dx} = e^{2\ln|\sec x|} = \sec^2 x \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>General Solution:</strong></li>
+</ol>
+<p>$$
+y \cdot \sec^2 x = \int \sin x \cdot \sec^2 x\,dx + C
+$$</p>
+<p>$$
+y \sec^2 x = \int \sec x \tan x\,dx + C
+$$</p>
+<p>$$
+y \sec^2 x = \sec x + C \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Apply Boundary Condition $\left(x = \frac{\pi}{3}, y = 0\right)$:</strong></li>
+</ol>
+<p>$$
+0 \cdot \sec^2\left(\frac{\pi}{3}\right) = \sec\left(\frac{\pi}{3}\right) + C
+$$</p>
+<p>$$
+0 = 2 + C \implies C = -2 \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Particular Solution:</strong></li>
+</ol>
+<p>$$
+y \sec^2 x = \sec x - 2 \implies y = \cos x - 2\cos^2 x \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_23" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 10</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2023 (Set 65/5/1), 3 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>Show that the differential equation $(x - y)\frac{dy}{dx} = x + 2y$ is homogeneous and solve it.</p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<ol>
+<li><strong>Proof of Homogeneity:</strong></li>
+</ol>
+<p>$$
+\frac{dy}{dx} = \frac{x + 2y}{x - y} = F(x, y)
+$$</p>
+<p>$$
+F(\lambda x, \lambda y) = \frac{\lambda x + 2\lambda y}{\lambda x - \lambda y} = \frac{\lambda(x + 2y)}{\lambda(x - y)} = \lambda^0 F(x, y)
+$$</p>
+<p>Since $F(\lambda x, \lambda y) = \lambda^0 F(x, y)$, it is homogeneous of degree $0$. $\quad [1\text{ Mark}]$</p>
+<ol>
+<li><strong>Substitution $y = vx \implies \frac{dy}{dx} = v + x\frac{dv}{dx}$:</strong></li>
+</ol>
+<p>$$
+v + x\frac{dv}{dx} = \frac{1 + 2v}{1 - v}
+$$</p>
+<p>$$
+x\frac{dv}{dx} = \frac{1 + 2v - v(1 - v)}{1 - v} = \frac{v^2 + v + 1}{1 - v} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Variable Separation and Integration:</strong></li>
+</ol>
+<p>$$
+\frac{v - 1}{v^2 + v + 1}\,dv = -\frac{dx}{x}
+$$</p>
+<p>$$
+\frac{1}{2}\int \frac{2v + 1}{v^2 + v + 1}\,dv - \frac{3}{2}\int \frac{dv}{\left(v + \frac{1}{2}\right)^2 + \left(\frac{\sqrt{3}}{2}\right)^2} = -\int \frac{dx}{x}
+$$</p>
+<p>$$
+\frac{1}{2}\ln(v^2 + v + 1) - \sqrt{3}\tan^{-1}\left(\frac{2v + 1}{\sqrt{3}}\right) = -\ln|x| + C' \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Resubstituting $v = \frac{y}{x}$:</strong></li>
+</ol>
+<p>$$
+\ln|x^2 + xy + y^2| - 2\sqrt{3}\tan^{-1}\left(\frac{2y + x}{\sqrt{3}x}\right) = C \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<hr />
+<h2>SECTION D: 5-MARK LONG ANSWER (LA) QUESTIONS</h2>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_24" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 11</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 (Set 65/1/1), 5 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>Find the particular </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of the differential equation:</p>
+<p>$$
+(x^2 + 1)\frac{dy}{dx} + 2xy = \sqrt{x^2 + 4}
+$$</p>
+<p>given that $y = 0$ when $x = 0$.</p>
+<h4>Model Solution:</h4>
+<ol>
+<li><strong>Express in Linear Differential Equation Form:</strong></li>
+</ol>
+<p>$$
+\frac{dy}{dx} + \left(\frac{2x}{x^2 + 1}\right)y = \frac{\sqrt{x^2 + 4}}{x^2 + 1} \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Compute Integrating Factor:</strong></li>
+</ol>
+<p>$$
+\text{I.F.} = e^{\int \frac{2x}{x^2 + 1}\,dx} = e^{\ln(x^2 + 1)} = x^2 + 1 \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Integrate General Solution:</strong></li>
+</ol>
+<p>$$
+y(x^2 + 1) = \int \left(\frac{\sqrt{x^2 + 4}}{x^2 + 1}\right)(x^2 + 1)\,dx + C
+$$</p>
+<p>$$
+y(x^2 + 1) = \int \sqrt{x^2 + 2^2}\,dx + C
+$$</p>
+<p>Using standard formula $\int \sqrt{x^2 + a^2}\,dx = \frac{x}{2}\sqrt{x^2 + a^2} + \frac{a^2}{2}\ln\left|x + \sqrt{x^2 + a^2}\right|$:</p>
+<p>$$
+y(x^2 + 1) = \frac{x}{2}\sqrt{x^2 + 4} + 2\ln\left|x + \sqrt{x^2 + 4}\right| + C \quad \left[1\frac{1}{2}\text{ Marks}\right]
+$$</p>
+<ol>
+<li><strong>Boundary Condition ($x = 0, y = 0$):</strong></li>
+</ol>
+<p>$$
+0 \cdot (1) = 0 + 2\ln 2 + C \implies C = -2\ln 2 = -\ln 4 \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Final Particular Solution:</strong></li>
+</ol>
+<p>$$
+y(x^2 + 1) = \frac{x}{2}\sqrt{x^2 + 4} + 2\ln\left|\frac{x + \sqrt{x^2 + 4}}{2}\right|
+$$</p>
+<p>$$
+y = \frac{1}{x^2 + 1}\left[\frac{x\sqrt{x^2 + 4}}{2} + 2\ln\left(\frac{x + \sqrt{x^2 + 4}}{2}\right)\right] \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_25" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 12</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2023 (Delhi/AI Set 65/4/1), 5 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<p>Find the particular </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of the differential equation:</p>
+<p>$$
+x \frac{dy}{dx} - y + x \sin\left(\frac{y}{x}\right) = 0
+$$</p>
+<p>given that $y = \frac{\pi}{2}$ when $x = 1$.</p>
+<h4>Model Solution:</h4>
+<ol>
+<li><strong>Identify Homogeneous Form:</strong></li>
+</ol>
+<p>$$
+\frac{dy}{dx} = \frac{y}{x} - \sin\left(\frac{y}{x}\right) \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Substitute $y = vx \implies \frac{dy}{dx} = v + x\frac{dv}{dx}$:</strong></li>
+</ol>
+<p>$$
+v + x\frac{dv}{dx} = v - \sin v \implies x\frac{dv}{dx} = -\sin v \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Separate and Integrate:</strong></li>
+</ol>
+<p>$$
+\csc v\,dv = -\frac{dx}{x} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<p>$$
+\int \csc v\,dv = -\int \frac{dx}{x}
+$$</p>
+<p>$$
+\ln|\csc v - \cot v| = -\ln|x| + \ln C
+$$</p>
+<p>$$
+x(\csc v - \cot v) = C \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>Substitute $v = \frac{y}{x}$:</strong></li>
+</ol>
+<p>$$
+x\left[\csc\left(\frac{y}{x}\right) - \cot\left(\frac{y}{x}\right)\right] = C \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Evaluate $C$ using $x = 1, y = \frac{\pi}{2}$:</strong></li>
+</ol>
+<p>$$
+1 \cdot \left[\csc\left(\frac{\pi}{2}\right) - \cot\left(\frac{\pi}{2}\right)\right] = C \implies 1(1 - 0) = C \implies C = 1 \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<ol>
+<li><strong>Final Simplified Answer:</strong></li>
+</ol>
+<p>$$
+x \tan\left(\frac{y}{2x}\right) = 1 \implies \tan\left(\frac{y}{2x}\right) = \frac{1}{x} \quad \left[\frac{1}{2}\text{ Mark}\right]
+$$</p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_26" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 13</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2022 Term-2 / Compt 2023, 5 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>Find the general </p></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <p>solution of the differential equation:</p>
+<p>$$
+\left(x + 2y^2\right)\frac{dy}{dx} = y \quad (y > 0)
+$$</p>
+<h4>Model Solution:</h4>
+<ol>
+<li><strong>Invert to standard linear differential equation in $x$:</strong></li>
+</ol>
+<p>$$
+\frac{dx}{dy} = \frac{x + 2y^2}{y} \implies \frac{dx}{dy} - \frac{1}{y}x = 2y \quad \left[1\frac{1}{2}\text{ Marks}\right]
+$$</p>
+<p>Here $P(y) = -\frac{1}{y}$ and $Q(y) = 2y$.</p>
+<ol>
+<li><strong>Compute Integrating Factor:</strong></li>
+</ol>
+<p>$$
+\text{I.F.} = e^{\int -\frac{1}{y}\,dy} = e^{-\ln y} = \frac{1}{y} \quad [1\text{ Mark}]
+$$</p>
+<ol>
+<li><strong>General Solution Formula:</strong></li>
+</ol>
+<p>$$
+x \cdot (\text{I.F.}) = \int Q(y) \cdot (\text{I.F.})\,dy + C
+$$</p>
+<p>$$
+x \cdot \frac{1}{y} = \int 2y \cdot \frac{1}{y}\,dy + C = \int 2\,dy + C
+$$</p>
+<p>$$
+\frac{x}{y} = 2y + C \implies x = 2y^2 + Cy \quad \left[2\frac{1}{2}\text{ Marks}\right]
+$$</p>
+<hr />
+<h2>SECTION E: 4-MARK CASE-BASED / PASSAGE INTEGRATED QUESTIONS</h2>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_27" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question 14</p></div>
+                    <div class="question-text"><p><strong><span class="step-mark-tag">[CBSE 2024 / SQP 2023-24, 4 Marks]</span></strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> [Must-Know]</p>
+<h4>Case Passage:</h4>
+<p>A biologist observes the growth of a bacterial colony. The rate of increase of bacteria is directly proportional to the number of bacteria $N(t)$ present at any time $t$ (in hours):</p>
+<p>$$
+\frac{dN}{dt} = k N
+$$</p>
+<p>At $t = 0$, the initial count was $1000$. After $2$ hours, the population reached $4000$.</p>
+<h4>Questions:</h4>
+<ol>
+<li>Solve the differential equation and write the formula for $N(t)$ in terms of $k$ and $t$. <strong><span class="step-mark-tag">[1 Mark]</span></strong></li>
+<li>Find the value of constant $k$. <strong><span class="step-mark-tag">[1 Mark]</span></strong></li>
+<li>Find the bacterial population after $3$ hours. <strong><span class="step-mark-tag">[2 Marks]</span></strong><br />
+<em>(OR)</em><br />
+   Determine the time taken for the population to reach $16000$. <strong><span class="step-mark-tag">[2 Marks]</span></strong></li>
+</ol>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4>Model Solution:</h4>
+<h4>Sub-part (1):</h4>
+<p>$$
+\frac{dN}{N} = k\,dt \implies \ln N = kt + C_1 \implies N(t) = C e^{kt}
+$$</p>
+<p>At $t = 0, N = 1000 \implies C = 1000$.</p>
+<p>$$
+N(t) = 1000 e^{kt} \quad [1\text{ Mark}]
+$$</p>
+<h4>Sub-part (2):</h4>
+<p>At $t = 2, N = 4000$:</p>
+<p>$$
+4000 = 1000 e^{2k} \implies e^{2k} = 4
+$$</p>
+<p>$$
+2k = \ln 4 = 2\ln 2 \implies k = \ln 2 \approx 0.693 \quad [1\text{ Mark}]
+$$</p>
+<h4>Sub-part (3):</h4>
+<p>$$
+N(t) = 1000 (e^{\ln 2})^t = 1000 \cdot 2^t \quad [1\text{ Mark}]
+$$</p>
+<p>For $t = 3$:</p>
+<p>$$
+N(3) = 1000 \cdot 2^3 = 8000 \text{ bacteria} \quad [1\text{ Mark}]
+$$</p>
+<p><em>(OR Option)</em></p>
+<h4>Sub-part (3) Alternative:</h4>
+<p>$$
+16000 = 1000 \cdot 2^t \quad [1\text{ Mark}]
+$$</p>
+<p>$$
+2^t = 16 = 2^4 \implies t = 4 \text{ hours} \quad [1\text{ Mark}]
+$$</p>
+<hr />
+<h3>💡 Examiner's Master Key Points for Differential Equations:</h3>
+<ol>
+<li><strong>Degree Validity Check:</strong> Ensure the differential equation is polynomial in all its derivatives before assigning degree.</li>
+<li><strong>Homogeneity Verification:</strong> In board marking schemes, writing $F(\lambda x, \lambda y) = \lambda^0 F(x, y)$ guarantees $1$ mark.</li>
+<li><strong>Form Selection:</strong> If $\frac{dy}{dx}$ has variables coupled in denominators, invert it to test for linear in $x$: $\frac{dx}{dy} + P(y)x = Q(y)$.</li>
+</ol>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+          </div>
+
+          <!-- TAB 4: Examiner Traps & Speed Hacks -->
+          <div id="panel-traps" class="view-panel">
+            
+              <div class="whiteboard-card trap-module-wrap">
+                <div class="sticky-note red" style="margin-bottom: 1.5rem;">
+                  <div class="sticky-title">⚠️ Examiner Traps &amp; Speed Hacks</div>
+                  Master these critical board traps to prevent negative marks and avoidable slips.
+                </div>
+                <h1>Speed Hacks, Examiner Traps, Common Evaluation Mistakes &amp; Golden Points to Remember</h1>
+<h1>CBSE Class 12 Mathematics: Differential Equations</h1>
+<h3>Senior Examiner's Blueprint: Speed Hacks, Traps, Board Deduction Pitfalls &amp; Formula Bank</h3>
+<hr />
+<h2>1. Speed Hacks &amp; Fast Solving Shortcuts</h2>
+<h3>1. Inspection &amp; Exact Differential Forms</h3>
+<p>Before converting a differential equation into standard Linear or Homogeneous form, check if it can be grouped into an exact differential $d(u) = 0$:
+* <strong>$x\,dy + y\,dx = d(xy)$</strong>
+* <strong>$\dfrac{x\,dy - y\,dx}{x^2} = d\left(\dfrac{y}{x}\right)$</strong> $\quad\implies\quad x\,dy - y\,dx = x^2\,d\left(\dfrac{y}{x}\right) = -y^2\,d\left(\dfrac{x}{y}\right)$
+* <strong>$\dfrac{x\,dy - y\,dx}{xy} = d\left(\ln\left|\dfrac{y}{x}\right|\right)$</strong>
+* <strong>$\dfrac{x\,dy - y\,dx}{x^2 + y^2} = d\left(\tan^{-1}\left(\dfrac{y}{x}\right)\right)$</strong>
+* <strong>$\dfrac{x\,dx + y\,dy}{\sqrt{x^2+y^2}} = d\left(\sqrt{x^2+y^2}\right)$</strong> $\quad$ and $\quad x\,dx + y\,dy = \dfrac{1}{2}d(x^2+y^2)$</p>
+<blockquote>
+<p><strong>Shortcut in Action:</strong><br />
+Solve $(x + 2y^3)\dfrac{dy}{dx} = y$.<br />
+Rearrange: $x\,dy - y\,dx + 2y^3\,dy = 0 \implies -\dfrac{y\,dx - x\,dy}{y^2} + 2y\,dy = 0 \implies -d\left(\dfrac{x}{y}\right) + d(y^2) = 0$.<br />
+Directly integrate: $-\dfrac{x}{y} + y^2 = C \implies y^3 - x = Cy$. <em>(Saves 4–5 steps of converting to $\frac{dx}{dy} + P_1 x = Q_1$)</em>.</p>
+</blockquote>
+<hr />
+<h3>2. Identifying Linear Differential Equations (LDE) in $x$ vs $y$</h3>
+<ul>
+<li>Look at the degree of variables:</li>
+<li>If $y$ appears only to the power $1$ (and not inside functions like $\sin y, e^y, \ln y$), it is linear in $y$:</li>
+</ul>
+<p>$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$</p>
+<ul>
+<li>If $x$ appears only to the power $1$, it is linear in $x$:</li>
+</ul>
+<p>$$
+\frac{dx}{dy} + P_1(y)x = Q_1(y)
+$$</p>
+<ul>
+<li><strong>Quick Test:</strong> If $\dfrac{dy}{dx} = \dfrac{y}{f(x, y)}$ where denominator cannot be split, take the reciprocal $\dfrac{dx}{dy}$ immediately.</li>
+</ul>
+<hr />
+<h3>3. Rapid Integrating Factor ($\text{I.F.}$) Rules</h3>
+<p>Use exponential-logarithm properties directly:
+* $e^{\int \frac{k}{x}\,dx} = e^{k\ln|x|} = e^{\ln|x|^k} = x^k$
+* $e^{\int \tan x\,dx} = e^{\ln|\sec x|} = \sec x$
+* $e^{-\int \tan x\,dx} = e^{-\ln|\sec x|} = e^{\ln|\cos x|} = \cos x$
+* $e^{\int \cot x\,dx} = e^{\ln|\sin x|} = \sin x$
+* $e^{-\int \cot x\,dx} = \csc x$
+* $e^{\int \frac{1}{1+x^2}\,dx} = e^{\tan^{-1}x}$
+* $e^{\int \frac{2x}{1+x^2}\,dx} = e^{\ln(1+x^2)} = 1+x^2$</p>
+<hr />
+<h3>4. Homogeneous Equations: Quick $y = vx$ Substitution Check</h3>
+<ul>
+<li>Test degree mentally: $f(\lambda x, \lambda y) = \lambda^0 f(x,y)$.</li>
+<li>When substituting $y = vx \implies \dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$:</li>
+</ul>
+<p>$$
+\text{Resulting form always separates directly as: } \frac{dv}{F(v) - v} = \frac{dx}{x}
+$$</p>
+<ul>
+<li>Calculate $F(v) - v$ first to avoid algebraic mistakes.</li>
+</ul>
+<hr />
+<h2>2. Examiner Traps &amp; Common Board Evaluation Mistakes</h2>
+<h3>1. Order and Degree Traps</h3>
+<ul>
+<li><strong>Trap 1: Non-polynomial derivatives.</strong><br />
+  If the differential equation contains terms like $\sin\left(\frac{dy}{dx}\right)$, $e^{\frac{dy}{dx}}$, or $\ln\left(\frac{dy}{dx}\right)$ that <strong>cannot</strong> be cleared via algebraic manipulation:</li>
+</ul>
+<p>$$
+\text{Order is defined, but Degree is \textbf{NOT DEFINED}}.
+$$</p>
+<ul>
+<li>Example: $\dfrac{d^2y}{dx^2} + \cos\left(\dfrac{dy}{dx}\right) = 0 \implies \text{Order} = 2, \text{Degree} = \text{Not Defined}$.</li>
+<li>Contrast: $\sin\left(\dfrac{dy}{dx}\right) = c \implies \dfrac{dy}{dx} = \sin^{-1}(c)$, which <strong>is</strong> a polynomial in derivatives $\implies \text{Order} = 1, \text{Degree} = 1$.</li>
+<li><strong>Trap 2: Radicals/Fractions.</strong>  </li>
+</ul>
+<p>$$
+\left[1 + \left(\frac{dy}{dx}\right)^2\right]^{3/2} = k\frac{d^2y}{dx^2}
+$$</p>
+<p>Must be squared to clear fractional powers before identifying degree:  </p>
+<p>$$
+\left[1 + \left(\frac{dy}{dx}\right)^2\right]^3 = k^2\left(\frac{d^2y}{dx^2}\right)^2 \implies \text{Order} = 2, \text{Degree} = 2.
+$$</p>
+<hr />
+<h3>2. The Arbitrary Constant Pitfall ($+ C$)</h3>
+<ul>
+<li>Missing $+C$ during the integration step costs <strong>$1$ full mark</strong>.</li>
+<li><strong>LDE Trap:</strong> In solving $y \cdot (\text{I.F.}) = \int Q \cdot (\text{I.F.})\,dx + C$, students often write:</li>
+</ul>
+<p>$$
+y = \frac{\int Q \cdot (\text{I.F.})\,dx}{\text{I.F.}} + C \quad \mathbf{[FATAL ERROR]}
+$$</p>
+<p>The constant $C$ must also be divided by $\text{I.F.}$:</p>
+<p>$$
+y = \frac{1}{\text{I.F.}}\left[ \int Q \cdot (\text{I.F.})\,dx + C \right]
+$$</p>
+<ul>
+<li>In homogeneous equations, write $+ C$ (or $\ln C$) as soon as integrals are evaluated, not at the very end.</li>
+</ul>
+<hr />
+<h3>3. Absolute Value Signs in Logarithms</h3>
+<ul>
+<li>Writing $\int \frac{1}{x}\,dx = \ln x$ instead of $\ln|x|$ leads to deduction when determining particular solutions with negative initial conditions (e.g., $y(1) = -2$).</li>
+<li>Always use:</li>
+</ul>
+<p>$$
+\int \frac{1}{x}\,dx = \ln|x| + C
+$$</p>
+<hr />
+<h3>4. Particular Solution &amp; Step Marking Checklist</h3>
+<p>Examiners use the following typical 5-mark distribution:
+1. <strong>Form Identification &amp; Setup</strong> ($1$ mark): Stating the type (e.g., "Given equation is a linear differential equation of the form $\frac{dy}{dx} + Py = Q$ where $P = \dots, Q = \dots$").
+2. <strong>Integrating Factor / Substitution</strong> ($1$ mark): Explicit computation of $\text{I.F.} = e^{\int P\,dx}$ or substitution $y = vx, \frac{dy}{dx} = v + x\frac{dv}{dx}$.
+3. <strong>General Solution Integration</strong> ($1.5$ marks): Correct execution of $\int Q \cdot (\text{I.F.})\,dx$ with $+ C$.
+4. <strong>Initial Value Substitution</strong> ($1$ mark): Substituting $x = x_0, y = y_0$ and solving for $C$.
+5. <strong>Final Clean Form</strong> ($0.5$ mark): Re-substituting $C$ back into the general solution.</p>
+<hr />
+<h2>3. Golden Points to Remember (NCERT Theorems &amp; Edge Cases)</h2>
+<ol>
+<li><strong>Number of Arbitrary Constants:</strong></li>
+<li><strong>General Solution</strong> of an $n$-th order differential equation contains exactly <strong>$n$</strong> independent arbitrary constants.</li>
+<li><strong>Particular Solution</strong> contains <strong>$0$</strong> arbitrary constants.</li>
+<li>
+<p><em>MCQ Trick Question:</em> "The number of arbitrary constants in the general solution of a 4th order differential equation is 4. In a particular solution of the same equation, it is 0."</p>
+</li>
+<li>
+<p><strong>Homogeneous Function Definition Verification:</strong></p>
+</li>
+<li>When asked to <em>"Show that the differential equation is homogeneous and solve it"</em>, CBSE requires proving homogeneity first:</li>
+</ol>
+<p>$$
+F(\lambda x, \lambda y) = \lambda^0 F(x, y)
+$$</p>
+<ul>
+<li>
+<p>Skipping this proof deducts <strong>$1$ mark</strong>, even if the differential equation is solved correctly.</p>
+</li>
+<li>
+<p><strong>Domain &amp; Boundary Points:</strong></p>
+</li>
+<li>
+<p>In equations involving $\frac{dx}{dy} + P_1 x = Q_1$, identify variables carefully. A frequent error is writing $x \cdot (\text{I.F.}) = \int Q_1 \cdot (\text{I.F.})\,dx$ instead of $dy$.</p>
+</li>
+<li>
+<p><strong>Singular Solutions (NCERT Appendix Context):</strong></p>
+</li>
+<li>Solutions that cannot be obtained from the general solution by assigning any value to the arbitrary constant are called <em>singular solutions</em>. CBSE tests only general and particular solutions.</li>
+</ul>
+<hr />
+<h2>4. Comprehensive Formula Bank &amp; Identity Checklist</h2>
+<h3>Governing Formulas for Differential Equations</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Differential Equation Type</th>
+<th style="text-align: left;">Standard Form</th>
+<th style="text-align: left;">Transformation / Key Step</th>
+<th style="text-align: left;">General Solution Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Variable Separable</strong></td>
+<td style="text-align: left;">$f(x)\,dx + g(y)\,dy = 0$</td>
+<td style="text-align: left;">Direct separation</td>
+<td style="text-align: left;">$\int f(x)\,dx + \int g(y)\,dy = C$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Reducible to Separable</strong></td>
+<td style="text-align: left;">$\dfrac{dy}{dx} = f(ax + by + c)$</td>
+<td style="text-align: left;">Put $z = ax + by + c \implies \dfrac{dz}{dx} = a + b\dfrac{dy}{dx}$</td>
+<td style="text-align: left;">$\int \dfrac{dz}{a + b\,f(z)} = x + C$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Homogeneous Type I</strong></td>
+<td style="text-align: left;">$\dfrac{dy}{dx} = F\left(\dfrac{y}{x}\right)$</td>
+<td style="text-align: left;">Put $y = vx \implies \dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$</td>
+<td style="text-align: left;">$\int \dfrac{dv}{F(v) - v} = \int \dfrac{dx}{x} + C$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Homogeneous Type II</strong></td>
+<td style="text-align: left;">$\dfrac{dx}{dy} = F\left(\dfrac{x}{y}\right)$</td>
+<td style="text-align: left;">Put $x = vy \implies \dfrac{dx}{dy} = v + y\dfrac{dv}{dy}$</td>
+<td style="text-align: left;">$\int \dfrac{dv}{F(v) - v} = \int \dfrac{dy}{y} + C$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Linear in $y$</strong></td>
+<td style="text-align: left;">$\dfrac{dy}{dx} + P(x)y = Q(x)$</td>
+<td style="text-align: left;">$\text{I.F.} = e^{\int P(x)\,dx}$</td>
+<td style="text-align: left;">$y \cdot (\text{I.F.}) = \int \left(Q(x) \cdot \text{I.F.}\right)dx + C$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Linear in $x$</strong></td>
+<td style="text-align: left;">$\dfrac{dx}{dy} + P_1(y)x = Q_1(y)$</td>
+<td style="text-align: left;">$\text{I.F.} = e^{\int P_1(y)\,dy}$</td>
+<td style="text-align: left;">$x \cdot (\text{I.F.}) = \int \left(Q_1(y) \cdot \text{I.F.}\right)dy + C$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Core Integration Results Frequently Needed in Differential Equations</h3>
+<p>$$
+\int \tan x\,dx = \ln|\sec x| + C
+$$</p>
+<p>$$
+\int \cot x\,dx = \ln|\sin x| + C
+$$</p>
+<p>$$
+\int \sec x\,dx = \ln|\sec x + \tan x| + C
+$$</p>
+<p>$$
+\int \csc x\,dx = \ln|\csc x - \cot x| + C
+$$</p>
+<p>$$
+\int \frac{1}{a^2 + x^2}\,dx = \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right) + C
+$$</p>
+<p>$$
+\int \frac{1}{x^2 - a^2}\,dx = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| + C
+$$</p>
+<p>$$
+\int \frac{1}{a^2 - x^2}\,dx = \frac{1}{2a}\ln\left|\frac{a+x}{a-x}\right| + C
+$$</p>
+<p>$$
+\int \frac{1}{\sqrt{a^2 - x^2}}\,dx = \sin^{-1}\left(\frac{x}{a}\right) + C
+$$</p>
+<p>$$
+\int \frac{1}{\sqrt{x^2 \pm a^2}}\,dx = \ln\left|x + \sqrt{x^2 \pm a^2}\right| + C
+$$</p>
+<p>$$
+\int e^{ax}\sin(bx)\,dx = \frac{e^{ax}}{a^2 + b^2}\Big(a\sin(bx) - b\cos(bx)\Big) + C
+$$</p>
+<p>$$
+\int e^{ax}\cos(bx)\,dx = \frac{e^{ax}}{a^2 + b^2}\Big(a\cos(bx) + b\sin(bx)\Big) + C
+$$</p>
+<hr />
+              </div>
+            
+          </div>
+
+          <!-- TAB 5: Advanced Studies (Segregated Beyond NCERT Core) -->
+          
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Chapter Footer -->
+  <footer class="portal-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>CBSE Class 12 Mathematics &bull; Differential Equations</h3>
+        <p>Curated strictly per NCERT syllabus guidelines and official CBSE marking schemes</p>
+      </div>
+
+      <div class="powered-by-wrap">
+        <div class="powered-by-text">
+          <span>⚡</span> Powered By Kedar's Academy
+        </div>
+      </div>
+
+      <button class="footer-contact-trigger contact-modal-trigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Connect with Kedar Krishna / Offline Teaching Centers</span>
+      </button>
+
+      <p class="copyright-sub">&copy; 2026 Kedar's Academy. All rights reserved. Dedicated to conceptual excellence in CBSE &amp; JEE Mathematics.</p>
+    </div>
+  </footer>
+
+  
+  <!-- Contact Information & Feedback Modal -->
+  <div id="contactModal" class="contact-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="contactModalTitle">
+    <div class="contact-modal-container">
+      <div class="contact-modal-header">
+        <div class="contact-header-text">
+          <h3 id="contactModalTitle">Instructor Contact &amp; Centers</h3>
+          <p>Get in touch with Kedar Krishna for classes, doubt clearing, or engine feedback</p>
+        </div>
+        <button id="closeContactModal" class="contact-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="contact-modal-body">
+        <!-- Instructor Details Card -->
+        <div class="instructor-card">
+          <div class="contact-avatar">
+            <span>KA</span>
+          </div>
+          <div class="contact-details">
+            <div class="instructor-name">Kedar Krishna</div>
+            <div class="instructor-role">Chemistry Educator &bull; CBSE &amp; JEE Specialist</div>
+            <a href="mailto:chemistrykedar@gmail.com" class="contact-email-link" title="Click to send an email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              chemistrykedar@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Teaching Centers -->
+        <div class="centers-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Teaching Centers (Bhubaneswar)
+          </div>
+          <div class="centers-grid">
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 1</span>
+                <span class="center-title">Arundhati Vihar</span>
+              </div>
+              <div class="center-address">
+                Jagasera, near Paikarapur, Bhubaneswar, Khordha &ndash; <strong class="center-pin">752054</strong>
+              </div>
+            </div>
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 2</span>
+                <span class="center-title">Jagannath Vihar</span>
+              </div>
+              <div class="center-address">
+                Lane-1, near Fire station, Bhubaneswar &ndash; <strong class="center-pin">751003</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback / Ask Doubt Form -->
+        <div class="feedback-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Ask a Doubt / Direct Message
+          </div>
+          <form id="feedbackForm" class="feedback-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fbName">Your Name</label>
+                <input type="text" id="fbName" class="form-input" placeholder="e.g. Student Name" required>
+              </div>
+              <div class="form-group">
+                <label for="fbClass">Target / Standard</label>
+                <select id="fbClass" class="form-input">
+                  <option value="Class 12">Class 12 CBSE Board</option>
+                  <option value="Class 11">Class 11 CBSE Foundation</option>
+                  <option value="JEE Main / Adv">JEE Main / Advanced Aspirant</option>
+                  <option value="Parent / Inquiry">Parent / General Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fbSubject">Topic / Question Reference</label>
+              <input type="text" id="fbSubject" class="form-input" placeholder="e.g. Doubt in Calculus / Matrix Inverses" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fbMessage">Your Doubt / Message</label>
+              <textarea id="fbMessage" class="form-input form-textarea" rows="3" placeholder="Describe your doubt, query, or feedback here..." required></textarea>
+            </div>
+
+            <button type="submit" class="feedback-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Send Message to Kedar Krishna
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Interactive Whiteboard Scratchpad Drawer -->
+  <div id="scratchpadModal">
+    <div class="scratchpad-header">
+      <div class="scratchpad-title">
+        <span>✏️</span> Student Whiteboard Scribble Pad
+      </div>
+      <button id="scratchpadCloseBtn" class="scratchpad-btn" title="Close Scratchpad">&times;</button>
+    </div>
+    <div class="scratchpad-toolbar">
+      <button id="toolPen" class="scratchpad-btn active">Pen</button>
+      <button id="toolHighlighter" class="scratchpad-btn">Highlighter</button>
+      <button id="toolEraser" class="scratchpad-btn">Eraser</button>
+      <span style="font-size: 0.8rem; color: #64748b; margin-left: 0.4rem;">Color:</span>
+      <div class="color-dot active" data-color="#1e293b" style="background: #1e293b;" title="Charcoal"></div>
+      <div class="color-dot" data-color="#1d4ed8" style="background: #1d4ed8;" title="Royal Blue"></div>
+      <div class="color-dot" data-color="#dc2626" style="background: #dc2626;" title="Red Marker"></div>
+      <div class="color-dot" data-color="#15803d" style="background: #15803d;" title="Green"></div>
+      <div class="color-dot" data-color="#7e22ce" style="background: #7e22ce;" title="Purple"></div>
+      <input type="range" id="scratchpadSize" min="1" max="15" value="3" style="width: 60px; margin-left: auto;" title="Stroke Size">
+      <button id="scratchpadUndoBtn" class="scratchpad-btn">Undo</button>
+      <button id="scratchpadClearBtn" class="scratchpad-btn" style="color: #dc2626;">Clear</button>
+    </div>
+    <div class="scratchpad-canvas-wrap">
+      <canvas id="scratchpadCanvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Floating Scratchpad Trigger Button -->
+  <button id="scratchpadToggleBtn" class="btn-scratchpad-toggle" title="Open Whiteboard Scratchpad to Solve Problems">
+    <span>✏️</span> Whiteboard Pad
+  </button>
+
+  <!-- Core JavaScript Modules -->
+  <script src="../../assets/js/whiteboard-animations.js"></script>
+  <script src="../../assets/js/whiteboard-scratchpad.js"></script>
+  <script src="../../assets/js/search-engine.js"></script>
+  <script src="../../assets/js/contact-modal.js"></script>
+  <script src="../../assets/js/chapter-engine.js"></script>
+</body>
+</html>

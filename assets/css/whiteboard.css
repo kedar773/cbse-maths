@@ -1,0 +1,1242 @@
+/* ==========================================================================
+   CBSE MATHEMATICS WHITEBOARD THEME
+   Engineered for CBSE Class 11 & 12 • NCERT Strict Standard
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap');
+
+:root {
+  /* Whiteboard Palette */
+  --board-bg: #f8fafc;
+  --board-canvas: #ffffff;
+  --board-card: #ffffff;
+  --board-border: #e2e8f0;
+  --board-bezel: #94a3b8;
+  --board-shadow: 0 4px 20px -2px rgba(30, 41, 59, 0.08);
+  --board-shadow-lg: 0 10px 30px -4px rgba(30, 41, 59, 0.12);
+
+  /* Dry-Erase Marker Inks */
+  --marker-black: #1e293b;
+  --marker-slate: #475569;
+  --marker-blue: #1d4ed8;
+  --marker-blue-light: #3b82f6;
+  --marker-blue-bg: rgba(29, 78, 216, 0.06);
+  --marker-red: #dc2626;
+  --marker-red-light: #ef4444;
+  --marker-red-bg: rgba(220, 38, 38, 0.07);
+  --marker-green: #15803d;
+  --marker-green-light: #22c55e;
+  --marker-green-bg: rgba(21, 128, 61, 0.08);
+  --marker-purple: #7e22ce;
+  --marker-purple-bg: rgba(126, 34, 206, 0.07);
+  --marker-amber: #d97706;
+  --marker-amber-bg: rgba(217, 119, 6, 0.09);
+
+  /* Sticky Notes */
+  --sticky-yellow: #fef9c3;
+  --sticky-yellow-border: #fde047;
+  --sticky-blue: #e0f2fe;
+  --sticky-blue-border: #7dd3fc;
+  --sticky-green: #dcfce7;
+  --sticky-green-border: #86efac;
+  --sticky-pink: #fce7f3;
+  --sticky-pink-border: #f472b6;
+
+  /* Typography */
+  --font-hand: 'Patrick Hand', cursive, sans-serif;
+  --font-marker: 'Caveat', cursive, sans-serif;
+  --font-title: 'Kalam', cursive, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Grid Settings */
+  --grid-dots: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  --grid-size: 24px 24px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  background-color: var(--board-bg);
+  color: var(--marker-black);
+  line-height: 1.68;
+  min-height: 100vh;
+  position: relative;
+  background-image: var(--grid-dots);
+  background-size: var(--grid-size);
+  transition: background-image 0.3s ease;
+}
+
+/* Grid Pattern Variations */
+body.pattern-graph {
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.4) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+body.pattern-blank {
+  background-image: none;
+}
+
+/* Selection Highlight */
+::selection {
+  background: #fef08a;
+  color: #1e293b;
+}
+
+/* Custom Whiteboard Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Typography Hierarchy with Vivid Marker Gradients */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  line-height: 1.3;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  background: linear-gradient(135deg, #7c2d12 0%, #dc2626 50%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  background: linear-gradient(135deg, #0f766e 0%, #059669 50%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #4c1d95 0%, #7e22ce 50%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0.75rem;
+}
+
+p, li, span, button, input {
+  font-family: var(--font-hand);
+}
+
+p {
+  font-size: 1.15rem;
+  margin-bottom: 0.95rem;
+}
+
+li {
+  font-size: 1.12rem;
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--marker-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-family: var(--font-hand);
+}
+a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Classroom Whiteboard Frame & Bezel
+   ========================================================================== */
+.board-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 5rem;
+  position: relative;
+}
+
+.whiteboard-frame {
+  background: var(--board-canvas);
+  border: 3px solid #cbd5e1;
+  border-radius: 18px;
+  box-shadow: 
+    0 0 0 1px #e2e8f0,
+    0 12px 35px -5px rgba(30, 41, 59, 0.12);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Simulated Whiteboard Top Screws & Aluminum Edge */
+.whiteboard-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #94a3b8, #e2e8f0, #94a3b8);
+  border-bottom: 1px solid #cbd5e1;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Classroom Sticky Notes
+   ========================================================================== */
+.sticky-note {
+  background: var(--sticky-yellow);
+  border: 1px solid var(--sticky-yellow-border);
+  border-radius: 6px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  position: relative;
+  margin: 1.5rem 0;
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: #334155;
+  transform: rotate(-0.75deg);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky Tape Header */
+.sticky-note::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(2px);
+  border: 1px dashed rgba(203, 213, 225, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.sticky-note.blue {
+  background: var(--sticky-blue);
+  border-color: var(--sticky-blue-border);
+  transform: rotate(0.8deg);
+  color: #1e3a8a;
+}
+.sticky-note.green {
+  background: var(--sticky-green);
+  border-color: var(--sticky-green-border);
+  transform: rotate(-0.5deg);
+  color: #14532d;
+}
+.sticky-note.pink {
+  background: var(--sticky-pink);
+  border-color: var(--sticky-pink-border);
+  transform: rotate(1deg);
+  color: #831843;
+}
+.sticky-note.purple {
+  background: #f3e8ff;
+  border-color: #d8b4fe;
+  transform: rotate(-0.8deg);
+  color: #581c87;
+}
+
+.sticky-note .sticky-title {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sticky-note.yellow .sticky-title { color: #854d0e; }
+.sticky-note.blue .sticky-title { color: #1e40af; }
+.sticky-note.green .sticky-title { color: #15803d; }
+.sticky-note.pink .sticky-title { color: #be185d; }
+.sticky-note.purple .sticky-title { color: #6b21a8; }
+
+/* Multi-Color Typography for Sticky Notes & Whiteboard Highlights */
+.sticky-text-red { color: #dc2626 !important; font-weight: 700; }
+.sticky-text-blue { color: #1d4ed8 !important; font-weight: 700; }
+.sticky-text-green { color: #15803d !important; font-weight: 700; }
+.sticky-text-purple { color: #7e22ce !important; font-weight: 700; }
+.sticky-text-amber { color: #b45309 !important; font-weight: 700; }
+.sticky-text-navy { color: #1e3a8a !important; font-weight: 700; }
+.sticky-highlight {
+  background: rgba(254, 240, 138, 0.85);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Teacher Formula Cards
+   ========================================================================== */
+.formula-board-card {
+  background: #ffffff;
+  border: 2px solid #bfdbfe;
+  border-left: 6px solid var(--marker-blue);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.05);
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formula-board-card:hover {
+  border-color: var(--marker-blue);
+  box-shadow: 0 6px 22px rgba(29, 78, 216, 0.1);
+}
+
+.formula-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 0.6rem;
+}
+
+.formula-card-title {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--marker-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formula-latex-display {
+  font-size: 1.15rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 8px;
+  margin: 0.75rem 0;
+}
+
+.formula-annotations {
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  color: var(--marker-slate);
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   CBSE Official Step-Marking Scheme Rubric
+   ========================================================================== */
+.marking-rubric-card {
+  background: #f0fdf4;
+  border: 2px dashed var(--marker-green);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+  position: relative;
+}
+
+.marking-rubric-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.marking-rubric-title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--marker-green);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.step-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(21, 128, 61, 0.15);
+}
+.step-row:last-child {
+  border-bottom: none;
+}
+
+.step-mark-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #15803d, #166534) !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  font-weight: 700 !important;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.3);
+  vertical-align: middle;
+}
+.step-mark-tag, .step-mark-tag * {
+  color: #ffffff !important;
+}
+
+.step-explanation {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+.evaluator-trap-note {
+  background: var(--marker-red-bg);
+  border-left: 4px solid var(--marker-red);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: #991b1b;
+}
+
+/* ==========================================================================
+   Examiner Traps & Speed Hacks
+   ========================================================================== */
+.trap-card {
+  background: #fff5f5;
+  border: 2px solid #fecaca;
+  border-left: 6px solid var(--marker-red);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.trap-card h3 {
+  color: var(--marker-red);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.speed-hack-card {
+  background: #faf5ff;
+  border: 2px solid #e9d5ff;
+  border-left: 6px solid var(--marker-purple);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.speed-hack-card h3 {
+  color: var(--marker-purple);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   Advanced Studies Section (Segregated Beyond NCERT Core)
+   ========================================================================== */
+.advanced-scope-banner {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  color: #e0e7ff;
+  border-radius: 14px;
+  padding: 1.4rem 1.8rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 6px 20px rgba(49, 46, 129, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.advanced-scope-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.advanced-scope-text h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.advanced-scope-text p {
+  color: #c7d2fe;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Interactive Whiteboard Scratchpad Drawer
+   ========================================================================== */
+#scratchpadModal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: min(520px, 94vw);
+  height: 480px;
+  background: #ffffff;
+  border: 3px solid #64748b;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transform: translateY(120%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease;
+}
+
+#scratchpadModal.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scratchpad-header {
+  padding: 0.75rem 1rem;
+  background: #f1f5f9;
+  border-bottom: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 13px 13px 0 0;
+}
+
+.scratchpad-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scratchpad-toolbar {
+  padding: 0.5rem 0.75rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.scratchpad-canvas-wrap {
+  flex: 1;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+#scratchpadCanvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scratchpad-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-body);
+  transition: all 0.15s ease;
+}
+.scratchpad-btn:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px #cbd5e1;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.color-dot:hover {
+  transform: scale(1.2);
+}
+.color-dot.active {
+  box-shadow: 0 0 0 2px var(--marker-blue);
+  transform: scale(1.15);
+}
+
+/* Floating Scratchpad Trigger Button */
+.btn-scratchpad-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--marker-blue);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.35rem;
+  border-radius: 30px;
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.35);
+  cursor: pointer;
+  z-index: 990;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-scratchpad-toggle:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(29, 78, 216, 0.45);
+}
+
+/* ==========================================================================
+   Responsive & Print Optimizations
+   ========================================================================== */
+@media (max-width: 768px) {
+  .board-container {
+    padding: 1rem 0.75rem 4.5rem;
+  }
+  .sticky-note {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+  .formula-latex-display {
+    font-size: 1rem;
+  }
+  #scratchpadModal {
+    width: 100vw;
+    height: 60vh;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px 16px 0 0;
+  }
+  .btn-scratchpad-toggle {
+    bottom: 16px;
+    right: 16px;
+    padding: 0.65rem 1.1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+  }
+  .whiteboard-frame {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  .btn-scratchpad-toggle, #scratchpadModal, .chapter-tabs-bar {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   PORTAL BRANDING & STACKED HERO MESSAGE
+   ========================================================================== */
+.portal-corner-contact {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #1d4ed8;
+  border: 1.5px solid #93c5fd;
+  border-radius: 20px;
+  font-family: var(--font-title);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.12);
+  z-index: 50;
+}
+
+.portal-corner-contact:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  color: #ffffff;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
+}
+
+@media (max-width: 640px) {
+  .portal-corner-contact {
+    position: static;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.portal-brand-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.stacked-brand-line1 {
+  font-family: var(--font-marker);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  color: #1e3a8a;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 6px rgba(30, 58, 138, 0.1);
+  margin-bottom: 0.1rem;
+}
+
+.stacked-brand-line2 {
+  font-family: var(--font-title);
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 60%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.portal-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+.portal-brand-icon {
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 1.5px solid #bfdbfe;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.1);
+}
+
+.portal-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-brand-main {
+  font-family: var(--font-title);
+  font-size: 1.32rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.portal-brand-sub {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.portal-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #1d4ed8;
+  border: 1.5px solid #93c5fd;
+  border-radius: 20px;
+  font-family: var(--font-title);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.12);
+}
+
+.btn-contact-icon:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  color: #ffffff;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
+}
+
+.btn-nav-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.95rem;
+  background: #f8fafc;
+  color: #475569;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 20px;
+  font-family: var(--font-title);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-nav-search:hover {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+/* ==========================================================================
+   PORTAL & CHAPTER FOOTER
+   ========================================================================== */
+.portal-footer {
+  background: #ffffff;
+  border-top: 2px solid #e2e8f0;
+  padding: 3rem 1.5rem 2.5rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-brand h3 {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.powered-by-wrap {
+  margin: 0.5rem 0;
+}
+
+.powered-by-text {
+  font-family: var(--font-marker);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #b91c1c;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fef2f2;
+  padding: 0.4rem 1.25rem;
+  border-radius: 24px;
+  border: 1.5px dashed #f87171;
+  box-shadow: 0 2px 8px rgba(185, 28, 28, 0.08);
+}
+
+.footer-contact-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 20px;
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.footer-contact-trigger:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+}
+
+.copyright-sub {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ==========================================================================
+   CONTACT DETAILS & FEEDBACK MODAL
+   ========================================================================== */
+.contact-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contact-modal-overlay.active {
+  display: flex;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.contact-modal-container {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  border: 2px solid #e2e8f0;
+  animation: modalPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.contact-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.4rem 1.6rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contact-header-text h3 {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem;
+}
+
+.contact-header-text p {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.contact-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.contact-close-btn:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.contact-modal-body {
+  padding: 1.4rem 1.6rem 1.8rem;
+}
+
+/* Instructor Card */
+.instructor-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: linear-gradient(135deg, #f8fafc, #eff6ff);
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 1.1rem;
+  margin-bottom: 1.4rem;
+}
+
+.contact-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.25);
+  flex-shrink: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor-name {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.instructor-role {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.35rem;
+}
+
+.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contact-email-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Teaching Centers Section */
+.centers-section {
+  margin-bottom: 1.4rem;
+}
+
+.modal-section-title {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.centers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .centers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.center-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+.center-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.center-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+}
+
+.center-title {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.center-address {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #64748b;
+}
+
+.center-pin {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* Feedback Form Section */
+.feedback-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.form-input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  background: #ffffff;
+  transition: border-color 0.15s;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.feedback-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.feedback-submit-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}

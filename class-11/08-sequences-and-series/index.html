@@ -1,0 +1,4443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 11 Sequences and Series // CBSE Mathematics Whiteboard</title>
+  <meta name="description" content="CBSE Class 11 Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for Sequences and Series.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/whiteboard.css">
+  <link rel="stylesheet" href="../../assets/css/whiteboard-animations.css">
+  <link rel="stylesheet" href="../../assets/css/chapter.css">
+  <link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css">
+  
+  <!-- KaTeX Engine -->
+  <script src="../../assets/vendor/katex/katex.min.js"></script>
+  <script src="../../assets/vendor/katex/contrib/auto-render.min.js"></script>
+</head>
+<body data-chapter-slug="class-11-08-sequences-and-series">
+
+  <!-- Whiteboard Top Reading Progress Bar -->
+  <div class="reading-progress-bar"></div>
+
+  <!-- Sticky Whiteboard Header -->
+  <header class="chapter-header">
+    <div class="chapter-nav-wrap">
+      <div class="chapter-nav-left">
+        <a href="../../index.html" class="back-link" title="Return to Portal Hub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Portal
+        </a>
+        <div class="chapter-meta">
+          <div class="chapter-breadcrumb">
+            <span>Class 11</span>
+            <span>&bull;</span>
+            <span class="badge-branch">Algebra</span>
+            <span>&bull;</span>
+            <span class="badge-priority">⭐⭐⭐⭐</span>
+          </div>
+          <h1>Sequences and Series</h1>
+        </div>
+      </div>
+
+      <div class="chapter-nav-right">
+        <button class="board-tool-btn contact-modal-trigger" title="Contact Kedar Krishna / Ask Doubt">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Contact
+        </button>
+        <button class="board-tool-btn open-search-trigger" title="Quick Search (Ctrl+K)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          Search <kbd style="font-size: 0.7rem; background: #e2e8f0; padding: 0.1rem 0.3rem; border-radius: 4px;">Ctrl+K</kbd>
+        </button>
+        <button id="gridToggleBtn" class="board-tool-btn" title="Switch Whiteboard Grid Pattern">
+          ⁝⁝ Grid: Dots
+        </button>
+        <button id="markCompletedBtn" class="board-tool-btn" title="Track Mastery">
+          ○ Mark Complete
+        </button>
+      </div>
+    </div>
+
+    <!-- 5-Tab Navigation Bar -->
+    <div class="chapter-tabs-bar">
+      <div class="chapter-tabs">
+        <button class="tab-item active" data-target="panel-concepts">
+          📋 NCERT Core Notes
+        </button>
+        <button class="tab-item" data-target="panel-examples">
+          💡 Solved Examples &amp; Step Marking
+        </button>
+        <button class="tab-item" data-target="panel-pyqs">
+          🎯 Board Exam PYQ Vault (2020–2025)
+        </button>
+        <button class="tab-item" data-target="panel-traps">
+          ⚠️ Examiner Traps &amp; Hacks
+        </button>
+        
+        <button class="tab-item tab-advanced" data-target="panel-advanced">
+          🚀 Advanced Studies (JEE Scope)
+        </button>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="board-container">
+    <div class="whiteboard-frame">
+      <div style="padding: 1.5rem 1.75rem;">
+
+        <!-- Panels Container -->
+        <div class="panels-container">
+          
+          <!-- TAB 1: NCERT Core Notes -->
+          <div id="panel-concepts" class="view-panel active">
+            <div class="sticky-note" style="margin-bottom: 2rem;">
+              <div class="sticky-title">📘 NCERT Classroom Notes: Sequences and Series</div>
+              Strictly aligned with current CBSE syllabus guidelines. Focus on fundamental definitions, intuitive proofs, and key identities.
+            </div>
+            
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note yellow" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Introduction to Sequences, Series, and Progression Fundamentals — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Introduction to Sequences, Series, and Progression Fundamentals</h1>
+<h1>Class 11 Mathematics — Senior Teaching Note</h1>
+<h2>Chapter: Sequences and Series</h2>
+<h3>Subtopic: Introduction to Sequences, Series, and Progression Fundamentals</h3>
+<hr />
+<h1>Section 1: In-Depth Pedagogical Theory &amp; Mathematical Intuition</h1>
+<h3>1.1 Formal Definition of a Sequence <span class="star-icon">⭐⭐⭐⭐⭐</span></h3>
+<p>In rigorous mathematical analysis and per the NCERT framework, a <strong>sequence</strong> is defined formally as a mapping:</p>
+<p>$$
+f: \mathbb{N} \to S
+$$</p>
+<p>where:
+- $\mathbb{N} = \{1, 2, 3, \dots\}$ is the set of natural numbers (the domain).
+- $S$ is any non-empty set of numbers, typically the set of real numbers $\mathbb{R}$ (the codomain). When $S \subseteq \mathbb{R}$, the sequence is called a <strong>real sequence</strong>.</p>
+<h4>Pedagogical Distinction: Function vs. Sequence</h4>
+<ul>
+<li>A real function $f(x)$ takes continuous inputs $x \in \mathbb{R}$ (e.g., $f(x) = x^2$ is an unbroken parabola).</li>
+<li>A sequence $a_n = f(n)$ is a discrete function evaluated solely at isolated, equally spaced integer points on the real line: $n = 1, 2, 3, \dots$. Geometrically, the graph of a sequence in the Cartesian plane is a collection of discrete lattice points:</li>
+</ul>
+<p>$$
+\{(1, a_1), (2, a_2), (3, a_3), \dots, (n, a_n), \dots\}
+$$</p>
+<p>No lines or curves join these points.</p>
+<pre><code>  a_n ^
+      |          • a_3 = 9
+      |
+      |      • a_2 = 4
+      |
+      |  • a_1 = 1
+      +------------------------&gt; n
+         1   2   3   4 ...
+    (Discrete points; never connect with a solid curve!)
+</code></pre>
+<h4>Notation and Classification</h4>
+<ul>
+<li><strong>Elements/Terms:</strong> The functional image $f(n)$ is denoted by $a_n$, $u_n$, or $T_n$, called the <strong>$n$-th term</strong> or <strong>general term</strong> of the sequence.</li>
+<li><strong>Whole Sequence Notation:</strong> Enclosed in brackets: $\{a_n\}_{n=1}^{\infty}$, $\langle a_n \rangle$, or simply $(a_n)$.</li>
+<li><strong>Finite Sequence:</strong> A sequence whose domain is a finite subset of natural numbers, $\{1, 2, 3, \dots, m\}$. It terminates with a definitive last term $a_m$.</li>
+<li><strong>Infinite Sequence:</strong> A sequence whose domain is the entire infinite set $\mathbb{N}$. It contains indefinitely many terms and never terminates.</li>
+</ul>
+<hr />
+<h3>1.2 Sequences, Progressions, and Patterns <span class="star-icon">⭐⭐⭐⭐</span></h3>
+<p>A common source of confusion among students is treating "sequence", "series", and "progression" as synonyms. They are mathematically distinct.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concept</th>
+<th style="text-align: left;">Formal Definition</th>
+<th style="text-align: left;">Defining Characteristic</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sequence</strong></td>
+<td style="text-align: left;">An ordered succession of numbers produced under an explicit rule or mapping $f: \mathbb{N} \to \mathbb{R}$.</td>
+<td style="text-align: left;">Requires an identifiable order. Does <em>not</em> require an algebraic formula.</td>
+<td style="text-align: left;">Sequence of prime numbers: $\langle 2, 3, 5, 7, 11, \dots \rangle$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Progression</strong></td>
+<td style="text-align: left;">A specialized sequence whose terms satisfy a rigid, uniform algebraic/analytical law.</td>
+<td style="text-align: left;">Every term $a_n$ can be expressed by an explicit formula, and consecutive terms satisfy invariant relations.</td>
+<td style="text-align: left;">Arithmetic Progression: $a_n = 3n + 1$</td>
+</tr>
+<tr>
+<td style="text-align: left;">Geometric Progression: $a_n = 2 \cdot 3^{n-1}$</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Series</strong></td>
+<td style="text-align: left;">The formal algebraic sum of the terms of a sequence: $\sum_{k=1}^{n} a_k$.</td>
+<td style="text-align: left;">An expression formed by connecting terms of a sequence with addition signs ($+$).</td>
+<td style="text-align: left;">$2 + 3 + 5 + 7 + 11 + \dots$</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Theorem of Inclusion:</strong> 
+<em>Every progression is a sequence, but every sequence is not necessarily a progression.</em>
+<em>Example:</em> The sequence of primes $\langle 2, 3, 5, 7, 11, 13, \dots \rangle$ has no explicit closed-form single algebraic polynomial mapping $n \mapsto p_n$, so it is not an algebraic progression, yet it is a well-defined sequence.</p>
+</blockquote>
+<hr />
+<h3>1.3 Methods of Specifying a Sequence <span class="star-icon">⭐⭐⭐⭐</span></h3>
+<p>There are three standard pedagogical methods to define a sequence:</p>
+<ol>
+<li><strong>Explicit (Closed-Form) Formula:</strong>
+   The $n$-th term is given as a direct function of $n$.</li>
+</ol>
+<p>$$
+a_n = \frac{(-1)^{n-1} \cdot n}{2^n + 1}
+$$</p>
+<p>Any arbitrary term (e.g., $a_{50}$) can be computed directly without knowing previous terms.</p>
+<ol>
+<li><strong>Recursive (Inductive) Definition / Difference Equation:</strong>
+   The initial term(s) are explicitly stated, and subsequent terms are expressed in terms of one or more preceding terms.</li>
+</ol>
+<p>$$
+\text{Fibonacci Sequence: } a_1 = 1, \; a_2 = 1, \quad a_n = a_{n-1} + a_{n-2} \quad \forall n \ge 3
+$$</p>
+<ol>
+<li><strong>Descriptive / Algorithmic Definition:</strong>
+   Terms are governed by a well-defined rule not reducible to a simple algebraic expression.</li>
+</ol>
+<p>$$
+d_n = \text{the } n\text{-th digit after the decimal point of } \pi \implies \langle 1, 4, 1, 5, 9, 2, 6, \dots \rangle
+$$</p>
+<hr />
+<h3>1.4 Formal Definition of a Series and Partial Sums <span class="star-icon">⭐⭐⭐⭐⭐</span></h3>
+<p>Given an infinite sequence $\langle a_1, a_2, a_3, \dots, a_n, \dots \rangle$, the formal sum:</p>
+<p>$$
+a_1 + a_2 + a_3 + \dots + a_n + \dots = \sum_{k=1}^{\infty} a_k
+$$</p>
+<p>is called the <strong>infinite series</strong> associated with the sequence.</p>
+<h4>The Sequence of Partial Sums (S.O.P.S.)</h4>
+<p>A series is not an ordinary sum (you cannot perform infinite additions in finite time). It is formally understood via its <strong>Sequence of Partial Sums</strong> $\{S_n\}_{n=1}^{\infty}$:</p>
+<p>$$
+\begin{aligned}
+S_1 &= a_1 \\
+S_2 &= a_1 + a_2 \\
+S_3 &= a_1 + a_2 + a_3 \\
+&\;\;\vdots \\
+S_n &= \sum_{k=1}^{n} a_k = a_1 + a_2 + \dots + a_n
+\end{aligned}
+$$</p>
+<h4>The Fundamental Bridge Theorem: $a_n = S_n - S_{n-1}$ <span class="star-icon">⭐⭐⭐⭐⭐</span></h4>
+<p>This relation bridges the concept of series sums back to individual sequence terms:</p>
+<p>$$
+\boxed{a_n = S_n - S_{n-1} \quad \text{for all } n \ge 2, \quad \text{with } a_1 = S_1}
+$$</p>
+<h4>Properties of the Summation Operator ($\Sigma$) <span class="star-icon">⭐⭐⭐</span></h4>
+<p>For sequences $\langle a_k \rangle$, $\langle b_k \rangle$ and constant $c \in \mathbb{R}$:
+1. <strong>Linearity (Homogeneity):</strong> </p>
+<p>$$
+\sum_{k=1}^{n} c \cdot a_k = c \sum_{k=1}^{n} a_k
+$$</p>
+<ol>
+<li><strong>Linearity (Additivity):</strong> </li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} (a_k \pm b_k) = \sum_{k=1}^{n} a_k \pm \sum_{k=1}^{n} b_k
+$$</p>
+<ol>
+<li><strong>Index Shifting:</strong> </li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} a_k = \sum_{j=1+m}^{n+m} a_{j-m}
+$$</p>
+<ol>
+<li><strong>Cauchy Split:</strong> </li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} a_k = \sum_{k=1}^{m} a_k + \sum_{k=m+1}^{n} a_k \quad (1 \le m < n)
+$$</p>
+<ol>
+<li><strong>Non-Multiplicativity (Critical Alert):</strong> </li>
+</ol>
+<p>$$
+\sum_{k=1}^n (a_k \cdot b_k) \neq \left(\sum_{k=1}^n a_k\right) \cdot \left(\sum_{k=1}^n b_k\right) \quad \text{(in general)}
+$$</p>
+<hr />
+<h1>Section 2: Complete Mathematical Proofs &amp; Derivations</h1>
+<h3>Proof 2.1: The Fundamental Identity $a_n = S_n - S_{n-1}$ for $n \ge 2$</h3>
+<ul>
+<li><strong>Statement:</strong> If $S_n$ denotes the sum of the first $n$ terms of a sequence $\{a_n\}$, then:</li>
+</ul>
+<p>$$
+a_n = S_n - S_{n-1} \quad \forall n \in \mathbb{N}, n \ge 2
+$$</p>
+<p>and $a_1 = S_1$.</p>
+<ul>
+<li><strong>Given:</strong> 
+  A real sequence $\langle a_1, a_2, a_3, \dots, a_n \rangle$ and its partial sums:</li>
+</ul>
+<p>$$
+S_n = \sum_{k=1}^{n} a_k = a_1 + a_2 + \dots + a_{n-1} + a_n \quad (n \ge 1)
+$$</p>
+<ul>
+<li><strong>To Prove:</strong></li>
+</ul>
+<p>$$
+S_n - S_{n-1} = a_n \quad \text{for } n \ge 2
+$$</p>
+<ul>
+<li><strong>Proof:</strong></li>
+</ul>
+<p>$$
+\begin{aligned}
+  \text{Step 1: Write } S_n \text{ explicitly:} \quad & S_n = a_1 + a_2 + a_3 + \dots + a_{n-1} + a_n \\
+  \text{Step 2: By definition of summation, write } S_{n-1} \text{ for } n \ge 2: \quad & S_{n-1} = a_1 + a_2 + a_3 + \dots + a_{n-1} \\
+  \text{Step 3: Group the first } (n-1) \text{ terms of } S_n: \quad & S_n = \underbrace{(a_1 + a_2 + \dots + a_{n-1})}_{= S_{n-1}} + a_n \\
+  \text{Step 4: Substitute } S_{n-1} \text{ into the expression:} \quad & S_n = S_{n-1} + a_n \\
+  \text{Step 5: Subtract } S_{n-1} \text{ from both sides:} \quad & S_n - S_{n-1} = a_n
+  \end{aligned}
+$$</p>
+<p>For $n = 1$, the index $n-1 = 0$, but $S_0$ is undefined in standard natural-number indexing. By direct substitution into the partial sum definition:</p>
+<p>$$
+S_1 = \sum_{k=1}^1 a_k = a_1
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.2: Linearity of the Finite Summation Operator $\Sigma$</h3>
+<ul>
+<li><strong>Statement:</strong> Let $\langle a_k \rangle$ and $\langle b_k \rangle$ be two sequences and $\alpha, \beta \in \mathbb{R}$. Then:</li>
+</ul>
+<p>$$
+\sum_{k=1}^{n} (\alpha a_k + \beta b_k) = \alpha \sum_{k=1}^{n} a_k + \beta \sum_{k=1}^{n} b_k
+$$</p>
+<ul>
+<li>
+<p><strong>Given:</strong> Finite sequences $\langle a_k \rangle_{k=1}^n$ and $\langle b_k \rangle_{k=1}^n$ with real scalars $\alpha, \beta$.</p>
+</li>
+<li>
+<p><strong>To Prove:</strong> The operator $\sum$ distributes linearly over addition and scales with scalar multiplication.</p>
+</li>
+<li>
+<p><strong>Proof:</strong></p>
+</li>
+</ul>
+<p>$$
+\begin{aligned}
+  \sum_{k=1}^{n} (\alpha a_k + \beta b_k) &= (\alpha a_1 + \beta b_1) + (\alpha a_2 + \beta b_2) + \dots + (\alpha a_n + \beta b_n) \\
+  &\quad \text{[By Generalized Associative and Commutative Axioms of } \mathbb{R}\text{]} \\
+  &= (\alpha a_1 + \alpha a_2 + \dots + \alpha a_n) + (\beta b_1 + \beta b_2 + \dots + \beta b_n) \\
+  &\quad \text{[By Distributive Property of Real Multiplication over Addition]} \\
+  &= \alpha(a_1 + a_2 + \dots + a_n) + \beta(b_1 + b_2 + \dots + b_n) \\
+  &= \alpha \sum_{k=1}^{n} a_k + \beta \sum_{k=1}^{n} b_k
+  \end{aligned}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.3: Second Difference Identity for General Terms</h3>
+<ul>
+<li><strong>Statement:</strong> The change in consecutive terms (first difference $\Delta a_n$) and the change in consecutive differences (second difference $\Delta^2 a_n$) can be written purely in terms of partial sums:</li>
+</ul>
+<p>$$
+\Delta a_n = a_{n+1} - a_n = S_{n+1} - 2S_n + S_{n-1} \quad (n \ge 2)
+$$</p>
+<ul>
+<li><strong>Proof:</strong></li>
+</ul>
+<p>$$
+\begin{aligned}
+  \Delta a_n &= a_{n+1} - a_n \\
+  &= (S_{n+1} - S_n) - (S_n - S_{n-1}) \quad \text{[Using Proof 2.1]} \\
+  &= S_{n+1} - S_n - S_n + S_{n-1} \\
+  &= S_{n+1} - 2S_n + S_{n-1}
+  \end{aligned}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h1>Section 3: High-Yield Solved Problems &amp; NCERT Exemplar Applications</h1>
+<h3>Problem 3.1: Finding $a_n$ from a Quadratic $S_n$ (NCERT Standard / Board High-Yield)</h3>
+<p><strong>Question:</strong> The sum of the first $n$ terms of a sequence is given by $S_n = 3n^2 + 5n$. Find the general term $a_n$, determine the 15th term, and show that this sequence is an Arithmetic Progression.</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Compute the general term $a_n$ for $n \ge 2$ using $a_n = S_n - S_{n-1}$.</strong></p>
+<p>$$
+S_n = 3n^2 + 5n
+$$</p>
+<p>Replace $n$ with $(n-1)$:</p>
+<p>$$
+\begin{aligned}
+S_{n-1} &= 3(n-1)^2 + 5(n-1) \\
+&= 3(n^2 - 2n + 1) + 5n - 5 \\
+&= 3n^2 - 6n + 3 + 5n - 5 \\
+&= 3n^2 - n - 2
+\end{aligned}
+$$</p>
+<p>Now, subtract $S_{n-1}$ from $S_n$:</p>
+<p>$$
+\begin{aligned}
+a_n &= S_n - S_{n-1} \\
+&= (3n^2 + 5n) - (3n^2 - n - 2) \\
+&= 3n^2 + 5n - 3n^2 + n + 2 \\
+&= 6n + 2 \quad (\text{for } n \ge 2)
+\end{aligned}
+$$</p>
+<p><strong>Step 2: Check boundary condition at $n = 1$.</strong></p>
+<p>$$
+a_1 = S_1 = 3(1)^2 + 5(1) = 3 + 5 = 8
+$$</p>
+<p>Check if our derived formula $a_n = 6n + 2$ holds for $n = 1$:</p>
+<p>$$
+a_1 = 6(1) + 2 = 8
+$$</p>
+<p>Since the formula yields 8, which matches $S_1$, the relation $a_n = 6n + 2$ holds uniformly for all $n \ge 1$:</p>
+<p>$$
+\boxed{a_n = 6n + 2 \quad \forall n \in \mathbb{N}}
+$$</p>
+<p><strong>Step 3: Evaluate the 15th term ($a_{15}$).</strong></p>
+<p>$$
+a_{15} = 6(15) + 2 = 90 + 2 = \mathbf{92}
+$$</p>
+<p><strong>Step 4: Prove that the sequence is an Arithmetic Progression.</strong>
+A sequence is an AP if and only if the difference between any two consecutive terms $a_{n} - a_{n-1}$ is a constant independent of $n$:</p>
+<p>$$
+a_n - a_{n-1} = (6n + 2) - [6(n-1) + 2] = 6n + 2 - 6n + 6 - 2 = 6
+$$</p>
+<p>Since $d = 6$ is constant, the sequence is an AP.</p>
+<h4>Marking Scheme Breakdown:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Action Required</th>
+<th style="text-align: left;">Marks Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Correct algebraic expansion of $S_{n-1}$</td>
+<td style="text-align: left;">1.0 Mark</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Subtraction $S_n - S_{n-1}$ and simplifying to $6n + 2$</td>
+<td style="text-align: left;">1.0 Mark</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Verification of $a_1 = S_1$ condition</td>
+<td style="text-align: left;">0.5 Mark</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Calculation of $a_{15} = 92$</td>
+<td style="text-align: left;">0.5 Mark</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Difference test $a_n - a_{n-1} = 6$ to confirm AP</td>
+<td style="text-align: left;">1.0 Mark</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>4.0 Marks</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Problem 3.2: Non-Zero Constant Trap in $S_n$ (NCERT Exemplar Advanced)</h3>
+<p><strong>Question:</strong> If the sum of $n$ terms of a sequence is given by $S_n = 2n^2 + 3n + 1$, determine whether this sequence forms an Arithmetic Progression.</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Compute $a_1$.</strong></p>
+<p>$$
+a_1 = S_1 = 2(1)^2 + 3(1) + 1 = 2 + 3 + 1 = \mathbf{6}
+$$</p>
+<p><strong>Step 2: Compute $a_n$ for $n \ge 2$.</strong></p>
+<p>$$
+\begin{aligned}
+S_{n-1} &= 2(n-1)^2 + 3(n-1) + 1 \\
+&= 2(n^2 - 2n + 1) + 3n - 3 + 1 \\
+&= 2n^2 - 4n + 2 + 3n - 2 \\
+&= 2n^2 - n
+\end{aligned}
+$$</p>
+<p>$$
+\begin{aligned}
+a_n &= S_n - S_{n-1} \\
+&= (2n^2 + 3n + 1) - (2n^2 - n) \\
+&= 4n + 1 \quad (\text{Valid only for } n \ge 2)
+\end{aligned}
+$$</p>
+<p><strong>Step 3: Test consistency for $n = 1$.</strong>
+If we substitute $n = 1$ into our expression for $a_n$:</p>
+<p>$$
+a_1^{\text{formula}} = 4(1) + 1 = 5
+$$</p>
+<p>However, actual $a_1 = S_1 = \mathbf{6}$.
+Notice that $a_1 \neq a_1^{\text{formula}}$ ($6 \neq 5$).</p>
+<p><strong>Step 4: Write the sequence terms and test the common difference.</strong></p>
+<p>$$
+\begin{aligned}
+a_1 &= 6 \\
+a_2 &= 4(2) + 1 = 9 \\
+a_3 &= 4(3) + 1 = 13 \\
+a_4 &= 4(4) + 1 = 17
+\end{aligned}
+$$</p>
+<p>Check consecutive differences:</p>
+<p>$$
+a_2 - a_1 = 9 - 6 = 3
+$$</p>
+<p>$$
+a_3 - a_2 = 13 - 9 = 4
+$$</p>
+<p>$$
+a_4 - a_3 = 17 - 13 = 4
+$$</p>
+<p>Since $a_2 - a_1 \neq a_3 - a_2$ ($3 \neq 4$), the common difference is not uniform throughout the entire sequence.</p>
+<p><strong>Conclusion:</strong></p>
+<p>$$
+\boxed{\text{The sequence is NOT an Arithmetic Progression from the first term.}}
+$$</p>
+<p><em>(It forms an AP only starting from the second term onward).</em></p>
+<hr />
+<h3>Problem 3.3: Recursive Sequence with Parity-Dependent Terms</h3>
+<p><strong>Question:</strong> A sequence $\{a_n\}$ is defined recursively by:</p>
+<p>$$
+a_1 = 2, \quad a_n = \begin{cases} \dfrac{a_{n-1}}{2}, & \text{if } a_{n-1} \text{ is even} \\[8pt] 3a_{n-1} + 1, & \text{if } a_{n-1} \text{ is odd} \end{cases} \quad \text{for } n \ge 2
+$$</p>
+<p>Write down the first 6 terms, and compute $S_6 = \sum_{k=1}^6 a_k$.</p>
+<h4>Step-by-Step Solution:</h4>
+<p>$$
+\begin{aligned}
+a_1 &= 2 \\
+a_2 &= \frac{a_1}{2} = \frac{2}{2} = 1 \quad (\text{since } a_1=2 \text{ is even}) \\
+a_3 &= 3(a_2) + 1 = 3(1) + 1 = 4 \quad (\text{since } a_2=1 \text{ is odd}) \\
+a_4 &= \frac{a_3}{2} = \frac{4}{2} = 2 \quad (\text{since } a_3=4 \text{ is even}) \\
+a_5 &= \frac{a_4}{2} = \frac{2}{2} = 1 \quad (\text{since } a_4=2 \text{ is even}) \\
+a_6 &= 3(a_5) + 1 = 3(1) + 1 = 4 \quad (\text{since } a_5=1 \text{ is odd})
+\end{aligned}
+$$</p>
+<p>The sequence terms are:</p>
+<p>$$
+\langle 2, 1, 4, 2, 1, 4, \dots \rangle
+$$</p>
+<p>Evaluating the partial sum $S_6$:</p>
+<p>$$
+S_6 = \sum_{k=1}^6 a_k = 2 + 1 + 4 + 2 + 1 + 4 = \mathbf{14}
+$$</p>
+<hr />
+<h3>Problem 3.4: Telescope Sum of a Series (Foundational Olympiad / JEE Main Bridge)</h3>
+<p><strong>Question:</strong> Find the sum of the first $n$ terms of the series:</p>
+<p>$$
+\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \frac{1}{3 \cdot 4} + \dots + \frac{1}{n(n+1)}
+$$</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Express the general term $a_k$.</strong></p>
+<p>$$
+a_k = \frac{1}{k(k+1)}
+$$</p>
+<p><strong>Step 2: Resolve $a_k$ using partial fractions.</strong></p>
+<p>$$
+a_k = \frac{(k+1) - k}{k(k+1)} = \frac{k+1}{k(k+1)} - \frac{k}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}
+$$</p>
+<p><strong>Step 3: Write out the partial sum $S_n$.</strong></p>
+<p>$$
+S_n = \sum_{k=1}^n a_k = \sum_{k=1}^n \left(\frac{1}{k} - \frac{1}{k+1}\right)
+$$</p>
+<p>Expand term by term:</p>
+<p>$$
+\begin{aligned}
+S_n &= \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \left(\frac{1}{3} - \frac{1}{4}\right) + \dots + \left(\frac{1}{n-1} - \frac{1}{n}\right) + \left(\frac{1}{n} - \frac{1}{n+1}\right)
+\end{aligned}
+$$</p>
+<p><strong>Step 4: Cancel intermediate terms (Telescoping Cancellation).</strong>
+Every intermediate term cancels out in pairs:</p>
+<p>$$
+S_n = 1 + \left(-\frac{1}{2} + \frac{1}{2}\right) + \left(-\frac{1}{3} + \frac{1}{3}\right) + \dots + \left(-\frac{1}{n} + \frac{1}{n}\right) - \frac{1}{n+1}
+$$</p>
+<p>$$
+S_n = 1 - \frac{1}{n+1} = \mathbf{\frac{n}{n+1}}
+$$</p>
+<hr />
+<h1>Section 4: Examiner Traps &amp; Common Student Pitfalls</h1>
+<h3>Pitfall 4.1: The "$S_0$ Hallucination"</h3>
+<ul>
+<li><strong>The Error:</strong> Students use the formula $a_n = S_n - S_{n-1}$ directly for $n=1$, writing $a_1 = S_1 - S_0$, and then assume $S_0 = 0$ without verifying the formula.</li>
+<li><strong>The Danger:</strong> If $S_n = 2n^2 + 3n + 5$, then blindly setting $S_0 = 5$ and computing:</li>
+</ul>
+<p>$$
+a_1 = S_1 - S_0 = (2 + 3 + 5) - 5 = 5
+$$</p>
+<p>is <strong>wrong</strong>. By definition, the first term is the sum of the first 1 term:</p>
+<p>$$
+a_1 = S_1 = 2(1)^2 + 3(1) + 5 = 10
+$$</p>
+<ul>
+<li><strong>Golden Rule:</strong> Never compute $a_1$ via subtraction. Always write:</li>
+</ul>
+<p>$$
+\boxed{a_1 = S_1} \quad \text{and} \quad \boxed{a_n = S_n - S_{n-1} \text{ only for } n \ge 2}
+$$</p>
+<hr />
+<h3>Pitfall 4.2: Confusing Sequence Indices with Real Coordinates</h3>
+<ul>
+<li><strong>The Error:</strong> Writing expressions such as $a_0$, $a_{-2}$, or $a_{2.5}$.</li>
+<li><strong>NCERT Law:</strong> In Class 11 sequences, the index variable $n$ <strong>must always belong to</strong> $\mathbb{N} = \{1, 2, 3, \dots\}$.</li>
+<li>When shifting indices (e.g., $k \to k-1$), students often fail to update the limits of summation accordingly:</li>
+</ul>
+<p>$$
+\sum_{k=1}^n a_k = \sum_{j=0}^{n-1} a_{j+1} \quad \text{(Correct)}
+$$</p>
+<p>$$
+\sum_{k=1}^n a_k \neq \sum_{k=0}^{n-1} a_k \quad \text{(Catastrophic Index Failure)}
+$$</p>
+<hr />
+<h3>Pitfall 4.3: Blind Multiplication of Summation Operators</h3>
+<ul>
+<li><strong>The Error:</strong> Splitting a product inside $\Sigma$:</li>
+</ul>
+<p>$$
+\sum_{k=1}^n (a_k \cdot b_k) \overset{?}{=} \left(\sum_{k=1}^n a_k\right)\left(\sum_{k=1}^n b_k\right)
+$$</p>
+<ul>
+<li><strong>Counterexample:</strong> Let $a_k = k$ and $b_k = 1$ for $n = 2$:</li>
+</ul>
+<p>$$
+\text{LHS} = \sum_{k=1}^2 (k \cdot 1) = 1(1) + 2(1) = 3
+$$</p>
+<p>$$
+\text{RHS} = \left(\sum_{k=1}^2 k\right) \cdot \left(\sum_{k=1}^2 1\right) = (1 + 2) \cdot (1 + 1) = 3 \cdot 2 = 6
+$$</p>
+<p>$3 \neq 6$. Addition distributes over sums; multiplication does <strong>not</strong>.</p>
+<hr />
+<h3>Pitfall 4.4: Sign Oscillation Mismanagement</h3>
+<ul>
+<li><strong>The Error:</strong> In alternating sequences, failing to track $(-1)^n$ vs. $(-1)^{n-1}$ vs. $(-1)^{n+1}$.</li>
+<li><strong>Verification Rule:</strong></li>
+<li>If the first term $a_1$ is <strong>positive</strong>, use $(-1)^{n-1}$ or $(-1)^{n+1}$, because:</li>
+</ul>
+<p>$$
+(-1)^{1-1} = (-1)^0 = +1
+$$</p>
+<ul>
+<li>If the first term $a_1$ is <strong>negative</strong>, use $(-1)^n$, because:</li>
+</ul>
+<p>$$
+(-1)^1 = -1
+$$</p>
+<hr />
+<h1>Section 5: Speed Hacks, Mental Math Shortcuts &amp; Golden Properties</h1>
+<h3>Hack 5.1: The 3-Second Derivative Shortcut for Linear/Quadratic $S_n$</h3>
+<p>When the sum of $n$ terms of an AP is given by a quadratic expression:</p>
+<p>$$
+S_n = A n^2 + B n
+$$</p>
+<p>(with no constant term, so $C = 0$):</p>
+<ol>
+<li><strong>The common difference $d$</strong> is always double the coefficient of $n^2$:</li>
+</ol>
+<p>$$
+\boxed{d = 2A}
+$$</p>
+<ol>
+<li><strong>The general term $a_n$</strong> is obtained by taking the formal derivative with respect to $n$ and subtracting $A$:</li>
+</ol>
+<p>$$
+\boxed{a_n = \frac{d}{dn}(S_n) - A = 2An + (B - A)}
+$$</p>
+<h4>Mental Math Drill:</h4>
+<ul>
+<li>If $S_n = 5n^2 - 3n$:</li>
+<li>$A = 5$, $B = -3$</li>
+<li>Common difference $d = 2(5) = \mathbf{10}$</li>
+<li>First term $a_1 = S_1 = 5(1)^2 - 3(1) = \mathbf{2}$</li>
+<li>General term $a_n = 2(5)n + (-3 - 5) = \mathbf{10n - 8}$
+  <em>(Solved in under 5 seconds without writing $S_{n-1}$!)</em></li>
+</ul>
+<hr />
+<h3>Hack 5.2: The AP Sum Constant Criterion</h3>
+<p>$$
+\text{A sequence is an AP starting at } n=1 \iff S_n = A n^2 + B n \text{ where } C = 0
+$$</p>
+<ul>
+<li>If $S_n = A n^2 + B n + C$ with $C \neq 0$:</li>
+<li>The sequence is an AP <strong>only from $n=2$ onward</strong>.</li>
+<li>The first term $a_1$ will deviate from the linear formula by exactly $C$:</li>
+</ul>
+<p>$$
+a_1 = A + B + C, \quad \text{while } a_n = 2An + (B - A) \quad \forall n \ge 2
+$$</p>
+<hr />
+<h3>Hack 5.3: Symmetry Mappings in Finite Sequences</h3>
+<p>When working with any symmetric sequence or progression of length $n$:</p>
+<p>$$
+a_k + a_{n-k+1} = \text{constant for all } k
+$$</p>
+<ul>
+<li>The sum of terms equidistant from the beginning and end is invariant.</li>
+<li>Pairwise regrouping reduces difficult summation problems into simple multiplications:</li>
+</ul>
+<p>$$
+\sum_{k=1}^n a_k = \frac{n}{2} (a_1 + a_n)
+$$</p>
+<hr />
+<h3>Hack 5.4: Essential Formulas at a Glance (Quick Revision Table)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Concept</th>
+<th style="text-align: left;">Closed Form Formula</th>
+<th style="text-align: left;">Valid Domain / Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>General Term from Sum</strong></td>
+<td style="text-align: left;">$a_n = S_n - S_{n-1}$</td>
+<td style="text-align: left;">$n \ge 2$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Term Identity</strong></td>
+<td style="text-align: left;">$a_1 = S_1$</td>
+<td style="text-align: left;">$n = 1$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Constant Summation</strong></td>
+<td style="text-align: left;">$\sum_{k=1}^n c = c \cdot n$</td>
+<td style="text-align: left;">$c$ is independent of $k$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sum of First $n$ Naturals</strong></td>
+<td style="text-align: left;">$\sum_{k=1}^n k = \frac{n(n+1)}{2}$</td>
+<td style="text-align: left;">$n \in \mathbb{N}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sum of First $n$ Odd Naturals</strong></td>
+<td style="text-align: left;">$\sum_{k=1}^n (2k - 1) = n^2$</td>
+<td style="text-align: left;">$n \in \mathbb{N}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sum of First $n$ Even Naturals</strong></td>
+<td style="text-align: left;">$\sum_{k=1}^n 2k = n(n+1)$</td>
+<td style="text-align: left;">$n \in \mathbb{N}$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>Summary Checklist for Class Presentation</h1>
+<ol>
+<li>Start by plotting discrete points $(n, a_n)$ on the board to build intuition that a sequence is a function with domain $\mathbb{N}$.</li>
+<li>Emphasize that $a_n = S_n - S_{n-1}$ is valid <strong>only for $n \ge 2$</strong>, and verify $a_1 = S_1$ as a separate step.</li>
+<li>Use the quadratic constant test ($S_n = An^2 + Bn + C$) to quickly check whether an AP holds from $n=1$ ($C=0$) or only from $n=2$ ($C \ne 0$).</li>
+</ol>
+<hr />
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note blue" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Geometric Progression (GP): Definition, General Term, and Properties — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Geometric Progression (GP): Definition, General Term, and Properties</h1>
+<h1>Class 11 Mathematics — Sequences &amp; Series</h1>
+<h2>Master Lecture Notes: Geometric Progression (GP) — Definition, General Term, and Fundamental Properties</h2>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Definition and Core Terminology</h3>
+<p>A sequence of non-zero real numbers $\langle a_n \rangle = a_1, a_2, a_3, \dots, a_n, \dots$ is called a <strong>Geometric Progression (GP)</strong> if the ratio of any term to its preceding term is always a non-zero constant throughout the sequence.</p>
+<p>Formally, for all $n \in \mathbb{N}$ ($n \ge 1$):</p>
+<p>$$
+\frac{a_{n+1}}{a_n} = r \quad (\text{constant})
+$$</p>
+<ul>
+<li><strong>First Term ($a$ or $a_1$):</strong> The initial non-zero scalar value $a \in \mathbb{R} \setminus \{0\}$.</li>
+<li><strong>Common Ratio ($r$):</strong> The fixed non-zero quotient $r \in \mathbb{R} \setminus \{0\}$.</li>
+<li><strong>General Sequence Representation:</strong></li>
+</ul>
+<p>$$
+a, \; ar, \; ar^2, \; ar^3, \; \dots, \; ar^{n-1}, \; \dots
+$$</p>
+<blockquote>
+<p><strong>Star Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Fundamental concept tested directly across CBSE board exams, NCERT Exemplar, JEE Main, and state entrance exams)</em></p>
+</blockquote>
+<hr />
+<h3>1.2 Intuition &amp; Geometric / Dynamic Interpretation</h3>
+<ul>
+<li><strong>Multiplicative Scaling:</strong> Arithmetic Progressions (AP) model discrete linear accumulation ($+d$), whereas Geometric Progressions model discrete exponential growth/decay ($\times r$).</li>
+<li><strong>Geometric Area/Volume Scaling:</strong> 
+  Consider a square of side $1$ unit (Area $= 1$). If each subsequent square has sides scaled by $\frac{1}{2}$, their areas scale as:</li>
+</ul>
+<p>$$
+1, \; \left(\frac{1}{2}\right)^2 = \frac{1}{4}, \; \left(\frac{1}{4}\right)^2 = \frac{1}{16}, \; \dots
+$$</p>
+<p>This forms a GP with first term $a = 1$ and common ratio $r = \frac{1}{4}$.
+* <strong>Sign Oscillations:</strong>
+  * When $r > 0$: The sequence is monotonic (strictly increasing if $a>0, r>1$ or decreasing if $a>0, 0<r<1$).
+  * When $r < 0$: The terms alternate strictly in algebraic sign (e.g., $+a, -|ar|, +|ar^2|, -|ar^3|, \dots$).</p>
+<hr />
+<h2>2. Rigorous Derivations &amp; Complete Mathematical Proofs</h2>
+<h3>Proof 2.1: The $n^{\text{th}}$ Term ($a_n$ or $T_n$) from the Beginning</h3>
+<blockquote>
+<p><strong>Star Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+</blockquote>
+<ul>
+<li><strong>Given:</strong> A geometric progression with first term $a_1 = a \neq 0$ and common ratio $r \neq 0$.</li>
+<li><strong>To Prove:</strong> </li>
+</ul>
+<p>$$
+a_n = a r^{n-1} \quad \forall \; n \in \mathbb{N}
+$$</p>
+<ul>
+<li><strong>Proof by Mathematical Induction:</strong></li>
+</ul>
+<p><strong>Basis Step ($n = 1$):</strong></p>
+<p>$$
+a_1 = a \cdot r^{1-1} = a \cdot r^0 = a \cdot 1 = a
+$$</p>
+<p>The base case holds true.</p>
+<p><strong>Inductive Hypothesis:</strong>
+Assume the formula holds for a positive integer $k \ge 1$:</p>
+<p>$$
+a_k = a r^{k-1}
+$$</p>
+<p><strong>Inductive Step:</strong>
+By the definition of a geometric progression:</p>
+<p>$$
+\frac{a_{k+1}}{a_k} = r \implies a_{k+1} = a_k \cdot r
+$$</p>
+<p>Substituting the inductive hypothesis into this relation:</p>
+<p>$$
+a_{k+1} = \left(a r^{k-1}\right) \cdot r = a r^{(k-1)+1} = a r^{(k+1)-1}
+$$</p>
+<p>Thus, if the statement holds for $n = k$, it holds for $n = k+1$.</p>
+<p><strong>Conclusion:</strong>
+By the Principle of Mathematical Induction (PMI), $a_n = a r^{n-1}$ is valid for all $n \in \mathbb{N}$.  </p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.2: The $n^{\text{th}}$ Term from the End of a Finite GP</h3>
+<blockquote>
+<p><strong>Star Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+</blockquote>
+<ul>
+<li><strong>Given:</strong> A finite GP having $m$ terms: $a, ar, ar^2, \dots, l$, where $l = T_m = a r^{m-1}$ is the last term, and common ratio is $r$.</li>
+<li><strong>To Prove:</strong> 
+  The $n^{\text{th}}$ term from the end ($T'_n$) is given by:</li>
+</ul>
+<p>$$
+T'_n = \frac{l}{r^{n-1}} = l \left(\frac{1}{r}\right)^{n-1}
+$$</p>
+<ul>
+<li><strong>Proof:</strong>
+Reversing the order of the terms of the GP gives:</li>
+</ul>
+<p>$$
+l, \; \frac{l}{r}, \; \frac{l}{r^2}, \; \frac{l}{r^3}, \; \dots
+$$</p>
+<p>In this reversed sequence:
+1. First term $A = l$
+2. Common ratio $R = \frac{l/r}{l} = \frac{1}{r}$</p>
+<p>Using the standard formula for the $n^{\text{th}}$ term:</p>
+<p>$$
+T'_n = A \cdot R^{n-1} = l \cdot \left(\frac{1}{r}\right)^{n-1} = \frac{l}{r^{n-1}}
+$$</p>
+<p>Alternatively, in a finite sequence of $m$ terms, the $n^{\text{th}}$ term from the end corresponds to the $(m - n + 1)^{\text{th}}$ term from the beginning:</p>
+<p>$$
+T'_n = T_{m - n + 1} = a r^{(m - n + 1) - 1} = a r^{m - n} = \frac{a r^{m-1}}{r^{n-1}} = \frac{l}{r^{n-1}}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.3: Fundamental Condition for Three Terms to be in GP</h3>
+<blockquote>
+<p><strong>Star Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+</blockquote>
+<ul>
+<li><strong>Theorem:</strong> Three non-zero numbers $a, b, c$ are in GP if and only if $b^2 = ac$.</li>
+<li><strong>Proof:</strong>
+By definition, $a, b, c$ are in GP if and only if:</li>
+</ul>
+<p>$$
+\frac{b}{a} = \frac{c}{b} = r
+$$</p>
+<p>Multiplying both sides by $ab$ ($a, b \neq 0$):</p>
+<p>$$
+b \cdot b = a \cdot c \iff b^2 = ac \iff b = \pm \sqrt{ac}
+$$</p>
+<p>Here, $b$ is known as the <strong>Geometric Mean (GM)</strong> of $a$ and $c$.  </p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.4: Equidistant Term Product Property</h3>
+<blockquote>
+<p><strong>Star Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+</blockquote>
+<ul>
+<li><strong>Theorem:</strong> In a finite GP, the product of terms equidistant from the beginning and the end is constant and equal to the product of the first and the last terms.</li>
+<li><strong>Given:</strong> A finite GP $\langle a_1, a_2, \dots, a_n \rangle$ with initial term $a$ and common ratio $r$.</li>
+<li><strong>To Prove:</strong></li>
+</ul>
+<p>$$
+a_k \cdot a_{n-k+1} = a_1 \cdot a_n \quad \forall \; 1 \le k \le n
+$$</p>
+<ul>
+<li><strong>Proof:</strong>
+The $k^{\text{th}}$ term from the beginning is:</li>
+</ul>
+<p>$$
+a_k = a r^{k-1}
+$$</p>
+<p>The $k^{\text{th}}$ term from the end is the $(n - k + 1)^{\text{th}}$ term from the beginning:</p>
+<p>$$
+a_{n-k+1} = a r^{(n - k + 1) - 1} = a r^{n-k}
+$$</p>
+<p>Taking their product:</p>
+<p>$$
+a_k \cdot a_{n-k+1} = (a r^{k-1}) \cdot (a r^{n-k}) = a^2 r^{(k - 1) + (n - k)} = a^2 r^{n-1}
+$$</p>
+<p>Now compute the product of the first ($a_1$) and last ($a_n$) terms:</p>
+<p>$$
+a_1 \cdot a_n = (a) \cdot (a r^{n-1}) = a^2 r^{n-1}
+$$</p>
+<p>Comparing both expressions:</p>
+<p>$$
+a_k \cdot a_{n-k+1} = a_1 \cdot a_n = \text{constant}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. Core Properties of Geometric Progressions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property Number</th>
+<th style="text-align: left;">Mathematical Statement</th>
+<th style="text-align: left;">Context / Operational Utility</th>
+<th style="text-align: left;">Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Property 1</strong></td>
+<td style="text-align: left;">If each term of a GP is multiplied/divided by a non-zero scalar $k$, the resulting sequence remains a GP with the same common ratio $r$.</td>
+<td style="text-align: left;">Scaling sequences without altering relative rates.</td>
+<td style="text-align: left;"><span class="star-icon">⭐⭐⭐</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Property 2</strong></td>
+<td style="text-align: left;">If each term of a GP with common ratio $r$ is raised to the power $k$ ($k \in \mathbb{R}$), the new sequence is a GP with common ratio $r^k$.</td>
+<td style="text-align: left;">Useful for logarithmic transforms and power equations.</td>
+<td style="text-align: left;"><span class="star-icon">⭐⭐⭐⭐</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Property 3</strong></td>
+<td style="text-align: left;">The reciprocals of terms of a GP form another GP with common ratio $\frac{1}{r}$.</td>
+<td style="text-align: left;">Crucial for harmonic/geometric hybrid problems.</td>
+<td style="text-align: left;"><span class="star-icon">⭐⭐⭐</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Property 4</strong></td>
+<td style="text-align: left;">If all terms $a_i > 0$, then $\log(a_1), \log(a_2), \log(a_3), \dots$ forms an AP with common difference $d = \log(r)$.</td>
+<td style="text-align: left;">Connects exponential GP structures directly to linear AP structures.</td>
+<td style="text-align: left;"><span class="star-icon">⭐⭐⭐⭐⭐</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Property 5</strong></td>
+<td style="text-align: left;">If two GPs $\langle a_n \rangle$ and $\langle b_n \rangle$ have ratios $r_1$ and $r_2$, their term-wise product $\langle a_n b_n \rangle$ is a GP with ratio $r_1 r_2$.</td>
+<td style="text-align: left;">Product sequences and multi-variable modeling.</td>
+<td style="text-align: left;"><span class="star-icon">⭐⭐⭐⭐</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Standard Setup for Unknown Terms</h2>
+<p>When solving word problems involving products and sums of terms in a GP, choose symmetric representations to simplify the algebra:</p>
+<ol>
+<li><strong>Three terms in GP:</strong></li>
+</ol>
+<p>$$
+\frac{a}{r}, \; a, \; ar \quad (\text{Product} = a^3)
+$$</p>
+<ol>
+<li><strong>Four terms in GP:</strong></li>
+</ol>
+<p>$$
+\frac{a}{r^3}, \; \frac{a}{r}, \; ar, \; ar^3 \quad (\text{Common ratio is } r^2; \; \text{Product} = a^4)
+$$</p>
+<ol>
+<li><strong>Five terms in GP:</strong></li>
+</ol>
+<p>$$
+\frac{a}{r^2}, \; \frac{a}{r}, \; a, \; ar, \; ar^2 \quad (\text{Product} = a^5)
+$$</p>
+<hr />
+<h2>5. High-Yield Solved Examples &amp; NCERT Exemplar Problems</h2>
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note green" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Sum of First n Terms and Sum to Infinity of a Geometric Progression — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Sum of First n Terms and Sum to Infinity of a Geometric Progression</h1>
+<h1>CBSE Class 11 Mathematics | Sequences &amp; Series</h1>
+<h2>Comprehensive Lecture Note: Sum of First $n$ Terms and Sum to Infinity of a Geometric Progression (G.P.)</h2>
+<hr />
+<h2>1. In-Depth Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Definition and Core Form</h3>
+<p>A sequence of non-zero real numbers $\langle a_n \rangle$ is called a <strong>Geometric Progression (G.P.)</strong> if the ratio of any term to its preceding term is a constant non-zero quantity throughout the sequence.
+- <strong>First term ($a$):</strong> $a_1 = a \neq 0$
+- <strong>Common ratio ($r$):</strong> $\frac{a_{k+1}}{a_k} = r \neq 0, \quad \forall k \in \mathbb{N}$
+- <strong>Standard form of first $n$ terms:</strong></p>
+<p>$$
+a, \; ar, \; ar^2, \; ar^3, \; \dots, \; ar^{n-1}
+$$</p>
+<hr />
+<h3>1.2 Sum of First $n$ Terms ($S_n$)</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Highest Board / Competitive Frequency)</em></p>
+<p>The sum of the first $n$ terms of a G.P. is defined as:</p>
+<p>$$
+S_n = a + ar + ar^2 + \dots + ar^{n-1} = \sum_{k=1}^{n} ar^{k-1}
+$$</p>
+<h4>Theorem Statements</h4>
+<ul>
+<li><strong>Case 1: $r = 1$</strong>
+  Every term is equal to $a$:</li>
+</ul>
+<p>$$
+S_n = \underbrace{a + a + \dots + a}_{n\text{ times}} = na
+$$</p>
+<ul>
+<li><strong>Case 2: $r \neq 1$</strong></li>
+</ul>
+<p>$$
+S_n = \frac{a(1 - r^n)}{1 - r} = \frac{a(r^n - 1)}{r - 1}
+$$</p>
+<p><em>Alternative Form (using the $n^{\text{th}}$ term $l = ar^{n-1}$):</em></p>
+<p>$$
+r \cdot l = a r^n \implies S_n = \frac{a - r \cdot l}{1 - r} = \frac{r \cdot l - a}{r - 1}
+$$</p>
+<h4>Geometric &amp; Physical Intuition</h4>
+<p>Consider doubling a quantity repeatedly ($r = 2$): $1, 2, 4, 8, 16, \dots$
+The sum $1 + 2 + 4 + 8 = 15 = 2^4 - 1$.
+The sum of all previous powers of $2$ is always $1$ less than the next power of $2$. 
+In geometric dissection, adding squares or rectangles scaled by a constant factor $r$ tiles a space whose total dimension is governed by a telescoping boundary.</p>
+<hr />
+<h3>1.3 Sum to Infinity of a G.P. ($S_\infty$)</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Crucial for Limits, Calculus, and JEE/Boards)</em></p>
+<p>An infinite geometric series has the form:</p>
+<p>$$
+S = a + ar + ar^2 + ar^3 + \dots + ar^{n-1} + \dots = \sum_{k=1}^{\infty} ar^{k-1}
+$$</p>
+<h4>Condition of Convergence</h4>
+<p>The infinite sum exists as a finite real number if and only if the sequence of partial sums $\{S_n\}$ converges to a finite limit as $n \to \infty$.
+- If $|r| < 1$ (i.e., $-1 < r < 1$):</p>
+<p>$$
+\lim_{n \to \infty} r^n = 0 \implies S_\infty = \lim_{n \to \infty} S_n = \frac{a(1 - 0)}{1 - r} = \frac{a}{1 - r}
+$$</p>
+<ul>
+<li>If $|r| \ge 1$ (with $a \neq 0$):
+  $\lim_{n \to \infty} r^n$ does not tend to $0$. The series <strong>diverges</strong>; hence, $S_\infty$ does not exist.</li>
+</ul>
+<h4>Geometric Intuition: Zeno’s Paradox &amp; Area Dissection</h4>
+<p>Consider a unit square of area $1$.
+1. Divide it in half: area $= \frac{1}{2}$.
+2. Divide the remainder in half: area $= \frac{1}{4}$.
+3. Repeat indefinitely: $\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \dots$
+The cumulative area fills the entire unit square without ever exceeding it:</p>
+<p>$$
+S_\infty = \frac{1/2}{1 - 1/2} = 1
+$$</p>
+<hr />
+<h3>1.4 Selection of Terms in G.P. (Symmetry Technique)</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<p>When the product of consecutive terms is given, use symmetric choices:
+- <strong>3 terms in G.P.:</strong> $\frac{a}{r}, \; a, \; ar$ with common ratio $r$.</p>
+<p>$$
+\text{Product} = \left(\frac{a}{r}\right)(a)(ar) = a^3
+$$</p>
+<ul>
+<li><strong>4 terms in G.P.:</strong> $\frac{a}{r^3}, \; \frac{a}{r}, \; ar, \; ar^3$ with common ratio $r^2$.</li>
+</ul>
+<p>$$
+\text{Product} = a^4
+$$</p>
+<ul>
+<li><strong>5 terms in G.P.:</strong> $\frac{a}{r^2}, \; \frac{a}{r}, \; a, \; ar, \; ar^2$ with common ratio $r$.</li>
+</ul>
+<p>$$
+\text{Product} = a^5
+$$</p>
+<hr />
+<h2>2. Complete Step-by-Step Mathematical Proofs &amp; Derivations</h2>
+<h3>Proof 2.1: Derivation of the Sum of First $n$ Terms of a G.P.</h3>
+<p><strong>Statement:</strong>
+For a G.P. with first term $a$ and common ratio $r \neq 1$, the sum of first $n$ terms is given by:</p>
+<p>$$
+S_n = \frac{a(1 - r^n)}{1 - r}
+$$</p>
+<p><strong>Given:</strong>
+Let $S_n$ denote the sum to $n$ terms:</p>
+<p>$$
+S_n = a + ar + ar^2 + ar^3 + \dots + ar^{n-2} + ar^{n-1} \quad \text{--- (Equation 1)}
+$$</p>
+<p><strong>To Prove:</strong></p>
+<p>$$
+S_n = \frac{a(1 - r^n)}{1 - r}, \quad r \neq 1
+$$</p>
+<p><strong>Algebraic Derivation (Method of Telescoping / Shift Multiplication):</strong>
+1. Multiply both sides of Equation (1) by the common ratio $r$:</p>
+<p>$$
+r \cdot S_n = ar + ar^2 + ar^3 + \dots + ar^{n-1} + ar^n \quad \text{--- (Equation 2)}
+$$</p>
+<ol>
+<li>Subtract Equation (2) from Equation (1):</li>
+</ol>
+<p>$$
+S_n - r \cdot S_n = (a + ar + ar^2 + \dots + ar^{n-1}) - (ar + ar^2 + \dots + ar^{n-1} + ar^n)
+$$</p>
+<ol>
+<li>Notice the complete telescoping cancellation of all intermediate terms:</li>
+</ol>
+<p>$$
+S_n(1 - r) = a + (ar - ar) + (ar^2 - ar^2) + \dots + (ar^{n-1} - ar^{n-1}) - ar^n
+$$</p>
+<p>$$
+S_n(1 - r) = a - ar^n
+$$</p>
+<p>$$
+S_n(1 - r) = a(1 - r^n)
+$$</p>
+<ol>
+<li>Since $r \neq 1$, divide both sides by $(1 - r)$:</li>
+</ol>
+<p>$$
+S_n = \frac{a(1 - r^n)}{1 - r}
+$$</p>
+<p>Multiplying numerator and denominator by $-1$ yields the equivalent form:</p>
+<p>$$
+S_n = \frac{a(r^n - 1)}{r - 1}
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h3>Proof 2.2: Derivation of the Sum to Infinity of a Decreasing G.P.</h3>
+<p><strong>Statement:</strong>
+For an infinite G.P. $a + ar + ar^2 + \dots$ where $|r| < 1$, the sum of the series converges to:</p>
+<p>$$
+S_\infty = \frac{a}{1 - r}
+$$</p>
+<p><strong>Given:</strong>
+$S_n = \frac{a(1 - r^n)}{1 - r}$ with $|r| < 1$.</p>
+<p><strong>To Prove:</strong></p>
+<p>$$
+\lim_{n \to \infty} S_n = \frac{a}{1 - r}
+$$</p>
+<p><strong>Proof:</strong>
+1. Express $S_n$ by distributing terms:</p>
+<p>$$
+S_n = \frac{a}{1 - r} - \frac{a \cdot r^n}{1 - r}
+$$</p>
+<ol>
+<li>Take the limit as $n \to \infty$ on both sides:</li>
+</ol>
+<p>$$
+S_\infty = \lim_{n \to \infty} S_n = \lim_{n \to \infty} \left[ \frac{a}{1 - r} - \frac{a \cdot r^n}{1 - r} \right]
+$$</p>
+<ol>
+<li>Using the standard algebraic limit properties:</li>
+</ol>
+<p>$$
+S_\infty = \frac{a}{1 - r} - \frac{a}{1 - r} \left( \lim_{n \to \infty} r^n \right)
+$$</p>
+<ol>
+<li><strong>Lemma:</strong> For any real number $r$ such that $|r| < 1$, $\lim_{n \to \infty} r^n = 0$.
+   <em>Justification:</em> Let $|r| = \frac{1}{1 + h}$, where $h > 0$.
+   By Bernoulli's / Binomial inequality for $n \in \mathbb{N}$:</li>
+</ol>
+<p>$$
+(1 + h)^n \ge 1 + nh > nh
+$$</p>
+<p>$$
+\implies |r|^n = \frac{1}{(1+h)^n} < \frac{1}{nh}
+$$</p>
+<p>As $n \to \infty$, $\frac{1}{nh} \to 0$. By Squeeze Theorem, $\lim_{n \to \infty} |r|^n = 0 \implies \lim_{n \to \infty} r^n = 0$.</p>
+<ol>
+<li>Substitute this limit back:</li>
+</ol>
+<p>$$
+S_\infty = \frac{a}{1 - r} - \frac{a}{1 - r}(0) = \frac{a}{1 - r}
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Solved Examples &amp; Application Problems</h2>
+<h3>Problem 3.1: Standard NCERT Board Pattern</h3>
+<p><strong>Find the sum of $n$ terms of the sequence:</strong></p>
+<p>$$
+7, \; 77, \; 777, \; 7777, \; \dots
+$$</p>
+<p><strong>Solution:</strong>
+Let $S_n = 7 + 77 + 777 + \dots + \underbrace{77\dots7}_{n\text{ digits}}$.</p>
+<ul>
+<li><strong>Step 1:</strong> Factor out the common digit $7$:</li>
+</ul>
+<p>$$
+S_n = 7 \left( 1 + 11 + 111 + \dots + \underbrace{11\dots1}_{n\text{ digits}} \right)
+$$</p>
+<ul>
+<li><strong>Step 2:</strong> Multiply and divide by $9$:</li>
+</ul>
+<p>$$
+S_n = \frac{7}{9} \left( 9 + 99 + 999 + \dots + \underbrace{99\dots9}_{n\text{ digits}} \right)
+$$</p>
+<ul>
+<li><strong>Step 3:</strong> Express each term as powers of $10$ minus $1$:</li>
+</ul>
+<p>$$
+S_n = \frac{7}{9} \left[ (10 - 1) + (10^2 - 1) + (10^3 - 1) + \dots + (10^n - 1) \right]
+$$</p>
+<ul>
+<li><strong>Step 4:</strong> Regroup into a G.P. and a constant series:</li>
+</ul>
+<p>$$
+S_n = \frac{7}{9} \left[ (10 + 10^2 + 10^3 + \dots + 10^n) - \underbrace{(1 + 1 + \dots + 1)}_{n\text{ times}} \right]
+$$</p>
+<ul>
+<li><strong>Step 5:</strong> Apply the G.P. sum formula to $10 + 10^2 + \dots + 10^n$ ($a = 10, r = 10$):</li>
+</ul>
+<p>$$
+\sum_{k=1}^n 10^k = \frac{10(10^n - 1)}{10 - 1} = \frac{10(10^n - 1)}{9}
+$$</p>
+<ul>
+<li><strong>Step 6:</strong> Substitute back and simplify:</li>
+</ul>
+<p>$$
+S_n = \frac{7}{9} \left[ \frac{10(10^n - 1)}{9} - n \right] = \frac{70}{81}(10^n - 1) - \frac{7n}{9}
+$$</p>
+<p><strong>Scoring Breakdown (4 Marks):</strong>
+- Factoring out $7$ and multiplying/dividing by $9$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+- Converting to $(10^k - 1)$ form: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+- Applying the G.P. sum formula: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+- Final simplified expression: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<h3>Problem 3.2: System of Equations with Ratio of Sums (NCERT Exemplar)</h3>
+<p><strong>The sum of the first three terms of a G.P. is to the sum of the first six terms as $125 : 152$. Find the common ratio $r$.</strong></p>
+<p><strong>Solution:</strong>
+- <strong>Step 1:</strong> Write the equations using $S_n = \frac{a(1 - r^n)}{1 - r}$:</p>
+<p>$$
+S_3 = \frac{a(1 - r^3)}{1 - r}, \quad S_6 = \frac{a(1 - r^6)}{1 - r}
+$$</p>
+<ul>
+<li><strong>Step 2:</strong> Formulate the given ratio:</li>
+</ul>
+<p>$$
+\frac{S_3}{S_6} = \frac{\frac{a(1 - r^3)}{1 - r}}{\frac{a(1 - r^6)}{1 - r}} = \frac{1 - r^3}{1 - r^6} = \frac{125}{152}
+$$</p>
+<ul>
+<li><strong>Step 3:</strong> Factorize the denominator using difference of squares:</li>
+</ul>
+<p>$$
+1 - r^6 = (1 - r^3)(1 + r^3)
+$$</p>
+<p>Since $r \neq 1$, $1 - r^3 \neq 0$, we can cancel $(1 - r^3)$:</p>
+<p>$$
+\frac{1}{1 + r^3} = \frac{125}{152}
+$$</p>
+<ul>
+<li><strong>Step 4:</strong> Solve for $r$:</li>
+</ul>
+<p>$$
+1 + r^3 = \frac{152}{125} \implies r^3 = \frac{152}{125} - 1 = \frac{27}{125}
+$$</p>
+<p>$$
+r = \left(\frac{27}{125}\right)^{1/3} = \frac{3}{5}
+$$</p>
+<hr />
+<h3>Problem 3.3: Pure Recurring Decimals to Rational Fractions via $S_\infty$</h3>
+<p><strong>Express $0.\overline{23} = 0.232323\dots$ as a rational number $\frac{p}{q}$ using an infinite geometric series.</strong></p>
+<p><strong>Solution:</strong>
+- <strong>Step 1:</strong> Expand in powers of $10$:</p>
+<p>$$
+0.\overline{23} = \frac{23}{100} + \frac{23}{10000} + \frac{23}{1000000} + \dots
+$$</p>
+<p>$$
+0.\overline{23} = \frac{23}{10^2} + \frac{23}{10^4} + \frac{23}{10^6} + \dots
+$$</p>
+<ul>
+<li><strong>Step 2:</strong> Identify parameters of the infinite G.P.:</li>
+<li>First term $a = \frac{23}{100}$</li>
+<li>
+<p>Common ratio $r = \frac{23/10^4}{23/10^2} = \frac{1}{10^2} = \frac{1}{100}$</p>
+</li>
+<li>
+<p><strong>Step 3:</strong> Check convergence condition:</p>
+</li>
+</ul>
+<p>$$
+|r| = \left|\frac{1}{100}\right| < 1 \quad \text{(Convergent)}
+$$</p>
+<ul>
+<li><strong>Step 4:</strong> Apply $S_\infty = \frac{a}{1 - r}$:</li>
+</ul>
+<p>$$
+S_\infty = \frac{\frac{23}{100}}{1 - \frac{1}{100}} = \frac{\frac{23}{100}}{\frac{99}{100}} = \frac{23}{99}
+$$</p>
+<hr />
+<h3>Problem 3.4: Real-World Geometric Application (Bouncing Ball)</h3>
+<p><strong>A ball is dropped from a height of $120\text{ m}$. Each time it hits the ground, it rebounds to $\frac{3}{4}$ of its previous height. Find the total distance traveled by the ball before it comes to rest.</strong></p>
+<p><strong>Solution:</strong>
+- <strong>Step 1:</strong> Analyze the motion breakdown:
+  - Initial downward drop: $h_0 = 120\text{ m}$.
+  - First rebound up &amp; down: $2 \times \left(120 \times \frac{3}{4}\right)$
+  - Second rebound up &amp; down: $2 \times \left(120 \times \left(\frac{3}{4}\right)^2\right)$
+  - $k^{\text{th}}$ rebound up &amp; down: $2 \times 120 \times \left(\frac{3}{4}\right)^k$</p>
+<ul>
+<li><strong>Step 2:</strong> Set up the total distance summation:</li>
+</ul>
+<p>$$
+D = 120 + 2 \left[ 120\left(\frac{3}{4}\right) + 120\left(\frac{3}{4}\right)^2 + 120\left(\frac{3}{4}\right)^3 + \dots \right]
+$$</p>
+<p>$$
+D = 120 + 240 \left[ \frac{3}{4} + \left(\frac{3}{4}\right)^2 + \left(\frac{3}{4}\right)^3 + \dots \right]
+$$</p>
+<ul>
+<li><strong>Step 3:</strong> Sum the infinite series inside brackets ($a = \frac{3}{4}, r = \frac{3}{4}$):</li>
+</ul>
+<p>$$
+S_\infty = \frac{a}{1 - r} = \frac{3/4}{1 - 3/4} = \frac{3/4}{1/4} = 3
+$$</p>
+<ul>
+<li><strong>Step 4:</strong> Compute final total distance:</li>
+</ul>
+<p>$$
+D = 120 + 240(3) = 120 + 720 = 840\text{ m}
+$$</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Student Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trap / Error Type</th>
+<th style="text-align: left;">Incorrect Student Work</th>
+<th style="text-align: left;">Correct Mathematical Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Trap 1: Applying $S_\infty$ blindly when $|r| \ge 1$</strong></td>
+<td style="text-align: left;">For $1 + 2 + 4 + 8 + \dots$, student writes $S_\infty = \frac{1}{1 - 2} = -1$.</td>
+<td style="text-align: left;">State: $|r| = 2 \ge 1$, so the series <strong>diverges</strong>. Sum does not exist ($\infty$). Formula $S_\infty = \frac{a}{1-r}$ is valid <strong>only if $|r| < 1$</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trap 2: Forgetting the $r = 1$ branch</strong></td>
+<td style="text-align: left;">Student writes $S_n = \frac{a(1^n - 1)}{1 - 1} = \frac{0}{0}$ and gets stuck.</td>
+<td style="text-align: left;">Explicitly branch: If $r = 1$, $S_n = na$. Never divide by $r - 1$ without stating $r \neq 1$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trap 3: Sign error in common ratio with alternating signs</strong></td>
+<td style="text-align: left;">For $9 - 3 + 1 - \frac{1}{3} + \dots$, student takes $r = \frac{1}{3}$.</td>
+<td style="text-align: left;">Common ratio must preserve sign: $r = \frac{-3}{9} = -\frac{1}{3}$. Then $S_\infty = \frac{9}{1 - (-1/3)} = \frac{9}{4/3} = \frac{27}{4}$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trap 4: Off-by-one error in number of terms ($n$)</strong></td>
+<td style="text-align: left;">Finding sum of $a^2 + a^3 + \dots + a^{n}$. Student plugs $n$ into formula instead of $(n - 1)$.</td>
+<td style="text-align: left;">Count terms carefully: $\text{Number of terms} = \text{last index} - \text{first index} + 1 = n - 2 + 1 = n - 1$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trap 5: Double counting in bouncing ball problems</strong></td>
+<td style="text-align: left;">Writing $D = 2 \times [120 + 120(3/4) + \dots]$</td>
+<td style="text-align: left;">The initial drop happens <strong>once</strong>; only rebounds have upward and downward legs: $D = h_0 + 2 \sum_{k=1}^\infty h_k$.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points</h2>
+<h3>5.1 The Repeating Decimal Direct Fraction Formula</h3>
+<p>For a repeating decimal $0.\overline{a_1 a_2 \dots a_k}$:</p>
+<p>$$
+\text{Fraction} = \frac{\text{Repeating Block}}{\underbrace{99\dots9}_{k\text{ nines}}}
+$$</p>
+<ul>
+<li>Example: $0.\overline{584} = \frac{584}{999}$
+For mixed recurring decimals $0.b_1 b_2 \dots b_m \overline{a_1 a_2 \dots a_k}$:</li>
+</ul>
+<p>$$
+\text{Fraction} = \frac{(\text{Entire non-repeating \& repeating part}) - (\text{Non-repeating part})}{\underbrace{99\dots9}_{k\text{ nines}} \underbrace{00\dots0}_{m\text{ zeroes}}}
+$$</p>
+<ul>
+<li>Example: $0.16\overline{3} = \frac{163 - 16}{900} = \frac{147}{900} = \frac{49}{300}$</li>
+</ul>
+<hr />
+<h3>5.2 Geometric Ratio of Block Sums</h3>
+<p>Let $S_n$ be the sum of the first $n$ terms, $S_{2n}$ the sum of the first $2n$ terms, and $S_{3n}$ the sum of the first $3n$ terms of any G.P.
+Define the block sums:
+- $B_1 = S_n$
+- $B_2 = S_{2n} - S_n$
+- $B_3 = S_{3n} - S_{2n}$</p>
+<p><strong>Golden Property:</strong>
+The block sums $B_1, B_2, B_3$ <strong>themselves form a G.P.</strong> with common ratio $r^n$:</p>
+<p>$$
+\frac{S_{2n} - S_n}{S_n} = r^n, \quad \frac{S_{3n} - S_{2n}}{S_{2n} - S_n} = r^n
+$$</p>
+<p>$$
+\implies (S_{2n} - S_n)^2 = S_n(S_{3n} - S_{2n})
+$$</p>
+<blockquote>
+<p><em>Use this shortcut in objective exams (JEE/CET) to find $S_{3n}$ without ever computing $a$ or $r$!</em></p>
+</blockquote>
+<hr />
+<h3>5.3 Quick Ratio Elimination for Symmetric 3-term Problems</h3>
+<p>If the sum of 3 terms in G.P. is $S$ and their product is $P$:
+1. Immediately obtain the middle term:</p>
+<p>$$
+a = P^{1/3}
+$$</p>
+<ol>
+<li>Substitute $a$ into the sum:</li>
+</ol>
+<p>$$
+\frac{a}{r} + a + ar = S \implies a\left(\frac{1}{r} + 1 + r\right) = S \implies r + \frac{1}{r} = \frac{S - a}{a}
+$$</p>
+<ol>
+<li>Let $k = \frac{S - a}{a}$. The quadratic in $r$ is simply:</li>
+</ol>
+<p>$$
+r^2 - kr + 1 = 0
+$$</p>
+<p>Real solutions exist if and only if $|k| \ge 2$.</p>
+<hr />
+                  </div>
+                
+
+                  <div class="whiteboard-section concept-block" style="margin-bottom: 2rem;">
+                    
+                  <div class="sticky-note pink" style="margin: 1.5rem 0 2rem;">
+                    <div class="sticky-title">📌 Geometric Mean (GM) and Relationship Between AM and GM — Essential Whiteboard Takeaways</div>
+                    <p><span class="sticky-text-navy">📘 Core NCERT Concept:</span> Master the foundational definitions and structural conditions before solving numerical problems.</p>
+                    <p><span class="sticky-text-red">⚠️ Examiner Trap Alert:</span> <span class="sticky-highlight">Do not skip identity statements or substitution lines.</span> CBSE evaluators penalize missing algebraic connections.</p>
+                    <p><span class="sticky-text-green">💡 Official Step-Marking Rule:</span> Allocate full attention to writing units, signs, and explicit equations to secure all step marks (½M / 1M).</p>
+                    <p><span class="sticky-text-purple">🎯 Student Practice Tip:</span> Practice reproducing the key steps on your Whiteboard Scribble Pad before consulting the model solution.</p>
+                  </div>
+                
+                    <h1>Geometric Mean (GM) and Relationship Between AM and GM</h1>
+<h1>Class 11 Mathematics — Sequences &amp; Series</h1>
+<h1></h1>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Definition of Geometric Mean between Two Positive Real Numbers</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Highest Board &amp; Competitive Frequency)</em></p>
+<p>Let $a$ and $b$ be two positive real numbers ($a, b \in \mathbb{R}^+$). A positive real number $G$ is called the <strong>Geometric Mean (GM)</strong> of $a$ and $b$ if the sequence:</p>
+<p>$$
+a, \; G, \; b
+$$</p>
+<p>forms a <strong>Geometric Progression (GP)</strong>.</p>
+<ul>
+<li><strong>Algebraic Condition:</strong> By definition of a GP, the common ratio $r$ must satisfy:</li>
+</ul>
+<p>$$
+\frac{G}{a} = \frac{b}{G} \implies G^2 = ab \implies G = \sqrt{ab}
+$$</p>
+<ul>
+<li><strong>NCERT Convention:</strong> Unless explicitly stated otherwise, the geometric mean of two positive real numbers $a$ and $b$ is taken as the <strong>positive square root</strong>:</li>
+</ul>
+<p>$$
+G = \sqrt{ab}
+$$</p>
+<h4>Geometric Interpretation (The Classical Euclidean Construction)</h4>
+<p>Construct a line segment $AB$ of length $a + b$. Let $C$ divide $AB$ into segments $AC = a$ and $CB = b$. Construct a semicircle with diameter $AB$. At point $C$, erect a perpendicular to $AB$ meeting the semicircle at point $D$.
+* In right-angled triangle $\triangle ADB$, the altitude to the hypotenuse is the geometric mean of the segments into which it divides the hypotenuse:</p>
+<p>$$
+CD^2 = AC \cdot CB = a \cdot b \implies CD = \sqrt{ab}
+$$</p>
+<p>Thus, the Geometric Mean $G$ corresponds directly to the length of the perpendicular dropped from a point on a semicircle to its diameter.</p>
+<pre><code>            D
+          / | \
+        /   |   \
+      /     |G   \
+    /       |     \
+  A---------C------B
+      a        b   
+  |&lt;--- a+b ------&gt;|
+</code></pre>
+<hr />
+<h3>1.2 Insertion of $n$ Geometric Means Between Two Positive Real Numbers</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<p>Let $a$ and $b$ be two positive real numbers. We wish to insert $n$ numbers $G_1, G_2, \dots, G_n$ between $a$ and $b$ such that the resulting sequence:</p>
+<p>$$
+a, \; G_1, \; G_2, \; G_3, \; \dots, \; G_n, \; b
+$$</p>
+<p>is a Geometric Progression.</p>
+<ul>
+<li>Total number of terms in this sequence $= n + 2$.</li>
+<li>First term $T_1 = a$.</li>
+<li>Last term $T_{n+2} = b$.</li>
+</ul>
+<hr />
+<h3>1.3 Arithmetic Mean vs. Geometric Mean: Fundamental Comparison</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Arithmetic Mean (AM)</th>
+<th style="text-align: left;">Geometric Mean (GM)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Formula for two numbers ($a, b$)</strong></td>
+<td style="text-align: left;">$A = \dfrac{a+b}{2}$</td>
+<td style="text-align: left;">$G = \sqrt{ab}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Invariance Principle</strong></td>
+<td style="text-align: left;">Preserves the <strong>linear sum</strong>: $a + b = A + A$</td>
+<td style="text-align: left;">Preserves the <strong>product</strong>: $a \cdot b = G \cdot G$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Domain Constraint</strong></td>
+<td style="text-align: left;">Defined for all $a, b \in \mathbb{R}$</td>
+<td style="text-align: left;">Defined primarily for $a, b \in \mathbb{R}^+$ (to avoid non-real roots)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Geometric Dimension</strong></td>
+<td style="text-align: left;">Midpoint of a 1D line segment</td>
+<td style="text-align: left;">Side of an equivalent area 2D square ($G^2 = ab$)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mean of $n$ Terms</strong></td>
+<td style="text-align: left;">$\bar{x} = \dfrac{1}{n}\sum_{i=1}^n x_i$</td>
+<td style="text-align: left;">$G = \left(\prod_{i=1}^n x_i\right)^{1/n}$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Complete Step-by-Step Mathematical Proofs &amp; Derivations</h2>
+<h3>Derivation 2.1: Formula for Common Ratio and the $k$-th Inserted Geometric Mean</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<p><strong>Theorem:</strong>
+If $n$ geometric means $G_1, G_2, \dots, G_n$ are inserted between two positive numbers $a$ and $b$, the common ratio is given by:</p>
+<p>$$
+r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}
+$$</p>
+<p>and the $k$-th inserted geometric mean is:</p>
+<p>$$
+G_k = a \cdot r^k = a\left(\frac{b}{a}\right)^{\frac{k}{n+1}} = a^{\frac{n+1-k}{n+1}} b^{\frac{k}{n+1}}
+$$</p>
+<h4>Formal Proof:</h4>
+<ol>
+<li><strong>Given:</strong> The sequence $a, G_1, G_2, \dots, G_n, b$ forms a GP with first term $a$, $(n+2)$-th term $b$, and common ratio $r$.</li>
+<li><strong>Step 1:</strong> Express the $(n+2)$-th term using the general term formula $T_m = a r^{m-1}$:</li>
+</ol>
+<p>$$
+T_{n+2} = a \cdot r^{(n+2)-1} = a \cdot r^{n+1}
+$$</p>
+<ol>
+<li><strong>Step 2:</strong> Equate $T_{n+2}$ to $b$:</li>
+</ol>
+<p>$$
+a \cdot r^{n+1} = b \implies r^{n+1} = \frac{b}{a}
+$$</p>
+<ol>
+<li><strong>Step 3:</strong> Taking the $(n+1)$-th positive real root on both sides:</li>
+</ol>
+<p>$$
+r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}
+$$</p>
+<ol>
+<li><strong>Step 4:</strong> The $k$-th mean $G_k$ is the $(k+1)$-th term of the overall sequence:</li>
+</ol>
+<p>$$
+G_k = T_{k+1} = a \cdot r^k
+$$</p>
+<ol>
+<li><strong>Step 5:</strong> Substitute $r$:</li>
+</ol>
+<p>$$
+G_k = a \left[\left(\frac{b}{a}\right)^{\frac{1}{n+1}}\right]^k = a \left(\frac{b}{a}\right)^{\frac{k}{n+1}} = a^{1 - \frac{k}{n+1}} b^{\frac{k}{n+1}} = a^{\frac{n+1-k}{n+1}} b^{\frac{k}{n+1}}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Derivation 2.2: Product of $n$ Inserted Geometric Means</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<p><strong>Theorem:</strong>
+The product of $n$ geometric means inserted between two positive numbers $a$ and $b$ is equal to the $n$-th power of the single geometric mean between them:</p>
+<p>$$
+\prod_{k=1}^n G_k = G^n = (\sqrt{ab})^n
+$$</p>
+<h4>Formal Proof:</h4>
+<ol>
+<li><strong>Given:</strong> $G_k = a \cdot r^k$, where $r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}$ and $G = \sqrt{ab}$.</li>
+<li><strong>Step 1:</strong> Write out the product $P_n = G_1 \cdot G_2 \cdot G_3 \cdots G_n$:</li>
+</ol>
+<p>$$
+P_n = (a r^1) \cdot (a r^2) \cdot (a r^3) \cdots (a r^n)
+$$</p>
+<ol>
+<li><strong>Step 2:</strong> Factor out powers of $a$ and group powers of $r$:</li>
+</ol>
+<p>$$
+P_n = a^n \cdot r^{(1 + 2 + 3 + \dots + n)}
+$$</p>
+<ol>
+<li><strong>Step 3:</strong> Use the arithmetic sum identity $\sum_{k=1}^n k = \frac{n(n+1)}{2}$:</li>
+</ol>
+<p>$$
+P_n = a^n \cdot r^{\frac{n(n+1)}{2}}
+$$</p>
+<ol>
+<li><strong>Step 4:</strong> Substitute $r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}$:</li>
+</ol>
+<p>$$
+P_n = a^n \cdot \left[\left(\frac{b}{a}\right)^{\frac{1}{n+1}}\right]^{\frac{n(n+1)}{2}} = a^n \cdot \left(\frac{b}{a}\right)^{\frac{n}{2}}
+$$</p>
+<ol>
+<li><strong>Step 5:</strong> Combine bases $a$ and $b$:</li>
+</ol>
+<p>$$
+P_n = a^n \cdot a^{-\frac{n}{2}} \cdot b^{\frac{n}{2}} = a^{\frac{n}{2}} \cdot b^{\frac{n}{2}} = (ab)^{\frac{n}{2}}
+$$</p>
+<ol>
+<li><strong>Step 6:</strong> Relate to $G = \sqrt{ab} = (ab)^{1/2}$:</li>
+</ol>
+<p>$$
+P_n = \left[(ab)^{1/2}\right]^n = G^n
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Derivation 2.3: Fundamental Inequality $A \ge G$ for Two Positive Real Numbers</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<p><strong>Theorem:</strong>
+Let $A = \frac{a+b}{2}$ and $G = \sqrt{ab}$ where $a, b \in \mathbb{R}^+$. Then:</p>
+<p>$$
+A \ge G
+$$</p>
+<p>The equality holds if and only if $a = b$.</p>
+<h4>Formal Proof:</h4>
+<ol>
+<li><strong>Given:</strong> $a, b \in \mathbb{R}^+$, $A = \frac{a+b}{2}$, $G = \sqrt{ab}$.</li>
+<li><strong>Step 1:</strong> Consider the difference $(A - G)$:</li>
+</ol>
+<p>$$
+A - G = \frac{a+b}{2} - \sqrt{ab} = \frac{a + b - 2\sqrt{ab}}{2}
+$$</p>
+<ol>
+<li><strong>Step 2:</strong> Express the numerator as a perfect square:
+   Since $a > 0$ and $b > 0$, we can write $a = (\sqrt{a})^2$ and $b = (\sqrt{b})^2$:</li>
+</ol>
+<p>$$
+A - G = \frac{(\sqrt{a})^2 - 2\sqrt{a}\sqrt{b} + (\sqrt{b})^2}{2} = \frac{(\sqrt{a} - \sqrt{b})^2}{2}
+$$</p>
+<ol>
+<li><strong>Step 3:</strong> Apply the Trivial Inequality for real numbers:
+   For any real numbers, $(\sqrt{a} - \sqrt{b})^2 \ge 0$, and the denominator $2 > 0$:</li>
+</ol>
+<p>$$
+\frac{(\sqrt{a} - \sqrt{b})^2}{2} \ge 0 \implies A - G \ge 0 \implies A \ge G
+$$</p>
+<ol>
+<li><strong>Step 4:</strong> Condition for Equality:</li>
+</ol>
+<p>$$
+A - G = 0 \iff (\sqrt{a} - \sqrt{b})^2 = 0 \iff \sqrt{a} = \sqrt{b} \iff a = b
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h3>Derivation 2.4: Expressing Numbers in Terms of their AM ($A$) and GM ($G$)</h3>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span></p>
+<p><strong>Theorem:</strong>
+If $A$ and $G$ are the Arithmetic and Geometric means between two positive numbers $a$ and $b$, then the numbers are given by:</p>
+<p>$$
+a, b = A \pm \sqrt{A^2 - G^2} = A \pm \sqrt{(A-G)(A+G)}
+$$</p>
+<h4>Formal Proof:</h4>
+<ol>
+<li><strong>Given:</strong></li>
+</ol>
+<p>$$
+A = \frac{a+b}{2} \implies a + b = 2A
+$$</p>
+<p>$$
+G = \sqrt{ab} \implies ab = G^2
+$$</p>
+<ol>
+<li><strong>Step 1:</strong> Recall that a quadratic equation with roots $a$ and $b$ is given by:</li>
+</ol>
+<p>$$
+x^2 - (\text{Sum of roots})x + (\text{Product of roots}) = 0
+$$</p>
+<ol>
+<li><strong>Step 2:</strong> Substitute sum and product:</li>
+</ol>
+<p>$$
+x^2 - (2A)x + G^2 = 0
+$$</p>
+<ol>
+<li><strong>Step 3:</strong> Apply the quadratic formula $x = \frac{-B \pm \sqrt{B^2 - 4AC}}{2}$:</li>
+</ol>
+<p>$$
+x = \frac{2A \pm \sqrt{(-2A)^2 - 4(1)(G^2)}}{2} = \frac{2A \pm \sqrt{4A^2 - 4G^2}}{2}
+$$</p>
+<ol>
+<li><strong>Step 4:</strong> Simplify radicals:</li>
+</ol>
+<p>$$
+x = \frac{2A \pm 2\sqrt{A^2 - G^2}}{2} = A \pm \sqrt{A^2 - G^2}
+$$</p>
+<ol>
+<li>Since $A \ge G$, $A^2 - G^2 \ge 0$, ensuring real roots. Factorising inside the radical gives:</li>
+</ol>
+<p>$$
+a, b = A \pm \sqrt{(A-G)(A+G)}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Examples, NCERT Exemplar &amp; Application Problems</h2>
+                  </div>
+                
+          </div>
+
+          <!-- TAB 2: Solved Examples with Step Marking -->
+          <div id="panel-examples" class="view-panel">
+            <div class="sticky-note green" style="margin-bottom: 2rem;">
+              <div class="sticky-title">💡 High-Yield Worked Examples</div>
+              Each solution explicitly breaks down where CBSE examiners award step marks (½ mark for formula, 1 mark for substitutions).
+            </div>
+            
+                  <div class="question-card example-card" id="ex_0" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 5.1 (NCERT Exemplar — System of Equations)
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> The $3^{\text{rd}}$ term of a GP is $24$ and the $6^{\text{th}}$ term is $192$. Find the $10^{\text{th}}$ term.</p>
+<p><strong>Step-by-Step Solution:</strong>
+* <strong>Step 1: Set up the algebraic system</strong>
+  Let the first term be $a$ and the common ratio be $r$.
+  Using the general term formula $T_n = a r^{n-1}$:</p>
+<p>$$
+T_3 = a r^2 = 24 \quad \text{--- (Equation 1)}
+$$</p>
+<p>$$
+T_6 = a r^5 = 192 \quad \text{--- (Equation 2)}
+$$</p>
+<ul>
+<li><strong>Step 2: Solve for $r$ by elimination</strong>
+  Dividing Equation (2) by Equation (1):</li>
+</ul>
+<p>$$
+\frac{a r^5}{a r^2} = \frac{192}{24} \implies r^3 = 8
+$$</p>
+<p>Taking the real cube root:</p>
+<p>$$
+r = 2
+$$</p>
+<ul>
+<li><strong>Step 3: Solve for the first term $a$</strong>
+  Substitute $r = 2$ back into Equation (1):</li>
+</ul>
+<p>$$
+a (2)^2 = 24 \implies 4a = 24 \implies a = 6
+$$</p>
+<ul>
+<li><strong>Step 4: Compute the desired term $T_{10}$</strong></li>
+</ul>
+<p>$$
+T_{10} = a r^9 = 6 \cdot (2)^9 = 6 \cdot 512 = 3072
+$$</p>
+<p><strong>Answer:</strong> $T_{10} = 3072$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_1" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 5.2 (Symmetric Variable Selection Technique)
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> The sum of three consecutive numbers in a GP is $56$, and their product is $4096$. Determine the numbers.</p>
+<p><strong>Step-by-Step Solution:</strong>
+* <strong>Step 1: Choose symmetric variables</strong>
+  Let the three numbers be $\frac{a}{r}, a, ar$.
+* <strong>Step 2: Exploit the product condition</strong></p>
+<p>$$
+\left(\frac{a}{r}\right) \cdot (a) \cdot (ar) = 4096 \implies a^3 = 4096
+$$</p>
+<p>Taking the real cube root ($4096 = 16^3$):</p>
+<p>$$
+a = 16
+$$</p>
+<ul>
+<li><strong>Step 3: Exploit the sum condition</strong></li>
+</ul>
+<p>$$
+\frac{a}{r} + a + ar = 56
+$$</p>
+<p>Substitute $a = 16$:</p>
+<p>$$
+16 \left(\frac{1}{r} + 1 + r\right) = 56 \implies \frac{1 + r + r^2}{r} = \frac{56}{16} = \frac{7}{2}
+$$</p>
+<p>Cross-multiplying:</p>
+<p>$$
+2(1 + r + r^2) = 7r \implies 2 + 2r + 2r^2 - 7r = 0 \implies 2r^2 - 5r + 2 = 0
+$$</p>
+<ul>
+<li><strong>Step 4: Factor the quadratic equation</strong></li>
+</ul>
+<p>$$
+2r^2 - 4r - r + 2 = 0 \implies 2r(r - 2) - 1(r - 2) = 0 \implies (2r - 1)(r - 2) = 0
+$$</p>
+<p>$$
+r = 2 \quad \text{or} \quad r = \frac{1}{2}
+$$</p>
+<ul>
+<li><strong>Step 5: State the sequence of numbers</strong></li>
+<li><strong>Case 1 ($r = 2$):</strong> Terms are $\frac{16}{2}, 16, 16(2) \implies 8, 16, 32$.</li>
+<li><strong>Case 2 ($r = \frac{1}{2}$):</strong> Terms are $\frac{16}{1/2}, 16, 16\left(\frac{1}{2}\right) \implies 32, 16, 8$.</li>
+</ul>
+<p><strong>Answer:</strong> The numbers are $8, 16, 32$ (or $32, 16, 8$).</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_2" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 5.3 (Algebraic Proof & Geometry of Indices)
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> If the $p^{\text{th}}$, $q^{\text{th}}$, and $s^{\text{th}}$ terms of an arbitrary GP are $x, y, z$ respectively, prove that:</p>
+<p>$$
+x^{q - s} \cdot y^{s - p} \cdot z^{p - q} = 1
+$$</p>
+<p><strong>Step-by-Step Proof:</strong>
+* <strong>Given:</strong> First term $= A$, common ratio $= R$.</p>
+<p>$$
+x = A R^{p-1}, \quad y = A R^{q-1}, \quad z = A R^{s-1}
+$$</p>
+<ul>
+<li><strong>To Prove:</strong> $x^{q-s} y^{s-p} z^{p-q} = 1$</li>
+<li><strong>Algebraic Evaluation:</strong>
+  Substitute the expressions for $x, y, z$ into the LHS:</li>
+</ul>
+<p>$$
+\text{LHS} = \left(A R^{p-1}\right)^{q-s} \cdot \left(A R^{q-1}\right)^{s-p} \cdot \left(A R^{s-1}\right)^{p-q}
+$$</p>
+<p>Group the base $A$ and base $R$ terms:</p>
+<p>$$
+\text{LHS} = A^{(q-s) + (s-p) + (p-q)} \cdot R^{(p-1)(q-s) + (q-1)(s-p) + (s-1)(p-q)}
+$$</p>
+<ul>
+<li><strong>Evaluate Exponent of $A$:</strong></li>
+</ul>
+<p>$$
+E_A = q - s + s - p + p - q = 0 \implies A^0 = 1
+$$</p>
+<ul>
+<li><strong>Evaluate Exponent of $R$:</strong>
+  Expand the index sum:</li>
+</ul>
+<p>$$
+\begin{aligned}
+  E_R &= [p(q - s) - (q - s)] + [q(s - p) - (s - p)] + [s(p - q) - (p - q)] \\
+      &= (pq - ps + qs - qp + sp - sq) - (q - s + s - p + p - q) \\
+      &= 0 - 0 = 0
+  \end{aligned}
+$$</p>
+<ul>
+<li><strong>Final Reduction:</strong></li>
+</ul>
+<p>$$
+\text{LHS} = A^0 \cdot R^0 = 1 \cdot 1 = 1 = \text{RHS}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<hr />
+<h2>6. Examiner Traps &amp; Common Student Mistakes</h2>
+<pre><code>                       COMMON PITFALL MATRIX
+┌──────────────────────────────────────┬───────────────────────────────────────────┐
+│              The Error               │           Correct Mathematical Rule       │
+├──────────────────────────────────────┼───────────────────────────────────────────┤
+│ Writing T_n = a r^n                  │ T_n = a r^(n-1)                           │
+│ (Off-by-one error in exponent)       │ (For n=1, power must be zero: r^0 = 1)    │
+├──────────────────────────────────────┼───────────────────────────────────────────┤
+│ Dropping the negative root:          │ Even powers yield ± solutions:            │
+│ r^2 = 9 =&gt; r = 3 only                │ r^2 = 9 =&gt; r = ±3                         │
+│                                      │ (Produces two valid oscillating sequences)│
+├──────────────────────────────────────┼───────────────────────────────────────────┤
+│ Assuming four symmetric terms have   │ If terms are a/r^3, a/r, ar, ar^3,        │
+│ common ratio r                       │ common ratio is r^2 (step size is 2)      │
+├──────────────────────────────────────┼───────────────────────────────────────────┤
+│ Permitting a = 0 or r = 0            │ By definition, a ≠ 0 and r ≠ 0            │
+│ in a GP                              │ (Division by zero a_(n+1)/a_n undefined)  │
+└──────────────────────────────────────┴───────────────────────────────────────────┘
+</code></pre>
+<ol>
+<li><strong>Even-Index Root Losses ($r = \pm \dots$):</strong></li>
+<li><em>Trap:</em> Solving $r^4 = 16$ or $r^2 = \frac{1}{4}$ and discarding the negative sign without text explicitly stating "terms are positive".</li>
+<li>
+<p><em>Impact:</em> Loses $50\%$ of credit on board markschemes for missing the alternating GP solution branch.</p>
+</li>
+<li>
+<p><strong>Common Ratio in Symmetric Setups:</strong></p>
+</li>
+<li><em>Trap:</em> For four numbers, students write $\frac{a}{r^3}, \frac{a}{r}, ar, ar^3$ and later conclude the common ratio is $r$.</li>
+<li>
+<p><em>Correction:</em> The common ratio of this sequence is $\frac{ar}{a/r} = r^2$. If $r = 2$, the actual common ratio of the resulting GP is $4$.</p>
+</li>
+<li>
+<p><strong>Boundary Indices in Term-Reversal:</strong></p>
+</li>
+<li><em>Trap:</em> Calculating the $k^{\text{th}}$ term from the end as $T_{m-k}$.</li>
+<li><em>Correction:</em> It is the $(m - k + 1)^{\text{th}}$ term from the start.</li>
+</ol>
+<hr />
+<h2>7. Speed Hacks &amp; Golden Properties for Competitive Exams</h2>
+<h3>Hack 7.1: The Logarithmic Bridge</h3>
+<p>If $a_1, a_2, a_3, \dots, a_n$ is a GP with terms $a_i > 0$:</p>
+<p>$$
+\log a_k = \log a_1 + (k-1)\log r
+$$</p>
+<ul>
+<li>This maps any GP identity problem directly into an Arithmetic Progression problem.</li>
+<li>The determinant involving terms of a GP:</li>
+</ul>
+<p>$$
+\begin{vmatrix} 
+  \log a_n & \log a_{n+1} & \log a_{n+2} \\ 
+  \log a_{n+3} & \log a_{n+4} & \log a_{n+5} \\ 
+  \log a_{n+6} & \log a_{n+7} & \log a_{n+8} 
+  \end{vmatrix} = 0
+$$</p>
+<p><em>(Rows form an AP, so $R_3 - R_2 = R_2 - R_1$, making two rows identical upon subtraction).</em></p>
+<h3>Hack 7.2: Ratio Elimination Shortcut</h3>
+<p>To find the ratio between two known arbitrary terms $T_p$ and $T_q$:</p>
+<p>$$
+\frac{T_p}{T_q} = r^{p - q} \implies r = \left(\frac{T_p}{T_q}\right)^{\frac{1}{p - q}}
+$$</p>
+<ul>
+<li><em>Example:</em> If $T_4 = 2$ and $T_7 = 54$, then:</li>
+</ul>
+<p>$$
+r^{7 - 4} = \frac{54}{2} \implies r^3 = 27 \implies r = 3
+$$</p>
+<p><em>(No need to explicitly solve for $a$ first).</em></p>
+<h3>Hack 7.3: Product of the First $n$ Terms of a GP</h3>
+<p>Let $P_n = a_1 \cdot a_2 \cdot a_3 \cdots a_n$. Using the equidistant term product property:</p>
+<p>$$
+P_n^2 = (a_1 \cdot a_n)^n \implies P_n = (a_1 \cdot a_n)^{n/2} = \left(a^2 r^{n-1}\right)^{n/2}
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_3" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3.1: Insertion of Multiple Geometric Means
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> Insert 4 geometric means between $5$ and $160$.</p>
+<h4>Complete Step-by-Step Solution:</h4>
+<ul>
+<li><strong>Step 1 (Identify Parameters):</strong>
+  Here, $a = 5$, $b = 160$, and $n = 4$.
+  Total terms in sequence $= n + 2 = 6$.</li>
+<li><strong>Step 2 (Compute Common Ratio $r$):</strong></li>
+</ul>
+<p>$$
+r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}} = \left(\frac{160}{5}\right)^{\frac{1}{4+1}} = (32)^{\frac{1}{5}} = (2^5)^{\frac{1}{5}} = 2
+$$</p>
+<ul>
+<li><strong>Step 3 (Calculate Individual Means):</strong></li>
+</ul>
+<p>$$
+G_1 = a \cdot r = 5 \times 2 = 10
+$$</p>
+<p>$$
+G_2 = a \cdot r^2 = 5 \times 2^2 = 20
+$$</p>
+<p>$$
+G_3 = a \cdot r^3 = 5 \times 2^3 = 40
+$$</p>
+<p>$$
+G_4 = a \cdot r^4 = 5 \times 2^4 = 80
+$$</p>
+<ul>
+<li><strong>Step 4 (Verification):</strong>
+  The sequence is $5, 10, 20, 40, 80, 160$.
+  Common ratio $= \frac{10}{5} = \frac{20}{10} = \dots = 2$, which is verified.</li>
+</ul>
+<p><strong>Board Marking Scheme Breakdown:</strong>
+* Identification of formula $r = (b/a)^{1/(n+1)}$ and parameters: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Correct computation of common ratio $r = 2$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Evaluation of all 4 means ($G_1, G_2, G_3, G_4$): <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_4" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3.2: Ratio of Numbers Given the Ratio of AM to GM (NCERT Classic)
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> If the AM and GM of two positive numbers $a$ and $b$ are in the ratio $m : n$, prove that:</p>
+<p>$$
+a : b = \left(m + \sqrt{m^2 - n^2}\right) : \left(m - \sqrt{m^2 - n^2}\right)
+$$</p>
+<h4>Complete Step-by-Step Solution:</h4>
+<ul>
+<li><strong>Step 1 (Setup given condition):</strong></li>
+</ul>
+<p>$$
+\frac{A}{G} = \frac{m}{n} \implies \frac{\frac{a+b}{2}}{\sqrt{ab}} = \frac{m}{n} \implies \frac{a+b}{2\sqrt{ab}} = \frac{m}{n}
+$$</p>
+<ul>
+<li><strong>Step 2 (Apply Componendo and Dividendo):</strong>
+  Recall: If $\frac{p}{q} = \frac{r}{s}$, then $\frac{p+q}{p-q} = \frac{r+s}{r-s}$.</li>
+</ul>
+<p>$$
+\frac{a + b + 2\sqrt{ab}}{a + b - 2\sqrt{ab}} = \frac{m + n}{m - n}
+$$</p>
+<ul>
+<li><strong>Step 3 (Rewrite as perfect squares):</strong></li>
+</ul>
+<p>$$
+\frac{(\sqrt{a} + \sqrt{b})^2}{(\sqrt{a} - \sqrt{b})^2} = \frac{m + n}{m - n}
+$$</p>
+<ul>
+<li><strong>Step 4 (Take square roots on both sides):</strong>
+  Assuming without loss of generality that $a > b$:</li>
+</ul>
+<p>$$
+\frac{\sqrt{a} + \sqrt{b}}{\sqrt{a} - \sqrt{b}} = \frac{\sqrt{m+n}}{\sqrt{m-n}}
+$$</p>
+<ul>
+<li><strong>Step 5 (Apply Componendo and Dividendo a second time):</strong></li>
+</ul>
+<p>$$
+\frac{(\sqrt{a} + \sqrt{b}) + (\sqrt{a} - \sqrt{b})}{(\sqrt{a} + \sqrt{b}) - (\sqrt{a} - \sqrt{b})} = \frac{\sqrt{m+n} + \sqrt{m-n}}{\sqrt{m+n} - \sqrt{m-n}}
+$$</p>
+<p>$$
+\frac{2\sqrt{a}}{2\sqrt{b}} = \frac{\sqrt{m+n} + \sqrt{m-n}}{\sqrt{m+n} - \sqrt{m-n}} \implies \frac{\sqrt{a}}{\sqrt{b}} = \frac{\sqrt{m+n} + \sqrt{m-n}}{\sqrt{m+n} - \sqrt{m-n}}
+$$</p>
+<ul>
+<li><strong>Step 6 (Square both sides):</strong></li>
+</ul>
+<p>$$
+\frac{a}{b} = \frac{\left(\sqrt{m+n} + \sqrt{m-n}\right)^2}{\left(\sqrt{m+n} - \sqrt{m-n}\right)^2}
+$$</p>
+<p>Expand numerator and denominator:</p>
+<p>$$
+\text{Numerator} = (m+n) + (m-n) + 2\sqrt{(m+n)(m-n)} = 2m + 2\sqrt{m^2 - n^2}
+$$</p>
+<p>$$
+\text{Denominator} = (m+n) + (m-n) - 2\sqrt{(m+n)(m-n)} = 2m - 2\sqrt{m^2 - n^2}
+$$</p>
+<ul>
+<li><strong>Step 7 (Cancel common factor of 2):</strong></li>
+</ul>
+<p>$$
+\frac{a}{b} = \frac{2\left(m + \sqrt{m^2 - n^2}\right)}{2\left(m - \sqrt{m^2 - n^2}\right)} = \frac{m + \sqrt{m^2 - n^2}}{m - \sqrt{m^2 - n^2}}
+$$</p>
+<p>$$
+\tag*{Q.E.D.}
+$$</p>
+<p><strong>Alternative Method (Quadratic Formula Route):</strong>
+Using $a, b = A \pm \sqrt{A^2 - G^2}$, set $A = mk, G = nk$:</p>
+<p>$$
+\frac{a}{b} = \frac{mk + \sqrt{m^2k^2 - n^2k^2}}{mk - \sqrt{m^2k^2 - n^2k^2}} = \frac{k\left(m + \sqrt{m^2 - n^2}\right)}{k\left(m - \sqrt{m^2 - n^2}\right)} = \frac{m + \sqrt{m^2 - n^2}}{m - \sqrt{m^2 - n^2}}
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_5" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3.3: Sum Constraints and Minimum Value (AM $\ge$ GM Application)
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem (NCERT Exemplar):</strong> If $x > 0$, find the minimum value of $f(x) = 4x + \frac{9}{x}$.</p>
+<h4>Complete Step-by-Step Solution:</h4>
+<ul>
+<li><strong>Step 1 (Check domain condition for AM-GM):</strong>
+  Since $x > 0$, both terms $4x > 0$ and $\frac{9}{x} > 0$.</li>
+<li><strong>Step 2 (Apply AM $\ge$ GM inequality):</strong>
+  For the positive terms $t_1 = 4x$ and $t_2 = \frac{9}{x}$:</li>
+</ul>
+<p>$$
+\frac{t_1 + t_2}{2} \ge \sqrt{t_1 \cdot t_2}
+$$</p>
+<ul>
+<li><strong>Step 3 (Substitute values):</strong></li>
+</ul>
+<p>$$
+\frac{4x + \frac{9}{x}}{2} \ge \sqrt{4x \cdot \frac{9}{x}} = \sqrt{36} = 6
+$$</p>
+<ul>
+<li><strong>Step 4 (Isolate the sum):</strong></li>
+</ul>
+<p>$$
+4x + \frac{9}{x} \ge 2 \times 6 = 12
+$$</p>
+<ul>
+<li><strong>Step 5 (Verify equality condition):</strong>
+  Equality holds if and only if:</li>
+</ul>
+<p>$$
+4x = \frac{9}{x} \implies 4x^2 = 9 \implies x^2 = \frac{9}{4} \implies x = \frac{3}{2} \quad (\text{since } x > 0)
+$$</p>
+<p>At $x = 3/2$:</p>
+<p>$$
+f(3/2) = 4(3/2) + \frac{9}{3/2} = 6 + 6 = 12
+$$</p>
+<ul>
+<li><strong>Conclusion:</strong> The minimum value is <strong>$12$</strong>, attained at $x = \frac{3}{2}$.</li>
+</ul>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+
+                  <div class="question-card example-card" id="ex_6" style="border-left: 5px solid var(--marker-blue);">
+                    <div class="question-header">
+                      <div class="question-title" style="color: var(--marker-blue);">
+                        💡 Example 3.4: Finding Numbers Given the Relations Between AM and GM
+                      </div>
+                      <div class="question-tags">
+                        <span class="badge-yield-high">Solved Example</span>
+                        <span class="badge-priority">⭐⭐⭐⭐⭐ Must-Know</span>
+                      </div>
+                    </div>
+                    <div class="question-text">
+                      <p><strong>Problem:</strong> The AM between two numbers is $34$ and their GM is $16$. Find the numbers.</p>
+<h4>Complete Step-by-Step Solution:</h4>
+<ul>
+<li><strong>Step 1 (Assign Values):</strong>
+  $A = 34$ and $G = 16$.</li>
+<li><strong>Step 2 (Apply Direct Formula):</strong>
+  The two numbers are given by:</li>
+</ul>
+<p>$$
+x = A \pm \sqrt{A^2 - G^2} = A \pm \sqrt{(A-G)(A+G)}
+$$</p>
+<ul>
+<li><strong>Step 3 (Compute Discriminant):</strong></li>
+</ul>
+<p>$$
+A - G = 34 - 16 = 18
+$$</p>
+<p>$$
+A + G = 34 + 16 = 50
+$$</p>
+<p>$$
+\sqrt{A^2 - G^2} = \sqrt{18 \times 50} = \sqrt{900} = 30
+$$</p>
+<ul>
+<li><strong>Step 4 (Find the roots):</strong></li>
+</ul>
+<p>$$
+a = 34 + 30 = 64
+$$</p>
+<p>$$
+b = 34 - 30 = 4
+$$</p>
+<ul>
+<li><strong>Verification:</strong></li>
+</ul>
+<p>$$
+\text{AM} = \frac{64 + 4}{2} = 34, \quad \text{GM} = \sqrt{64 \times 4} = \sqrt{256} = 16
+$$</p>
+<ul>
+<li><strong>Answer:</strong> The numbers are <strong>$64$ and $4$</strong> (or $4$ and $64$).</li>
+</ul>
+<hr />
+<h2>4. Examiner Traps &amp; Common Student Mistakes</h2>
+<h3>1. Missing Positive Real Number Domain Requirement</h3>
+<ul>
+<li><strong>The Error:</strong> Students blindly apply $G = \sqrt{ab}$ to negative numbers, e.g., $a = -2, b = -8 \implies G = \sqrt{(-2)(-8)} = \sqrt{16} = 4$. But $-2, 4, -8$ has alternating signs where $r = -2$, whereas between positive numbers $r$ is positive.</li>
+<li><strong>Examiner Guideline:</strong> The inequality $A \ge G$ is <strong>strictly defined for non-negative real numbers</strong> ($a, b \ge 0$). Applying AM-GM to negative terms directly is mathematically invalid.</li>
+</ul>
+<h3>2. Failing to Check the Equality Condition in Minima/Maxima Problems</h3>
+<ul>
+<li><strong>The Error:</strong> For expression $f(x) = x^2 + \frac{1}{x^2 + 5}$, a student states $f(x) \ge 2\sqrt{x^2 \cdot \frac{1}{x^2+5}}$, which fails because the product is not independent of $x$, or states that equality holds when $x^2 = \frac{1}{x^2+5}$ without checking if a real $x$ exists.</li>
+<li><strong>Correction Rule:</strong> AM $\ge$ GM yields an absolute minimum/maximum <strong>if and only if</strong>:</li>
+<li>The product of the chosen terms is a <strong>constant</strong> (variables cancel out).</li>
+<li>The equality condition $t_1 = t_2 = \dots = t_n$ has a <strong>valid real solution</strong> in the variable's specified domain.</li>
+</ul>
+<h3>3. Misidentifying the Index of Inserted Means</h3>
+<ul>
+<li><strong>The Error:</strong> Writing $G_k = T_k$.</li>
+<li><strong>Correction Rule:</strong> If $n$ means are inserted between $a$ and $b$, the first inserted mean $G_1$ is actually the <strong>second term</strong> ($T_2$) of the sequence, and $G_k = T_{k+1} = a r^k$.</li>
+</ul>
+<h3>4. Forgetting Exponent Denominator $(n+1)$ vs $n$</h3>
+<ul>
+<li><strong>The Error:</strong> Writing $r = (b/a)^{1/n}$.</li>
+<li><strong>Correction Rule:</strong> There are $n$ inserted means, making the total number of terms $N = n + 2$. The distance in powers between $T_1$ and $T_{n+2}$ is $(n+2) - 1 = n+1$. Therefore, the denominator in the exponent must be <strong>$n+1$</strong>.</li>
+</ul>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points for Competitive Exams (JEE / Olympiads)</h2>
+<h3>Golden Point 1: Sum and Product Identities</h3>
+<ul>
+<li>Product of $n$ inserted GMs:</li>
+</ul>
+<p>$$
+\prod_{k=1}^n G_k = (\sqrt{ab})^n
+$$</p>
+<ul>
+<li>Product of $n$ inserted GMs divided by the product of $a$ and $b$:</li>
+</ul>
+<p>$$
+\prod_{k=1}^n G_k = (ab)^{\frac{n}{2}}
+$$</p>
+<ul>
+<li>Symmetric Pairing Property:</li>
+</ul>
+<p>$$
+G_k \cdot G_{n-k+1} = ab = G^2 \quad \forall \; 1 \le k \le n
+$$</p>
+<h3>Golden Point 2: Rapid Elimination for $a:b$ Ratios</h3>
+<p>If $A : G = m : n$, jump directly to the result:</p>
+<p>$$
+\frac{a}{b} = \frac{m + \sqrt{m^2 - n^2}}{m - \sqrt{m^2 - n^2}}
+$$</p>
+<ul>
+<li><em>Mental Math Example:</em> If $A : G = 5 : 4$, then:</li>
+</ul>
+<p>$$
+\sqrt{5^2 - 4^2} = 3 \implies \frac{a}{b} = \frac{5 + 3}{5 - 3} = \frac{8}{2} = 4 : 1
+$$</p>
+<p><em>(Solves a 5-mark board problem in 5 seconds).</em></p>
+<h3>Golden Point 3: Extension to $n$ Variables (Generalized AM-GM)</h3>
+<p>For any $n$ positive real numbers $x_1, x_2, \dots, x_n$:</p>
+<p>$$
+\frac{x_1 + x_2 + \dots + x_n}{n} \ge \left(x_1 \cdot x_2 \cdots x_n\right)^{\frac{1}{n}}
+$$</p>
+<p>Equality holds if and only if $x_1 = x_2 = \dots = x_n$.</p>
+<h3>Golden Point 4: Split-Up Method for Unbalanced Exponents</h3>
+<p>To find the minimum value of $f(x) = x^3 + \frac{16}{x}$ for $x > 0$:
+* Direct AM-GM fails because the product $x^3 \cdot \frac{16}{x} = 16x^2$ is not constant.
+* <strong>Hack:</strong> Split the terms so powers match!</p>
+<p>$$
+f(x) = x^3 + \frac{16}{3x} + \frac{16}{3x} + \frac{16}{3x}
+$$</p>
+<p>Now apply AM-GM on 4 terms:</p>
+<p>$$
+\frac{x^3 + \frac{16}{3x} + \frac{16}{3x} + \frac{16}{3x}}{4} \ge \left(x^3 \cdot \frac{16^3}{27 x^3}\right)^{1/4} = \left(\frac{4096}{27}\right)^{1/4}
+$$</p>
+<hr />
+                    </div>
+                    <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                      <label class="step-check-label">
+                        <input type="checkbox" class="step-checkbox"> I Mastered This Worked Example
+                      </label>
+                    </div>
+                  </div>
+                
+          </div>
+
+          <!-- TAB 3: Board Exam PYQ Vault -->
+          <div id="panel-pyqs" class="view-panel">
+            <div class="sticky-note blue" style="margin-bottom: 1.5rem;">
+              <div class="sticky-title">🎯 CBSE Board Exam Questions Vault (2020–2025)</div>
+              Real examination questions categorized by official CBSE marks weightage. Practice writing out each step before checking model answers.
+            </div>
+
+            <!-- PYQ Filter Chips -->
+            <div class="pyq-filter-bar">
+              <div class="filter-group">
+                <span class="filter-label">Filter Marks:</span>
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="1m">1 Mark (MCQ/AR)</button>
+                <button class="filter-chip" data-filter="2m">2 Marks (VSA)</button>
+                <button class="filter-chip" data-filter="3m">3 Marks (SA)</button>
+                <button class="filter-chip" data-filter="4m">4 Marks (Case Study)</button>
+                <button class="filter-chip" data-filter="5m">5 Marks (LA)</button>
+              </div>
+              <div class="filter-group">
+                <span class="filter-label">Exam Year:</span>
+                <button class="filter-chip" data-filter="2024">2024</button>
+                <button class="filter-chip" data-filter="2023">2023</button>
+                <button class="filter-chip" data-filter="2022">2022</button>
+              </div>
+            </div>
+
+            <div class='pyq-intro' style='margin-bottom: 1rem;'><h1>Master Competency &amp; Application Question Bank: NCERT Exercises, Exemplar Problems &amp; CBSE New Pattern Application Questions with Marking Schemes</h1>
+<h1>CBSE CLASS 11 MATHEMATICS: MASTER QUESTION BANK</h1>
+<h2>Chapter: Sequences and Series (Aligned with Latest CBSE Rationalised Curriculum &amp; NEP 2020 Competency Guidelines)</h2>
+<hr />
+<h1>SECTION A: CBSE New Pattern Competency &amp; Application-Based Questions</h1>
+<hr /></div>
+
+                  <div class="question-card" id="q_7" data-year="Case Study" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Case Study</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question A1: Case-Based / Passage-Integrated Question</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[CBSE Competency Pattern, Case Study, 4 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Context / Stimulus:</strong></h4>
+<p>A civil engineer designs a parabolic pedestrian bridge support truss. The vertical steel cables suspended from the primary arch to the deck are spaced equidistant at $2\text{ m}$ intervals along the horizontal walkway. 
+Due to architectural dynamics, the lengths of these vertical suspension cables increase from the center outwards to either side in a Geometric Progression (G.P.). </p>
+<p>Let the central shortest cable have a length $a = 4\text{ m}$. The lengths of consecutive cables to one side form a geometric progression with a common ratio $r = 1.25 = \frac{5}{4}$. 
+There are $5$ cables to the right of the central cable (denoting them $C_1, C_2, C_3, C_4, C_5$, where $C_1$ is immediately adjacent to the central cable).</p>
+<pre><code>          Arch Primary Cable
+             .  -  -  .
+          '       |       '
+        '    |    |    |    '
+       |  |  |  | | |  |  |  |
+      =========================  &lt;-- Bridge Deck (Horizontal)
+            Center (4m)
+</code></pre>
+<h4><strong>Sub-questions:</strong></h4>
+<ol>
+<li>Determine the length of the 3rd cable to the right of the center ($C_3$) in fractional form and correct to two decimal places. <em>(1 Mark)</em></li>
+<li>Find the total steel cable length required for the central cable and all $5$ cables to its right. <em>(2 Marks)</em></li>
+<li><strong>Alternative / Internal Choice:</strong> If due to structural limitations, no cable length can exceed $15\text{ m}$, verify mathematically whether a 6th cable ($C_6$) can be installed on either side under the same geometric pattern. <em>(2 Marks)</em></li>
+</ol>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Part 1: Length of Cable $C_3$</strong>
+* The central cable has length $a = 4\text{ m}$.
+* The cables to the right are given by:</p>
+<p>$$
+l_n = a \cdot r^n \quad \text{for } n = 1, 2, 3, 4, 5
+$$</p>
+<p><em>(Note: $C_1 = ar, C_2 = ar^2, C_3 = ar^3$)</em>
+* For cable $C_3$ ($n = 3$):</p>
+<p>$$
+l_3 = 4 \cdot \left(\frac{5}{4}\right)^3 = 4 \cdot \frac{125}{64} = \frac{125}{16}\text{ m}
+$$</p>
+<p>$$
+\frac{125}{16} = 7.8125\text{ m} \approx 7.81\text{ m}
+$$</p>
+<p><strong>Marking Rubric (Part 1):</strong>
+* Formulating $l_3 = ar^3$ with correct substitution: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Final exact fraction $\frac{125}{16}\text{ m}$ or decimal $7.81\text{ m}$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Part 2: Total Cable Length (Center + 5 Right Cables)</strong>
+* Total length $L = a + \sum_{n=1}^{5} ar^n = \sum_{k=0}^{5} a r^k$.
+* This forms a G.P. of $n = 6$ terms, first term $a = 4$, common ratio $r = \frac{5}{4} > 1$.
+* Sum formula:</p>
+<p>$$
+S_n = \frac{a(r^n - 1)}{r - 1}
+$$</p>
+<ul>
+<li>Substituting $n = 6, a = 4, r = \frac{5}{4}$:</li>
+</ul>
+<p>$$
+S_6 = \frac{4\left[\left(\frac{5}{4}\right)^6 - 1\right]}{\frac{5}{4} - 1} = \frac{4\left[\frac{15625}{4096} - 1\right]}{\frac{1}{4}} = 16 \left[\frac{15625 - 4096}{4096}\right]
+$$</p>
+<p>$$
+S_6 = 16 \cdot \frac{11529}{4096} = \frac{11529}{256}\text{ m} \approx 45.035\text{ m} \approx 45.04\text{ m}
+$$</p>
+<p><strong>Marking Rubric (Part 2):</strong>
+* Identifying the series has $6$ terms and quoting $S_n = \frac{a(r^n - 1)}{r - 1}$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Correct algebraic substitution into the sum formula: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Calculation of $\left(\frac{5}{4}\right)^6 - 1$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Final answer $\frac{11529}{256}\text{ m}$ or $45.04\text{ m}$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Part 3 (Internal Choice): Feasibility of 6th Cable ($C_6$)</strong>
+* For the 6th cable to the right ($n = 6$):</p>
+<p>$$
+l_6 = a \cdot r^6 = 4 \cdot \left(\frac{5}{4}\right)^6 = 4 \cdot \frac{15625}{4096} = \frac{15625}{1024}\text{ m}
+$$</p>
+<ul>
+<li>Converting to decimal:</li>
+</ul>
+<p>$$
+\frac{15625}{1024} \approx 15.2588\text{ m}
+$$</p>
+<ul>
+<li>Comparison with structural limit:</li>
+</ul>
+<p>$$
+15.26\text{ m} > 15.00\text{ m}
+$$</p>
+<ul>
+<li><strong>Conclusion:</strong> Since $l_6 > 15\text{ m}$, the 6th cable <strong>cannot</strong> be installed under the structural specification.</li>
+</ul>
+<p><strong>Marking Rubric (Part 3):</strong>
+* Setting up $l_6 = 4 \cdot \left(\frac{5}{4}\right)^6$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Evaluating to $\frac{15625}{1024}\text{ m}$ or $\approx 15.26\text{ m}$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Valid mathematical comparison and final concluding statement: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_8" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question A2: Assertion-Reason Set</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[CBSE Competency Pattern, Assertion-Reason, 1 Mark Each]&lt;/span&gt;</code></p>
+<h4><strong>Directions:</strong></h4>
+<p>In the following questions, two statements are given—one labelled <strong>Assertion (A)</strong> and the other labelled <strong>Reason (R)</strong>. Select the correct answer from the codes:
+* <strong>(a)</strong> Both (A) and (R) are true and (R) is the correct explanation of (A).
+* <strong>(b)</strong> Both (A) and (R) are true but (R) is NOT the correct explanation of (A).
+* <strong>(c)</strong> (A) is true but (R) is false.
+* <strong>(d)</strong> (A) is false but (R) is true.</p>
+<hr />
+<h4><strong>Item 1:</strong></h4>
+<ul>
+<li><strong>Assertion (A):</strong> The sequence defined by $a_n = 3 \cdot 2^{n-1} + 1$ is a Geometric Progression.</li>
+<li><strong>Reason (R):</strong> A sequence $\langle a_n \rangle$ is a Geometric Progression if and only if the ratio $\frac{a_{n+1}}{a_n}$ is independent of $n$ for all $n \in \mathbb{N}$.</li>
+</ul>
+<p><strong>Answer:</strong> <strong>(d) (A) is false but (R) is true.</strong></p>
+<p><strong>Detailed Explanation &amp; Marking Rubric:</strong>
+* Evaluate $\frac{a_{n+1}}{a_n}$:</p>
+<p>$$
+a_1 = 3(1) + 1 = 4
+$$</p>
+<p>$$
+a_2 = 3(2) + 1 = 7
+$$</p>
+<p>$$
+a_3 = 3(4) + 1 = 13
+$$</p>
+<p>$$
+\frac{a_2}{a_1} = \frac{7}{4} = 1.75, \quad \frac{a_3}{a_2} = \frac{13}{7} \approx 1.857
+$$</p>
+<p>Since $\frac{a_2}{a_1} \neq \frac{a_3}{a_2}$, the sequence is <strong>not</strong> a G.P. Thus, (A) is false.
+* Reason (R) gives the standard mathematical definition of a G.P., which is true.
+* <strong>Marking:</strong> Correct identification of Option (d) with justification: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<h4><strong>Item 2:</strong></h4>
+<ul>
+<li><strong>Assertion (A):</strong> If $a, b, c$ are positive real numbers in G.P., then $\log a, \log b, \log c$ are in A.P. for any base $k > 0, k \neq 1$.</li>
+<li><strong>Reason (R):</strong> If three positive terms $x, y, z$ are in G.P., then $y^2 = xz$, and taking the logarithm on both sides yields $2\log y = \log x + \log z$.</li>
+</ul>
+<p><strong>Answer:</strong> <strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong></p>
+<p><strong>Detailed Explanation &amp; Marking Rubric:</strong>
+* Let $b^2 = ac$.
+* Taking $\log_k$ on both sides:</p>
+<p>$$
+\log_k(b^2) = \log_k(ac) \implies 2\log_k b = \log_k a + \log_k c
+$$</p>
+<ul>
+<li>This satisfies the necessary and sufficient condition for $\log_k a, \log_k b, \log_k c$ to be in A.P.</li>
+<li>Thus, Reason (R) is not only true, but directly establishes Assertion (A).</li>
+<li><strong>Marking:</strong> Correct identification of Option (a): <strong><span class="step-mark-tag">[1 Mark]</span></strong></li>
+</ul>
+<hr /></div>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_9" data-year="HOTS" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE HOTS</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question A3: Higher Order Thinking Skills (HOTS) Problem</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[CBSE HOTS, Multi-Concept Analytical, 5 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>Let $a, b, c$ be non-zero real numbers such that $a, b, c$ are in Geometric Progression. If the roots of the quadratic equation $a x^2 + 2b x + c = 0$ are denoted by $\alpha$ and $\beta$, and the roots of the quadratic equation $d x^2 + 2e x + f = 0$ are denoted by $\gamma$ and $\delta$, prove that if $\frac{d}{a}, \frac{e}{b}, \frac{f}{c}$ are in Arithmetic Progression, then the two equations have a common root.</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Step 1: Analyze the roots of the first equation</strong>
+* Given $a, b, c$ are in G.P., we have:</p>
+<p>$$
+b^2 = ac
+$$</p>
+<ul>
+<li>The discriminant of the quadratic equation $a x^2 + 2b x + c = 0$ is:</li>
+</ul>
+<p>$$
+D_1 = (2b)^2 - 4(a)(c) = 4b^2 - 4ac = 4(b^2 - ac)
+$$</p>
+<ul>
+<li>Since $b^2 = ac$, $D_1 = 0$.</li>
+<li>Therefore, the roots $\alpha$ and $\beta$ are real and equal:</li>
+</ul>
+<p>$$
+\alpha = \beta = \frac{-2b \pm \sqrt{0}}{2a} = -\frac{b}{a}
+$$</p>
+<p><strong>Marking:</strong>
+* Using $b^2 = ac$ to evaluate the discriminant $D_1 = 0$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Determining the repeated root $x = -\frac{b}{a}$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Test if this root satisfies the second equation</strong>
+* For the two equations to have a common root, the root $x = -\frac{b}{a}$ must satisfy:</p>
+<p>$$
+d x^2 + 2e x + f = 0
+$$</p>
+<ul>
+<li>Substitute $x = -\frac{b}{a}$ into the left-hand side:</li>
+</ul>
+<p>$$
+\text{LHS} = d\left(-\frac{b}{a}\right)^2 + 2e\left(-\frac{b}{a}\right) + f = d\left(\frac{b^2}{a^2}\right) - 2e\left(\frac{b}{a}\right) + f
+$$</p>
+<p><strong>Marking:</strong>
+* Substituting $x = -\frac{b}{a}$ into the second equation: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Apply the G.P. and A.P. relations</strong>
+* Since $b^2 = ac$, replace $b^2$ with $ac$:</p>
+<p>$$
+\text{LHS} = d\left(\frac{ac}{a^2}\right) - 2e\left(\frac{b}{a}\right) + f = d\left(\frac{c}{a}\right) - 2e\left(\frac{b}{a}\right) + f
+$$</p>
+<ul>
+<li>Divide the entire expression by $c$ (since $c \neq 0$):</li>
+</ul>
+<p>$$
+\frac{\text{LHS}}{c} = \frac{d}{a} - \frac{2e}{c}\left(\frac{b}{a}\right) + 1
+$$</p>
+<ul>
+<li>From $b^2 = ac \implies \frac{b}{a} = \frac{c}{b} \implies \frac{1}{c}\left(\frac{b}{a}\right) = \frac{1}{b}$.</li>
+<li>Substituting this gives:</li>
+</ul>
+<p>$$
+\frac{\text{LHS}}{c} = \frac{d}{a} - \frac{2e}{b} + \frac{f}{c}
+$$</p>
+<p><strong>Marking:</strong>
+* Using $\frac{b^2}{a^2} = \frac{c}{a}$ and $\frac{b}{ca} = \frac{1}{b}$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Simplifying LHS into the form $c \left[\frac{d}{a} - \frac{2e}{b} + \frac{f}{c}\right]$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 4: Conclude using the A.P. condition</strong>
+* We are given that $\frac{d}{a}, \frac{e}{b}, \frac{f}{c}$ are in Arithmetic Progression.
+* By definition of an A.P.:</p>
+<p>$$
+2\left(\frac{e}{b}\right) = \frac{d}{a} + \frac{f}{c} \implies \frac{d}{a} - \frac{2e}{b} + \frac{f}{c} = 0
+$$</p>
+<ul>
+<li>Therefore:</li>
+</ul>
+<p>$$
+\text{LHS} = c \cdot (0) = 0
+$$</p>
+<ul>
+<li>Hence, $x = -\frac{b}{a}$ is indeed a root of $d x^2 + 2e x + f = 0$.</li>
+<li>Thus, the two equations have a common root. <em>(Hence Proved)</em></li>
+</ul>
+<p><strong>Marking:</strong>
+* Applying the A.P. condition $2\left(\frac{e}{b}\right) = \frac{d}{a} + \frac{f}{c}$ and concluding LHS $= 0$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<h1>SECTION B: Selected NCERT Textbook Exercise Problems (High-Yield &amp; Tricky)</h1>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_10" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question B1: Ratio of Sum of Terms</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exercise Problem, 4 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>The ratio of the sum of the first $n$ terms of two arithmetic progressions is given by:</p>
+<p>$$
+\frac{S_n}{S'_n} = \frac{7n + 1}{4n + 27}
+$$</p>
+<p>Find the ratio of their $m^{\text{th}}$ terms. Hence, find the ratio of their $11^{\text{th}}$ terms.</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Step 1: Express the sum of $n$ terms for both APs</strong>
+* Let the first AP have first term $a_1$ and common difference $d_1$.
+* Let the second AP have first term $a_2$ and common difference $d_2$.
+* The sum of $n$ terms is given by:</p>
+<p>$$
+S_n = \frac{n}{2}[2a_1 + (n - 1)d_1], \quad S'_n = \frac{n}{2}[2a_2 + (n - 1)d_2]
+$$</p>
+<ul>
+<li>Their ratio is:</li>
+</ul>
+<p>$$
+\frac{S_n}{S'_n} = \frac{\frac{n}{2}[2a_1 + (n - 1)d_1]}{\frac{n}{2}[2a_2 + (n - 1)d_2]} = \frac{2a_1 + (n - 1)d_1}{2a_2 + (n - 1)d_2} = \frac{7n + 1}{4n + 27} \quad \text{--- (Equation 1)}
+$$</p>
+<p><strong>Marking:</strong>
+* Formulating the ratio of sums and canceling $\frac{n}{2}$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Relate the sum expression to the ratio of $m^{\text{th}}$ terms</strong>
+* The $m^{\text{th}}$ term of an A.P. is $T_m = a + (m - 1)d$.
+* The ratio of their $m^{\text{th}}$ terms is:</p>
+<p>$$
+\frac{T_m}{T'_m} = \frac{a_1 + (m - 1)d_1}{a_2 + (m - 1)d_2}
+$$</p>
+<ul>
+<li>Multiply numerator and denominator by $2$:</li>
+</ul>
+<p>$$
+\frac{T_m}{T'_m} = \frac{2a_1 + 2(m - 1)d_1}{2a_2 + 2(m - 1)d_2} = \frac{2a_1 + (2m - 2)d_1}{2a_2 + (2m - 2)d_2} \quad \text{--- (Equation 2)}
+$$</p>
+<p><strong>Marking:</strong>
+* Expressing the ratio of $m^{\text{th}}$ terms in the form $\frac{2a + (2m - 2)d}{2a' + (2m - 2)d'}$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Equate coefficients and determine $n$</strong>
+* Comparing Equation (1) and Equation (2):</p>
+<p>$$
+n - 1 = 2m - 2 \implies n = 2m - 1
+$$</p>
+<ul>
+<li>Substituting $n = 2m - 1$ into Equation (1):</li>
+</ul>
+<p>$$
+\frac{T_m}{T'_m} = \frac{7(2m - 1) + 1}{4(2m - 1) + 27} = \frac{14m - 7 + 1}{8m - 4 + 27} = \frac{14m - 6}{8m + 23}
+$$</p>
+<p><strong>Marking:</strong>
+* Deducing the transformation $n = 2m - 1$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Simplifying the ratio of the $m^{\text{th}}$ terms to $\frac{14m - 6}{8m + 23}$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 4: Compute the ratio for $m = 11$</strong>
+* Substitute $m = 11$:</p>
+<p>$$
+\frac{T_{11}}{T'_{11}} = \frac{14(11) - 6}{8(11) + 23} = \frac{154 - 6}{88 + 23} = \frac{148}{111}
+$$</p>
+<ul>
+<li>Dividing numerator and denominator by their greatest common factor ($37$):</li>
+</ul>
+<p>$$
+148 = 37 \times 4, \quad 111 = 37 \times 3
+$$</p>
+<p>$$
+\frac{T_{11}}{T'_{11}} = \frac{4}{3}
+$$</p>
+<ul>
+<li>Therefore, the ratio of their $11^{\text{th}}$ terms is $4 : 3$.</li>
+</ul>
+<p><strong>Marking:</strong>
+* Numerical substitution and simplification to $4 : 3$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_11" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question B2: Product and Sum of Geometric Terms</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exercise Problem, 3 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐&lt;/span&gt; [High-Yield]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>The sum of the first three terms of a Geometric Progression is $\frac{13}{12}$ and their product is $-1$. Find the common ratio $r$ and the three terms.</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Step 1: Choose an efficient parameterization</strong>
+* Let the first three terms of the G.P. be $\frac{a}{r}, a, ar$.
+* Given their product is $-1$:</p>
+<p>$$
+\left(\frac{a}{r}\right) \cdot (a) \cdot (ar) = -1 \implies a^3 = -1 \implies a = -1 \quad (\text{since } a \in \mathbb{R})
+$$</p>
+<p><strong>Marking:</strong>
+* Choosing symmetric terms $\frac{a}{r}, a, ar$ and finding $a = -1$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Set up the sum equation</strong>
+* The sum of the three terms is $\frac{13}{12}$:</p>
+<p>$$
+\frac{a}{r} + a + ar = \frac{13}{12}
+$$</p>
+<ul>
+<li>Substitute $a = -1$:</li>
+</ul>
+<p>$$
+-1\left(\frac{1}{r} + 1 + r\right) = \frac{13}{12} \implies \frac{1 + r + r^2}{r} = -\frac{13}{12}
+$$</p>
+<ul>
+<li>Cross-multiply to obtain a quadratic equation in $r$:</li>
+</ul>
+<p>$$
+12(1 + r + r^2) = -13r \implies 12r^2 + 12r + 12 + 13r = 0
+$$</p>
+<p>$$
+12r^2 + 25r + 12 = 0
+$$</p>
+<p><strong>Marking:</strong>
+* Correct substitution of $a = -1$ and forming the quadratic equation $12r^2 + 25r + 12 = 0$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Solve the quadratic equation and state the terms</strong>
+* Factor the quadratic equation:</p>
+<p>$$
+12r^2 + 16r + 9r + 12 = 0 \implies 4r(3r + 4) + 3(3r + 4) = 0
+$$</p>
+<p>$$
+(3r + 4)(4r + 3) = 0 \implies r = -\frac{4}{3} \quad \text{or} \quad r = -\frac{3}{4}
+$$</p>
+<ul>
+<li><strong>Case 1: When $a = -1$ and $r = -\frac{4}{3}$:</strong></li>
+<li>Term 1: $\frac{a}{r} = \frac{-1}{-4/3} = \frac{3}{4}$</li>
+<li>Term 2: $a = -1$</li>
+<li>Term 3: $ar = (-1)\left(-\frac{4}{3}\right) = \frac{4}{3}$</li>
+<li>
+<p>Terms: $\frac{3}{4}, -1, \frac{4}{3}$</p>
+</li>
+<li>
+<p><strong>Case 2: When $a = -1$ and $r = -\frac{3}{4}$:</strong></p>
+</li>
+<li>Term 1: $\frac{a}{r} = \frac{-1}{-3/4} = \frac{4}{3}$</li>
+<li>Term 2: $a = -1$</li>
+<li>Term 3: $ar = (-1)\left(-\frac{3}{4}\right) = \frac{3}{4}$</li>
+<li>
+<p>Terms: $\frac{4}{3}, -1, \frac{3}{4}$</p>
+</li>
+<li>
+<p>In both cases, the three terms are $\frac{3}{4}, -1, \frac{4}{3}$ (or in reverse order).</p>
+</li>
+</ul>
+<p><strong>Marking:</strong>
+* Factoring and finding both values of $r$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Stating both sets of terms correctly: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_12" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question B3: Geometric Progression Exponent and Proof</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exercise Problem, 4 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>If $a, b, c, d$ are in Geometric Progression, prove that:</p>
+<p>$$
+(a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = (ab + bc + cd)^2
+$$</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Step 1: Express terms using the first term and common ratio</strong>
+* Let $r$ be the common ratio of the G.P.
+* Then:</p>
+<p>$$
+b = ar, \quad c = ar^2, \quad d = ar^3
+$$</p>
+<p><strong>Marking:</strong>
+* Setting $b = ar, c = ar^2, d = ar^3$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Expand and simplify the Left-Hand Side (LHS)</strong></p>
+<p>$$
+\text{LHS} = (a^2 + b^2 + c^2)(b^2 + c^2 + d^2)
+$$</p>
+<ul>
+<li>Substitute $b, c, d$:</li>
+</ul>
+<p>$$
+a^2 + b^2 + c^2 = a^2 + (ar)^2 + (ar^2)^2 = a^2 + a^2r^2 + a^2r^4 = a^2(1 + r^2 + r^4)
+$$</p>
+<p>$$
+b^2 + c^2 + d^2 = (ar)^2 + (ar^2)^2 + (ar^3)^2 = a^2r^2 + a^2r^4 + a^2r^6 = a^2r^2(1 + r^2 + r^4)
+$$</p>
+<ul>
+<li>Multiply the two factors:</li>
+</ul>
+<p>$$
+\text{LHS} = \left[a^2(1 + r^2 + r^4)\right] \cdot \left[a^2r^2(1 + r^2 + r^4)\right] = a^4 r^2 (1 + r^2 + r^4)^2
+$$</p>
+<p><strong>Marking:</strong>
+* Factoring out $a^2$ and $a^2r^2$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Arriving at $\text{LHS} = a^4 r^2 (1 + r^2 + r^4)^2$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Expand and simplify the Right-Hand Side (RHS)</strong></p>
+<p>$$
+\text{RHS} = (ab + bc + cd)^2
+$$</p>
+<ul>
+<li>Substitute $b, c, d$:</li>
+</ul>
+<p>$$
+ab = a(ar) = a^2r
+$$</p>
+<p>$$
+bc = (ar)(ar^2) = a^2r^3
+$$</p>
+<p>$$
+cd = (ar^2)(ar^3) = a^2r^5
+$$</p>
+<ul>
+<li>Sum inside the bracket:</li>
+</ul>
+<p>$$
+ab + bc + cd = a^2r + a^2r^3 + a^2r^5 = a^2r(1 + r^2 + r^4)
+$$</p>
+<ul>
+<li>Square the entire expression:</li>
+</ul>
+<p>$$
+\text{RHS} = \left[a^2r(1 + r^2 + r^4)\right]^2 = (a^2r)^2 (1 + r^2 + r^4)^2 = a^4 r^2 (1 + r^2 + r^4)^2
+$$</p>
+<p><strong>Marking:</strong>
+* Expressing $ab + bc + cd = a^2r(1 + r^2 + r^4)$: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Squaring to get $a^4 r^2 (1 + r^2 + r^4)^2$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 4: Conclusion</strong>
+* Since $\text{LHS} = a^4 r^2 (1 + r^2 + r^4)^2$ and $\text{RHS} = a^4 r^2 (1 + r^2 + r^4)^2$, we have:</p>
+<p>$$
+\text{LHS} = \text{RHS}
+$$</p>
+<ul>
+<li><em>(Hence Proved)</em></li>
+</ul>
+<p><strong>Marking:</strong>
+* Stating equality of LHS and RHS: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<h1>SECTION C: NCERT Exemplar Master Problems</h1>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_13" data-year="Exemplar" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">NCERT Exemplar</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question C1: Exemplar Analytical MCQ</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exemplar, MCQ, 1 Mark]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐&lt;/span&gt; [High-Yield]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>If $a, b, c$ are in Arithmetic Progression, then the value of the expression $(a + 2b - c)(2b + c - a)(c + a - b)$ is:
+* <strong>(a)</strong> $\frac{1}{2} abc$
+* <strong>(b)</strong> $abc$
+* <strong>(c)</strong> $2abc$
+* <strong>(d)</strong> $4abc$</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Analytical Derivation:</strong>
+* Given $a, b, c$ are in A.P., we have the standard condition:</p>
+<p>$$
+a + c = 2b
+$$</p>
+<ul>
+<li>Substitute $2b$ into each factor:</li>
+<li><strong>Factor 1:</strong></li>
+</ul>
+<p>$$
+(a + 2b - c) = a + (a + c) - c = 2a
+$$</p>
+<ul>
+<li><strong>Factor 2:</strong></li>
+</ul>
+<p>$$
+(2b + c - a) = (a + c) + c - a = 2c
+$$</p>
+<ul>
+<li><strong>Factor 3:</strong></li>
+</ul>
+<p>$$
+(c + a - b) = (2b) - b = b
+$$</p>
+<ul>
+<li>Multiply the three simplified factors together:</li>
+</ul>
+<p>$$
+\text{Expression} = (2a) \cdot (2c) \cdot (b) = 4abc
+$$</p>
+<p><strong>Correct Option:</strong> <strong>(d)</strong></p>
+<p><strong>Marking Rubric:</strong>
+* Applying $a + c = 2b$ to rewrite factors: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Final evaluation to $4abc$ and selecting (d): <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_14" data-year="Exemplar" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">NCERT Exemplar</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question C2: Exemplar Long Analytical Problem (A.M. &amp; G.M. Inequality)</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exemplar, Analytical Proof, 5 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>If $a, b, c$ are distinct positive real numbers, prove that:</p>
+<p>$$
+(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) > 9
+$$</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Method: Using the Arithmetic Mean – Geometric Mean (AM-GM) Inequality</strong></p>
+<p><strong>Step 1: State the fundamental AM-GM theorem</strong>
+* For any $n$ positive real numbers $x_1, x_2, \dots, x_n$, the Arithmetic Mean is strictly greater than the Geometric Mean when the numbers are not all equal:</p>
+<p>$$
+\frac{x_1 + x_2 + \dots + x_n}{n} \ge (x_1 x_2 \cdots x_n)^{1/n}
+$$</p>
+<p>with equality holding if and only if $x_1 = x_2 = \dots = x_n$.</p>
+<p><strong>Marking:</strong>
+* Stating the AM-GM theorem with condition for strict inequality: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Apply AM-GM to the positive numbers $a, b, c$</strong>
+* Since $a, b, c$ are positive and distinct:</p>
+<p>$$
+\frac{a + b + c}{3} > (abc)^{1/3} \implies a + b + c > 3(abc)^{1/3} \quad \text{--- (Inequality 1)}
+$$</p>
+<p><strong>Marking:</strong>
+* Applying AM-GM to $a, b, c$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Apply AM-GM to the reciprocals $\frac{1}{a}, \frac{1}{b}, \frac{1}{c}$</strong>
+* Since $a, b, c$ are distinct and positive, their reciprocals $\frac{1}{a}, \frac{1}{b}, \frac{1}{c}$ are also positive and distinct.
+* Applying the AM-GM inequality:</p>
+<p>$$
+\frac{\frac{1}{a} + \frac{1}{b} + \frac{1}{c}}{3} > \left(\frac{1}{a} \cdot \frac{1}{b} \cdot \frac{1}{c}\right)^{1/3}
+$$</p>
+<p>$$
+\frac{1}{a} + \frac{1}{b} + \frac{1}{c} > 3\left(\frac{1}{abc}\right)^{1/3} \quad \text{--- (Inequality 2)}
+$$</p>
+<p><strong>Marking:</strong>
+* Applying AM-GM to the reciprocal terms: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 4: Multiply the inequalities</strong>
+* Since both sides of Inequality (1) and Inequality (2) are strictly positive, multiplying them preserves the inequality:</p>
+<p>$$
+(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) > \left[3(abc)^{1/3}\right] \cdot \left[3\left(\frac{1}{abc}\right)^{1/3}\right]
+$$</p>
+<p>$$
+(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) > 9 \cdot (abc)^{1/3} \cdot \frac{1}{(abc)^{1/3}}
+$$</p>
+<p>$$
+(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) > 9
+$$</p>
+<ul>
+<li><em>(Hence Proved)</em></li>
+</ul>
+<p><strong>Marking:</strong>
+* Valid multiplication of positive inequalities: <strong><span class="step-mark-tag">[1 Mark]</span></strong>
+* Cancellation of $(abc)^{1/3}$ and final proof conclusion: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+
+                  <div class="question-card" id="q_15" data-year="Board Core" data-marks="1">
+                    <div class="question-header">
+                      <div class="question-tags">
+                        <span class="badge-pyq-stamp animate-stamp">CBSE Question</span>
+                        <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+                        <span class="badge-yield-high">1 Mark</span>
+                        <div class="prob-indicator-wrap">
+                          <span>Exam Prob:</span>
+                          <div class="prob-track"><div class="prob-fill high" data-prob="80%"></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="question-title" style="margin-bottom: 0.5rem;"><p>Question C3: Inserted Means Problem (Arithmetic &amp; Geometric Integration)</p></div>
+                    <div class="question-text"><p><strong>Tags:</strong> <code>&lt;span class="step-mark-tag"&gt;[NCERT Exemplar / Advanced Core, 5 Marks]&lt;/span&gt;</code> | <code>&lt;span class="star-icon"&gt;⭐⭐⭐⭐⭐&lt;/span&gt; [Must-Know]</code></p>
+<h4><strong>Problem:</strong></h4>
+<p>Between two numbers $a$ and $b$, let $A$ be the single Arithmetic Mean and $G_1, G_2$ be two Geometric Means. Prove that:</p>
+<p>$$
+\frac{G_1^2}{G_2} + \frac{G_2^2}{G_1} = 2A
+$$</p>
+<hr /></div>
+                    
+                    <details class="solution-accordion">
+                      <summary class="solution-toggle">
+                        <span>📝 View CBSE Model Solution &amp; Step-Marking Scheme</span>
+                        <span>▼</span>
+                      </summary>
+                      <div class="solution-body">
+                        <h4><strong>Model Solution &amp; CBSE Step-by-Step Marking Rubric:</strong></h4>
+<p><strong>Step 1: Express the Arithmetic Mean $A$</strong>
+* The single Arithmetic Mean between two numbers $a$ and $b$ is:</p>
+<p>$$
+A = \frac{a + b}{2} \implies 2A = a + b \quad \text{--- (Equation 1)}
+$$</p>
+<p><strong>Marking:</strong>
+* Correct definition of Arithmetic Mean: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 2: Insert two Geometric Means between $a$ and $b$</strong>
+* If $G_1, G_2$ are two geometric means between $a$ and $b$, then the sequence:</p>
+<p>$$
+a, G_1, G_2, b
+$$</p>
+<p>forms a Geometric Progression with first term $T_1 = a$ and fourth term $T_4 = b$.
+* Let $r$ be the common ratio:</p>
+<p>$$
+T_4 = a r^{4 - 1} = a r^3 = b \implies r^3 = \frac{b}{a} \implies r = \left(\frac{b}{a}\right)^{1/3}
+$$</p>
+<p><strong>Marking:</strong>
+* Setting up the 4-term G.P. $a, G_1, G_2, b$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Finding $r = \left(\frac{b}{a}\right)^{1/3}$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 3: Determine the expressions for $G_1$ and $G_2$</strong>
+* The two geometric means are:</p>
+<p>$$
+G_1 = a r = a \left(\frac{b}{a}\right)^{1/3} = a^{2/3} b^{1/3}
+$$</p>
+<p>$$
+G_2 = a r^2 = a \left(\frac{b}{a}\right)^{2/3} = a^{1/3} b^{2/3}
+$$</p>
+<p><strong>Marking:</strong>
+* Evaluating $G_1$ and $G_2$ in terms of powers of $a$ and $b$: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<p><strong>Step 4: Evaluate the Left-Hand Side (LHS)</strong></p>
+<p>$$
+\text{LHS} = \frac{G_1^2}{G_2} + \frac{G_2^2}{G_1}
+$$</p>
+<ul>
+<li>Compute each term separately:</li>
+<li><strong>First term:</strong></li>
+</ul>
+<p>$$
+\frac{G_1^2}{G_2} = \frac{(ar)^2}{ar^2} = \frac{a^2 r^2}{a r^2} = a
+$$</p>
+<ul>
+<li><strong>Second term:</strong></li>
+</ul>
+<p>$$
+\frac{G_2^2}{G_1} = \frac{(ar^2)^2}{ar} = \frac{a^2 r^4}{a r} = a r^3
+$$</p>
+<ul>
+<li>Substitute $r^3 = \frac{b}{a}$:</li>
+</ul>
+<p>$$
+\frac{G_2^2}{G_1} = a \left(\frac{b}{a}\right) = b
+$$</p>
+<p><strong>Marking:</strong>
+* Simplifying $\frac{G_1^2}{G_2} = a$: <strong><span class="step-mark-tag">[½ Mark]</span></strong>
+* Simplifying $\frac{G_2^2}{G_1} = b$: <strong><span class="step-mark-tag">[½ Mark]</span></strong></p>
+<hr />
+<p><strong>Step 5: Synthesize and conclude</strong>
+* Adding the two simplified terms:</p>
+<p>$$
+\text{LHS} = a + b
+$$</p>
+<ul>
+<li>From Equation (1), $a + b = 2A$.</li>
+<li>Therefore:</li>
+</ul>
+<p>$$
+\text{LHS} = 2A = \text{RHS}
+$$</p>
+<ul>
+<li><em>(Hence Proved)</em></li>
+</ul>
+<p><strong>Marking:</strong>
+* Equating to $a + b = 2A$ and finishing the proof: <strong><span class="step-mark-tag">[1 Mark]</span></strong></p>
+<hr />
+<h2>Pedagogical Notes &amp; Common Examination Pitfalls for Teachers &amp; Students</h2>
+<ol>
+<li>
+<p><strong>Sum vs. $n^{\text{th}}$ Term Traps in AP:</strong>
+   When given the ratio of sums $\frac{S_n}{S'_n} = \frac{f(n)}{g(n)}$ and finding the ratio of $m^{\text{th}}$ terms, the transformation $n \to 2m - 1$ must be explicitly derived by showing $\frac{2a + (n-1)d}{2a' + (n-1)d'} = \frac{a + \frac{n-1}{2}d}{a' + \frac{n-1}{2}d'}$ and setting $\frac{n-1}{2} = m - 1$. Simply stating $n = 2m - 1$ without showing coefficient equivalence risks losing deductive marks in subjective papers.</p>
+</li>
+<li>
+<p><strong>G.P. Unknown Selection Strategy:</strong></p>
+</li>
+<li>For an <strong>odd number of terms (e.g., 3 terms)</strong> in G.P. whose product is known, always set the terms as $\frac{a}{r}, a, ar$. This cancels $r$ directly in products.</li>
+<li>
+<p>For an <strong>even number of terms (e.g., 4 terms)</strong> with product known, set terms as $\frac{a}{r^3}, \frac{a}{r}, ar, ar^3$ with common ratio $r^2$.</p>
+</li>
+<li>
+<p><strong>Domain &amp; Boundary Restrictions on AM-GM:</strong>
+   Students often forget that the AM-GM inequality $AM \ge GM$ applies <strong>exclusively to non-negative/positive real numbers</strong>. In subjective answers, explicitly state: <em>"Since $a, b, c$ are given as positive real numbers, applying the AM-GM inequality gives..."</em> Failure to state the positivity condition is penalized under CBSE marking schemes.</p>
+</li>
+</ol>
+<hr />
+                        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+                          <label class="step-check-label">
+                            <input type="checkbox" class="step-checkbox"> I Understand This Solution Step
+                          </label>
+                        </div>
+                      </div>
+                    </details>
+                    
+                  </div>
+                
+          </div>
+
+          <!-- TAB 4: Examiner Traps & Speed Hacks -->
+          <div id="panel-traps" class="view-panel">
+            
+              <div class="whiteboard-card trap-module-wrap">
+                <div class="sticky-note red" style="margin-bottom: 1.5rem;">
+                  <div class="sticky-title">⚠️ Examiner Traps &amp; Speed Hacks</div>
+                  Master these critical board traps to prevent negative marks and avoidable slips.
+                </div>
+                <h1>Speed Hacks, Examiner Traps, Common Evaluation Mistakes &amp; Golden Points to Remember</h1>
+<h1>CBSE CLASS 11 MATHEMATICS: SEQUENCES AND SERIES</h1>
+<h3>Official Senior Board Examiner’s Guide: Speed Hacks, Traps, Marking Criteria &amp; Formula Bank</h3>
+<hr />
+<h2>1. Speed Hacks &amp; Fast Solving Shortcuts</h2>
+<h3>1.1 The Polynomial Structure of $S_n$ and $a_n$</h3>
+<ul>
+<li><strong>AP Sum to $n$ Terms Shortcut:</strong>
+  An expression is the sum of an AP if and only if it is a quadratic in $n$ with <strong>zero constant term</strong>:</li>
+</ul>
+<p>$$
+S_n = A n^2 + B n
+$$</p>
+<ul>
+<li><strong>Common difference ($d$):</strong> $d = 2A$ (twice the coefficient of $n^2$).</li>
+<li><strong>First term ($a$):</strong> $a = S_1 = A + B$.</li>
+<li><strong>General term ($a_n$):</strong> Differentiate mentally or use $a_n = 2An + (B - A)$.</li>
+<li>
+<p><em>Speed Test:</em> If $S_n = 3n^2 + 5n$, instantly write $d = 6$, $a_1 = 8$, $a_n = 6n + 2$. No need to write $S_n - S_{n-1}$ on rough sheets.</p>
+</li>
+<li>
+<p><strong>AP $n$-th Term Shortcut:</strong>
+  If $a_n = P n + Q$ (linear in $n$), then:</p>
+</li>
+<li>Common difference $d = P$.</li>
+<li>First term $a_1 = P + Q$.</li>
+</ul>
+<h3>1.2 The Ratio of Sums Trick: $\frac{S_n^{(1)}}{S_n^{(2)}} \longleftrightarrow \frac{a_m^{(1)}}{a_m^{(2)}}$</h3>
+<p>For two distinct APs with sums $S_n$ and $S'_n$:</p>
+<p>$$
+\frac{S_n}{S'_n} = \frac{\frac{n}{2}[2a_1 + (n-1)d_1]}{\frac{n}{2}[2a_2 + (n-1)d_2]} = \frac{a_1 + \left(\frac{n-1}{2}\right)d_1}{a_2 + \left(\frac{n-1}{2}\right)d_2}
+$$</p>
+<p>To obtain the ratio of their $m$-th terms $\frac{T_m}{T'_m} = \frac{a_1 + (m-1)d_1}{a_2 + (m-1)d_2}$, equate:</p>
+<p>$$
+\frac{n - 1}{2} = m - 1 \implies \mathbf{n = 2m - 1}
+$$</p>
+<ul>
+<li><strong>Rule 1 (Sum ratio to Term ratio):</strong> Replace every $n$ in the ratio $\frac{S_n}{S'_n}$ with $(2m - 1)$.</li>
+<li><strong>Rule 2 (Term ratio to Sum ratio):</strong> Replace every $m$ in the ratio $\frac{T_m}{T'_m}$ with $\frac{n + 1}{2}$.</li>
+</ul>
+<h3>1.3 Geometric Progression Logarithmic &amp; Product Tricks</h3>
+<ul>
+<li><strong>Symmetric Product in GP:</strong>
+  In any finite GP of $n$ terms:</li>
+</ul>
+<p>$$
+a_1 \cdot a_n = a_2 \cdot a_{n-1} = a_k \cdot a_{n-k+1}
+$$</p>
+<p>The product of all $n$ terms is:</p>
+<p>$$
+P_n = (a_1 \cdot a_n)^{n/2} = (\sqrt{a_1 \cdot a_n})^n
+$$</p>
+<ul>
+<li><strong>Logarithm Transformation:</strong>
+  If positive terms $T_1, T_2, \dots, T_n$ are in GP with common ratio $r > 0$, then $\ln(T_1), \ln(T_2), \dots, \ln(T_n)$ form an AP with common difference $d = \ln(r)$.</li>
+</ul>
+<h3>1.4 Smart Parameter Selection for Unknown Terms</h3>
+<p>Never assume arbitrary variables like $a, a+d, a+2d$ when sums or products are given:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Terms Needed</th>
+<th style="text-align: left;">Arithmetic Progression (AP)</th>
+<th style="text-align: left;">Geometric Progression (GP)</th>
+<th style="text-align: left;">Advantage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>3 terms</strong></td>
+<td style="text-align: left;">$a - d,\; a,\; a + d$</td>
+<td style="text-align: left;">$\frac{a}{r},\; a,\; ar$</td>
+<td style="text-align: left;">Sum eliminates $d$; Product eliminates $r$ ($P = a^3$)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4 terms</strong></td>
+<td style="text-align: left;">$a - 3d,\; a - d,\; a + d,\; a + 3d$ (step $= 2d$)</td>
+<td style="text-align: left;">$\frac{a}{r^3},\; \frac{a}{r},\; ar,\; ar^3$ (step $= r^2$)</td>
+<td style="text-align: left;">Product eliminates $r$ ($P = a^4$)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5 terms</strong></td>
+<td style="text-align: left;">$a - 2d,\; a - d,\; a,\; a + d,\; a + 2d$</td>
+<td style="text-align: left;">$\frac{a}{r^2},\; \frac{a}{r},\; a,\; ar,\; ar^2$</td>
+<td style="text-align: left;">Symmetric cancellations</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. Examiner Traps &amp; Common Board Evaluation Mistakes</h2>
+<h3>2.1 The "$n \ge 2$" Step Deduction Trap</h3>
+<ul>
+<li><strong>The Pitfall:</strong> When deriving $a_n$ from $S_n$ using $a_n = S_n - S_{n-1}$, writing this without restricting $n \ge 2$ incurs a <strong>$-\frac{1}{2}$ mark penalty</strong>.</li>
+<li><strong>Why:</strong> $S_0$ is completely undefined in CBSE curriculum.</li>
+<li><strong>Prescribed Presentation:</strong></li>
+<li>State: $a_1 = S_1$.</li>
+<li>State: For $n \ge 2$, $a_n = S_n - S_{n-1}$.</li>
+<li>Simplify the expression for $a_n$.</li>
+<li>Verify if substituting $n = 1$ into the simplified formula matches $S_1$. If it does, write: <em>"Hence, $a_n = \dots$ holds for all $n \ge 1$."</em> If not, state $a_1$ and $a_n$ as a piecewise formula.</li>
+</ul>
+<h3>2.2 The Non-Zero and Unity Conditions in GP</h3>
+<ul>
+<li><strong>Common Ratio Trap:</strong> Writing the sum formula $S_n = \frac{a(1 - r^n)}{1 - r}$ without explicitly noting $r \ne 1$ results in a <strong>$-\frac{1}{2}$ mark deduction</strong>.</li>
+<li>If $r = 1$, $S_n = na$.</li>
+<li><strong>Extraneous Roots in Common Ratio:</strong> When solving $r^2 = k^2$, always check if the problem specifies <em>"positive terms"</em>, <em>"alternating terms"</em>, or <em>"strictly decreasing GP"</em>. Discard the inappropriate sign explicitly with a written justification (e.g., <em>"Since all terms are positive, $r > 0 \implies r = +k$"</em>). Failing to justify the discarded root loses $\frac{1}{2}$ mark.</li>
+</ul>
+<h3>2.3 Insertion of Means: Number of Terms Confusion</h3>
+<ul>
+<li><strong>Trap:</strong> Inserting $n$ Arithmetic Means ($A_1, A_2, \dots, A_n$) or Geometric Means ($G_1, G_2, \dots, G_n$) between $a$ and $b$ creates a sequence of <strong>$n + 2$ terms</strong>.</li>
+<li><strong>Consequences:</strong></li>
+<li>In AP: $b = T_{n+2} = a + (n + 1)d \implies d = \frac{b - a}{n + 1}$. (Students frequently write $d = \frac{b-a}{n}$ or $\frac{b-a}{n-1}$, receiving $0$ marks for subsequent steps).</li>
+<li>In GP: $b = T_{n+2} = a \cdot r^{n+1} \implies r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}$.</li>
+<li>$m$-th mean is NOT the $m$-th term:</li>
+</ul>
+<p>$$
+A_m = T_{m+1} = a + m d
+$$</p>
+<p>$$
+G_m = T_{m+1} = a r^m
+$$</p>
+<h3>2.4 Division by Unknown Parameters (Zero Division Error)</h3>
+<ul>
+<li>When eliminating variables in GP equations like $a(r^2 - 1) = 0$, dividing by $(r^2 - 1)$ without stating $r \ne \pm 1$ loses marks.</li>
+<li>In problems requiring factor cancellations, explicitly state: <em>"Since $r \ne 1$, dividing both sides by $(r - 1) \dots$"</em>.</li>
+</ul>
+<h3>2.5 Strict CBSE Step-Marking Scheme Breakdown</h3>
+<p>Examiners grade using a strict step-marking rubric:
+* <strong>Formulas (1/2 mark):</strong> Merely quoting the relevant standard formula ($S_n$, $a_n$, or AM-GM inequality) secures $\frac{1}{2}$ mark even if arithmetic errors occur later.
+* <strong>Equation Setup (1 mark):</strong> Translating word problems into simultaneous algebraic equations.
+* <strong>Intermediate Substitution (1 mark):</strong> Proper elimination of variables ($a$ or $d$/$r$).
+* <strong>Final Answer with Units/Constraints (1/2 to 1 mark):</strong> An unsimplified answer (e.g., leaving $\frac{24}{48}$ instead of $\frac{1}{2}$) or missing negative solutions costs up to 1 mark.</p>
+<hr />
+<h2>3. Golden Points to Remember (NCERT Theorems &amp; High-Yield Truths)</h2>
+<h3>3.1 Properties of Arithmetic Progressions</h3>
+<ol>
+<li><strong>Linear Transformation Invariance:</strong> If $a_1, a_2, \dots, a_n$ is an AP with common difference $d$:</li>
+<li>$a_1 \pm k, a_2 \pm k, \dots, a_n \pm k$ is an AP with common difference $d$.</li>
+<li>$k a_1, k a_2, \dots, k a_n$ is an AP with common difference $kd$.</li>
+<li>$\frac{a_1}{k}, \frac{a_2}{k}, \dots, \frac{a_n}{k}$ ($k \ne 0$) is an AP with common difference $\frac{d}{k}$.</li>
+<li><strong>Equidistant Sum Property:</strong> The sum of terms equidistant from the beginning and the end is constant:</li>
+</ol>
+<p>$$
+a_k + a_{n-k+1} = a_1 + a_n = 2a_1 + (n-1)d
+$$</p>
+<ol>
+<li><strong>Sum of $n$ Arithmetic Means:</strong> The sum of $n$ arithmetic means inserted between $a$ and $b$ is exactly $n$ times the single AM between $a$ and $b$:</li>
+</ol>
+<p>$$
+\sum_{i=1}^n A_i = n \left(\frac{a + b}{2}\right)
+$$</p>
+<h3>3.2 Properties of Geometric Progressions</h3>
+<ol>
+<li><strong>Geometric Transformation Invariance:</strong> If $a_1, a_2, \dots, a_n$ is a GP with common ratio $r$:</li>
+<li>$k a_1, k a_2, \dots, k a_n$ is a GP with common ratio $r$.</li>
+<li>$(a_1)^k, (a_2)^k, \dots, (a_n)^k$ is a GP with common ratio $r^k$.</li>
+<li>$\frac{1}{a_1}, \frac{1}{a_2}, \dots, \frac{1}{a_n}$ is a GP with common ratio $\frac{1}{r}$.</li>
+<li><strong>Equidistant Product Property:</strong></li>
+</ol>
+<p>$$
+a_k \cdot a_{n-k+1} = a_1 \cdot a_n
+$$</p>
+<ol>
+<li><strong>Product of $n$ Geometric Means:</strong> The product of $n$ geometric means inserted between two positive numbers $a$ and $b$ equals the $n$-th power of the single GM between them:</li>
+</ol>
+<p>$$
+\prod_{i=1}^n G_i = (G)^n = (\sqrt{ab})^n = (ab)^{n/2}
+$$</p>
+<h3>3.3 The AM-GM Inequality (Theorem &amp; NCERT Domain Restrictions)</h3>
+<ul>
+<li><strong>Statement:</strong> For any two <strong>positive real numbers</strong> $a$ and $b$:</li>
+</ul>
+<p>$$
+\text{AM} \ge \text{GM} \iff \frac{a + b}{2} \ge \sqrt{ab}
+$$</p>
+<ul>
+<li><strong>Equality Condition:</strong> $\text{AM} = \text{GM}$ holds <strong>if and only if</strong> $a = b$.</li>
+<li><strong>Critical Examiner Check:</strong> The GM is defined as $\sqrt{ab}$ strictly for <strong>positive real numbers</strong> in Class 11 CBSE. If $a$ and $b$ have opposite signs or are both negative, real GM does not exist in standard real-sequence evaluation.</li>
+<li><strong>Quadratic Equation Roots via AM &amp; GM:</strong>
+  If $A$ and $G$ are the AM and GM between two positive numbers $a$ and $b$, then $a$ and $b$ are the roots of the quadratic equation:</li>
+</ul>
+<p>$$
+x^2 - 2Ax + G^2 = 0 \implies x = A \pm \sqrt{A^2 - G^2}
+$$</p>
+<hr />
+<h2>4. Comprehensive Formula Bank &amp; Identity Checklist</h2>
+<h3>4.1 Master Comparison Table: AP vs GP</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute / Operation</th>
+<th style="text-align: left;">Arithmetic Progression (AP)</th>
+<th style="text-align: left;">Geometric Progression (GP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>First Term &amp; Common Step</strong></td>
+<td style="text-align: left;">First term: $a$, Common diff: $d$</td>
+<td style="text-align: left;">First term: $a$, Common ratio: $r$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>General Term ($n$-th term)</strong></td>
+<td style="text-align: left;">$a_n = a + (n - 1)d$</td>
+<td style="text-align: left;">$a_n = a r^{n-1}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sum of First $n$ Terms ($S_n$)</strong></td>
+<td style="text-align: left;">$S_n = \frac{n}{2}[2a + (n-1)d] = \frac{n}{2}(a + l)$</td>
+<td style="text-align: left;">$S_n = \frac{a(1 - r^n)}{1 - r} = \frac{a(r^n - 1)}{r - 1} \quad (r \ne 1)$</td>
+</tr>
+<tr>
+<td style="text-align: left;">$S_n = na \quad (r = 1)$</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sum of Infinite Terms ($S_\infty$)</strong></td>
+<td style="text-align: left;">Diverges ($\pm\infty$)</td>
+<td style="text-align: left;">$S_\infty = \frac{a}{1 - r} \quad (\text{Strictly for } \|r\| < 1)$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Single Mean between $a$ and $b$</strong></td>
+<td style="text-align: left;">$A = \frac{a + b}{2}$</td>
+<td style="text-align: left;">$G = \sqrt{ab} \quad (a, b > 0)$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Common Step for $n$ Means</strong></td>
+<td style="text-align: left;">$d = \frac{b - a}{n + 1}$</td>
+<td style="text-align: left;">$r = \left(\frac{b}{a}\right)^{\frac{1}{n+1}}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>$k$-th Inserted Mean</strong></td>
+<td style="text-align: left;">$A_k = a + k\left(\frac{b - a}{n + 1}\right)$</td>
+<td style="text-align: left;">$G_k = a \left(\frac{b}{a}\right)^{\frac{k}{n+1}}$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Relation between $S_n$ and $a_n$</strong></td>
+<td style="text-align: left;">$a_n = S_n - S_{n-1} \quad (n \ge 2)$</td>
+<td style="text-align: left;">$a_n = S_n - S_{n-1} \quad (n \ge 2)$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>4.2 Standard Summation Identities (Algebraic Checkpoints)</h3>
+<ol>
+<li><strong>Sum of first $n$ natural numbers:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^n k = 1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}
+$$</p>
+<ol>
+<li><strong>Sum of first $n$ odd natural numbers:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^n (2k - 1) = 1 + 3 + 5 + \dots + (2n - 1) = n^2
+$$</p>
+<ol>
+<li><strong>Sum of first $n$ even natural numbers:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^n 2k = 2 + 4 + 6 + \dots + 2n = n(n + 1)
+$$</p>
+<ol>
+<li><strong>Sum of squares of first $n$ natural numbers:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^n k^2 = 1^2 + 2^2 + 3^2 + \dots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
+$$</p>
+<ol>
+<li><strong>Sum of cubes of first $n$ natural numbers:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^n k^3 = 1^3 + 2^3 + 3^3 + \dots + n^3 = \left[\frac{n(n + 1)}{2}\right]^2 = \left(\sum_{k=1}^n k\right)^2
+$$</p>
+<hr />
+<h3>4.3 Recurring Decimal to Fraction via Infinite GP Shortcut</h3>
+<p>For converting recurring repeating decimals of the form $0.\overline{pqr}$:</p>
+<p>$$
+0.\overline{a_1 a_2 \dots a_k} = \frac{a_1 a_2 \dots a_k}{\underbrace{99\dots9}_{k \text{ nines}}}
+$$</p>
+<p>For mixed recurring decimals $0.a_1 \dots a_m \overline{b_1 \dots b_k}$:</p>
+<p>$$
+\text{Fraction} = \frac{(\text{Full number formed by non-repeating and repeating digits}) - (\text{Non-repeating digits})}{\underbrace{99\dots9}_{k \text{ nines}} \underbrace{00\dots0}_{m \text{ zeroes}}}
+$$</p>
+<p><em>Example:</em> $0.2\overline{35} = \frac{235 - 2}{990} = \frac{233}{990}$. (Verify via $S_\infty = \frac{2}{10} + \frac{35}{1000}\left(\frac{1}{1 - 1/100}\right)$ for formal 3-mark questions).</p>
+<hr />
+              </div>
+            
+          </div>
+
+          <!-- TAB 5: Advanced Studies (Segregated Beyond NCERT Core) -->
+          
+          <div id="panel-advanced" class="view-panel">
+            <div class="advanced-scope-banner">
+              <div class="advanced-scope-icon">🚀</div>
+              <div class="advanced-scope-text">
+                <h3>Advanced Studies &amp; Competitive Extension (JEE Main &amp; Advanced)</h3>
+                <p><strong>Note for CBSE Board Candidates:</strong> The topics below are rationalized from the core board exam paper or extend beyond the NCERT textbook. Preserved strictly for students preparing for JEE, Olympiads, and university entrance.</p>
+              </div>
+            </div>
+            
+              <div class="whiteboard-card adv-module-card" style="margin-bottom: 2rem;">
+                <div class="sticky-note purple" style="margin-bottom: 1.25rem;">
+                  <div class="sticky-title">🚀 Advanced Extension: Sum to n Terms of Special Series and Word Problems on Progressions</div>
+                  <strong>CBSE Syllabus Advisory:</strong> This module covers competitive concepts, proofs, and higher lemmas (JEE Main/Advanced). Focus on this after completing the NCERT core.
+                </div>
+                <h1>Sum to n Terms of Special Series and Word Problems on Progressions</h1>
+<h1>Sequences and Series: Sum to $n$ Terms of Special Series and Word Problems on Progressions</h1>
+<hr />
+<h2>1. Pedagogical Theory &amp; Mathematical Intuition</h2>
+<h3>1.1 Overview and Context</h3>
+<p>In Class 11 Mathematics (NCERT Chapter: <em>Sequences and Series</em>), after studying Arithmetic Progressions (AP) and Geometric Progressions (GP), we encounter non-standard series whose $n$-th term $a_n$ (or $T_n$) can be expressed as a polynomial function of $n$, or as products of consecutive integers/terms.</p>
+<p>To sum these series to $n$ terms, denoted by:</p>
+<p>$$
+S_n = \sum_{k=1}^{n} a_k = a_1 + a_2 + a_3 + \dots + a_n
+$$</p>
+<p>we rely on the linearity of the summation operator ($\Sigma$) and three foundational algebraic identities known as the <strong>Sums of Natural Powers of the First $n$ Natural Numbers</strong>.</p>
+<hr />
+<h3>1.2 Core Definitions and Notation</h3>
+<h4>Definition 1.2.1: The Summation Operator ($\Sigma$)</h4>
+<p>Let $\{a_k\}_{k=1}^{n}$ be an ordered sequence of real numbers. The compact sum notation is defined as:</p>
+<p>$$
+\sum_{k=1}^{n} a_k = a_1 + a_2 + a_3 + \dots + a_n
+$$</p>
+<p>where:
+- $k$ is the index of summation (dummy variable).
+- $1$ is the lower limit.
+- $n$ is the upper limit ($n \in \mathbb{N}$).
+- $a_k$ represents the general term ($k$-th term).</p>
+<h4>Properties of the Summation Operator:</h4>
+<ol>
+<li><strong>Homogeneity (Factoring Constants):</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} c \cdot a_k = c \sum_{k=1}^{n} a_k \quad (\text{where } c \text{ is independent of } k)
+$$</p>
+<ol>
+<li><strong>Additivity / Linearity:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} (a_k \pm b_k) = \sum_{k=1}^{n} a_k \pm \sum_{k=1}^{n} b_k
+$$</p>
+<ol>
+<li><strong>Sum of a Constant:</strong></li>
+</ol>
+<p>$$
+\sum_{k=1}^{n} c = \underbrace{c + c + \dots + c}_{n \text{ times}} = n \cdot c \quad (\text{specifically, } \sum_{k=1}^{n} 1 = n)
+$$</p>
+<hr />
+<h3>1.3 Fundamental Special Series (Priority Tagged)</h3>
+<h4>Concept 1: Sum of the First $n$ Natural Numbers ($\sum n$)</h4>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Highest Board &amp; Entrance Frequency)</em></p>
+<p>$$
+\sum_{k=1}^{n} k = 1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+$$</p>
+<p><strong>Geometric Intuition (Triangular Numbers):</strong>
+Imagine arranging unit dots or squares in rows: Row 1 has $1$, Row 2 has $2$, $\dots$, Row $n$ has $n$. Two such identical step-triangles can be interlocked to form a rectangle of dimension $n \times (n + 1)$. The area is $n(n+1)$, so one triangle equals $\frac{n(n+1)}{2}$.</p>
+<pre><code>•              •  o  o  o
+•  •           •  •  o  o   --&gt; Rectangle of dimension n × (n + 1)
+•  •  •   +    •  •  •  o       Total elements = n(n + 1)
+•  •  •  •     •  •  •  •       Half = n(n + 1) / 2
+</code></pre>
+<hr />
+<h4>Concept 2: Sum of the Squares of the First $n$ Natural Numbers ($\sum n^2$)</h4>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐⭐</span> <em>(Highest Board &amp; Entrance Frequency)</em></p>
+<p>$$
+\sum_{k=1}^{n} k^2 = 1^2 + 2^2 + 3^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}
+$$</p>
+<p><strong>Geometric Intuition (Square Pyramidal Numbers):</strong>
+The sum represents stacking square layers of cannonballs or unit cubes into a pyramid of height $n$. Three identical square pyramids can be dissected and reassembled (along with an extra half-layer adjustment) to form a cuboid of dimensions $n \times (n + 1) \times \left(n + \frac{1}{2}\right) = \frac{n(n+1)(2n+1)}{2}$, giving the volume of one pyramid as $\frac{n(n+1)(2n+1)}{6}$.</p>
+<hr />
+<h4>Concept 3: Sum of the Cubes of the First $n$ Natural Numbers ($\sum n^3$)</h4>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span> <em>(High Board Frequency)</em></p>
+<p>$$
+\sum_{k=1}^{n} k^3 = 1^3 + 2^3 + 3^3 + \dots + n^3 = \left[ \frac{n(n+1)}{2} \right]^2 = \left( \sum_{k=1}^{n} k \right)^2
+$$</p>
+<p><strong>Remarkable Theorem (Nicomachus's Theorem):</strong>
+The sum of the first $n$ cubes is strictly equal to the square of the sum of the first $n$ natural numbers.</p>
+<p><strong>Geometric Intuition:</strong>
+A large square of side length $\frac{n(n+1)}{2} = 1 + 2 + \dots + n$ can be decomposed into concentric L-shaped gnomons. The $k$-th gnomon has an area of $k \times k^2 = k^3$. Summing all gnomons from $k=1$ to $n$ reconstructs the entire square.</p>
+<hr />
+<h4>Concept 4: Method of Differences (Telescoping Sums)</h4>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐⭐</span> <em>(High Frequency in Conceptual Problems)</em></p>
+<p>When a sequence $\{a_n\}$ does not follow standard AP or GP patterns, we examine the first differences:</p>
+<p>$$
+d_k = a_{k+1} - a_k
+$$</p>
+<p>If $\{d_k\}$ forms an AP or GP, the general term $a_n$ is determined via:</p>
+<p>$$
+a_n = a_1 + \sum_{k=1}^{n-1} (a_{k+1} - a_k)
+$$</p>
+<p>Once $a_n$ is obtained as a polynomial in $n$, $S_n$ is computed via $\sum a_n$.</p>
+<hr />
+<h4>Concept 5: Real-World Word Problems on Progressions</h4>
+<p><strong>Priority:</strong> <span class="star-icon">⭐⭐⭐</span> <em>(Regular 4-Mark / 6-Mark Board Exam Applications)</em></p>
+<p>Application of AP and GP models to:
+1. Depreciation and compound appreciation (financial growth).
+2. Installment loans and repayment structures (declining balance AP).
+3. Geometric physical chains (bouncing balls, radioactive decay, cellular division).
+4. Physical distribution and collection models (e.g., Potato Race, tree planting).</p>
+<hr />
+<h2>2. Rigorous Step-by-Step Proofs &amp; Derivations</h2>
+<h3>Theorem 2.1: Sum of the First $n$ Natural Numbers</h3>
+<p>Prove that for every $n \in \mathbb{N}$:</p>
+<p>$$
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
+$$</p>
+<h4>Formal Proof:</h4>
+<p><strong>Given:</strong> The finite sequence of consecutive natural numbers $1, 2, 3, \dots, n$.<br />
+<strong>To Prove:</strong></p>
+<p>$$
+S_n = 1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+$$</p>
+<p><strong>Proof (Method of Telescoping Identity / Mathematical Induction / Gauss Reversal):</strong>
+We use the fundamental algebraic identity:</p>
+<p>$$
+(k+1)^2 - k^2 = 2k + 1
+$$</p>
+<p>Substitute $k = 1, 2, 3, \dots, n$:</p>
+<p>$$
+k = 1: \quad 2^2 - 1^2 = 2(1) + 1
+$$</p>
+<p>$$
+k = 2: \quad 3^2 - 2^2 = 2(2) + 1
+$$</p>
+<p>$$
+k = 3: \quad 4^2 - 3^2 = 2(3) + 1
+$$</p>
+<p>$$
+\vdots
+$$</p>
+<p>$$
+k = n: \quad (n+1)^2 - n^2 = 2(n) + 1
+$$</p>
+<p>Summing all $n$ equations vertically:
+The left-hand side telescopes:</p>
+<p>$$
+\sum_{k=1}^{n} \left[(k+1)^2 - k^2\right] = (2^2 - 1^2) + (3^2 - 2^2) + \dots + \left((n+1)^2 - n^2\right) = (n+1)^2 - 1^2
+$$</p>
+<p>The right-hand side sums as:</p>
+<p>$$
+\sum_{k=1}^{n} [2k + 1] = 2\sum_{k=1}^{n} k + \sum_{k=1}^{n} 1 = 2 S_n + n
+$$</p>
+<p>Equating LHS and RHS:</p>
+<p>$$
+(n+1)^2 - 1 = 2S_n + n
+$$</p>
+<p>$$
+n^2 + 2n + 1 - 1 = 2S_n + n
+$$</p>
+<p>$$
+n^2 + 2n = 2S_n + n
+$$</p>
+<p>$$
+2S_n = n^2 + n = n(n+1)
+$$</p>
+<p>$$
+S_n = \frac{n(n+1)}{2}
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h3>Theorem 2.2: Sum of the Squares of the First $n$ Natural Numbers</h3>
+<p>Prove that for every $n \in \mathbb{N}$:</p>
+<p>$$
+\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}
+$$</p>
+<h4>Formal Proof:</h4>
+<p><strong>Given:</strong> The finite sequence of squares $1^2, 2^2, 3^2, \dots, n^2$.<br />
+<strong>To Prove:</strong></p>
+<p>$$
+S_n = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}
+$$</p>
+<p><strong>Proof:</strong>
+Consider the cubic algebraic identity:</p>
+<p>$$
+(k+1)^3 - k^3 = 3k^2 + 3k + 1
+$$</p>
+<p>Substitute successively $k = 1, 2, 3, \dots, n$:</p>
+<p>$$
+k = 1: \quad 2^3 - 1^3 = 3(1^2) + 3(1) + 1
+$$</p>
+<p>$$
+k = 2: \quad 3^3 - 2^3 = 3(2^2) + 3(2) + 1
+$$</p>
+<p>$$
+k = 3: \quad 4^3 - 3^3 = 3(3^2) + 3(3) + 1
+$$</p>
+<p>$$
+\vdots
+$$</p>
+<p>$$
+k = n: \quad (n+1)^3 - n^3 = 3(n^2) + 3(n) + 1
+$$</p>
+<p>Summing both sides vertically over $k = 1$ to $n$:</p>
+<p><strong>Left-Hand Side:</strong>
+All intermediate terms cancel out telescopically:</p>
+<p>$$
+\text{LHS} = (2^3 - 1^3) + (3^3 - 2^3) + \dots + \left((n+1)^3 - n^3\right) = (n+1)^3 - 1
+$$</p>
+<p><strong>Right-Hand Side:</strong></p>
+<p>$$
+\text{RHS} = 3\sum_{k=1}^{n} k^2 + 3\sum_{k=1}^{n} k + \sum_{k=1}^{n} 1
+$$</p>
+<p>Let $S = \sum_{k=1}^{n} k^2$. Using Theorem 2.1:</p>
+<p>$$
+\text{RHS} = 3S + 3\left[\frac{n(n+1)}{2}\right] + n
+$$</p>
+<p>Equating LHS and RHS:</p>
+<p>$$
+(n+1)^3 - 1 = 3S + \frac{3n(n+1)}{2} + n
+$$</p>
+<p>Expand $(n+1)^3 - 1$:</p>
+<p>$$
+(n+1)^3 - 1 = n^3 + 3n^2 + 3n + 1 - 1 = n^3 + 3n^2 + 3n
+$$</p>
+<p>Substitute and isolate $3S$:</p>
+<p>$$
+3S = n^3 + 3n^2 + 3n - n - \frac{3n(n+1)}{2}
+$$</p>
+<p>$$
+3S = n^3 + 3n^2 + 2n - \frac{3n(n+1)}{2}
+$$</p>
+<p>Factor out $n$ from the polynomial expression:</p>
+<p>$$
+n^3 + 3n^2 + 2n = n(n^2 + 3n + 2) = n(n+1)(n+2)
+$$</p>
+<p>Hence:</p>
+<p>$$
+3S = n(n+1)(n+2) - \frac{3n(n+1)}{2}
+$$</p>
+<p>Factor out the common term $n(n+1)$:</p>
+<p>$$
+3S = n(n+1) \left[ (n+2) - \frac{3}{2} \right]
+$$</p>
+<p>$$
+3S = n(n+1) \left[ \frac{2n + 4 - 3}{2} \right] = n(n+1) \left[ \frac{2n + 1}{2} \right]
+$$</p>
+<p>Divide both sides by $3$:</p>
+<p>$$
+S = \frac{n(n+1)(2n+1)}{6}
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h3>Theorem 2.3: Sum of the Cubes of the First $n$ Natural Numbers</h3>
+<p>Prove that for every $n \in \mathbb{N}$:</p>
+<p>$$
+\sum_{k=1}^{n} k^3 = \left[ \frac{n(n+1)}{2} \right]^2
+$$</p>
+<h4>Formal Proof:</h4>
+<p><strong>Given:</strong> The sequence $1^3, 2^3, 3^3, \dots, n^3$.<br />
+<strong>To Prove:</strong></p>
+<p>$$
+S_n = \sum_{k=1}^{n} k^3 = \frac{n^2(n+1)^2}{4}
+$$</p>
+<p><strong>Proof:</strong>
+Consider the quartic identity:</p>
+<p>$$
+(k+1)^4 - k^4 = 4k^3 + 6k^2 + 4k + 1
+$$</p>
+<p>Substitute successively $k = 1, 2, 3, \dots, n$:</p>
+<p>$$
+k = 1: \quad 2^4 - 1^4 = 4(1^3) + 6(1^2) + 4(1) + 1
+$$</p>
+<p>$$
+k = 2: \quad 3^4 - 2^4 = 4(2^3) + 6(2^2) + 4(2) + 1
+$$</p>
+<p>$$
+\vdots
+$$</p>
+<p>$$
+k = n: \quad (n+1)^4 - n^4 = 4(n^3) + 6(n^2) + 4(n) + 1
+$$</p>
+<p>Summing vertically over $k = 1$ to $n$:</p>
+<p><strong>Left-Hand Side:</strong>
+Telescoping sum yields:</p>
+<p>$$
+\text{LHS} = (n+1)^4 - 1
+$$</p>
+<p><strong>Right-Hand Side:</strong></p>
+<p>$$
+\text{RHS} = 4\sum_{k=1}^{n} k^3 + 6\sum_{k=1}^{n} k^2 + 4\sum_{k=1}^{n} k + \sum_{k=1}^{n} 1
+$$</p>
+<p>Let $C = \sum_{k=1}^{n} k^3$. Using our derived results for $\sum k^2$ and $\sum k$:</p>
+<p>$$
+\text{RHS} = 4C + 6 \left[ \frac{n(n+1)(2n+1)}{6} \right] + 4 \left[ \frac{n(n+1)}{2} \right] + n
+$$</p>
+<p>$$
+\text{RHS} = 4C + n(n+1)(2n+1) + 2n(n+1) + n
+$$</p>
+<p>Equate LHS and RHS:</p>
+<p>$$
+(n+1)^4 - 1 = 4C + n(n+1)(2n+1) + 2n(n+1) + n
+$$</p>
+<p>Notice:</p>
+<p>$$
+(n+1)^4 - 1 = [(n+1)^2 - 1][(n+1)^2 + 1] = [n^2 + 2n][n^2 + 2n + 2] = n(n+2)(n^2 + 2n + 2)
+$$</p>
+<p>Alternatively, group polynomial terms on the RHS excluding $4C$:</p>
+<p>$$
+n(n+1)(2n+1) + 2n(n+1) + n = n\left[(n+1)(2n+1) + 2(n+1) + 1\right]
+$$</p>
+<p>$$
+= n\left[ 2n^2 + 3n + 1 + 2n + 2 + 1 \right] = n\left[ 2n^2 + 5n + 4 \right]
+$$</p>
+<p>Now expand $(n+1)^4 - 1$:</p>
+<p>$$
+(n+1)^4 - 1 = n^4 + 4n^3 + 6n^2 + 4n
+$$</p>
+<p>Therefore:</p>
+<p>$$
+4C = (n^4 + 4n^3 + 6n^2 + 4n) - (2n^3 + 5n^2 + 4n)
+$$</p>
+<p>$$
+4C = n^4 + (4n^3 - 2n^3) + (6n^2 - 5n^2) + (4n - 4n)
+$$</p>
+<p>$$
+4C = n^4 + 2n^3 + n^2
+$$</p>
+<p>Factor out $n^2$:</p>
+<p>$$
+4C = n^2(n^2 + 2n + 1) = n^2(n+1)^2
+$$</p>
+<p>Divide by $4$:</p>
+<p>$$
+C = \frac{n^2(n+1)^2}{4} = \left[ \frac{n(n+1)}{2} \right]^2
+$$</p>
+<p>$$
+\text{Q.E.D.}
+$$</p>
+<hr />
+<h2>3. High-Yield Examples &amp; Exemplar Applications</h2>
+<h3>Example 3.1: Standard Polynomial Decomposition</h3>
+<p><strong>Problem:</strong> Find the sum to $n$ terms of the series:</p>
+<p>$$
+1 \cdot 2 + 2 \cdot 3 + 3 \cdot 4 + 4 \cdot 5 + \dots
+$$</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Determine the general term ($n$-th term $a_n$).</strong><br />
+The first factors are $1, 2, 3, \dots \implies n$.<br />
+The second factors are $2, 3, 4, \dots \implies (n+1)$.  </p>
+<p>$$
+a_n = n(n+1) = n^2 + n
+$$</p>
+<p><strong>Step 2: Apply the summation operator.</strong></p>
+<p>$$
+S_n = \sum_{k=1}^{n} a_k = \sum_{k=1}^{n} (k^2 + k) = \sum_{k=1}^{n} k^2 + \sum_{k=1}^{n} k
+$$</p>
+<p><strong>Step 3: Substitute the standard formulas.</strong></p>
+<p>$$
+S_n = \frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2}
+$$</p>
+<p><strong>Step 4: Factorize completely (Do not expand into cubic polynomials).</strong><br />
+Take out the common factor $\frac{n(n+1)}{6}$:</p>
+<p>$$
+S_n = \frac{n(n+1)}{6} \left[ (2n + 1) + 3 \right]
+$$</p>
+<p>$$
+S_n = \frac{n(n+1)(2n + 4)}{6} = \frac{2n(n+1)(n+2)}{6}
+$$</p>
+<p>$$
+S_n = \frac{n(n+1)(n+2)}{3}
+$$</p>
+<h4>Board Marking Scheme:</h4>
+<ul>
+<li>Identification of $a_n = n(n+1)$: <strong>1 Mark</strong></li>
+<li>Splitting into $\sum n^2 + \sum n$: <strong>1 Mark</strong></li>
+<li>Correct substitution of formulas: <strong>1 Mark</strong></li>
+<li>Proper algebraic factoring to obtain $\frac{n(n+1)(n+2)}{3}$: <strong>1 Mark</strong></li>
+</ul>
+<hr />
+<h3>Example 3.2: Triple Factor Product Series</h3>
+<p><strong>Problem:</strong> Find the sum to $n$ terms of the series:</p>
+<p>$$
+1 \cdot 2 \cdot 3 + 2 \cdot 3 \cdot 4 + 3 \cdot 4 \cdot 5 + \dots
+$$</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Find the general term.</strong></p>
+<p>$$
+a_n = n(n+1)(n+2) = n(n^2 + 3n + 2) = n^3 + 3n^2 + 2n
+$$</p>
+<p><strong>Step 2: Express $S_n$ using summation.</strong></p>
+<p>$$
+S_n = \sum_{k=1}^{n} k^3 + 3\sum_{k=1}^{n} k^2 + 2\sum_{k=1}^{n} k
+$$</p>
+<p><strong>Step 3: Substitute standard formulas.</strong></p>
+<p>$$
+S_n = \frac{n^2(n+1)^2}{4} + 3\left[\frac{n(n+1)(2n+1)}{6}\right] + 2\left[\frac{n(n+1)}{2}\right]
+$$</p>
+<p>$$
+S_n = \frac{n^2(n+1)^2}{4} + \frac{n(n+1)(2n+1)}{2} + n(n+1)
+$$</p>
+<p><strong>Step 4: Factor out $\frac{n(n+1)}{4}$.</strong></p>
+<p>$$
+S_n = \frac{n(n+1)}{4} \left[ n(n+1) + 2(2n+1) + 4 \right]
+$$</p>
+<p>Expand inside the brackets:</p>
+<p>$$
+n(n+1) + 2(2n+1) + 4 = n^2 + n + 4n + 2 + 4 = n^2 + 5n + 6
+$$</p>
+<p><strong>Step 5: Factor the quadratic term.</strong></p>
+<p>$$
+n^2 + 5n + 6 = (n+2)(n+3)
+$$</p>
+<p>Thus:</p>
+<p>$$
+S_n = \frac{n(n+1)(n+2)(n+3)}{4}
+$$</p>
+<hr />
+<h3>Example 3.3: NCERT Exemplar — Difference Method</h3>
+<p><strong>Problem:</strong> Find the sum to $n$ terms of the series:</p>
+<p>$$
+3 + 7 + 13 + 21 + 31 + \dots
+$$</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Check difference between consecutive terms.</strong></p>
+<p>$$
+7 - 3 = 4, \quad 13 - 7 = 6, \quad 21 - 13 = 8, \quad 31 - 21 = 10
+$$</p>
+<p>The differences $4, 6, 8, 10, \dots$ form an AP with first term $A = 4$ and common difference $D = 2$.</p>
+<p><strong>Step 2: Express $S_n$ in two shifted forms.</strong></p>
+<p>$$
+S_n = 3 + 7 + 13 + 21 + \dots + a_{n-1} + a_n \quad \text{--- (1)}
+$$</p>
+<p>$$
+S_n = \phantom{3 + } 3 + 7 + 13 + \dots + a_{n-1} + a_n \quad \text{--- (2)}
+$$</p>
+<p>Subtracting equation (2) from equation (1):</p>
+<p>$$
+0 = 3 + [4 + 6 + 8 + 10 + \dots + (a_n - a_{n-1})] - a_n
+$$</p>
+<p>Note that the bracket contains $(n-1)$ terms.</p>
+<p>$$
+a_n = 3 + \sum_{j=1}^{n-1} [4 + (j-1)2]
+$$</p>
+<p>Using the AP sum formula for $(n-1)$ terms:</p>
+<p>$$
+\sum_{j=1}^{n-1} [4 + (j-1)2] = \frac{n-1}{2} [2(4) + ((n-1)-1)2] = \frac{n-1}{2} [8 + 2n - 4] = \frac{n-1}{2} [2n + 4] = (n-1)(n+2)
+$$</p>
+<p>Thus:</p>
+<p>$$
+a_n = 3 + (n^2 + n - 2) = n^2 + n + 1
+$$</p>
+<p><em>Check $n=1$: $a_1 = 1 + 1 + 1 = 3$. Check $n=2$: $a_2 = 4 + 2 + 1 = 7$. Matches.</em></p>
+<p><strong>Step 3: Sum the series $S_n = \sum_{k=1}^{n} a_k$.</strong></p>
+<p>$$
+S_n = \sum_{k=1}^{n} (k^2 + k + 1) = \sum_{k=1}^{n} k^2 + \sum_{k=1}^{n} k + \sum_{k=1}^{n} 1
+$$</p>
+<p>$$
+S_n = \frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2} + n
+$$</p>
+<p><strong>Step 4: Factor out $\frac{n}{6}$.</strong></p>
+<p>$$
+S_n = \frac{n}{6} \left[ (n+1)(2n+1) + 3(n+1) + 6 \right]
+$$</p>
+<p>Expand inside the brackets:</p>
+<p>$$
+(2n^2 + 3n + 1) + (3n + 3) + 6 = 2n^2 + 6n + 10 = 2(n^2 + 3n + 5)
+$$</p>
+<p>Thus:</p>
+<p>$$
+S_n = \frac{2n(n^2 + 3n + 5)}{6} = \frac{n(n^2 + 3n + 5)}{3}
+$$</p>
+<hr />
+<h3>Example 3.4: Word Problem on AP (NCERT Miscellaneous — Loan Repayment)</h3>
+<p><strong>Problem:</strong> A person writes a loan agreement to pay off a debt of ₹ $36,000$ in $40$ annual installments which form an arithmetic progression. When $30$ of the installments are paid, the person dies leaving one-third of the debt unpaid. Find the value of the first installment.</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Set up the variables.</strong><br />
+Let the first installment be $a$ (in ₹), and the annual increment be $d$ (in ₹).<br />
+The total number of agreed installments is $n = 40$.<br />
+Total agreed debt:</p>
+<p>$$
+S_{40} = 36,000
+$$</p>
+<p>Using $S_n = \frac{n}{2}[2a + (n-1)d]$:</p>
+<p>$$
+S_{40} = \frac{40}{2}[2a + 39d] = 20(2a + 39d) = 36,000
+$$</p>
+<p>$$
+2a + 39d = 1,800 \quad \text{--- (Equation 1)}
+$$</p>
+<p><strong>Step 2: Translate the condition at the 30th installment.</strong><br />
+Debt unpaid after $30$ installments:</p>
+<p>$$
+\text{Unpaid amount} = \frac{1}{3} \times 36,000 = 12,000
+$$</p>
+<p>Therefore, the amount paid in the first $30$ installments is:</p>
+<p>$$
+S_{30} = 36,000 - 12,000 = 24,000
+$$</p>
+<p>Using the sum formula for 30 terms:</p>
+<p>$$
+S_{30} = \frac{30}{2}[2a + 29d] = 15(2a + 29d) = 24,000
+$$</p>
+<p>$$
+2a + 29d = \frac{24,000}{15} = 1,600 \quad \text{--- (Equation 2)}
+$$</p>
+<p><strong>Step 3: Solve the linear system.</strong><br />
+Subtract Equation (2) from Equation (1):</p>
+<p>$$
+(2a + 39d) - (2a + 29d) = 1,800 - 1,600
+$$</p>
+<p>$$
+10d = 200 \implies d = 20
+$$</p>
+<p>Substitute $d = 20$ into Equation (2):</p>
+<p>$$
+2a + 29(20) = 1,600
+$$</p>
+<p>$$
+2a + 580 = 1,600 \implies 2a = 1,020 \implies a = 510
+$$</p>
+<p><strong>Conclusion:</strong> The value of the first installment is <strong>₹ 510</strong>.</p>
+<hr />
+<h3>Example 3.5: Word Problem on GP (NCERT Classic — The Bouncing Ball)</h3>
+<p><strong>Problem:</strong> A ball is dropped from a height of $120\text{ m}$. It rebounds to $\frac{3}{5}$ of the height from which it falls on each bounce. Find the total distance travelled by the ball before it comes to rest.</p>
+<h4>Step-by-Step Solution:</h4>
+<p><strong>Step 1: Decompose the path into downward and upward journeys.</strong>
+- Initial drop: $h_0 = 120\text{ m}$ (downward only).
+- First rebound: reaches height $120 \times \frac{3}{5}\text{ m}$, then falls back $120 \times \frac{3}{5}\text{ m}$.
+- Second rebound: reaches height $120 \times \left(\frac{3}{5}\right)^2\text{ m}$, then falls back $120 \times \left(\frac{3}{5}\right)^2\text{ m}$.
+- $k$-th rebound: travels $2 \times \left[ 120 \times \left(\frac{3}{5}\right)^k \right]\text{ m}$ (up + down).</p>
+<p><strong>Step 2: Formulate the total distance equation.</strong></p>
+<p>$$
+\text{Total Distance } D = h_0 + 2h_1 + 2h_2 + 2h_3 + \dots
+$$</p>
+<p>$$
+D = 120 + 2\left[ 120\left(\frac{3}{5}\right) + 120\left(\frac{3}{5}\right)^2 + 120\left(\frac{3}{5}\right)^3 + \dots \right]
+$$</p>
+<p>$$
+D = 120 + 240 \left[ \frac{3}{5} + \left(\frac{3}{5}\right)^2 + \left(\frac{3}{5}\right)^3 + \dots \right]
+$$</p>
+<p><strong>Step 3: Evaluate the infinite geometric series.</strong><br />
+The series inside brackets is an infinite GP with:
+- First term $a = \frac{3}{5}$
+- Common ratio $r = \frac{3}{5}$ (since $|r| < 1$, the sum converges)</p>
+<p>$$
+S_\infty = \frac{a}{1 - r} = \frac{\frac{3}{5}}{1 - \frac{3}{5}} = \frac{\frac{3}{5}}{\frac{2}{5}} = \frac{3}{2}
+$$</p>
+<p><strong>Step 4: Compute the final distance.</strong></p>
+<p>$$
+D = 120 + 240\left(\frac{3}{2}\right) = 120 + 360 = 480\text{ m}
+$$</p>
+<p><strong>Conclusion:</strong> The total distance travelled by the ball before coming to rest is <strong>$480\text{ m}$</strong>.</p>
+<hr />
+<h2>4. Examiner Traps &amp; Common Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Trap / Error Type</th>
+<th style="text-align: left;">Incorrect Approach</th>
+<th style="text-align: left;">Correct Mathematical Approach</th>
+<th style="text-align: left;">Why Students Lose Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. The Constant Term Trap in Summation</strong></td>
+<td style="text-align: left;">$\sum_{k=1}^{n} 1 = 1$ or omitting it during expansion.</td>
+<td style="text-align: left;">$\sum_{k=1}^{n} c = c \cdot n$. Thus $\sum_{k=1}^{n} 1 = n$.</td>
+<td style="text-align: left;">Treating $\Sigma$ as distributing only over variables, forgetting that the constant $1$ is added $n$ times.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Difference Method Index Shift</strong></td>
+<td style="text-align: left;">In $S_n - S_n$, writing: $a_n = 3 + \sum_{k=1}^{n} d_k$ ($n$ terms).</td>
+<td style="text-align: left;">$a_n = a_1 + \sum_{k=1}^{n-1} d_k$ (strictly $n-1$ differences).</td>
+<td style="text-align: left;">Off-by-one error produces an incorrect $a_n$, causing all subsequent sums to be wrong.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Premature Expansion vs. Factoring</strong></td>
+<td style="text-align: left;">Expanding $\frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2}$ into a cubic: $\frac{2n^3 + 3n^2 + n}{6} + \dots$</td>
+<td style="text-align: left;">Factor out common terms $\frac{n(n+1)}{6}$ immediately.</td>
+<td style="text-align: left;">Expanding leads to cubic polynomial division mistakes and lost time during exams.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Bouncing Ball Double-Distance Error</strong></td>
+<td style="text-align: left;">Doubling the very first drop: $D = 2 \times \frac{120}{1 - 3/5}$.</td>
+<td style="text-align: left;">Initial drop is unilateral (down only). Double only the rebounds: $D = h_0 + 2 \sum_{k=1}^\infty h_k$.</td>
+<td style="text-align: left;">Fails physical visualization; adds a nonexistent initial upward trajectory.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Partial Sum Range Mismatch</strong></td>
+<td style="text-align: left;">Finding sum of squares from $11^2 + 12^2 + \dots + 20^2$ by evaluating formula directly with $n=10$.</td>
+<td style="text-align: left;">Use complement sum: $S = \sum_{k=1}^{20} k^2 - \sum_{k=1}^{10} k^2$.</td>
+<td style="text-align: left;">Formulas $\sum k, \sum k^2, \sum k^3$ require the lower limit to be strictly $k=1$.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Speed Hacks &amp; Golden Points</h2>
+<h3>5.1 Verification Hack: Test for $n = 1$ and $n = 2$</h3>
+<p>Never submit a closed-form formula without quick numerical sanity checks:
+- Plug $n=1$: The formula <strong>must</strong> equal the first term $a_1$.
+- Plug $n=2$: The formula <strong>must</strong> equal $a_1 + a_2$.</p>
+<p><em>Example:</em> For $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$:
+- For $n=1$: $\frac{1 \times 2 \times 3}{3} = 2$. First term is $1 \cdot 2 = 2$. (Matches)
+- For $n=2$: $\frac{2 \times 3 \times 4}{3} = 8$. Sum is $2 + (2 \cdot 3) = 8$. (Matches)</p>
+<hr />
+<h3>5.2 The Factorial / Combinatorial Analogy (Faulhaber Shortcut)</h3>
+<p>Notice the pattern of consecutive factor products:</p>
+<p>$$
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
+$$</p>
+<p>$$
+\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}
+$$</p>
+<p>$$
+\sum_{k=1}^{n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}
+$$</p>
+<blockquote>
+<p><strong>Golden Rule:</strong> The sum of $r$ consecutive rising factorials is simply the product of $(r+1)$ consecutive factors divided by $(r+1)$.<br />
+This can be stated using combinations:
+</p>
+</blockquote>
+<p>$$
+k(k+1)\dots(k+r-1) = r! \binom{k+r-1}{r}
+$$</p>
+<blockquote>
+<p>Summing via the Hockey-Stick Identity gives:
+</p>
+</blockquote>
+<p>$$
+\sum_{k=1}^{n} \binom{k+r-1}{r} = \binom{n+r}{r+1} \implies \sum_{k=1}^{n} k(k+1)\dots(k+r-1) = \frac{n(n+1)\dots(n+r)}{r+1}
+$$</p>
+<hr />
+<h3>5.3 Quick Derivation Template for $\sum (2k-1)^2$ (Odd Squares)</h3>
+<p>To find the sum of squares of odd numbers $1^2 + 3^2 + 5^2 + \dots + (2n-1)^2$:</p>
+<p>$$
+\sum_{k=1}^{n} (2k-1)^2 = \sum_{k=1}^{n} (4k^2 - 4k + 1) = 4\sum k^2 - 4\sum k + \sum 1
+$$</p>
+<p>$$
+= 4\left[\frac{n(n+1)(2n+1)}{6}\right] - 4\left[\frac{n(n+1)}{2}\right] + n
+$$</p>
+<p>$$
+= \frac{2n(n+1)(2n+1)}{3} - 2n(n+1) + n = \frac{n(2n-1)(2n+1)}{3} = \frac{n(4n^2-1)}{3}
+$$</p>
+<hr />
+<h3>5.4 Summary Formula Sheet</h3>
+<p>$$
+\boxed{\sum_{k=1}^{n} k = \frac{n(n+1)}{2}}
+$$</p>
+<p>$$
+\boxed{\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}}
+$$</p>
+<p>$$
+\boxed{\sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2 = \left(\sum_{k=1}^{n} k\right)^2}
+$$</p>
+<p>$$
+\boxed{\sum_{k=1}^{n} c = n \cdot c}
+$$</p>
+<hr />
+              </div>
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Chapter Footer -->
+  <footer class="portal-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>CBSE Class 11 Mathematics &bull; Sequences and Series</h3>
+        <p>Curated strictly per NCERT syllabus guidelines and official CBSE marking schemes</p>
+      </div>
+
+      <div class="powered-by-wrap">
+        <div class="powered-by-text">
+          <span>⚡</span> Powered By Kedar's Academy
+        </div>
+      </div>
+
+      <button class="footer-contact-trigger contact-modal-trigger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Connect with Kedar Krishna / Offline Teaching Centers</span>
+      </button>
+
+      <p class="copyright-sub">&copy; 2026 Kedar's Academy. All rights reserved. Dedicated to conceptual excellence in CBSE &amp; JEE Mathematics.</p>
+    </div>
+  </footer>
+
+  
+  <!-- Contact Information & Feedback Modal -->
+  <div id="contactModal" class="contact-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="contactModalTitle">
+    <div class="contact-modal-container">
+      <div class="contact-modal-header">
+        <div class="contact-header-text">
+          <h3 id="contactModalTitle">Instructor Contact &amp; Centers</h3>
+          <p>Get in touch with Kedar Krishna for classes, doubt clearing, or engine feedback</p>
+        </div>
+        <button id="closeContactModal" class="contact-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="contact-modal-body">
+        <!-- Instructor Details Card -->
+        <div class="instructor-card">
+          <div class="contact-avatar">
+            <span>KA</span>
+          </div>
+          <div class="contact-details">
+            <div class="instructor-name">Kedar Krishna</div>
+            <div class="instructor-role">Chemistry Educator &bull; CBSE &amp; JEE Specialist</div>
+            <a href="mailto:chemistrykedar@gmail.com" class="contact-email-link" title="Click to send an email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              chemistrykedar@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Teaching Centers -->
+        <div class="centers-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Teaching Centers (Bhubaneswar)
+          </div>
+          <div class="centers-grid">
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 1</span>
+                <span class="center-title">Arundhati Vihar</span>
+              </div>
+              <div class="center-address">
+                Jagasera, near Paikarapur, Bhubaneswar, Khordha &ndash; <strong class="center-pin">752054</strong>
+              </div>
+            </div>
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 2</span>
+                <span class="center-title">Jagannath Vihar</span>
+              </div>
+              <div class="center-address">
+                Lane-1, near Fire station, Bhubaneswar &ndash; <strong class="center-pin">751003</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback / Ask Doubt Form -->
+        <div class="feedback-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Ask a Doubt / Direct Message
+          </div>
+          <form id="feedbackForm" class="feedback-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fbName">Your Name</label>
+                <input type="text" id="fbName" class="form-input" placeholder="e.g. Student Name" required>
+              </div>
+              <div class="form-group">
+                <label for="fbClass">Target / Standard</label>
+                <select id="fbClass" class="form-input">
+                  <option value="Class 12">Class 12 CBSE Board</option>
+                  <option value="Class 11">Class 11 CBSE Foundation</option>
+                  <option value="JEE Main / Adv">JEE Main / Advanced Aspirant</option>
+                  <option value="Parent / Inquiry">Parent / General Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fbSubject">Topic / Question Reference</label>
+              <input type="text" id="fbSubject" class="form-input" placeholder="e.g. Doubt in Calculus / Matrix Inverses" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fbMessage">Your Doubt / Message</label>
+              <textarea id="fbMessage" class="form-input form-textarea" rows="3" placeholder="Describe your doubt, query, or feedback here..." required></textarea>
+            </div>
+
+            <button type="submit" class="feedback-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Send Message to Kedar Krishna
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Interactive Whiteboard Scratchpad Drawer -->
+  <div id="scratchpadModal">
+    <div class="scratchpad-header">
+      <div class="scratchpad-title">
+        <span>✏️</span> Student Whiteboard Scribble Pad
+      </div>
+      <button id="scratchpadCloseBtn" class="scratchpad-btn" title="Close Scratchpad">&times;</button>
+    </div>
+    <div class="scratchpad-toolbar">
+      <button id="toolPen" class="scratchpad-btn active">Pen</button>
+      <button id="toolHighlighter" class="scratchpad-btn">Highlighter</button>
+      <button id="toolEraser" class="scratchpad-btn">Eraser</button>
+      <span style="font-size: 0.8rem; color: #64748b; margin-left: 0.4rem;">Color:</span>
+      <div class="color-dot active" data-color="#1e293b" style="background: #1e293b;" title="Charcoal"></div>
+      <div class="color-dot" data-color="#1d4ed8" style="background: #1d4ed8;" title="Royal Blue"></div>
+      <div class="color-dot" data-color="#dc2626" style="background: #dc2626;" title="Red Marker"></div>
+      <div class="color-dot" data-color="#15803d" style="background: #15803d;" title="Green"></div>
+      <div class="color-dot" data-color="#7e22ce" style="background: #7e22ce;" title="Purple"></div>
+      <input type="range" id="scratchpadSize" min="1" max="15" value="3" style="width: 60px; margin-left: auto;" title="Stroke Size">
+      <button id="scratchpadUndoBtn" class="scratchpad-btn">Undo</button>
+      <button id="scratchpadClearBtn" class="scratchpad-btn" style="color: #dc2626;">Clear</button>
+    </div>
+    <div class="scratchpad-canvas-wrap">
+      <canvas id="scratchpadCanvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Floating Scratchpad Trigger Button -->
+  <button id="scratchpadToggleBtn" class="btn-scratchpad-toggle" title="Open Whiteboard Scratchpad to Solve Problems">
+    <span>✏️</span> Whiteboard Pad
+  </button>
+
+  <!-- Core JavaScript Modules -->
+  <script src="../../assets/js/whiteboard-animations.js"></script>
+  <script src="../../assets/js/whiteboard-scratchpad.js"></script>
+  <script src="../../assets/js/search-engine.js"></script>
+  <script src="../../assets/js/contact-modal.js"></script>
+  <script src="../../assets/js/chapter-engine.js"></script>
+</body>
+</html>

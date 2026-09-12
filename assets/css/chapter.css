@@ -1,0 +1,355 @@
+/* ==========================================================================
+   CHAPTER-SPECIFIC STYLES & INTERACTIVE MULTI-TAB ARCHITECTURE
+   ========================================================================== */
+
+/* Chapter Header */
+.chapter-header {
+  background: #ffffff;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 1.25rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.chapter-nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chapter-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #475569;
+  background: #f1f5f9;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+}
+.back-link:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  text-decoration: none;
+  transform: translateX(-2px);
+}
+
+.chapter-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--marker-slate);
+}
+
+.badge-branch {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--marker-blue-bg);
+  color: var(--marker-blue);
+  border: 1px solid #bfdbfe;
+}
+
+.chapter-meta h1 {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  color: #0f172a;
+  margin-top: 0.15rem;
+  margin-bottom: 0;
+}
+
+.chapter-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.board-tool-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+.board-tool-btn:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+.board-tool-btn.active {
+  background: #e0f2fe;
+  border-color: #38bdf8;
+  color: #0284c7;
+}
+
+/* ==========================================================================
+   Multi-Tab Navigation Bar (Whiteboard Marker Tray Style)
+   ========================================================================== */
+.chapter-tabs-bar {
+  background: #f1f5f9;
+  border-bottom: 2px solid #cbd5e1;
+  padding: 0.4rem 1.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chapter-tabs-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.chapter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.tab-item {
+  background: transparent;
+  border: none;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #64748b;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.tab-item:hover {
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.tab-item.active {
+  color: var(--marker-blue);
+  background: #ffffff;
+}
+
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--marker-blue);
+  border-radius: 3px 3px 0 0;
+}
+
+.tab-item.tab-advanced {
+  color: #6b21a8;
+}
+.tab-item.tab-advanced.active {
+  color: #6b21a8;
+}
+.tab-item.tab-advanced.active::after {
+  background: #7e22ce;
+}
+
+/* ==========================================================================
+   Tab Panels Container
+   ========================================================================== */
+.view-panel {
+  display: none;
+  padding: 1.5rem 0;
+}
+.view-panel.active {
+  display: block;
+  animation: panelFade 0.25s ease-out;
+}
+
+@keyframes panelFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   Question Cards & Model Solutions
+   ========================================================================== */
+.question-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.question-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.question-title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.question-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.question-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+/* Collapsible Solution Accordion */
+details.solution-accordion {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+details.solution-accordion[open] {
+  border-color: var(--marker-green);
+  background: #ffffff;
+}
+
+summary.solution-toggle {
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: #1e293b;
+  background: #f1f5f9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+summary.solution-toggle::-webkit-details-marker {
+  display: none;
+}
+
+summary.solution-toggle:hover {
+  background: #e2e8f0;
+}
+
+details.solution-accordion[open] summary.solution-toggle {
+  background: #dcfce7;
+  color: #166534;
+  border-bottom: 1px solid #86efac;
+}
+
+.solution-body {
+  padding: 1.25rem 1.4rem;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* ==========================================================================
+   PYQ Filter Chips Toolbar
+   ========================================================================== */
+.pyq-filter-bar {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.25rem;
+}
+
+.filter-chip {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 0.25rem 0.65rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-chip:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.filter-chip.active {
+  background: var(--marker-blue);
+  color: #ffffff;
+  border-color: var(--marker-blue);
+}

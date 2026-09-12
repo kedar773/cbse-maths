@@ -1,0 +1,195 @@
+{
+  "class_11": [
+    {
+      "slug": "01-sets",
+      "title": "Sets",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "02-relations-and-functions",
+      "title": "Relations and Functions",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "Core Foundation"
+    },
+    {
+      "slug": "03-trigonometric-functions",
+      "title": "Trigonometric Functions",
+      "domain": "Trigonometry",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "04-complex-numbers",
+      "title": "Complex Numbers and Quadratic Equations",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "05-linear-inequalities",
+      "title": "Linear Inequalities",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐",
+      "yield": "Core Foundation"
+    },
+    {
+      "slug": "06-permutations-and-combinations",
+      "title": "Permutations and Combinations",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "07-binomial-theorem",
+      "title": "Binomial Theorem",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "08-sequences-and-series",
+      "title": "Sequences and Series",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "09-straight-lines",
+      "title": "Straight Lines",
+      "domain": "Coordinate Geometry",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "10-conic-sections",
+      "title": "Conic Sections",
+      "domain": "Coordinate Geometry",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "11-three-dimensional-geometry",
+      "title": "Introduction to 3D Geometry",
+      "domain": "Vectors & 3D",
+      "priority": "⭐⭐⭐",
+      "yield": "Core Foundation"
+    },
+    {
+      "slug": "12-limits-and-derivatives",
+      "title": "Limits and Derivatives",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "13-statistics",
+      "title": "Statistics",
+      "domain": "Statistics",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "Core Foundation"
+    },
+    {
+      "slug": "14-probability",
+      "title": "Probability",
+      "domain": "Probability",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    }
+  ],
+  "class_12": [
+    {
+      "slug": "01-relations-and-functions",
+      "title": "Relations and Functions",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "02-inverse-trigonometric-functions",
+      "title": "Inverse Trigonometric Functions",
+      "domain": "Trigonometry",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "03-matrices",
+      "title": "Matrices",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "04-determinants",
+      "title": "Determinants",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "05-continuity-and-differentiability",
+      "title": "Continuity and Differentiability",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "06-application-of-derivatives",
+      "title": "Application of Derivatives",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "07-integrals",
+      "title": "Integrals",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "08-application-of-integrals",
+      "title": "Application of Integrals",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "09-differential-equations",
+      "title": "Differential Equations",
+      "domain": "Calculus",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "10-vectors",
+      "title": "Vector Algebra",
+      "domain": "Vectors & 3D",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "11-three-dimensional-geometry",
+      "title": "Three-Dimensional Geometry",
+      "domain": "Vectors & 3D",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "12-linear-programming",
+      "title": "Linear Programming",
+      "domain": "Algebra",
+      "priority": "⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    },
+    {
+      "slug": "13-probability",
+      "title": "Probability",
+      "domain": "Probability",
+      "priority": "⭐⭐⭐⭐⭐",
+      "yield": "High Yield 🔥"
+    }
+  ]
+}

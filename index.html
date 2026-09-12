@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBSE Mathematics Whiteboard Engine // Class 11 &amp; 12 NCERT</title>
+  <meta name="description" content="Immersive Whiteboard study engine strictly aligned with CBSE Class 11 &amp; 12 Mathematics NCERT syllabus. Step-by-step marking schemes, PYQs (2020-2025), formulas and exam traps.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/whiteboard.css">
+  <link rel="stylesheet" href="assets/css/whiteboard-animations.css">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+
+  <style>
+    /* Portal Specific Styling */
+    .portal-hero {
+      text-align: center;
+      padding: 3.5rem 1.5rem 2rem;
+      position: relative;
+    }
+    .portal-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #fef9c3;
+      border: 1px solid #fde047;
+      color: #854d0e;
+      font-family: var(--font-title);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.35rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 8px rgba(253, 224, 71, 0.25);
+    }
+    .portal-title {
+      font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+      color: var(--marker-black);
+      margin-bottom: 0.75rem;
+    }
+    .portal-subtitle {
+      max-width: 780px;
+      margin: 0 auto 2rem;
+      font-size: 1.15rem;
+      color: var(--marker-slate);
+      line-height: 1.6;
+    }
+    .portal-search-bar {
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+    }
+    .portal-search-input {
+      width: 100%;
+      padding: 1rem 1.25rem 1rem 3rem;
+      border: 2px solid #cbd5e1;
+      border-radius: 30px;
+      font-size: 1.05rem;
+      font-family: var(--font-body);
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .portal-search-input:focus {
+      border-color: var(--marker-blue);
+      box-shadow: 0 6px 25px rgba(29, 78, 216, 0.15);
+    }
+    .search-icon-pos {
+      position: absolute;
+      top: 50%;
+      left: 1.2rem;
+      transform: translateY(-50%);
+      color: #94a3b8;
+    }
+
+    /* Stats HUD */
+    .portal-stats-hud {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .stat-pill {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 0.75rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      min-width: 130px;
+    }
+    .stat-number {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--marker-blue);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+    }
+
+    /* Class Switcher & Domain Filter Toolbar */
+    .portal-controls-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    .portal-class-tabs {
+      display: flex;
+      gap: 0.5rem;
+      background: #e2e8f0;
+      padding: 0.3rem;
+      border-radius: 12px;
+    }
+    .portal-class-tab {
+      padding: 0.6rem 1.4rem;
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      background: transparent;
+      color: #475569;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .portal-class-tab.active {
+      background: #ffffff;
+      color: var(--marker-blue);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .domain-chips-wrap {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .domain-filter-chip {
+      padding: 0.35rem 0.8rem;
+      border-radius: 16px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .domain-filter-chip:hover {
+      background: #f1f5f9;
+    }
+    .domain-filter-chip.active {
+      background: var(--marker-blue);
+      color: #ffffff;
+      border-color: var(--marker-blue);
+    }
+
+    /* Chapter Cards Grid */
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .chapter-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+    }
+    .chapter-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--marker-blue);
+      box-shadow: 0 10px 28px rgba(29, 78, 216, 0.1);
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+    .card-domain-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--marker-blue);
+      background: var(--marker-blue-bg);
+      border: 1px solid #bfdbfe;
+      padding: 0.15rem 0.55rem;
+      border-radius: 10px;
+    }
+    .completion-indicator {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 0.15rem 0.55rem;
+      border-radius: 10px;
+    }
+    .card-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+    .card-title a {
+      color: inherit;
+    }
+    .card-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    .btn-enter-board {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.65rem 1rem;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: var(--font-title);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--marker-blue);
+      transition: all 0.2s ease;
+    }
+    .btn-enter-board:hover {
+      background: var(--marker-blue);
+      color: #ffffff;
+      border-color: var(--marker-blue);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Whiteboard Top Reading Progress Bar -->
+  <div class="reading-progress-bar"></div>
+
+  <!-- Hero Section -->
+  <section class="portal-hero">
+    <!-- Top Corner Contact Trigger -->
+    <button id="contactModalToggle" class="portal-corner-contact contact-modal-trigger" title="Contact Kedar Krishna &amp; Teaching Centers">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Contact</span>
+    </button>
+
+    <!-- Stacked Line Formation Brand Message -->
+    <div class="portal-brand-stacked">
+      <div class="stacked-brand-line1">Kedar's Academy</div>
+      <div class="stacked-brand-line2">Mathematics Engine</div>
+    </div>
+
+    <div class="portal-tag-badge">
+      <span>&#9733; CBSE CLASS 11 &amp; 12 // NCERT STRICT STANDARDS</span>
+    </div>
+
+    <h1 class="portal-title">
+      Classroom Whiteboard <br>
+      <span style="color: var(--marker-blue);">Mathematics Engine</span>
+    </h1>
+
+    <p class="portal-subtitle">
+      Comprehensive interactive mathematics lecture whiteboard engineered for CBSE students. Strictly NCERT aligned explanations, step-by-step CBSE marking schemes, 5-year PYQ vault (2020–2025), and isolated advanced studies for competitive examinations.
+    </p>
+
+    <!-- Global Search Bar -->
+    <div class="portal-search-bar">
+      <svg class="search-icon-pos" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="heroSearchInput" class="portal-search-input" placeholder="Search concepts, formulas, or CBSE questions... (Press Ctrl+K)">
+    </div>
+
+    <!-- Stats HUD -->
+    <div class="portal-stats-hud">
+      <div class="stat-pill">
+        <span class="stat-number">27</span>
+        <span class="stat-label">Total Chapters</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-number">14</span>
+        <span class="stat-label">Class 11 Chapters</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-number">13</span>
+        <span class="stat-label">Class 12 Chapters</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-number" style="color: var(--marker-green);">100%</span>
+        <span class="stat-label">NCERT Aligned</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-number" id="statMasteredCount" style="color: var(--marker-amber);">0</span>
+        <span class="stat-label">Mastered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Directory Container -->
+  <main class="board-container">
+    <div class="whiteboard-frame">
+      <div style="padding: 1.5rem 1.75rem;">
+
+        <!-- Control Toolbar: Class 11 vs 12 Switcher & Domain Filter -->
+        <div class="portal-controls-bar">
+          <div class="portal-class-tabs">
+            <button class="portal-class-tab active" data-class="12">Class 12 (Board Core)</button>
+            <button class="portal-class-tab" data-class="11">Class 11 (Foundation)</button>
+          </div>
+
+          <div class="domain-chips-wrap">
+            <button class="domain-filter-chip active" data-domain="all">All Domains</button>
+            <button class="domain-filter-chip" data-domain="calculus">Calculus</button>
+            <button class="domain-filter-chip" data-domain="algebra">Algebra</button>
+            <button class="domain-filter-chip" data-domain="vectors & 3d">Vectors &amp; 3D</button>
+            <button class="domain-filter-chip" data-domain="probability">Probability</button>
+            <button class="domain-filter-chip" data-domain="trigonometry">Trigonometry</button>
+            <button class="domain-filter-chip" data-domain="coordinate geometry">Coordinate Geometry</button>
+          </div>
+        </div>
+
+        <!-- Class 12 Directory Section -->
+        <section class="class-directory-section" data-class="12">
+          <div class="sticky-note blue" style="margin-bottom: 1.75rem;">
+            <div class="sticky-title">🎯 CBSE Class 12 Mathematics (Complete 13 Chapters)</div>
+            Featuring full step-marking solutions, 2020-2025 PYQ vault, speed verification hacks, and segregated advanced studies for JEE.
+          </div>
+
+          <div class="chapters-grid">
+            
+          <div class="chapter-card" data-domain="algebra" data-slug="class-12-01-relations-and-functions">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/01-relations-and-functions/index.html">Relations and Functions</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Equivalence Relation</span><span class="concept-sticker purple">Injective (1-1)</span><span class="concept-sticker green">Surjective (Onto)</span><span class="concept-sticker amber">Bijective Mapping</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/01-relations-and-functions/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="trigonometry" data-slug="class-12-02-inverse-trigonometric-functions">
+            <div class="card-top">
+              <span class="card-domain-badge">Trigonometry</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/02-inverse-trigonometric-functions/index.html">Inverse Trigonometric Functions</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Principal Value Branch</span><span class="concept-sticker purple">$\sin^{-1}(\sin x) = x$</span><span class="concept-sticker green">Domain & Range</span><span class="concept-sticker amber">Complementary Identities</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/02-inverse-trigonometric-functions/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-12-03-matrices">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/03-matrices/index.html">Matrices</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Order $m \times n$</span><span class="concept-sticker purple">Matrix Mult $AB \neq BA$</span><span class="concept-sticker green">$A = P + Q$ (Sym + Skew)</span><span class="concept-sticker amber">$A^{-1} = \frac{\text{adj}(A)}{|A|}$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/03-matrices/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-12-04-determinants">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/04-determinants/index.html">Determinants</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Expansion by Minors</span><span class="concept-sticker purple">Area of Triangle</span><span class="concept-sticker green">Adjoint $\text{adj}(A)$</span><span class="concept-sticker amber">Matrix Method $AX=B$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/04-determinants/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-12-05-continuity-and-differentiability">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/05-continuity-and-differentiability/index.html">Continuity and Differentiability</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">LHL = RHL = $f(c)$</span><span class="concept-sticker purple">Chain Rule $\frac{dy}{dx}$</span><span class="concept-sticker green">Logarithmic Diff</span><span class="concept-sticker amber">Parametric Form</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/05-continuity-and-differentiability/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-12-06-application-of-derivatives">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/06-application-of-derivatives/index.html">Application of Derivatives</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Rate of Change $\frac{dy}{dx}$</span><span class="concept-sticker purple">Monotonicity $f'(x) \ge 0$</span><span class="concept-sticker green">Second Derivative Test</span><span class="concept-sticker amber">Applied Optimization</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/06-application-of-derivatives/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-12-07-integrals">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/07-integrals/index.html">Integrals</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Substitution $\int f(g)g'dx$</span><span class="concept-sticker purple">By Parts (ILATE)</span><span class="concept-sticker green">$\int e^x[f(x)+f'(x)]dx$</span><span class="concept-sticker amber">King's Rule $\int_0^a f(a-x)dx$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/07-integrals/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-12-08-application-of-integrals">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/08-application-of-integrals/index.html">Application of Integrals</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Area Under Curve $\int y\,dx$</span><span class="concept-sticker purple">Symmetrical Curves</span><span class="concept-sticker green">Bounded Region</span><span class="concept-sticker amber">Limit of Integration</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/08-application-of-integrals/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-12-09-differential-equations">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/09-differential-equations/index.html">Differential Equations</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Order & Degree</span><span class="concept-sticker purple">Variable Separable</span><span class="concept-sticker green">Homogeneous ($y=vx$)</span><span class="concept-sticker amber">Integrating Factor $e^{\int P\,dx}$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/09-differential-equations/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="vectors & 3d" data-slug="class-12-10-vectors">
+            <div class="card-top">
+              <span class="card-domain-badge">Vectors & 3D</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/10-vectors/index.html">Vector Algebra</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Dot Product $\vec{a}\cdot\vec{b}$</span><span class="concept-sticker purple">Cross Product $\vec{a}\times\vec{b}$</span><span class="concept-sticker green">Projection of Vector</span><span class="concept-sticker amber">Unit Vector $\hat{a}$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/10-vectors/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="vectors & 3d" data-slug="class-12-11-three-dimensional-geometry">
+            <div class="card-top">
+              <span class="card-domain-badge">Vectors & 3D</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/11-three-dimensional-geometry/index.html">Three-Dimensional Geometry</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Direction Cosines $l^2+m^2+n^2=1$</span><span class="concept-sticker purple">Line Equation $\vec{r} = \vec{a}+\lambda\vec{b}$</span><span class="concept-sticker green">Shortest Distance Skew Lines</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/11-three-dimensional-geometry/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-12-12-linear-programming">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/12-linear-programming/index.html">Linear Programming</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Objective Function $Z$</span><span class="concept-sticker purple">Feasible Region</span><span class="concept-sticker green">Corner Point Method</span><span class="concept-sticker amber">Bounded vs Unbounded</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/12-linear-programming/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="probability" data-slug="class-12-13-probability">
+            <div class="card-top">
+              <span class="card-domain-badge">Probability</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-12/13-probability/index.html">Probability</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Conditional $P(A|B)$</span><span class="concept-sticker purple">Multiplication Rule</span><span class="concept-sticker green">Bayes' Theorem</span><span class="concept-sticker amber">Total Probability Theorem</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-12/13-probability/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          </div>
+        </section>
+
+        <!-- Class 11 Directory Section -->
+        <section class="class-directory-section" data-class="11" style="display: none;">
+          <div class="sticky-note yellow" style="margin-bottom: 1.75rem;">
+            <div class="sticky-title">📘 CBSE Class 11 Mathematics (Complete 14 Chapters)</div>
+            Strengthening core mathematical foundations, competency questions, and exemplar problems.
+          </div>
+
+          <div class="chapters-grid">
+            
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-01-sets">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/01-sets/index.html">Sets</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Venn Diagrams</span><span class="concept-sticker purple">$A \cup B$, $A \cap B$</span><span class="concept-sticker green">De Morgan's Laws</span><span class="concept-sticker amber">Power Set $P(A) = 2^n$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/01-sets/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-02-relations-and-functions">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/02-relations-and-functions/index.html">Relations and Functions</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">Core Foundation</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Cartesian Product $A \times B$</span><span class="concept-sticker purple">Domain & Range</span><span class="concept-sticker green">$f: X \to Y$</span><span class="concept-sticker amber">Function Types</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/02-relations-and-functions/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="trigonometry" data-slug="class-11-03-trigonometric-functions">
+            <div class="card-top">
+              <span class="card-domain-badge">Trigonometry</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/03-trigonometric-functions/index.html">Trigonometric Functions</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">ASTC Quadrant Rule</span><span class="concept-sticker purple">$\cos(A \pm B)$</span><span class="concept-sticker green">Double Angle $\sin 2x$</span><span class="concept-sticker amber">$\tan(A+B)$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/03-trigonometric-functions/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-04-complex-numbers">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/04-complex-numbers/index.html">Complex Numbers and Quadratic Equations</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Euler Form $r e^{i\theta}$</span><span class="concept-sticker purple">Modulus $|z|$</span><span class="concept-sticker green">Conjugate $\bar{z}$</span><span class="concept-sticker amber">$i^2 = -1$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/04-complex-numbers/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-05-linear-inequalities">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/05-linear-inequalities/index.html">Linear Inequalities</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">Core Foundation</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Interval Notation $[a,b)$</span><span class="concept-sticker purple">Sign Reversal on $\times (-1)$</span><span class="concept-sticker green">Half-Plane Shading</span><span class="concept-sticker amber">Strict vs Slack</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/05-linear-inequalities/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-06-permutations-and-combinations">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/06-permutations-and-combinations/index.html">Permutations and Combinations</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">$^n P_r = \frac{n!}{(n-r)!}$</span><span class="concept-sticker purple">$^n C_r = \frac{n!}{r!(n-r)!}$</span><span class="concept-sticker green">$^n C_r = ^n C_{n-r}$</span><span class="concept-sticker amber">Multiplication Rule</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/06-permutations-and-combinations/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-07-binomial-theorem">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/07-binomial-theorem/index.html">Binomial Theorem</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">General Term $T_{r+1}$</span><span class="concept-sticker purple">$^n C_r a^{n-r} b^r$</span><span class="concept-sticker green">Pascal's Triangle</span><span class="concept-sticker amber">Middle Terms</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/07-binomial-theorem/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="algebra" data-slug="class-11-08-sequences-and-series">
+            <div class="card-top">
+              <span class="card-domain-badge">Algebra</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/08-sequences-and-series/index.html">Sequences and Series</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">AP $a_n = a+(n-1)d$</span><span class="concept-sticker purple">GP $a_n = ar^{n-1}$</span><span class="concept-sticker green">Sum $S_n$</span><span class="concept-sticker amber">AM-GM Inequality</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/08-sequences-and-series/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="coordinate geometry" data-slug="class-11-09-straight-lines">
+            <div class="card-top">
+              <span class="card-domain-badge">Coordinate Geometry</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/09-straight-lines/index.html">Straight Lines</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Slope $m = \tan\theta$</span><span class="concept-sticker purple">Point-Slope Form</span><span class="concept-sticker green">$y = mx+c$</span><span class="concept-sticker amber">$m_1 m_2 = -1$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/09-straight-lines/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="coordinate geometry" data-slug="class-11-10-conic-sections">
+            <div class="card-top">
+              <span class="card-domain-badge">Coordinate Geometry</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/10-conic-sections/index.html">Conic Sections</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Parabola $y^2 = 4ax$</span><span class="concept-sticker purple">Ellipse $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$</span><span class="concept-sticker green">Hyperbola</span><span class="concept-sticker amber">Eccentricity $e$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/10-conic-sections/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="vectors & 3d" data-slug="class-11-11-three-dimensional-geometry">
+            <div class="card-top">
+              <span class="card-domain-badge">Vectors & 3D</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/11-three-dimensional-geometry/index.html">Introduction to 3D Geometry</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">Core Foundation</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Distance $\sqrt{\Delta x^2+\Delta y^2+\Delta z^2}$</span><span class="concept-sticker purple">Section Formula</span><span class="concept-sticker green">Octants (8)</span><span class="concept-sticker amber">Midpoint</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/11-three-dimensional-geometry/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="calculus" data-slug="class-11-12-limits-and-derivatives">
+            <div class="card-top">
+              <span class="card-domain-badge">Calculus</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/12-limits-and-derivatives/index.html">Limits and Derivatives</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">$\lim_{x\to 0}\frac{\sin x}{x}=1$</span><span class="concept-sticker purple">Product & Quotient Rule</span><span class="concept-sticker green">First Principle $f'(x)$</span><span class="concept-sticker amber">Standard Derivatives</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/12-limits-and-derivatives/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="statistics" data-slug="class-11-13-statistics">
+            <div class="card-top">
+              <span class="card-domain-badge">Statistics</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/13-statistics/index.html">Statistics</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">Core Foundation</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Mean Deviation</span><span class="concept-sticker purple">Variance $\sigma^2$</span><span class="concept-sticker green">Std Dev $\sigma$</span><span class="concept-sticker amber">Shortcut Formula</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/13-statistics/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          <div class="chapter-card" data-domain="probability" data-slug="class-11-14-probability">
+            <div class="card-top">
+              <span class="card-domain-badge">Probability</span>
+              <span class="completion-indicator">○ Incomplete</span>
+            </div>
+            <h3 class="card-title">
+              <a href="class-11/14-probability/index.html">Probability</a>
+            </h3>
+            <div class="card-meta-row">
+              <span class="badge-priority">⭐⭐⭐⭐ Priority</span>
+              <span class="badge-yield-high">High Yield 🔥</span>
+            </div>
+            <div class="card-concepts-wrap" style="margin: 0.85rem 0 1.25rem;">
+              <span style="font-size: 0.82rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.45rem;">
+                📌 Core Concepts &amp; Formulas:
+              </span>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="concept-sticker ">Sample Space $S$</span><span class="concept-sticker purple">Mutually Exclusive</span><span class="concept-sticker green">Independent Events</span><span class="concept-sticker amber">$P(A \cup B)$</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="class-11/14-probability/index.html" class="btn-enter-board">
+                Open Whiteboard &rarr;
+              </a>
+            </div>
+          </div>
+        
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Portal Footer -->
+  <footer class="portal-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Kedar's Academy Mathematics Engine</h3>
+        <p>Interactive Whiteboard Architecture for CBSE Class 11 &amp; 12 Mathematics</p>
+      </div>
+
+      <div class="powered-by-wrap">
+        <div class="powered-by-text">
+          <span>⚡</span> Powered By Kedar's Academy
+        </div>
+      </div>
+
+      <button class="footer-contact-trigger contact-modal-trigger" id="footerContactBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Connect with Kedar Krishna / Teaching Centers (Bhubaneswar)</span>
+      </button>
+
+      <p class="copyright-sub">&copy; 2026 Kedar's Academy. All rights reserved. Strict NCERT Syllabus &amp; CBSE Exam Patterns.</p>
+    </div>
+  </footer>
+
+  
+  <!-- Contact Information & Feedback Modal -->
+  <div id="contactModal" class="contact-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="contactModalTitle">
+    <div class="contact-modal-container">
+      <div class="contact-modal-header">
+        <div class="contact-header-text">
+          <h3 id="contactModalTitle">Instructor Contact &amp; Centers</h3>
+          <p>Get in touch with Kedar Krishna for classes, doubt clearing, or engine feedback</p>
+        </div>
+        <button id="closeContactModal" class="contact-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="contact-modal-body">
+        <!-- Instructor Details Card -->
+        <div class="instructor-card">
+          <div class="contact-avatar">
+            <span>KA</span>
+          </div>
+          <div class="contact-details">
+            <div class="instructor-name">Kedar Krishna</div>
+            <div class="instructor-role">Chemistry Educator &bull; CBSE &amp; JEE Specialist</div>
+            <a href="mailto:chemistrykedar@gmail.com" class="contact-email-link" title="Click to send an email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              chemistrykedar@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Teaching Centers -->
+        <div class="centers-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Teaching Centers (Bhubaneswar)
+          </div>
+          <div class="centers-grid">
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 1</span>
+                <span class="center-title">Arundhati Vihar</span>
+              </div>
+              <div class="center-address">
+                Jagasera, near Paikarapur, Bhubaneswar, Khordha &ndash; <strong class="center-pin">752054</strong>
+              </div>
+            </div>
+            <div class="center-card">
+              <div class="center-header">
+                <span class="center-tag">Center 2</span>
+                <span class="center-title">Jagannath Vihar</span>
+              </div>
+              <div class="center-address">
+                Lane-1, near Fire station, Bhubaneswar &ndash; <strong class="center-pin">751003</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback / Ask Doubt Form -->
+        <div class="feedback-section">
+          <div class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Ask a Doubt / Direct Message
+          </div>
+          <form id="feedbackForm" class="feedback-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fbName">Your Name</label>
+                <input type="text" id="fbName" class="form-input" placeholder="e.g. Student Name" required>
+              </div>
+              <div class="form-group">
+                <label for="fbClass">Target / Standard</label>
+                <select id="fbClass" class="form-input">
+                  <option value="Class 12">Class 12 CBSE Board</option>
+                  <option value="Class 11">Class 11 CBSE Foundation</option>
+                  <option value="JEE Main / Adv">JEE Main / Advanced Aspirant</option>
+                  <option value="Parent / Inquiry">Parent / General Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fbSubject">Topic / Question Reference</label>
+              <input type="text" id="fbSubject" class="form-input" placeholder="e.g. Doubt in Calculus / Matrix Inverses" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fbMessage">Your Doubt / Message</label>
+              <textarea id="fbMessage" class="form-input form-textarea" rows="3" placeholder="Describe your doubt, query, or feedback here..." required></textarea>
+            </div>
+
+            <button type="submit" class="feedback-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Send Message to Kedar Krishna
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Interactive Whiteboard Scratchpad Drawer -->
+  <div id="scratchpadModal">
+    <div class="scratchpad-header">
+      <div class="scratchpad-title">
+        <span>✏️</span> Whiteboard Scratchpad
+      </div>
+      <button id="scratchpadCloseBtn" class="scratchpad-btn" title="Close">&times;</button>
+    </div>
+    <div class="scratchpad-toolbar">
+      <button id="toolPen" class="scratchpad-btn active">Pen</button>
+      <button id="toolHighlighter" class="scratchpad-btn">Highlighter</button>
+      <button id="toolEraser" class="scratchpad-btn">Eraser</button>
+      <div class="color-dot active" data-color="#1e293b" style="background: #1e293b;"></div>
+      <div class="color-dot" data-color="#1d4ed8" style="background: #1d4ed8;"></div>
+      <div class="color-dot" data-color="#dc2626" style="background: #dc2626;"></div>
+      <div class="color-dot" data-color="#15803d" style="background: #15803d;"></div>
+      <input type="range" id="scratchpadSize" min="1" max="15" value="3" style="width: 60px; margin-left: auto;">
+      <button id="scratchpadUndoBtn" class="scratchpad-btn">Undo</button>
+      <button id="scratchpadClearBtn" class="scratchpad-btn" style="color: #dc2626;">Clear</button>
+    </div>
+    <div class="scratchpad-canvas-wrap">
+      <canvas id="scratchpadCanvas"></canvas>
+    </div>
+  </div>
+
+  <button id="scratchpadToggleBtn" class="btn-scratchpad-toggle">
+    <span>✏️</span> Whiteboard Pad
+  </button>
+
+  <!-- KaTeX Math Engine for Concept Stickers -->
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script src="assets/vendor/katex/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof renderMathInElement === "function") {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\(", right: "\)", display: false },
+            { left: "\[", right: "\]", display: true }
+          ],
+          throwOnError: false
+        });
+      }
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="assets/js/whiteboard-animations.js"></script>
+  <script src="assets/js/whiteboard-scratchpad.js"></script>
+  <script src="assets/js/search-engine.js"></script>
+  <script src="assets/js/contact-modal.js"></script>
+  <script src="assets/js/portal-engine.js"></script>
+</body>
+</html>
