@@ -827,6 +827,12 @@ def generate_chapter_page(cls_name, ch_meta, chapter_dir, global_search_list):
     </div>
   </header>
 
+  <!-- Floating Mobile Header Toggle Pill (Appears when Header moves up) -->
+  <button id="headerTogglePill" class="header-toggle-pill" aria-label="Show Navigation &amp; Tabs">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    <span>Menu &amp; Tabs</span>
+  </button>
+
   <!-- Main Content Container -->
   <main class="board-container">
     <div class="whiteboard-frame">

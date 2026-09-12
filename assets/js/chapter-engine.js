@@ -169,6 +169,81 @@
     }
   }
 
+  function initSmartHeader() {
+    const header = document.querySelector('.chapter-header');
+    if (!header) return;
+
+    // Create floating toggle pill if not already in DOM
+    let togglePill = document.getElementById('headerTogglePill');
+    if (!togglePill) {
+      togglePill = document.createElement('button');
+      togglePill.id = 'headerTogglePill';
+      togglePill.className = 'header-toggle-pill';
+      togglePill.setAttribute('aria-label', 'Show Navigation & Tabs');
+      togglePill.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg> <span>Menu &amp; Tabs</span>';
+      document.body.appendChild(togglePill);
+    }
+
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const threshold = 10; // Minimum scroll delta
+
+    function hideHeader() {
+      header.classList.add('header-hidden');
+      header.classList.remove('header-visible');
+      document.body.classList.add('header-is-hidden');
+    }
+
+    function showHeader() {
+      header.classList.remove('header-hidden');
+      header.classList.add('header-visible');
+      document.body.classList.remove('header-is-hidden');
+    }
+
+    function onScroll() {
+      const currentScrollY = window.scrollY;
+
+      // Always visible at the very top of the page
+      if (currentScrollY <= 40) {
+        showHeader();
+        lastScrollY = currentScrollY;
+        ticking = false;
+        return;
+      }
+
+      const diff = currentScrollY - lastScrollY;
+      if (Math.abs(diff) >= threshold) {
+        if (diff > 0 && currentScrollY > 100) {
+          // Scrolling DOWN: slide header UP to maximize reading area
+          hideHeader();
+        } else if (diff < 0) {
+          // Scrolling UP: slide header DOWN to reveal navigation & tabs
+          showHeader();
+        }
+        lastScrollY = currentScrollY;
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Tap toggle pill to restore header
+    togglePill.addEventListener('click', (e) => {
+      e.preventDefault();
+      showHeader();
+    });
+
+    // Bring header down whenever search trigger is activated
+    document.querySelectorAll('.open-search-trigger').forEach(btn => {
+      btn.addEventListener('click', showHeader);
+    });
+  }
+
   function init() {
     initChapterTabs();
     initSolutionAccordions();
@@ -176,6 +251,7 @@
     initGridToggle();
     initProgressTracker();
     initKaTeXRendering();
+    initSmartHeader();
   }
 
   if (document.readyState === 'loading') {

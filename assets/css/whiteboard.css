@@ -1240,3 +1240,187 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
+
+/* ==========================================================================
+   KaTeX Mathematical Formula Mobile Fluidity & Overflow Protection
+   ========================================================================== */
+.katex-display {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  max-width: 100% !important;
+  padding: 0.6rem 0.25rem !important;
+  margin: 0.75rem 0 !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.katex-display::-webkit-scrollbar {
+  height: 4px;
+}
+
+.katex-display::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.6);
+  border-radius: 4px;
+}
+
+.katex-display::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.katex-display::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.katex-display > .katex {
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.katex {
+  max-width: 100%;
+}
+
+/* Delimiters & Matrix Brackets within KaTeX */
+.katex .svg-align,
+.katex .delimsizing,
+.katex .mopen,
+.katex .mclose {
+  max-width: none !important;
+}
+
+/* ==========================================================================
+   SVG Boxes, Diagrams & Figures Mobile Fluidity
+   ========================================================================== */
+svg:not(.katex svg) {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.whiteboard-diagram,
+.diagram-box,
+.svg-wrap,
+.svg-container {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+/* ==========================================================================
+   Global Whiteboard Mobile Viewport Optimizations
+   ========================================================================== */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .board-container {
+    padding: 0.6rem 0.4rem 3.5rem;
+  }
+
+  .whiteboard-frame {
+    border-radius: 12px;
+    border-width: 2px;
+    margin-bottom: 1.25rem;
+  }
+
+  .whiteboard-frame > div {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .sticky-note {
+    padding: 0.9rem 0.85rem;
+    margin: 1rem 0;
+    transform: none !important;
+  }
+
+  .sticky-note:hover {
+    transform: none !important;
+  }
+
+  .formula-board-card {
+    padding: 1rem 0.85rem;
+    margin: 1rem 0;
+    border-left-width: 4px;
+  }
+
+  .formula-latex-display {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .katex-display {
+    font-size: 0.94em;
+  }
+
+  .marking-rubric-card {
+    padding: 0.9rem 0.85rem;
+  }
+
+  .step-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .advanced-scope-banner {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .advanced-scope-icon {
+    font-size: 2rem;
+  }
+
+  .portal-hero {
+    padding: 2rem 0.85rem 1.5rem !important;
+  }
+
+  .portal-title {
+    font-size: 2rem !important;
+  }
+
+  .portal-stats-hud {
+    gap: 0.65rem !important;
+  }
+
+  .stat-pill {
+    min-width: 100px !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .chapters-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  #scratchpadModal {
+    width: 96vw;
+    right: 2vw;
+    bottom: 10px;
+    height: 420px;
+  }
+
+  .btn-scratchpad-toggle {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.85rem;
+  }
+}
