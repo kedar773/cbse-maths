@@ -11,6 +11,7 @@ import json
 import glob
 import markdown
 import sys
+from datetime import datetime, timezone
 
 # Ensure UTF-8 output
 sys.stdout.reconfigure(encoding='utf-8')
@@ -702,6 +703,68 @@ def get_contact_modal_html():
   </div>
 """
 
+def get_google_verification_meta():
+    """Reads Google verification code if provided in google_verification.txt or env var."""
+    ver_file = os.path.join(OUT_DIR, "google_verification.txt")
+    code = os.environ.get("GOOGLE_SITE_VERIFICATION_MATHS", os.environ.get("GOOGLE_SITE_VERIFICATION", ""))
+    if not code and os.path.exists(ver_file):
+        try:
+            with open(ver_file, "r", encoding="utf-8") as f:
+                code = f.read().strip()
+        except Exception:
+            code = ""
+    if code:
+        return f'<meta name="google-site-verification" content="{code}">'
+    return '<!-- Google Search Console Verification Meta Tag: add code to google_verification.txt or place here -->'
+
+def generate_sitemap(manifest_curriculum):
+    """Generates a standard sitemap.xml for Google Search Console and crawlers."""
+    base_url = "https://kedar773.github.io/cbse-maths/"
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        '  <url>',
+        f'    <loc>{base_url}</loc>',
+        f'    <lastmod>{now_str}</lastmod>',
+        '    <changefreq>weekly</changefreq>',
+        '    <priority>1.0</priority>',
+        '  </url>'
+    ]
+
+    for cls_key in ["class_11", "class_12"]:
+        folder = "class-11" if cls_key == "class_11" else "class-12"
+        for ch in manifest_curriculum.get(cls_key, []):
+            slug = ch['slug']
+            ch_url = f"{base_url}{folder}/{slug}/index.html"
+            xml_lines.extend([
+                '  <url>',
+                f'    <loc>{ch_url}</loc>',
+                f'    <lastmod>{now_str}</lastmod>',
+                '    <changefreq>weekly</changefreq>',
+                '    <priority>0.8</priority>',
+                '  </url>'
+            ])
+
+    xml_lines.append('</urlset>')
+    sitemap_path = os.path.join(OUT_DIR, "sitemap.xml")
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(xml_lines) + "\n")
+    print(f"[OK] Generated Sitemap: {sitemap_path} ({len(xml_lines)-3} URLs)")
+
+def generate_robots_txt():
+    """Generates robots.txt for search engine crawlers and Googlebot."""
+    content = """User-agent: *
+Allow: /
+
+Sitemap: https://kedar773.github.io/cbse-maths/sitemap.xml
+"""
+    robots_path = os.path.join(OUT_DIR, "robots.txt")
+    with open(robots_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"[OK] Generated robots.txt: {robots_path}")
+
 def generate_chapter_page(cls_name, ch_meta, chapter_dir, global_search_list):
     """Generates the full standalone whiteboard chapter HTML file."""
     cls_num = "11" if "11" in cls_name else "12"
@@ -744,6 +807,17 @@ def generate_chapter_page(cls_name, ch_meta, chapter_dir, global_search_list):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Class {cls_num} {title} // CBSE Mathematics Whiteboard</title>
   <meta name="description" content="CBSE Class {cls_num} Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for {title}.">
+  <meta name="keywords" content="{title}, CBSE Class {cls_num} Mathematics, NCERT Class {cls_num} Math, CBSE Board Exam PYQs, Marking Scheme, JEE Main Mathematics">
+  <meta name="author" content="Kedar Krishna">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kedar773.github.io/cbse-maths/class-{cls_num}/{slug}/index.html">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kedar773.github.io/cbse-maths/class-{cls_num}/{slug}/index.html">
+  <meta property="og:title" content="Class {cls_num} {title} // CBSE Mathematics Whiteboard">
+  <meta property="og:description" content="CBSE Class {cls_num} Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for {title}.">
+  <meta property="og:site_name" content="Kedar's Academy Mathematics Engine">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1067,6 +1141,34 @@ def generate_portal_hub(global_search_list):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CBSE Mathematics Whiteboard Engine // Class 11 &amp; 12 NCERT</title>
   <meta name="description" content="Immersive Whiteboard study engine strictly aligned with CBSE Class 11 &amp; 12 Mathematics NCERT syllabus. Step-by-step marking schemes, PYQs (2020-2025), formulas and exam traps.">
+  <meta name="keywords" content="CBSE Mathematics, Class 11 Maths, Class 12 Maths, NCERT Maths, CBSE Board Exam, PYQs 2020-2025, Marking Schemes, Formulas, JEE Main Maths">
+  <meta name="author" content="Kedar Krishna">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kedar773.github.io/cbse-maths/">
+
+  {get_google_verification_meta()}
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kedar773.github.io/cbse-maths/">
+  <meta property="og:title" content="CBSE Mathematics Whiteboard Engine // Class 11 &amp; 12 NCERT">
+  <meta property="og:description" content="Immersive Whiteboard study engine strictly aligned with CBSE Class 11 &amp; 12 Mathematics NCERT syllabus. Step-by-step marking schemes, PYQs (2020-2025), formulas and exam traps.">
+  <meta property="og:site_name" content="Kedar's Academy Mathematics Engine">
+
+  <!-- Schema.org Educational JSON-LD -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Kedar's Academy Mathematics Engine",
+    "url": "https://kedar773.github.io/cbse-maths/",
+    "description": "Comprehensive CBSE Class 11 and Class 12 Mathematics digital whiteboard with NCERT pure-line notes, solved examples, step-wise marking schemes, and PYQs.",
+    "founder": {{
+      "@type": "Person",
+      "name": "Kedar Krishna"
+    }}
+  }}
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1566,6 +1668,11 @@ def main():
     # Generate Master Portal Hub
     print("\n--- Compiling Master Portal Hub ---")
     generate_portal_hub(global_search_list)
+
+    # Generate Sitemap and Robots.txt for Search Console
+    print("\n--- Generating Sitemap & Robots.txt ---")
+    generate_sitemap(manifest_curriculum)
+    generate_robots_txt()
 
     print("\n=================================================================")
     print("CBSE Mathematics Whiteboard Site Generated Successfully!")
