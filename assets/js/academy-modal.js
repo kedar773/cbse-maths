@@ -9,6 +9,7 @@
     {
       id: 'physics',
       name: "Kedar's Physics Engine",
+      subject: "Physics",
       badge: "CBSE 11 & 12 • NCERT Pure-Line",
       badgeClass: "badge-physics",
       icon: "⚛️",
@@ -18,17 +19,19 @@
     },
     {
       id: 'maths',
-      name: "Classroom Mathematics Whiteboard",
+      name: "Kedar's Mathematics Engine",
+      subject: "Mathematics",
       badge: "CBSE 11 & 12 • Step-by-Step Rigor",
       badgeClass: "badge-maths",
       icon: "📐",
       tagline: "Full 27-chapter digital whiteboard with NCERT line notes, official CBSE marking breakdowns, 5-year PYQ archive, formula proof sheets, and built-in problem-solving scratchpad.",
       url: "https://kedar773.github.io/cbse-maths/",
-      action: "Enter Mathematics Whiteboard"
+      action: "Enter Mathematics Engine"
     },
     {
       id: 'chemistry',
-      name: "Cyber Dark Chemistry Engine",
+      name: "Kedar's Chemistry Engine",
+      subject: "Chemistry",
       badge: "CBSE 11 & 12 • Physical, Inorganic, Organic",
       badgeClass: "badge-chemistry",
       icon: "🧪",
@@ -56,7 +59,7 @@
       return `
         <a href="${site.url}" class="${cardClass}" ${isCurrent ? 'aria-current="page"' : ''}>
           <div class="academy-card-top">
-            <span class="academy-card-badge ${site.badgeClass}">${site.icon} ${site.name.split(' ')[1] || site.id.toUpperCase()}</span>
+            <span class="academy-card-badge ${site.badgeClass}">${site.icon} ${site.subject || site.name.split(' ')[1] || site.id.toUpperCase()}</span>
             ${statusHtml}
           </div>
           <h3 class="academy-card-title">${site.name}</h3>

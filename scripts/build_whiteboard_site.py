@@ -805,7 +805,7 @@ def generate_chapter_page(cls_name, ch_meta, chapter_dir, global_search_list):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class {cls_num} {title} // CBSE Mathematics Whiteboard</title>
+  <title>Class {cls_num} {title} // Kedar's Mathematics Engine</title>
   <meta name="description" content="CBSE Class {cls_num} Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for {title}.">
   <meta name="keywords" content="{title}, CBSE Class {cls_num} Mathematics, NCERT Class {cls_num} Math, CBSE Board Exam PYQs, Marking Scheme, JEE Main Mathematics">
   <meta name="author" content="Kedar Krishna">
@@ -815,9 +815,9 @@ def generate_chapter_page(cls_name, ch_meta, chapter_dir, global_search_list):
   <!-- OpenGraph / Social Sharing -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://kedar773.github.io/cbse-maths/class-{cls_num}/{slug}/index.html">
-  <meta property="og:title" content="Class {cls_num} {title} // CBSE Mathematics Whiteboard">
+  <meta property="og:title" content="Class {cls_num} {title} // Kedar's Mathematics Engine">
   <meta property="og:description" content="CBSE Class {cls_num} Mathematics chapter notes, solved examples with official CBSE marking breakdown, 2020-2025 board PYQs for {title}.">
-  <meta property="og:site_name" content="Kedar's Academy Mathematics Engine">
+  <meta property="og:site_name" content="Kedar's Mathematics Engine">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1143,7 +1143,7 @@ def generate_portal_hub(global_search_list):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBSE Mathematics Whiteboard Engine // Class 11 &amp; 12 NCERT</title>
+  <title>Kedar's Mathematics Engine — CBSE Class 11 &amp; 12 Senior Mathematics</title>
   <meta name="description" content="Immersive Whiteboard study engine strictly aligned with CBSE Class 11 &amp; 12 Mathematics NCERT syllabus. Step-by-step marking schemes, PYQs (2020-2025), formulas and exam traps.">
   <meta name="keywords" content="CBSE Mathematics, Class 11 Maths, Class 12 Maths, NCERT Maths, CBSE Board Exam, PYQs 2020-2025, Marking Schemes, Formulas, JEE Main Maths">
   <meta name="author" content="Kedar Krishna">
@@ -1155,16 +1155,16 @@ def generate_portal_hub(global_search_list):
   <!-- OpenGraph / Social Sharing -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kedar773.github.io/cbse-maths/">
-  <meta property="og:title" content="CBSE Mathematics Whiteboard Engine // Class 11 &amp; 12 NCERT">
+  <meta property="og:title" content="Kedar's Mathematics Engine — CBSE Class 11 &amp; 12 Senior Mathematics">
   <meta property="og:description" content="Immersive Whiteboard study engine strictly aligned with CBSE Class 11 &amp; 12 Mathematics NCERT syllabus. Step-by-step marking schemes, PYQs (2020-2025), formulas and exam traps.">
-  <meta property="og:site_name" content="Kedar's Academy Mathematics Engine">
+  <meta property="og:site_name" content="Kedar's Mathematics Engine">
 
   <!-- Schema.org Educational JSON-LD -->
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "Kedar's Academy Mathematics Engine",
+    "name": "Kedar's Mathematics Engine",
     "url": "https://kedar773.github.io/cbse-maths/",
     "description": "Comprehensive CBSE Class 11 and Class 12 Mathematics digital whiteboard with NCERT pure-line notes, solved examples, step-wise marking schemes, and PYQs.",
     "founder": {{
